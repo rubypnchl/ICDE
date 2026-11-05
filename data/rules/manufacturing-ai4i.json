@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "id": "candidate-ai4i-air-temperature-range",
+  "dataset_id": "ai4i-2020",
+  "columns": ["Type", "Air temperature [K]"],
+  "rule_type": "conditional_range",
+  "condition": {
+    "op": "eq",
+    "column": "Type",
+    "value": "L"
+  },
+  "assertion": {
+    "op": "between",
+    "column": "Air temperature [K]",
+    "lower": 290,
+    "upper": 310
+  },
+  "evidence": [
+    {
+      "description": "The UCI dataset page describes air temperature as a measured feature centered around 300 K; these bounds are an illustrative candidate only.",
+      "source_url": "https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset"
+    }
+  ],
+  "provenance": {
+    "metadata_file": "data/metadata/ai4i-2020.json",
+    "metadata_sha256": "fe531127f52abad4eeec28a86fcddc4970d6c4c63e73c01226bf30e4fdbd77fb",
+    "source_files": [
+      {
+        "file": "data/originals/ai4i/uci-dataset-page.html",
+        "url": "https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset",
+        "sha256": "470818f3ebd7b46c7db1ccbab2a6ff2643038ca3057c1866394b86aa2be70509"
+      }
+    ]
+  },
+  "confidence": 0.3,
+  "verification_status": "candidate"
+}

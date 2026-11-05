@@ -11,7 +11,11 @@
         "data/originals/ai4i/ai4i2020.csv",
         "data/originals/ai4i/uci-dataset-page.html"
       ],
-      "availability": "data_and_documentation"
+      "availability": "data_and_documentation",
+      "redistribution": {
+        "status": "not_cleared_local_only",
+        "basis": "The reviewed UCI API metadata did not state a redistribution license; download remains available from UCI."
+      }
     },
     "sec-edgar-xbrl": {
       "source_urls": [
@@ -22,7 +26,11 @@
         "data/originals/sec/apple_assets.json",
         "data/originals/sec/api-documentation.html"
       ],
-      "availability": "data_and_official_api_documentation"
+      "availability": "data_and_official_api_documentation",
+      "redistribution": {
+        "status": "not_cleared_local_only",
+        "basis": "No explicit redistribution license for the SEC fact snapshots was verified; public API access alone was not treated as permission to republish."
+      }
     },
     "sec-companyfacts": {
       "source_urls": [
@@ -50,6 +58,10 @@
         "data/originals/sec/companyfacts/0000034088_exxon.json"
       ],
       "availability": "ten_official_companyfacts_snapshots",
+      "redistribution": {
+        "status": "not_cleared_local_only",
+        "basis": "No explicit redistribution license for the SEC fact snapshots was verified; public API access alone was not treated as permission to republish."
+      },
       "limitations": [
         "Concept coverage includes available US-GAAP tags with facts ending in 2020-2025; quarterly facts and restatements are retained."
       ]
@@ -63,7 +75,11 @@
         "data/originals/nhanes/DEMO_J.XPT",
         "data/originals/nhanes/DEMO_J.htm"
       ],
-      "availability": "data_and_official_codebook"
+      "availability": "data_and_official_codebook",
+      "redistribution": {
+        "status": "not_cleared_local_only",
+        "basis": "CDC/NCHS publishes public-use files, but no explicit redistribution license was verified in this review."
+      }
     },
     "nhanes-labs": {
       "source_urls": [
@@ -82,7 +98,11 @@
         "data/originals/nhanes/GLU_J.XPT",
         "data/originals/nhanes/GLU_J.htm"
       ],
-      "availability": "three_official_lab_data_files_and_codebooks"
+      "availability": "three_official_lab_data_files_and_codebooks",
+      "redistribution": {
+        "status": "not_cleared_local_only",
+        "basis": "CDC/NCHS publishes public-use files, but no explicit redistribution license was verified in this review."
+      }
     },
     "ton-iot": {
       "source_urls": [
@@ -115,6 +135,10 @@
         "data/samples/unsw_nb15/flows-100000.csv"
       ],
       "availability": "verified_public_mirror_train_test",
+      "redistribution": {
+        "status": "not_cleared_local_only",
+        "basis": "The Hugging Face repository metadata declares GPL-3.0, but its pinned revision has no standalone license file; keep dataset payloads local pending review."
+      },
       "sampling": {
         "method": "uniform reservoir sample without replacement across both retained split files",
         "seed": 2015,
@@ -141,7 +165,11 @@
         "data/originals/worldbank/indicator-NY_GDP_PCAP_CD.json",
         "data/originals/worldbank/indicator-SP_POP_TOTL.json"
       ],
-      "availability": "official_api_2020_2024_two_indicators"
+      "availability": "official_api_2020_2024_two_indicators",
+      "redistribution": {
+        "status": "not_cleared_local_only",
+        "basis": "World Bank terms apply to its materials; this review did not verify the applicable license for these exact API responses."
+      }
     },
     "nist-nvd": {
       "source_urls": [
@@ -155,6 +183,10 @@
         "data/originals/nist_nvd/api-vulnerabilities.html"
       ],
       "availability": "official_api_paginated_sample",
+      "redistribution": {
+        "status": "not_cleared_local_only",
+        "basis": "NIST notes that some data may contain third-party or extramural rights; the CVE response set was not individually rights-cleared."
+      },
       "sampling": {
         "method": "official NVD CVE API startIndex pagination",
         "results_per_page": 2000,
@@ -188,6 +220,10 @@
         "data/samples/cic_ids2017/flows-50000.csv"
       ],
       "availability": "50000_rows_from_two_pinned_public_mirror_files",
+      "redistribution": {
+        "status": "not_cleared_local_only",
+        "basis": "Pinned mirror metadata says license 'other'; its README requests citation but provides no explicit reuse grant."
+      },
       "sampling": {
         "method": "uniform reservoir sample without replacement across both source CSVs",
         "seed": 2017,

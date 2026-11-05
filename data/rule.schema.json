@@ -1,0 +1,182 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://metaverify.example/schema/rule-v1.json",
+  "title": "MetaVerify candidate semantic rule",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "id",
+    "dataset_id",
+    "columns",
+    "rule_type",
+    "condition",
+    "assertion",
+    "evidence",
+    "provenance",
+    "confidence",
+    "verification_status"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "dataset_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "columns": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "rule_type": {
+      "enum": ["conditional_range", "cross_field", "categorical"]
+    },
+    "condition": {
+      "oneOf": [
+        { "$ref": "#/$defs/predicate" },
+        { "$ref": "#/$defs/predicateGroup" },
+        { "type": "null" }
+      ]
+    },
+    "assertion": {
+      "oneOf": [
+        { "$ref": "#/$defs/predicate" },
+        { "$ref": "#/$defs/rangeAssertion" },
+        { "$ref": "#/$defs/relationAssertion" }
+      ]
+    },
+    "evidence": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["description", "source_url"],
+        "properties": {
+          "description": { "type": "string", "minLength": 1 },
+          "source_url": { "type": "string", "format": "uri" }
+        },
+        "additionalProperties": false
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "required": ["metadata_file", "metadata_sha256", "source_files"],
+      "properties": {
+        "metadata_file": { "type": "string", "minLength": 1 },
+        "metadata_sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "source_files": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/source" }
+        }
+      },
+      "additionalProperties": false
+    },
+    "confidence": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "verification_status": {
+      "const": "candidate"
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "value": {
+      "oneOf": [
+        { "type": ["string", "number", "boolean"] },
+        {
+          "type": "array",
+          "items": { "type": ["string", "number", "boolean"] }
+        }
+      ]
+    },
+    "predicate": {
+      "type": "object",
+      "required": ["op", "column", "value"],
+      "properties": {
+        "op": {
+          "enum": ["eq", "ne", "gt", "gte", "lt", "lte", "in", "not_in"]
+        },
+        "column": { "type": "string", "minLength": 1 },
+        "value": { "$ref": "#/$defs/value" }
+      },
+      "additionalProperties": false
+    },
+    "predicateGroup": {
+      "type": "object",
+      "oneOf": [
+        {
+          "required": ["all"],
+          "properties": {
+            "all": {
+              "type": "array",
+              "minItems": 1,
+              "items": { "$ref": "#/$defs/predicate" }
+            }
+          }
+        },
+        {
+          "required": ["any"],
+          "properties": {
+            "any": {
+              "type": "array",
+              "minItems": 1,
+              "items": { "$ref": "#/$defs/predicate" }
+            }
+          }
+        }
+      ],
+      "additionalProperties": false
+    },
+    "rangeAssertion": {
+      "type": "object",
+      "required": ["op", "column", "lower", "upper"],
+      "properties": {
+        "op": { "const": "between" },
+        "column": { "type": "string", "minLength": 1 },
+        "lower": { "type": "number" },
+        "upper": { "type": "number" }
+      },
+      "additionalProperties": false
+    },
+    "relationAssertion": {
+      "type": "object",
+      "required": ["op", "left_column", "right_column"],
+      "properties": {
+        "op": {
+          "enum": ["eq", "ne", "gt", "gte", "lt", "lte"]
+        },
+        "left_column": { "type": "string", "minLength": 1 },
+        "right_column": { "type": "string", "minLength": 1 }
+      },
+      "additionalProperties": false
+    },
+    "source": {
+      "type": "object",
+      "required": ["file", "url", "sha256"],
+      "properties": {
+        "file": { "type": "string", "minLength": 1 },
+        "url": { "type": "string", "format": "uri" },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

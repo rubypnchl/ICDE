@@ -1,0 +1,22 @@
+# Python and pytest artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+*.tmp
+*.temp
+*.log
+
+# Raw dataset payloads are local-only pending redistribution-rights review.
+/data/originals/ai4i/ai4i2020.csv
+/data/originals/ai4i/ai4i2020.zip
+/data/originals/cic_ids2017/*.csv
+/data/originals/cic_ids2017/sample-rows.json
+/data/originals/nhanes/*.XPT
+/data/originals/nist_nvd/cves-*.json
+/data/originals/sec/apple_assets.json
+/data/originals/sec/companyfacts/*.json
+/data/originals/unsw_nb15/*.csv
+/data/originals/worldbank/*.json
+/data/samples/**/*.csv

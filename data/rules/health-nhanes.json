@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0",
+  "id": "candidate-nhanes-gender-codes",
+  "dataset_id": "nhanes-2017-2018",
+  "columns": ["RIAGENDR"],
+  "rule_type": "categorical",
+  "condition": null,
+  "assertion": {
+    "op": "in",
+    "column": "RIAGENDR",
+    "value": [1, 2]
+  },
+  "evidence": [
+    {
+      "description": "The official codebook lists codes 1 and 2; this candidate has not been validated against every source record.",
+      "source_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm"
+    }
+  ],
+  "provenance": {
+    "metadata_file": "data/metadata/nhanes-2017-2018.json",
+    "metadata_sha256": "0a1412ae2af56a260f4c3f4d760adc104e6624c4cfeda50d3ee45d08b417d1bb",
+    "source_files": [
+      {
+        "file": "data/originals/nhanes/DEMO_J.htm",
+        "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+        "sha256": "07f8f1e7f884fab180ccf53c705652de9d663833fdad85b0d759919c8464cde0"
+      }
+    ]
+  },
+  "confidence": 0.55,
+  "verification_status": "candidate"
+}

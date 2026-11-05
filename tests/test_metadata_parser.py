@@ -252,6 +252,7 @@ def test_cic_requires_provenance_url_for_sample(tmp_path: Path):
         parse_cic_ids2017(docs, root=tmp_path, sample_csv=sample)
 
 
+@pytest.mark.requires_data
 def test_available_datasets_follow_common_schema(available_metadata):
     root = Path(__file__).resolve().parents[1]
     outputs = available_metadata
@@ -297,6 +298,7 @@ def test_available_datasets_follow_common_schema(available_metadata):
     assert outputs["sec-edgar-xbrl"]["api_documentation"]["status"] == "documented"
 
 
+@pytest.mark.requires_data
 def test_sec_companyfacts_covers_ten_companies_multiple_concepts_and_years(available_metadata):
     outputs = available_metadata
     companyfacts = {
@@ -312,6 +314,7 @@ def test_sec_companyfacts_covers_ten_companies_multiple_concepts_and_years(avail
         )
 
 
+@pytest.mark.requires_data
 def test_ai4i_processes_all_records_and_nhanes_has_three_lab_files(available_metadata):
     outputs = available_metadata
     assert outputs["ai4i-2020"]["provenance"]["records_sampled"] == 10_000
@@ -332,6 +335,7 @@ def test_ai4i_processes_all_records_and_nhanes_has_three_lab_files(available_met
     assert documented_missing["value"] == [{"code": ".", "description": "Missing"}]
 
 
+@pytest.mark.requires_data
 def test_supplementary_sources_and_ton_iot_access_limitation(available_metadata):
     outputs = available_metadata
     wdi = outputs["world-bank-wdi"]
@@ -363,6 +367,7 @@ def test_supplementary_sources_and_ton_iot_access_limitation(available_metadata)
     assert all(column["missing_values"]["value"]["sample_size"] == 100_000 for column in unsw["columns"])
 
 
+@pytest.mark.requires_data
 def test_cic_ids2017_sample_remains_a_regression_fixture(available_metadata):
     cic = available_metadata["cic-ids2017"]
     assert len(cic["columns"]) == 79
@@ -380,6 +385,7 @@ def test_cic_ids2017_sample_remains_a_regression_fixture(available_metadata):
     assert hashlib.sha256(sample_path.read_bytes()).hexdigest() == cic["provenance"]["sampling"]["sample_sha256"]
 
 
+@pytest.mark.requires_data
 def test_schema_rejects_invented_values_for_unknown_fields(available_metadata):
     root = Path(__file__).resolve().parents[1]
     metadata = copy.deepcopy(available_metadata["cic-ids2017"])

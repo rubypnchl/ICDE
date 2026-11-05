@@ -1,0 +1,467 @@
+{
+  "datasets": {
+    "ai4i-2020": {
+      "candidate_count": 9,
+      "metrics": {
+        "conditional": {
+          "coverage": 0.3333333333333333,
+          "decisions": {
+            "abstain": 6,
+            "accept": 2,
+            "reject": 1
+          },
+          "false_positive_rate": 0.75,
+          "heldout_rule_pass_rates": {
+            "ai4i-air-temperature-global": 1.0,
+            "ai4i-air-temperature-type-H": 1.0,
+            "ai4i-air-temperature-type-L": 0.9994465965688988,
+            "ai4i-air-temperature-type-M": 1.0,
+            "ai4i-hdf-implies-machine-failure": 1.0,
+            "ai4i-osf-implies-machine-failure": 1.0,
+            "ai4i-pwf-implies-machine-failure": 1.0,
+            "ai4i-rnf-implies-machine-failure": 0.0,
+            "ai4i-twf-implies-machine-failure": 1.0
+          },
+          "rule_decisions": {
+            "ai4i-air-temperature-global": {
+              "decision": "abstain",
+              "heldout_applicable_rows": 3000,
+              "heldout_violations": 0,
+              "independently_documented": false,
+              "selected": false
+            },
+            "ai4i-air-temperature-type-H": {
+              "decision": "accept",
+              "heldout_applicable_rows": 296,
+              "heldout_violations": 0,
+              "independently_documented": false,
+              "selected": true
+            },
+            "ai4i-air-temperature-type-L": {
+              "decision": "reject",
+              "heldout_applicable_rows": 1807,
+              "heldout_violations": 1,
+              "independently_documented": false,
+              "selected": true
+            },
+            "ai4i-air-temperature-type-M": {
+              "decision": "accept",
+              "heldout_applicable_rows": 897,
+              "heldout_violations": 0,
+              "independently_documented": false,
+              "selected": true
+            },
+            "ai4i-hdf-implies-machine-failure": {
+              "decision": "abstain",
+              "heldout_applicable_rows": 41,
+              "heldout_violations": 0,
+              "independently_documented": true,
+              "selected": false
+            },
+            "ai4i-osf-implies-machine-failure": {
+              "decision": "abstain",
+              "heldout_applicable_rows": 26,
+              "heldout_violations": 0,
+              "independently_documented": true,
+              "selected": false
+            },
+            "ai4i-pwf-implies-machine-failure": {
+              "decision": "abstain",
+              "heldout_applicable_rows": 27,
+              "heldout_violations": 0,
+              "independently_documented": true,
+              "selected": false
+            },
+            "ai4i-rnf-implies-machine-failure": {
+              "decision": "abstain",
+              "heldout_applicable_rows": 5,
+              "heldout_violations": 5,
+              "independently_documented": true,
+              "selected": false
+            },
+            "ai4i-twf-implies-machine-failure": {
+              "decision": "abstain",
+              "heldout_applicable_rows": 13,
+              "heldout_violations": 0,
+              "independently_documented": true,
+              "selected": false
+            }
+          },
+          "rule_precision": 0.6666666666666666,
+          "runtime_seconds": 0.008046999981161207,
+          "selected_rules": [
+            "ai4i-air-temperature-type-H",
+            "ai4i-air-temperature-type-L",
+            "ai4i-air-temperature-type-M"
+          ]
+        },
+        "evidence_gated": {
+          "coverage": 0.5555555555555556,
+          "decisions": {
+            "abstain": 4,
+            "accept": 4,
+            "reject": 1
+          },
+          "false_positive_rate": 0.0,
+          "heldout_rule_pass_rates": {
+            "ai4i-air-temperature-global": 1.0,
+            "ai4i-air-temperature-type-H": 1.0,
+            "ai4i-air-temperature-type-L": 0.9994465965688988,
+            "ai4i-air-temperature-type-M": 1.0,
+            "ai4i-hdf-implies-machine-failure": 1.0,
+            "ai4i-osf-implies-machine-failure": 1.0,
+            "ai4i-pwf-implies-machine-failure": 1.0,
+            "ai4i-rnf-implies-machine-failure": 0.0,
+            "ai4i-twf-implies-machine-failure": 1.0
+          },
+          "rule_decisions": {
+            "ai4i-air-temperature-global": {
+              "decision": "abstain",
+              "heldout_applicable_rows": 3000,
+              "heldout_violations": 0,
+              "independently_documented": false,
+              "selected": false
+            },
+            "ai4i-air-temperature-type-H": {
+              "decision": "abstain",
+              "heldout_applicable_rows": 296,
+              "heldout_violations": 0,
+              "independently_documented": false,
+              "selected": false
+            },
+            "ai4i-air-temperature-type-L": {
+              "decision": "abstain",
+              "heldout_applicable_rows": 1807,
+              "heldout_violations": 1,
+              "independently_documented": false,
+              "selected": false
+            },
+            "ai4i-air-temperature-type-M": {
+              "decision": "abstain",
+              "heldout_applicable_rows": 897,
+              "heldout_violations": 0,
+              "independently_documented": false,
+              "selected": false
+            },
+            "ai4i-hdf-implies-machine-failure": {
+              "decision": "accept",
+              "heldout_applicable_rows": 41,
+              "heldout_violations": 0,
+              "independently_documented": true,
+              "selected": true
+            },
+            "ai4i-osf-implies-machine-failure": {
+              "decision": "accept",
+              "heldout_applicable_rows": 26,
+              "heldout_violations": 0,
+              "independently_documented": true,
+              "selected": true
+            },
+            "ai4i-pwf-implies-machine-failure": {
+              "decision": "accept",
+              "heldout_applicable_rows": 27,
+              "heldout_violations": 0,
+              "independently_documented": true,
+              "selected": true
+            },
+            "ai4i-rnf-implies-machine-failure": {
+              "decision": "reject",
+              "heldout_applicable_rows": 5,
+              "heldout_violations": 5,
+              "independently_documented": true,
+              "selected": true
+            },
+            "ai4i-twf-implies-machine-failure": {
+              "decision": "accept",
+              "heldout_applicable_rows": 13,
+              "heldout_violations": 0,
+              "independently_documented": true,
+              "selected": true
+            }
+          },
+          "rule_precision": 0.8,
+          "runtime_seconds": 0.008072500000707805,
+          "selected_rules": [
+            "ai4i-twf-implies-machine-failure",
+            "ai4i-hdf-implies-machine-failure",
+            "ai4i-pwf-implies-machine-failure",
+            "ai4i-osf-implies-machine-failure",
+            "ai4i-rnf-implies-machine-failure"
+          ]
+        },
+        "global": {
+          "coverage": 0.1111111111111111,
+          "decisions": {
+            "abstain": 8,
+            "accept": 1,
+            "reject": 0
+          },
+          "false_positive_rate": 0.25,
+          "heldout_rule_pass_rates": {
+            "ai4i-air-temperature-global": 1.0,
+            "ai4i-air-temperature-type-H": 1.0,
+            "ai4i-air-temperature-type-L": 0.9994465965688988,
+            "ai4i-air-temperature-type-M": 1.0,
+            "ai4i-hdf-implies-machine-failure": 1.0,
+            "ai4i-osf-implies-machine-failure": 1.0,
+            "ai4i-pwf-implies-machine-failure": 1.0,
+            "ai4i-rnf-implies-machine-failure": 0.0,
+            "ai4i-twf-implies-machine-failure": 1.0
+          },
+          "rule_decisions": {
+            "ai4i-air-temperature-global": {
+              "decision": "accept",
+              "heldout_applicable_rows": 3000,
+              "heldout_violations": 0,
+              "independently_documented": false,
+              "selected": true
+            },
+            "ai4i-air-temperature-type-H": {
+              "decision": "abstain",
+              "heldout_applicable_rows": 296,
+              "heldout_violations": 0,
+              "independently_documented": false,
+              "selected": false
+            },
+            "ai4i-air-temperature-type-L": {
+              "decision": "abstain",
+              "heldout_applicable_rows": 1807,
+              "heldout_violations": 1,
+              "independently_documented": false,
+              "selected": false
+            },
+            "ai4i-air-temperature-type-M": {
+              "decision": "abstain",
+              "heldout_applicable_rows": 897,
+              "heldout_violations": 0,
+              "independently_documented": false,
+              "selected": false
+            },
+            "ai4i-hdf-implies-machine-failure": {
+              "decision": "abstain",
+              "heldout_applicable_rows": 41,
+              "heldout_violations": 0,
+              "independently_documented": true,
+              "selected": false
+            },
+            "ai4i-osf-implies-machine-failure": {
+              "decision": "abstain",
+              "heldout_applicable_rows": 26,
+              "heldout_violations": 0,
+              "independently_documented": true,
+              "selected": false
+            },
+            "ai4i-pwf-implies-machine-failure": {
+              "decision": "abstain",
+              "heldout_applicable_rows": 27,
+              "heldout_violations": 0,
+              "independently_documented": true,
+              "selected": false
+            },
+            "ai4i-rnf-implies-machine-failure": {
+              "decision": "abstain",
+              "heldout_applicable_rows": 5,
+              "heldout_violations": 5,
+              "independently_documented": true,
+              "selected": false
+            },
+            "ai4i-twf-implies-machine-failure": {
+              "decision": "abstain",
+              "heldout_applicable_rows": 13,
+              "heldout_violations": 0,
+              "independently_documented": true,
+              "selected": false
+            }
+          },
+          "rule_precision": 1.0,
+          "runtime_seconds": 0.009417599998414516,
+          "selected_rules": [
+            "ai4i-air-temperature-global"
+          ]
+        }
+      },
+      "selection_threshold": 0.99,
+      "split": {
+        "discovery_rows": 7000,
+        "heldout_rows": 3000,
+        "method": "seeded 70/30 random rows (AI4I); seeded 70/30 reporting-end-date groups (SEC)",
+        "seed": 2401
+      }
+    },
+    "sec-companyfacts-0000320193": {
+      "candidate_count": 4,
+      "metrics": {
+        "conditional": {
+          "coverage": 0.5,
+          "decisions": {
+            "abstain": 2,
+            "accept": 2,
+            "reject": 0
+          },
+          "false_positive_rate": 0.5,
+          "heldout_rule_pass_rates": {
+            "sec-assets-cover-liabilities-10-K": 1.0,
+            "sec-assets-cover-liabilities-10-Q": 1.0,
+            "sec-assets-nonnegative": 1.0,
+            "sec-liabilities-nonnegative": 1.0
+          },
+          "rule_decisions": {
+            "sec-assets-cover-liabilities-10-K": {
+              "decision": "accept",
+              "heldout_applicable_rows": 4,
+              "heldout_violations": 0,
+              "independently_documented": false,
+              "selected": true
+            },
+            "sec-assets-cover-liabilities-10-Q": {
+              "decision": "accept",
+              "heldout_applicable_rows": 12,
+              "heldout_violations": 0,
+              "independently_documented": false,
+              "selected": true
+            },
+            "sec-assets-nonnegative": {
+              "decision": "abstain",
+              "heldout_applicable_rows": 16,
+              "heldout_violations": 0,
+              "independently_documented": false,
+              "selected": false
+            },
+            "sec-liabilities-nonnegative": {
+              "decision": "abstain",
+              "heldout_applicable_rows": 16,
+              "heldout_violations": 0,
+              "independently_documented": false,
+              "selected": false
+            }
+          },
+          "rule_precision": 1.0,
+          "runtime_seconds": 1.6700010746717453e-05,
+          "selected_rules": [
+            "sec-assets-cover-liabilities-10-K",
+            "sec-assets-cover-liabilities-10-Q"
+          ]
+        },
+        "evidence_gated": {
+          "coverage": 0.0,
+          "decisions": {
+            "abstain": 4,
+            "accept": 0,
+            "reject": 0
+          },
+          "false_positive_rate": 0.0,
+          "heldout_rule_pass_rates": {
+            "sec-assets-cover-liabilities-10-K": 1.0,
+            "sec-assets-cover-liabilities-10-Q": 1.0,
+            "sec-assets-nonnegative": 1.0,
+            "sec-liabilities-nonnegative": 1.0
+          },
+          "rule_decisions": {
+            "sec-assets-cover-liabilities-10-K": {
+              "decision": "abstain",
+              "heldout_applicable_rows": 4,
+              "heldout_violations": 0,
+              "independently_documented": false,
+              "selected": false
+            },
+            "sec-assets-cover-liabilities-10-Q": {
+              "decision": "abstain",
+              "heldout_applicable_rows": 12,
+              "heldout_violations": 0,
+              "independently_documented": false,
+              "selected": false
+            },
+            "sec-assets-nonnegative": {
+              "decision": "abstain",
+              "heldout_applicable_rows": 16,
+              "heldout_violations": 0,
+              "independently_documented": false,
+              "selected": false
+            },
+            "sec-liabilities-nonnegative": {
+              "decision": "abstain",
+              "heldout_applicable_rows": 16,
+              "heldout_violations": 0,
+              "independently_documented": false,
+              "selected": false
+            }
+          },
+          "rule_precision": null,
+          "runtime_seconds": 1.4999997802078724e-05,
+          "selected_rules": []
+        },
+        "global": {
+          "coverage": 0.5,
+          "decisions": {
+            "abstain": 2,
+            "accept": 2,
+            "reject": 0
+          },
+          "false_positive_rate": 0.5,
+          "heldout_rule_pass_rates": {
+            "sec-assets-cover-liabilities-10-K": 1.0,
+            "sec-assets-cover-liabilities-10-Q": 1.0,
+            "sec-assets-nonnegative": 1.0,
+            "sec-liabilities-nonnegative": 1.0
+          },
+          "rule_decisions": {
+            "sec-assets-cover-liabilities-10-K": {
+              "decision": "abstain",
+              "heldout_applicable_rows": 4,
+              "heldout_violations": 0,
+              "independently_documented": false,
+              "selected": false
+            },
+            "sec-assets-cover-liabilities-10-Q": {
+              "decision": "abstain",
+              "heldout_applicable_rows": 12,
+              "heldout_violations": 0,
+              "independently_documented": false,
+              "selected": false
+            },
+            "sec-assets-nonnegative": {
+              "decision": "accept",
+              "heldout_applicable_rows": 16,
+              "heldout_violations": 0,
+              "independently_documented": false,
+              "selected": true
+            },
+            "sec-liabilities-nonnegative": {
+              "decision": "accept",
+              "heldout_applicable_rows": 16,
+              "heldout_violations": 0,
+              "independently_documented": false,
+              "selected": true
+            }
+          },
+          "rule_precision": 1.0,
+          "runtime_seconds": 2.1600048057734966e-05,
+          "selected_rules": [
+            "sec-assets-nonnegative",
+            "sec-liabilities-nonnegative"
+          ]
+        }
+      },
+      "selection_threshold": 0.99,
+      "split": {
+        "discovery_rows": 32,
+        "heldout_rows": 16,
+        "method": "seeded 70/30 random rows (AI4I); seeded 70/30 reporting-end-date groups (SEC)",
+        "seed": 2401
+      }
+    }
+  },
+  "decision_semantics": {
+    "abstain": "unsupported, unselected, or not evaluable candidate",
+    "accept": "independently documented candidate with zero observed held-out violations; remains unverified",
+    "reject": "independently documented candidate with at least one held-out violation; indicates a rule/data conflict, not a finding of bad data"
+  },
+  "metric_definitions": {
+    "coverage": "selected candidate rules / all candidate rules",
+    "decisions": "per-rule pilot decisions; unsupported statistical candidates always abstain, regardless of held-out pass rate",
+    "false_positive_rate": "selected unsupported candidates / all unsupported candidates (conservative proxy, not a measured error rate)",
+    "rule_precision": "selected rules with independent documentation support and zero held-out violations / selected rules; null when none selected"
+  },
+  "pilot": "MetaVerify Module 2A novelty pilot",
+  "warning": "Empirical regularities are unverified candidates, not integrity rules. Only independently documented assertions are evidence-gated."
+}

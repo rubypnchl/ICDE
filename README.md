@@ -57,3 +57,21 @@ parsing uses pyreadstat's dictionary mode and does not require pandas.
 
 No undocumented units, constraints, or descriptions are synthesized. Sources
 not available to this environment are noted in provenance and `data/sources.json`.
+
+## Redistribution and reproducibility
+
+Raw dataset payloads are ignored by Git and kept locally because this review
+could not verify redistribution permission for every original or mirror. This
+does not delete local files. Per-source URLs, SHA-256 hashes, license notices,
+sampling seeds, counts, and limitations remain in the generated metadata and
+`data/sources.json`. Download each ignored source to its listed path before
+running `python -m src.metadata_parser`; mirror revisions and paginated NVD
+URLs are pinned in the manifest. The parser recreates the CIC-IDS2017 and
+UNSW-NB15 samples with fixed seeds.
+
+The full-data integration tests are marked `requires_data` and need the
+locally retained source files. GitHub Actions runs the fixture-backed suite
+with `python -m pytest -m "not requires_data" -q`, so CI does not require or
+download datasets. Redistribution status and the evidence reviewed are
+recorded per dataset in `data/sources.json`; this is a conservative repository
+policy, not a legal determination.

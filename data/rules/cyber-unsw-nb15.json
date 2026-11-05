@@ -1,0 +1,46 @@
+{
+  "schema_version": "1.0",
+  "id": "candidate-unsw-benign-category",
+  "dataset_id": "unsw-nb15",
+  "columns": ["label", "attack_cat"],
+  "rule_type": "cross_field",
+  "condition": {
+    "op": "eq",
+    "column": "label",
+    "value": 0
+  },
+  "assertion": {
+    "op": "eq",
+    "column": "attack_cat",
+    "value": "Normal"
+  },
+  "evidence": [
+    {
+      "description": "Both fields and their observed classes occur in the pinned mirror sample; split-label consistency remains unverified.",
+      "source_url": "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/tree/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0"
+    }
+  ],
+  "provenance": {
+    "metadata_file": "data/metadata/unsw-nb15.json",
+    "metadata_sha256": "8ce95ccb55f4c021885c054b6168b6f72ae50f0098e4044ea9bd502673a59ccc",
+    "source_files": [
+      {
+        "file": "data/originals/unsw_nb15/README.md",
+        "url": "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/README.md",
+        "sha256": "719dbf574cf4e031c4b4e3cb74852dbc61315d65b888078901151cba22df0e8e"
+      },
+      {
+        "file": "data/originals/unsw_nb15/train.csv",
+        "url": "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/train.csv",
+        "sha256": "734fe6642edf758f7c94d7d9149426b49d202fe8e7bf0bef47392489c3c0a559"
+      },
+      {
+        "file": "data/originals/unsw_nb15/test.csv",
+        "url": "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/test.csv",
+        "sha256": "bec7dd5ec88dc2a0ccc7a07879d338395ed7421750f675fd0339e07dfe0648fa"
+      }
+    ]
+  },
+  "confidence": 0.4,
+  "verification_status": "candidate"
+}

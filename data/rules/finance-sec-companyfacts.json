@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0",
+  "id": "candidate-sec-assets-cover-liabilities",
+  "dataset_id": "sec-companyfacts-0000320193",
+  "columns": ["assets", "liabilities"],
+  "rule_type": "cross_field",
+  "condition": null,
+  "assertion": {
+    "op": "gte",
+    "left_column": "assets",
+    "right_column": "liabilities"
+  },
+  "evidence": [
+    {
+      "description": "SEC Company Facts metadata includes assets and liabilities concepts; this comparison is illustrative and not asserted to hold for every period.",
+      "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000320193.json"
+    }
+  ],
+  "provenance": {
+    "metadata_file": "data/metadata/sec-companyfacts-0000320193.json",
+    "metadata_sha256": "7bdf5187454ae353fe4dc3907baab106debfb65c5b089f5cad2ad37a0ecad043",
+    "source_files": [
+      {
+        "file": "data/originals/sec/companyfacts/0000320193_apple.json",
+        "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000320193.json",
+        "sha256": "75a78f918313f3336823517d6c34908d23dd07f07e90e625c61e705e3bb6d27b"
+      }
+    ]
+  },
+  "confidence": 0.25,
+  "verification_status": "candidate"
+}
