@@ -1,0 +1,259 @@
+{
+  "columns": [
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/GLU_J.htm",
+        "status": "documented",
+        "value": "Respondent sequence number"
+      },
+      "missing_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/GLU_J.XPT",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 1000
+        }
+      },
+      "name": "SEQN",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/GLU_J.XPT",
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/GLU_J.htm"
+      ],
+      "type": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/GLU_J.XPT",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/GLU_J.htm",
+        "status": "documented",
+        "value": [
+          {
+            "code": "9133.518063 to 944153.24975",
+            "description": "Range of Values"
+          },
+          {
+            "code": "0",
+            "description": "No Lab Result or Not Fasting for 8 to <24 hours"
+          }
+        ]
+      },
+      "description": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/GLU_J.htm",
+        "status": "documented",
+        "value": "Fasting Subsample 2 Year MEC Weight"
+      },
+      "missing_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/GLU_J.XPT",
+        "status": "inferred",
+        "value": {
+          "documented_categories": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/GLU_J.htm",
+            "status": "documented",
+            "value": [
+              {
+                "code": ".",
+                "description": "Missing"
+              }
+            ]
+          },
+          "observed_in_sample": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/GLU_J.XPT",
+            "status": "inferred",
+            "value": {
+              "count_in_sample": 0,
+              "sample_size": 1000
+            }
+          }
+        }
+      },
+      "name": "WTSAF2YR",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/GLU_J.XPT",
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/GLU_J.htm"
+      ],
+      "type": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/GLU_J.XPT",
+        "status": "inferred",
+        "value": "number"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/GLU_J.htm",
+        "status": "documented",
+        "value": [
+          {
+            "code": "47 to 451",
+            "description": "Range of Values"
+          }
+        ]
+      },
+      "description": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/GLU_J.htm",
+        "status": "documented",
+        "value": "Fasting Glucose (mg/dL)"
+      },
+      "missing_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/GLU_J.XPT",
+        "status": "inferred",
+        "value": {
+          "documented_categories": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/GLU_J.htm",
+            "status": "documented",
+            "value": [
+              {
+                "code": ".",
+                "description": "Missing"
+              }
+            ]
+          },
+          "observed_in_sample": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/GLU_J.XPT",
+            "status": "inferred",
+            "value": {
+              "count_in_sample": 49,
+              "sample_size": 1000
+            }
+          }
+        }
+      },
+      "name": "LBXGLU",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/GLU_J.XPT",
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/GLU_J.htm"
+      ],
+      "type": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/GLU_J.XPT",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/GLU_J.htm",
+        "status": "documented",
+        "value": [
+          {
+            "code": "2.61 to 25",
+            "description": "Range of Values"
+          }
+        ]
+      },
+      "description": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/GLU_J.htm",
+        "status": "documented",
+        "value": "Fasting Glucose (mmol/L)"
+      },
+      "missing_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/GLU_J.XPT",
+        "status": "inferred",
+        "value": {
+          "documented_categories": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/GLU_J.htm",
+            "status": "documented",
+            "value": [
+              {
+                "code": ".",
+                "description": "Missing"
+              }
+            ]
+          },
+          "observed_in_sample": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/GLU_J.XPT",
+            "status": "inferred",
+            "value": {
+              "count_in_sample": 49,
+              "sample_size": 1000
+            }
+          }
+        }
+      },
+      "name": "LBDGLUSI",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/GLU_J.XPT",
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/GLU_J.htm"
+      ],
+      "type": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/GLU_J.XPT",
+        "status": "inferred",
+        "value": "number"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    }
+  ],
+  "dataset": {
+    "availability": "data_and_official_codebook",
+    "description": {
+      "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/GLU_J.htm",
+      "status": "documented",
+      "value": "In 2015, diabetes was the seventh leading cause of death in the United States. More than 30 million Americans are living with diabetes, and 86 million are living with prediabetes, which is a serious health condition that increases a person’s risk of type-2 diabetes and other chronic diseases. The prevalence of diabetes and overweight (one of the major risk factors for diabetes) continues to increase. Substantial new efforts to prevent or control diabetes have begun, including the Diabetes Prevention Trial and the National Diabetes Education Program."
+    },
+    "domain": "health and demographics",
+    "id": "nhanes-2017-2018-glu-j",
+    "name": "NHANES 2017-2018 GLU_J"
+  },
+  "provenance": {
+    "limitations": [],
+    "records_sampled": 1000,
+    "sources": [
+      {
+        "file": "data/originals/nhanes/GLU_J.XPT",
+        "sha256": "5b38897d0d7bfbc69dd9ca74ffdaf2f6a9bed5a91d4a7bf46e07f1332cc3379e",
+        "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/GLU_J.XPT"
+      },
+      {
+        "file": "data/originals/nhanes/GLU_J.htm",
+        "sha256": "cb8808a45e6b05ac9f2d31c799b501affec60ae3f2573d08da8315fe02f04ee2",
+        "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/GLU_J.htm"
+      }
+    ]
+  },
+  "schema_version": "1.0"
+}

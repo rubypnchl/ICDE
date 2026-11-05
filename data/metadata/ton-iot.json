@@ -1,0 +1,33 @@
+{
+  "columns": [],
+  "dataset": {
+    "availability": "blocked_authentication",
+    "data_access_url": {
+      "source": "https://research.unsw.edu.au/projects/toniot-datasets",
+      "status": "documented",
+      "value": "https://unsw-my.sharepoint.com/:f:/g/personal/z5025758_ad_unsw_edu_au/EvBTaetotpdGnW7rJQ8fCvYBh8063CNeY9W33MpRsarJaQ"
+    },
+    "description": {
+      "source": "https://research.unsw.edu.au/projects/toniot-datasets",
+      "status": "documented",
+      "value": "The TON_IoT datasets are new generations of Industry 4.0/Internet of Things (IoT) and Industrial IoT (IIoT) datasets for evaluating the fidelity and efficiency of different cybersecurity applications based on Artificial Intelligence (AI), i.e., Machine/Deep Learning algorithms. The datasets can be downloaded from HERE . You can also use our dataset, the UNSW-NB15 ."
+    },
+    "domain": "IoT and industrial IoT cybersecurity",
+    "id": "ton-iot",
+    "name": "ToN_IoT"
+  },
+  "provenance": {
+    "limitations": [
+      "The official UNSW SharePoint folder was retried without credentials and returned HTTP 403; authentication was not bypassed. Verified UNSW-NB15 train/test files are recorded separately."
+    ],
+    "records_sampled": null,
+    "sources": [
+      {
+        "file": "data/originals/toniot/official-project-page.html",
+        "sha256": "838f7f7fe2fa96937b6a28ba5bd79ab9e449f93a0c00cb71abe79671fecba3e6",
+        "url": "https://research.unsw.edu.au/projects/toniot-datasets"
+      }
+    ]
+  },
+  "schema_version": "1.0"
+}

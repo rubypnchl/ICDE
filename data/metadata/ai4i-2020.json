@@ -1,0 +1,578 @@
+{
+  "columns": [
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://archive.ics.uci.edu/static/public/601/ai4i+2020+predictive+maintenance+dataset.zip",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 10000
+        }
+      },
+      "name": "UDI",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://archive.ics.uci.edu/static/public/601/ai4i+2020+predictive+maintenance+dataset.zip"
+      ],
+      "type": {
+        "source": "https://archive.ics.uci.edu/static/public/601/ai4i+2020+predictive+maintenance+dataset.zip",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset",
+        "status": "documented",
+        "value": {
+          "present": false
+        }
+      },
+      "name": "Product ID",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://archive.ics.uci.edu/static/public/601/ai4i+2020+predictive+maintenance+dataset.zip",
+        "https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset"
+      ],
+      "type": {
+        "source": "https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset",
+        "status": "documented",
+        "value": "string"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset",
+        "status": "documented",
+        "value": {
+          "present": false
+        }
+      },
+      "name": "Type",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://archive.ics.uci.edu/static/public/601/ai4i+2020+predictive+maintenance+dataset.zip",
+        "https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset"
+      ],
+      "type": {
+        "source": "https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset",
+        "status": "documented",
+        "value": "string"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset",
+        "status": "documented",
+        "value": {
+          "present": false
+        }
+      },
+      "name": "Air temperature [K]",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://archive.ics.uci.edu/static/public/601/ai4i+2020+predictive+maintenance+dataset.zip",
+        "https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset"
+      ],
+      "type": {
+        "source": "https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset",
+        "status": "documented",
+        "value": "number"
+      },
+      "unit": {
+        "source": "https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset",
+        "status": "documented",
+        "value": "K"
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset",
+        "status": "documented",
+        "value": {
+          "present": false
+        }
+      },
+      "name": "Process temperature [K]",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://archive.ics.uci.edu/static/public/601/ai4i+2020+predictive+maintenance+dataset.zip",
+        "https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset"
+      ],
+      "type": {
+        "source": "https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset",
+        "status": "documented",
+        "value": "number"
+      },
+      "unit": {
+        "source": "https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset",
+        "status": "documented",
+        "value": "K"
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset",
+        "status": "documented",
+        "value": {
+          "present": false
+        }
+      },
+      "name": "Rotational speed [rpm]",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://archive.ics.uci.edu/static/public/601/ai4i+2020+predictive+maintenance+dataset.zip",
+        "https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset"
+      ],
+      "type": {
+        "source": "https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset",
+        "status": "documented",
+        "value": "integer"
+      },
+      "unit": {
+        "source": "https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset",
+        "status": "documented",
+        "value": "rpm"
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset",
+        "status": "documented",
+        "value": {
+          "present": false
+        }
+      },
+      "name": "Torque [Nm]",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://archive.ics.uci.edu/static/public/601/ai4i+2020+predictive+maintenance+dataset.zip",
+        "https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset"
+      ],
+      "type": {
+        "source": "https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset",
+        "status": "documented",
+        "value": "number"
+      },
+      "unit": {
+        "source": "https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset",
+        "status": "documented",
+        "value": "Nm"
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset",
+        "status": "documented",
+        "value": {
+          "present": false
+        }
+      },
+      "name": "Tool wear [min]",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://archive.ics.uci.edu/static/public/601/ai4i+2020+predictive+maintenance+dataset.zip",
+        "https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset"
+      ],
+      "type": {
+        "source": "https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset",
+        "status": "documented",
+        "value": "integer"
+      },
+      "unit": {
+        "source": "https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset",
+        "status": "documented",
+        "value": "min"
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset",
+        "status": "documented",
+        "value": {
+          "present": false
+        }
+      },
+      "name": "Machine failure",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://archive.ics.uci.edu/static/public/601/ai4i+2020+predictive+maintenance+dataset.zip",
+        "https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset"
+      ],
+      "type": {
+        "source": "https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset",
+        "status": "documented",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset",
+        "status": "documented",
+        "value": {
+          "present": false
+        }
+      },
+      "name": "TWF",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://archive.ics.uci.edu/static/public/601/ai4i+2020+predictive+maintenance+dataset.zip",
+        "https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset"
+      ],
+      "type": {
+        "source": "https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset",
+        "status": "documented",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://archive.ics.uci.edu/static/public/601/ai4i+2020+predictive+maintenance+dataset.zip",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 10000
+        }
+      },
+      "name": "HDF",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://archive.ics.uci.edu/static/public/601/ai4i+2020+predictive+maintenance+dataset.zip"
+      ],
+      "type": {
+        "source": "https://archive.ics.uci.edu/static/public/601/ai4i+2020+predictive+maintenance+dataset.zip",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://archive.ics.uci.edu/static/public/601/ai4i+2020+predictive+maintenance+dataset.zip",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 10000
+        }
+      },
+      "name": "PWF",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://archive.ics.uci.edu/static/public/601/ai4i+2020+predictive+maintenance+dataset.zip"
+      ],
+      "type": {
+        "source": "https://archive.ics.uci.edu/static/public/601/ai4i+2020+predictive+maintenance+dataset.zip",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://archive.ics.uci.edu/static/public/601/ai4i+2020+predictive+maintenance+dataset.zip",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 10000
+        }
+      },
+      "name": "OSF",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://archive.ics.uci.edu/static/public/601/ai4i+2020+predictive+maintenance+dataset.zip"
+      ],
+      "type": {
+        "source": "https://archive.ics.uci.edu/static/public/601/ai4i+2020+predictive+maintenance+dataset.zip",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://archive.ics.uci.edu/static/public/601/ai4i+2020+predictive+maintenance+dataset.zip",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 10000
+        }
+      },
+      "name": "RNF",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://archive.ics.uci.edu/static/public/601/ai4i+2020+predictive+maintenance+dataset.zip"
+      ],
+      "type": {
+        "source": "https://archive.ics.uci.edu/static/public/601/ai4i+2020+predictive+maintenance+dataset.zip",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    }
+  ],
+  "dataset": {
+    "availability": "data_and_documentation",
+    "description": {
+      "source": "https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset",
+      "status": "documented",
+      "value": "Synthetic dataset reflecting predictive maintenance data encountered in industry."
+    },
+    "domain": "industrial predictive maintenance",
+    "id": "ai4i-2020",
+    "name": "AI4I 2020 Predictive Maintenance Dataset"
+  },
+  "provenance": {
+    "limitations": [],
+    "records_sampled": 10000,
+    "sources": [
+      {
+        "file": "data/originals/ai4i/ai4i2020.csv",
+        "sha256": "dc6630cd9b1f0f853922fad78a1b6436570d3f1ec863f1dd5c4340ac56bc8a8e",
+        "url": "https://archive.ics.uci.edu/static/public/601/ai4i+2020+predictive+maintenance+dataset.zip"
+      },
+      {
+        "file": "data/originals/ai4i/uci-dataset-page.html",
+        "sha256": "470818f3ebd7b46c7db1ccbab2a6ff2643038ca3057c1866394b86aa2be70509",
+        "url": "https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset"
+      }
+    ]
+  },
+  "schema_version": "1.0"
+}

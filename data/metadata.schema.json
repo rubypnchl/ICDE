@@ -1,0 +1,112 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://metaverify.example/schema/metadata-v1.json",
+  "title": "MetaVerify normalized dataset metadata",
+  "type": "object",
+  "required": ["schema_version", "dataset", "columns", "provenance"],
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "dataset": {
+      "type": "object",
+      "required": ["id", "name", "domain", "description", "availability"],
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "domain": { "type": "string" },
+        "description": { "$ref": "#/$defs/metadataField" },
+        "availability": { "type": "string" }
+      },
+      "additionalProperties": true
+    },
+    "columns": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/column" }
+    },
+    "provenance": {
+      "type": "object",
+      "required": ["sources", "records_sampled", "limitations"],
+      "properties": {
+        "sources": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/source" }
+        },
+        "records_sampled": { "type": ["integer", "null"], "minimum": 0 },
+        "source_records_total": { "type": "integer", "minimum": 0 },
+        "limitations": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "metadataField": {
+      "type": "object",
+      "required": ["value", "status", "source"],
+      "properties": {
+        "value": {},
+        "status": {
+          "enum": ["documented", "inferred", "unknown"]
+        },
+        "source": {
+          "type": ["string", "null"],
+          "format": "uri"
+        }
+      },
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": { "properties": { "status": { "const": "unknown" } } },
+          "then": { "properties": { "value": { "type": "null" } } }
+        },
+        {
+          "if": {
+            "properties": {
+              "status": { "enum": ["documented", "inferred"] }
+            }
+          },
+          "then": { "properties": { "source": { "type": "string", "format": "uri" } } }
+        }
+      ]
+    },
+    "source": {
+      "type": "object",
+      "required": ["url", "file", "sha256"],
+      "properties": {
+        "url": { "type": "string", "format": "uri" },
+        "file": { "type": "string" },
+        "sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" }
+      },
+      "additionalProperties": false
+    },
+    "column": {
+      "type": "object",
+      "required": [
+        "name",
+        "type",
+        "description",
+        "unit",
+        "allowed_values",
+        "relationships",
+        "missing_values",
+        "sources"
+      ],
+      "properties": {
+        "name": { "type": "string" },
+        "type": { "$ref": "#/$defs/metadataField" },
+        "description": { "$ref": "#/$defs/metadataField" },
+        "unit": { "$ref": "#/$defs/metadataField" },
+        "allowed_values": { "$ref": "#/$defs/metadataField" },
+        "relationships": { "$ref": "#/$defs/metadataField" },
+        "missing_values": { "$ref": "#/$defs/metadataField" },
+        "sources": {
+          "type": "array",
+          "items": { "type": "string", "format": "uri" }
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

@@ -1,0 +1,369 @@
+{
+  "api_documentation": {
+    "source": "https://www.sec.gov/edgar/sec-api-documentation",
+    "status": "documented",
+    "value": "The company-concept API returns all the XBRL disclosures from a single company (CIK) and concept (a taxonomy and tag) into a single JSON file, with a separate array of facts for each units on measure that the company has chosen to disclose (e.g. net profits reported in U.S. dollars and in Canadian dollars)."
+  },
+  "columns": [
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000320193/us-gaap/Assets.json",
+        "status": "documented",
+        "value": "Sum of the carrying amounts as of the balance sheet date of all assets that are recognized. Assets are probable future economic benefits obtained or controlled by an entity as a result of past transactions or events."
+      },
+      "missing_values": {
+        "source": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000320193/us-gaap/Assets.json",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 148
+        }
+      },
+      "name": "value",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://data.sec.gov/api/xbrl/companyconcept/CIK0000320193/us-gaap/Assets.json"
+      ],
+      "type": {
+        "source": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000320193/us-gaap/Assets.json",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000320193/us-gaap/Assets.json",
+        "status": "documented",
+        "value": "USD"
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000320193/us-gaap/Assets.json",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 148
+        }
+      },
+      "name": "end",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://data.sec.gov/api/xbrl/companyconcept/CIK0000320193/us-gaap/Assets.json"
+      ],
+      "type": {
+        "source": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000320193/us-gaap/Assets.json",
+        "status": "inferred",
+        "value": "date"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000320193/us-gaap/Assets.json",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 2,
+          "sample_size": 148
+        }
+      },
+      "name": "fy",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://data.sec.gov/api/xbrl/companyconcept/CIK0000320193/us-gaap/Assets.json"
+      ],
+      "type": {
+        "source": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000320193/us-gaap/Assets.json",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000320193/us-gaap/Assets.json",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 2,
+          "sample_size": 148
+        }
+      },
+      "name": "fp",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://data.sec.gov/api/xbrl/companyconcept/CIK0000320193/us-gaap/Assets.json"
+      ],
+      "type": {
+        "source": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000320193/us-gaap/Assets.json",
+        "status": "inferred",
+        "value": "string"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000320193/us-gaap/Assets.json",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 148
+        }
+      },
+      "name": "form",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://data.sec.gov/api/xbrl/companyconcept/CIK0000320193/us-gaap/Assets.json"
+      ],
+      "type": {
+        "source": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000320193/us-gaap/Assets.json",
+        "status": "inferred",
+        "value": "string"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000320193/us-gaap/Assets.json",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 148
+        }
+      },
+      "name": "filed",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://data.sec.gov/api/xbrl/companyconcept/CIK0000320193/us-gaap/Assets.json"
+      ],
+      "type": {
+        "source": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000320193/us-gaap/Assets.json",
+        "status": "inferred",
+        "value": "date"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000320193/us-gaap/Assets.json",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 148
+        }
+      },
+      "name": "accn",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://data.sec.gov/api/xbrl/companyconcept/CIK0000320193/us-gaap/Assets.json"
+      ],
+      "type": {
+        "source": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000320193/us-gaap/Assets.json",
+        "status": "inferred",
+        "value": "string"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000320193/us-gaap/Assets.json",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 77,
+          "sample_size": 148
+        }
+      },
+      "name": "frame",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://data.sec.gov/api/xbrl/companyconcept/CIK0000320193/us-gaap/Assets.json"
+      ],
+      "type": {
+        "source": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000320193/us-gaap/Assets.json",
+        "status": "inferred",
+        "value": "string"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    }
+  ],
+  "dataset": {
+    "availability": "data_and_api_metadata",
+    "concept": {
+      "source": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000320193/us-gaap/Assets.json",
+      "status": "documented",
+      "value": "Assets"
+    },
+    "description": {
+      "source": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000320193/us-gaap/Assets.json",
+      "status": "documented",
+      "value": "Sum of the carrying amounts as of the balance sheet date of all assets that are recognized. Assets are probable future economic benefits obtained or controlled by an entity as a result of past transactions or events."
+    },
+    "domain": "financial reporting",
+    "entity": {
+      "source": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000320193/us-gaap/Assets.json",
+      "status": "documented",
+      "value": "Apple Inc."
+    },
+    "id": "sec-edgar-xbrl-apple-assets",
+    "label": {
+      "source": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000320193/us-gaap/Assets.json",
+      "status": "documented",
+      "value": "Assets"
+    },
+    "name": "SEC EDGAR XBRL Apple Assets concept sample",
+    "taxonomy": {
+      "source": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000320193/us-gaap/Assets.json",
+      "status": "documented",
+      "value": "us-gaap"
+    }
+  },
+  "provenance": {
+    "limitations": [],
+    "records_sampled": 148,
+    "sources": [
+      {
+        "file": "data/originals/sec/apple_assets.json",
+        "sha256": "72602d245bc4962e457a31e1f739aaefe19839dc51883700d9940595e4a39957",
+        "url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000320193/us-gaap/Assets.json"
+      },
+      {
+        "file": "data/originals/sec/api-documentation.html",
+        "sha256": "a7999ece02302a29386dffdb9731faa036c50363a0658a2c3261f29e008a8ea6",
+        "url": "https://www.sec.gov/edgar/sec-api-documentation"
+      }
+    ]
+  },
+  "schema_version": "1.0"
+}

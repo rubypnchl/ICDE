@@ -1,0 +1,205 @@
+{
+  "retrieved_on": "2026-11-05",
+  "datasets": {
+    "ai4i-2020": {
+      "source_urls": [
+        "https://archive.ics.uci.edu/static/public/601/ai4i+2020+predictive+maintenance+dataset.zip",
+        "https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset"
+      ],
+      "files": [
+        "data/originals/ai4i/ai4i2020.zip",
+        "data/originals/ai4i/ai4i2020.csv",
+        "data/originals/ai4i/uci-dataset-page.html"
+      ],
+      "availability": "data_and_documentation"
+    },
+    "sec-edgar-xbrl": {
+      "source_urls": [
+        "https://data.sec.gov/api/xbrl/companyconcept/CIK0000320193/us-gaap/Assets.json",
+        "https://www.sec.gov/edgar/sec-api-documentation"
+      ],
+      "files": [
+        "data/originals/sec/apple_assets.json",
+        "data/originals/sec/api-documentation.html"
+      ],
+      "availability": "data_and_official_api_documentation"
+    },
+    "sec-companyfacts": {
+      "source_urls": [
+        "https://data.sec.gov/api/xbrl/companyfacts/CIK0000320193.json",
+        "https://data.sec.gov/api/xbrl/companyfacts/CIK0000789019.json",
+        "https://data.sec.gov/api/xbrl/companyfacts/CIK0001018724.json",
+        "https://data.sec.gov/api/xbrl/companyfacts/CIK0001652044.json",
+        "https://data.sec.gov/api/xbrl/companyfacts/CIK0001326801.json",
+        "https://data.sec.gov/api/xbrl/companyfacts/CIK0001045810.json",
+        "https://data.sec.gov/api/xbrl/companyfacts/CIK0000019617.json",
+        "https://data.sec.gov/api/xbrl/companyfacts/CIK0000104169.json",
+        "https://data.sec.gov/api/xbrl/companyfacts/CIK0001318605.json",
+        "https://data.sec.gov/api/xbrl/companyfacts/CIK0000034088.json"
+      ],
+      "files": [
+        "data/originals/sec/companyfacts/0000320193_apple.json",
+        "data/originals/sec/companyfacts/0000789019_microsoft.json",
+        "data/originals/sec/companyfacts/0001018724_amazon.json",
+        "data/originals/sec/companyfacts/0001652044_alphabet.json",
+        "data/originals/sec/companyfacts/0001326801_meta.json",
+        "data/originals/sec/companyfacts/0001045810_nvidia.json",
+        "data/originals/sec/companyfacts/0000019617_jpmorgan.json",
+        "data/originals/sec/companyfacts/0000104169_walmart.json",
+        "data/originals/sec/companyfacts/0001318605_tesla.json",
+        "data/originals/sec/companyfacts/0000034088_exxon.json"
+      ],
+      "availability": "ten_official_companyfacts_snapshots",
+      "limitations": [
+        "Concept coverage includes available US-GAAP tags with facts ending in 2020-2025; quarterly facts and restatements are retained."
+      ]
+    },
+    "nhanes-2017-2018": {
+      "source_urls": [
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm"
+      ],
+      "files": [
+        "data/originals/nhanes/DEMO_J.XPT",
+        "data/originals/nhanes/DEMO_J.htm"
+      ],
+      "availability": "data_and_official_codebook"
+    },
+    "nhanes-labs": {
+      "source_urls": [
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.XPT",
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.htm",
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/HDL_J.XPT",
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/HDL_J.htm",
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/GLU_J.XPT",
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/GLU_J.htm"
+      ],
+      "files": [
+        "data/originals/nhanes/CBC_J.XPT",
+        "data/originals/nhanes/CBC_J.htm",
+        "data/originals/nhanes/HDL_J.XPT",
+        "data/originals/nhanes/HDL_J.htm",
+        "data/originals/nhanes/GLU_J.XPT",
+        "data/originals/nhanes/GLU_J.htm"
+      ],
+      "availability": "three_official_lab_data_files_and_codebooks"
+    },
+    "ton-iot": {
+      "source_urls": [
+        "https://research.unsw.edu.au/projects/toniot-datasets",
+        "https://unsw-my.sharepoint.com/:f:/g/personal/z5025758_ad_unsw_edu_au/EvBTaetotpdGnW7rJQ8fCvYBh8063CNeY9W33MpRsarJaQ?e=yZlnxW"
+      ],
+      "files": [
+        "data/originals/toniot/official-project-page.html"
+      ],
+      "availability": "blocked_authentication",
+      "limitations": [
+        "Unauthenticated retries of the official SharePoint folder returned HTTP 403; no authentication was bypassed. A verified UNSW-NB15 train/test mirror is recorded separately."
+      ]
+    },
+    "unsw-nb15": {
+      "source_urls": [
+        "https://research.unsw.edu.au/projects/unsw-nb15-dataset",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/tree/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/README.md",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/train.csv",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/test.csv"
+      ],
+      "files": [
+        "data/originals/unsw_nb15/official-project-page.html",
+        "data/originals/unsw_nb15/README.md",
+        "data/originals/unsw_nb15/train.csv",
+        "data/originals/unsw_nb15/test.csv"
+      ],
+      "samples": [
+        "data/samples/unsw_nb15/flows-100000.csv"
+      ],
+      "availability": "verified_public_mirror_train_test",
+      "sampling": {
+        "method": "uniform reservoir sample without replacement across both retained split files",
+        "seed": 2015,
+        "records_sampled": 100000
+      },
+      "license_notes": [
+        "Pinned mirror README declares GPL-3.0; no standalone license file was present in the pinned revision.",
+        "Official page lists the dataset's original authors and required academic citations."
+      ],
+      "limitations": [
+        "Mirror filenames report 82,332 rows as train.csv and 175,341 as test.csv, opposite the official page's declared training/test counts; filenames are preserved without relabeling."
+      ]
+    },
+    "world-bank-wdi": {
+      "source_urls": [
+        "https://api.worldbank.org/v2/country/all/indicator/NY.GDP.PCAP.CD?date=2020%3A2024&format=json&per_page=2000",
+        "https://api.worldbank.org/v2/country/all/indicator/SP.POP.TOTL?date=2020%3A2024&format=json&per_page=2000",
+        "https://api.worldbank.org/v2/indicator/NY.GDP.PCAP.CD?format=json",
+        "https://api.worldbank.org/v2/indicator/SP.POP.TOTL?format=json"
+      ],
+      "files": [
+        "data/originals/worldbank/NY_GDP_PCAP_CD.json",
+        "data/originals/worldbank/SP_POP_TOTL.json",
+        "data/originals/worldbank/indicator-NY_GDP_PCAP_CD.json",
+        "data/originals/worldbank/indicator-SP_POP_TOTL.json"
+      ],
+      "availability": "official_api_2020_2024_two_indicators"
+    },
+    "nist-nvd": {
+      "source_urls": [
+        "https://services.nvd.nist.gov/rest/json/cves/2.0?pubStartDate=2025-01-01T00%3A00%3A00.000&pubEndDate=2025-01-31T23%3A59%3A59.999&resultsPerPage=2000&startIndex=0",
+        "https://services.nvd.nist.gov/rest/json/cves/2.0?pubStartDate=2025-01-01T00%3A00%3A00.000&pubEndDate=2025-01-31T23%3A59%3A59.999&resultsPerPage=2000&startIndex=2000",
+        "https://nvd.nist.gov/developers/vulnerabilities"
+      ],
+      "files": [
+        "data/originals/nist_nvd/cves-2025-01-page-1.json",
+        "data/originals/nist_nvd/cves-2025-01-page-2.json",
+        "data/originals/nist_nvd/api-vulnerabilities.html"
+      ],
+      "availability": "official_api_paginated_sample",
+      "sampling": {
+        "method": "official NVD CVE API startIndex pagination",
+        "results_per_page": 2000,
+        "records_sampled": 4000,
+        "records_available": 4415,
+        "publication_window": [
+          "2025-01-01",
+          "2025-01-31"
+        ]
+      },
+      "limitations": [
+        "The API reports 4,415 records for January 2025; the first two pages (4,000 records) are retained."
+      ]
+    },
+    "cic-ids2017": {
+      "source_urls": [
+        "https://www.unb.ca/cic/datasets/ids-2017.html",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/README.md",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv"
+      ],
+      "files": [
+        "data/originals/cic_ids2017/ids-2017.html",
+        "data/originals/cic_ids2017/dataset-card.md",
+        "data/originals/cic_ids2017/sample-rows.json",
+        "data/originals/cic_ids2017/LICENSE",
+        "data/originals/cic_ids2017/Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv",
+        "data/originals/cic_ids2017/Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv"
+      ],
+      "samples": [
+        "data/samples/cic_ids2017/flows-50000.csv"
+      ],
+      "availability": "50000_rows_from_two_pinned_public_mirror_files",
+      "sampling": {
+        "method": "uniform reservoir sample without replacement across both source CSVs",
+        "seed": 2017,
+        "records_sampled": 50000,
+        "source_records": 512212
+      },
+      "license_notes": [
+        "Pinned mirror metadata labels the license as other; its README requests citation but provides no explicit reuse license grant. Verify rights before redistribution."
+      ],
+      "limitations": [
+        "The original CIC download page requires a contact form; the retained sample covers only the two Friday afternoon DDoS and PortScan source files, not all CIC-IDS2017 attack scenarios."
+      ]
+    }
+  }
+}

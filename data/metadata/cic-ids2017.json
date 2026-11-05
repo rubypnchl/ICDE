@@ -1,0 +1,3325 @@
+{
+  "columns": [
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 50000
+        }
+      },
+      "name": " Destination Port",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 50000
+        }
+      },
+      "name": " Flow Duration",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 50000
+        }
+      },
+      "name": " Total Fwd Packets",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 50000
+        }
+      },
+      "name": " Total Backward Packets",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 50000
+        }
+      },
+      "name": "Total Length of Fwd Packets",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 50000
+        }
+      },
+      "name": " Total Length of Bwd Packets",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 50000
+        }
+      },
+      "name": " Fwd Packet Length Max",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 50000
+        }
+      },
+      "name": " Fwd Packet Length Min",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 50000
+        }
+      },
+      "name": " Fwd Packet Length Mean",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": "number"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 50000
+        }
+      },
+      "name": " Fwd Packet Length Std",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": "number"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 50000
+        }
+      },
+      "name": "Bwd Packet Length Max",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 50000
+        }
+      },
+      "name": " Bwd Packet Length Min",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 50000
+        }
+      },
+      "name": " Bwd Packet Length Mean",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": "number"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 50000
+        }
+      },
+      "name": " Bwd Packet Length Std",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": "number"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 1,
+          "sample_size": 50000
+        }
+      },
+      "name": "Flow Bytes/s",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": "number"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 50000
+        }
+      },
+      "name": " Flow Packets/s",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": "number"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 50000
+        }
+      },
+      "name": " Flow IAT Mean",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": "number"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 50000
+        }
+      },
+      "name": " Flow IAT Std",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": "number"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 50000
+        }
+      },
+      "name": " Flow IAT Max",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 50000
+        }
+      },
+      "name": " Flow IAT Min",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 50000
+        }
+      },
+      "name": "Fwd IAT Total",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 50000
+        }
+      },
+      "name": " Fwd IAT Mean",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": "number"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 50000
+        }
+      },
+      "name": " Fwd IAT Std",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": "number"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 50000
+        }
+      },
+      "name": " Fwd IAT Max",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 50000
+        }
+      },
+      "name": " Fwd IAT Min",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 50000
+        }
+      },
+      "name": "Bwd IAT Total",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 50000
+        }
+      },
+      "name": " Bwd IAT Mean",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": "number"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 50000
+        }
+      },
+      "name": " Bwd IAT Std",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": "number"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 50000
+        }
+      },
+      "name": " Bwd IAT Max",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 50000
+        }
+      },
+      "name": " Bwd IAT Min",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 50000
+        }
+      },
+      "name": "Fwd PSH Flags",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 50000
+        }
+      },
+      "name": " Bwd PSH Flags",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 50000
+        }
+      },
+      "name": " Fwd URG Flags",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 50000
+        }
+      },
+      "name": " Bwd URG Flags",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 50000
+        }
+      },
+      "name": " Fwd Header Length",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 50000
+        }
+      },
+      "name": " Bwd Header Length",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 50000
+        }
+      },
+      "name": "Fwd Packets/s",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": "number"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 50000
+        }
+      },
+      "name": " Bwd Packets/s",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": "number"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 50000
+        }
+      },
+      "name": " Min Packet Length",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 50000
+        }
+      },
+      "name": " Max Packet Length",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 50000
+        }
+      },
+      "name": " Packet Length Mean",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": "number"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 50000
+        }
+      },
+      "name": " Packet Length Std",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": "number"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 50000
+        }
+      },
+      "name": " Packet Length Variance",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": "number"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 50000
+        }
+      },
+      "name": "FIN Flag Count",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 50000
+        }
+      },
+      "name": " SYN Flag Count",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 50000
+        }
+      },
+      "name": " RST Flag Count",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 50000
+        }
+      },
+      "name": " PSH Flag Count",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 50000
+        }
+      },
+      "name": " ACK Flag Count",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 50000
+        }
+      },
+      "name": " URG Flag Count",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 50000
+        }
+      },
+      "name": " CWE Flag Count",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 50000
+        }
+      },
+      "name": " ECE Flag Count",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 50000
+        }
+      },
+      "name": " Down/Up Ratio",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 50000
+        }
+      },
+      "name": " Average Packet Size",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": "number"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 50000
+        }
+      },
+      "name": " Avg Fwd Segment Size",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": "number"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 50000
+        }
+      },
+      "name": " Avg Bwd Segment Size",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": "number"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 50000
+        }
+      },
+      "name": " Fwd Header Length",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 50000
+        }
+      },
+      "name": "Fwd Avg Bytes/Bulk",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 50000
+        }
+      },
+      "name": " Fwd Avg Packets/Bulk",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 50000
+        }
+      },
+      "name": " Fwd Avg Bulk Rate",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 50000
+        }
+      },
+      "name": " Bwd Avg Bytes/Bulk",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 50000
+        }
+      },
+      "name": " Bwd Avg Packets/Bulk",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 50000
+        }
+      },
+      "name": "Bwd Avg Bulk Rate",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 50000
+        }
+      },
+      "name": "Subflow Fwd Packets",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 50000
+        }
+      },
+      "name": " Subflow Fwd Bytes",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 50000
+        }
+      },
+      "name": " Subflow Bwd Packets",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 50000
+        }
+      },
+      "name": " Subflow Bwd Bytes",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 50000
+        }
+      },
+      "name": "Init_Win_bytes_forward",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 50000
+        }
+      },
+      "name": " Init_Win_bytes_backward",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 50000
+        }
+      },
+      "name": " act_data_pkt_fwd",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 50000
+        }
+      },
+      "name": " min_seg_size_forward",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 50000
+        }
+      },
+      "name": "Active Mean",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": "number"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 50000
+        }
+      },
+      "name": " Active Std",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": "number"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 50000
+        }
+      },
+      "name": " Active Max",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 50000
+        }
+      },
+      "name": " Active Min",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 50000
+        }
+      },
+      "name": "Idle Mean",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": "number"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 50000
+        }
+      },
+      "name": " Idle Std",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": "number"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 50000
+        }
+      },
+      "name": " Idle Max",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 50000
+        }
+      },
+      "name": " Idle Min",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 50000
+        }
+      },
+      "name": " Label",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv",
+        "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/tree/4e9edfa727f800b6f595bc2ee7420527156562b2",
+        "status": "inferred",
+        "value": "string"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    }
+  ],
+  "dataset": {
+    "availability": "data_and_documentation",
+    "class_coverage": {
+      "BENIGN": 22137,
+      "DDoS": 12393,
+      "PortScan": 15470
+    },
+    "description": {
+      "source": "https://www.unb.ca/cic/datasets/ids-2017.html",
+      "status": "documented",
+      "value": "CICIDS2017 dataset contains benign and the most up-to-date common attacks, which resembles the true real-world data (PCAPs). It also includes the results of the network traffic analysis using CICFlowMeter with labeled flows based on the time stamp, source, and destination IPs, source and destination ports, protocols and attack (CSV files)."
+    },
+    "domain": "network intrusion detection",
+    "id": "cic-ids2017",
+    "licensing_note": "The pinned mirror labels its license as 'other' and its README requests citation but grants no explicit reuse license; verify rights before redistribution.",
+    "name": "CIC-IDS2017"
+  },
+  "provenance": {
+    "limitations": [
+      "The original CIC download page requires a contact form; the retained flow records are from the pinned public Hugging Face mirror."
+    ],
+    "records_sampled": 50000,
+    "sampling": {
+      "method": "uniform reservoir sample without replacement across source files",
+      "records_available": 512212,
+      "records_sampled": 50000,
+      "sample_class_distribution": {
+        " Label": {
+          "BENIGN": 22137,
+          "DDoS": 12393,
+          "PortScan": 15470
+        }
+      },
+      "sample_file": "data/samples/cic_ids2017/flows-50000.csv",
+      "sample_sha256": "3ee83d5ecbfd50541b0205293a462643309e253e095c41c82cc5c37cf6aef2d5",
+      "seed": 2017,
+      "source_class_distribution": {
+        " Label": {
+          "BENIGN": 225255,
+          "DDoS": 128027,
+          "PortScan": 158930
+        }
+      },
+      "source_records": {
+        "data/originals/cic_ids2017/Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv": 225745,
+        "data/originals/cic_ids2017/Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv": 286467
+      },
+      "source_sample_records": {
+        "data/originals/cic_ids2017/Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv": 21982,
+        "data/originals/cic_ids2017/Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv": 28018
+      }
+    },
+    "source_records_total": 512212,
+    "sources": [
+      {
+        "file": "data/originals/cic_ids2017/ids-2017.html",
+        "sha256": "7bec2e72649fff7a0b301f2958ff91cdccb9161131534fafafee2b2ce8087521",
+        "url": "https://www.unb.ca/cic/datasets/ids-2017.html"
+      },
+      {
+        "file": "data/originals/cic_ids2017/Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv",
+        "sha256": "6ff1580f5f81c0ae28a26f7631721018577f5f7c5e0feac28b795fcfe7b411ee",
+        "url": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv"
+      },
+      {
+        "file": "data/originals/cic_ids2017/Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv",
+        "sha256": "ca1824c51bfbb7b3c72290a11be04366ba8815878c6a1cc5c44cb1cee269e99b",
+        "url": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv"
+      },
+      {
+        "file": "data/originals/cic_ids2017/dataset-card.md",
+        "sha256": "2d638b7b4829a39de3569e1888c2e7ef408e82b14516ffb0e19098d89c8e3b53",
+        "url": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/README.md"
+      },
+      {
+        "file": "data/originals/cic_ids2017/LICENSE",
+        "sha256": "816d0fa64ed5fc67404b61f44ec324520d0373ba4949415c851af6ffe1f1e5a0",
+        "url": "https://huggingface.co/datasets/c01dsnap/CIC-IDS2017/resolve/4e9edfa727f800b6f595bc2ee7420527156562b2/LICENSE"
+      }
+    ]
+  },
+  "schema_version": "1.0"
+}

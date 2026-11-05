@@ -1,0 +1,296 @@
+{
+  "columns": [
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://services.nvd.nist.gov/rest/json/cves/2.0?pubStartDate=2025-01-01T00%3A00%3A00.000&pubEndDate=2025-01-31T23%3A59%3A59.999&resultsPerPage=2000&startIndex=2000",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 4000
+        }
+      },
+      "name": "cve_id",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://nvd.nist.gov/developers/vulnerabilities"
+      ],
+      "type": {
+        "source": "https://services.nvd.nist.gov/rest/json/cves/2.0?pubStartDate=2025-01-01T00%3A00%3A00.000&pubEndDate=2025-01-31T23%3A59%3A59.999&resultsPerPage=2000&startIndex=2000",
+        "status": "inferred",
+        "value": "string"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://services.nvd.nist.gov/rest/json/cves/2.0?pubStartDate=2025-01-01T00%3A00%3A00.000&pubEndDate=2025-01-31T23%3A59%3A59.999&resultsPerPage=2000&startIndex=2000",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 4000
+        }
+      },
+      "name": "published",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://nvd.nist.gov/developers/vulnerabilities"
+      ],
+      "type": {
+        "source": "https://services.nvd.nist.gov/rest/json/cves/2.0?pubStartDate=2025-01-01T00%3A00%3A00.000&pubEndDate=2025-01-31T23%3A59%3A59.999&resultsPerPage=2000&startIndex=2000",
+        "status": "inferred",
+        "value": "datetime"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://services.nvd.nist.gov/rest/json/cves/2.0?pubStartDate=2025-01-01T00%3A00%3A00.000&pubEndDate=2025-01-31T23%3A59%3A59.999&resultsPerPage=2000&startIndex=2000",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 4000
+        }
+      },
+      "name": "last_modified",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://nvd.nist.gov/developers/vulnerabilities"
+      ],
+      "type": {
+        "source": "https://services.nvd.nist.gov/rest/json/cves/2.0?pubStartDate=2025-01-01T00%3A00%3A00.000&pubEndDate=2025-01-31T23%3A59%3A59.999&resultsPerPage=2000&startIndex=2000",
+        "status": "inferred",
+        "value": "datetime"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://services.nvd.nist.gov/rest/json/cves/2.0?pubStartDate=2025-01-01T00%3A00%3A00.000&pubEndDate=2025-01-31T23%3A59%3A59.999&resultsPerPage=2000&startIndex=2000",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 4000
+        }
+      },
+      "name": "status",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://nvd.nist.gov/developers/vulnerabilities"
+      ],
+      "type": {
+        "source": "https://services.nvd.nist.gov/rest/json/cves/2.0?pubStartDate=2025-01-01T00%3A00%3A00.000&pubEndDate=2025-01-31T23%3A59%3A59.999&resultsPerPage=2000&startIndex=2000",
+        "status": "inferred",
+        "value": "string"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://services.nvd.nist.gov/rest/json/cves/2.0?pubStartDate=2025-01-01T00%3A00%3A00.000&pubEndDate=2025-01-31T23%3A59%3A59.999&resultsPerPage=2000&startIndex=2000",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 4000
+        }
+      },
+      "name": "description",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://nvd.nist.gov/developers/vulnerabilities"
+      ],
+      "type": {
+        "source": "https://services.nvd.nist.gov/rest/json/cves/2.0?pubStartDate=2025-01-01T00%3A00%3A00.000&pubEndDate=2025-01-31T23%3A59%3A59.999&resultsPerPage=2000&startIndex=2000",
+        "status": "inferred",
+        "value": "string"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://services.nvd.nist.gov/rest/json/cves/2.0?pubStartDate=2025-01-01T00%3A00%3A00.000&pubEndDate=2025-01-31T23%3A59%3A59.999&resultsPerPage=2000&startIndex=2000",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 139,
+          "sample_size": 4000
+        }
+      },
+      "name": "cvss_base_score",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://nvd.nist.gov/developers/vulnerabilities"
+      ],
+      "type": {
+        "source": "https://services.nvd.nist.gov/rest/json/cves/2.0?pubStartDate=2025-01-01T00%3A00%3A00.000&pubEndDate=2025-01-31T23%3A59%3A59.999&resultsPerPage=2000&startIndex=2000",
+        "status": "inferred",
+        "value": "number"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    }
+  ],
+  "dataset": {
+    "availability": "official_api_paginated_sample",
+    "class_coverage": {
+      "vulnStatus": {
+        "Analyzed": 1651,
+        "Deferred": 1591,
+        "Modified": 619,
+        "Rejected": 139
+      }
+    },
+    "description": {
+      "source": "https://nvd.nist.gov/developers/vulnerabilities",
+      "status": "documented",
+      "value": "NVD CVE records published during January 2025; the first two 2,000-record API pages."
+    },
+    "domain": "vulnerability metadata",
+    "id": "nist-nvd-cves-2025-01",
+    "name": "NIST NVD CVE API paginated sample",
+    "query_window": {
+      "published_end": "2025-01-31",
+      "published_start": "2025-01-01"
+    }
+  },
+  "provenance": {
+    "limitations": [
+      "The API reports 4415 records for January 2025; the first 4000 are retained."
+    ],
+    "records_sampled": 4000,
+    "sampling": {
+      "method": "official NVD CVE API pagination in startIndex order",
+      "pages": 2,
+      "records_sampled": 4000,
+      "results_per_page": 2000,
+      "start_indices": [
+        0,
+        2000
+      ]
+    },
+    "source_records_total": 4415,
+    "sources": [
+      {
+        "file": "data/originals/nist_nvd/cves-2025-01-page-1.json",
+        "sha256": "3ade46f7f1f8ad20935ac3111c709432ef4ddc08774da7a0decb2da76309a364",
+        "url": "https://services.nvd.nist.gov/rest/json/cves/2.0?pubStartDate=2025-01-01T00%3A00%3A00.000&pubEndDate=2025-01-31T23%3A59%3A59.999&resultsPerPage=2000&startIndex=0"
+      },
+      {
+        "file": "data/originals/nist_nvd/cves-2025-01-page-2.json",
+        "sha256": "77a6dc9602e9abd83e81de9e3d9626ec0acaebb5966505e5e03438ca748985fa",
+        "url": "https://services.nvd.nist.gov/rest/json/cves/2.0?pubStartDate=2025-01-01T00%3A00%3A00.000&pubEndDate=2025-01-31T23%3A59%3A59.999&resultsPerPage=2000&startIndex=2000"
+      },
+      {
+        "file": "data/originals/nist_nvd/api-vulnerabilities.html",
+        "sha256": "8dcc6a92b8439ce9e814c135a17602c437a488907bb2ed3c1c92d397f218b604",
+        "url": "https://nvd.nist.gov/developers/vulnerabilities"
+      }
+    ]
+  },
+  "schema_version": "1.0"
+}

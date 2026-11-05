@@ -1,0 +1,194 @@
+{
+  "columns": [
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/HDL_J.htm",
+        "status": "documented",
+        "value": "Respondent Sequence Number"
+      },
+      "missing_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/HDL_J.XPT",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 1000
+        }
+      },
+      "name": "SEQN",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/HDL_J.XPT",
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/HDL_J.htm"
+      ],
+      "type": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/HDL_J.XPT",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/HDL_J.htm",
+        "status": "documented",
+        "value": [
+          {
+            "code": "10 to 189",
+            "description": "Range of Values"
+          }
+        ]
+      },
+      "description": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/HDL_J.htm",
+        "status": "documented",
+        "value": "Direct HDL-Cholesterol (mg/dL)"
+      },
+      "missing_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/HDL_J.XPT",
+        "status": "inferred",
+        "value": {
+          "documented_categories": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/HDL_J.htm",
+            "status": "documented",
+            "value": [
+              {
+                "code": ".",
+                "description": "Missing"
+              }
+            ]
+          },
+          "observed_in_sample": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/HDL_J.XPT",
+            "status": "inferred",
+            "value": {
+              "count_in_sample": 80,
+              "sample_size": 1000
+            }
+          }
+        }
+      },
+      "name": "LBDHDD",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/HDL_J.XPT",
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/HDL_J.htm"
+      ],
+      "type": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/HDL_J.XPT",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/HDL_J.htm",
+        "status": "documented",
+        "value": [
+          {
+            "code": "0.26 to 4.89",
+            "description": "Range of Values"
+          }
+        ]
+      },
+      "description": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/HDL_J.htm",
+        "status": "documented",
+        "value": "Direct HDL-Cholesterol (mmol/L)"
+      },
+      "missing_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/HDL_J.XPT",
+        "status": "inferred",
+        "value": {
+          "documented_categories": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/HDL_J.htm",
+            "status": "documented",
+            "value": [
+              {
+                "code": ".",
+                "description": "Missing"
+              }
+            ]
+          },
+          "observed_in_sample": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/HDL_J.XPT",
+            "status": "inferred",
+            "value": {
+              "count_in_sample": 80,
+              "sample_size": 1000
+            }
+          }
+        }
+      },
+      "name": "LBDHDDSI",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/HDL_J.XPT",
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/HDL_J.htm"
+      ],
+      "type": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/HDL_J.XPT",
+        "status": "inferred",
+        "value": "number"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    }
+  ],
+  "dataset": {
+    "availability": "data_and_official_codebook",
+    "description": {
+      "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/HDL_J.htm",
+      "status": "documented",
+      "value": "Heart disease is the leading cause of death in the United States (Murphy, et. al., 2018). Blood lipid levels are fundamental measures included in NHANES that can be used for cardiovascular risk assessment. The goals of the NHANES blood lipid measurements include: 1) monitoring the prevalence and trends in major cardiovascular conditions and overall risk factors in the U.S.; 2) evaluating prevention and treatment programs targeting cardiovascular disease in the U.S.; and 3) monitoring the status of hyperlipidemia."
+    },
+    "domain": "health and demographics",
+    "id": "nhanes-2017-2018-hdl-j",
+    "name": "NHANES 2017-2018 HDL_J"
+  },
+  "provenance": {
+    "limitations": [],
+    "records_sampled": 1000,
+    "sources": [
+      {
+        "file": "data/originals/nhanes/HDL_J.XPT",
+        "sha256": "9f4eb41b89f0c9f3d6262f873e671eeb2f2eb40581a8426b2a3c8fd4fc19439e",
+        "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/HDL_J.XPT"
+      },
+      {
+        "file": "data/originals/nhanes/HDL_J.htm",
+        "sha256": "140497f53050cb264cfcf250c3f6dd289ef44dce988ca1f1bf01dca69fa37501",
+        "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/HDL_J.htm"
+      }
+    ]
+  },
+  "schema_version": "1.0"
+}

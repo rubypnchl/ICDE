@@ -1,0 +1,366 @@
+{
+  "api_documentation": {
+    "source": "https://www.sec.gov/edgar/sec-api-documentation",
+    "status": "documented",
+    "value": "This API returns all the company concepts data for a company into a single API call:"
+  },
+  "columns": [
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": "https://data.sec.gov/api/xbrl/companyfacts/0001652044.json",
+        "status": "documented",
+        "value": "Sum of the carrying amounts as of the balance sheet date of all assets that are recognized. Assets are probable future economic benefits obtained or controlled by an entity as a result of past transactions or events."
+      },
+      "missing_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "name": "assets",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://data.sec.gov/api/xbrl/companyfacts/0001652044.json"
+      ],
+      "type": {
+        "source": "https://data.sec.gov/api/xbrl/companyfacts/0001652044.json",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": "https://data.sec.gov/api/xbrl/companyfacts/0001652044.json",
+        "status": "documented",
+        "value": "USD"
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": "https://data.sec.gov/api/xbrl/companyfacts/0001652044.json",
+        "status": "documented",
+        "value": "Sum of the carrying amounts as of the balance sheet date of all liabilities that are recognized. Liabilities are probable future sacrifices of economic benefits arising from present obligations of an entity to transfer assets or provide services to other entities in the future."
+      },
+      "missing_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "name": "liabilities",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://data.sec.gov/api/xbrl/companyfacts/0001652044.json"
+      ],
+      "type": {
+        "source": "https://data.sec.gov/api/xbrl/companyfacts/0001652044.json",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": "https://data.sec.gov/api/xbrl/companyfacts/0001652044.json",
+        "status": "documented",
+        "value": "USD"
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": "https://data.sec.gov/api/xbrl/companyfacts/0001652044.json",
+        "status": "documented",
+        "value": "Amount, excluding tax collected from customer, of revenue from satisfaction of performance obligation by transferring promised good or service to customer. Tax collected from customer is tax assessed by governmental authority that is both imposed on and concurrent with specific revenue-producing transaction, including, but not limited to, sales, use, value added and excise."
+      },
+      "missing_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "name": "revenue",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://data.sec.gov/api/xbrl/companyfacts/0001652044.json"
+      ],
+      "type": {
+        "source": "https://data.sec.gov/api/xbrl/companyfacts/0001652044.json",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": "https://data.sec.gov/api/xbrl/companyfacts/0001652044.json",
+        "status": "documented",
+        "value": "USD"
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": "https://data.sec.gov/api/xbrl/companyfacts/0001652044.json",
+        "status": "documented",
+        "value": "The portion of profit or loss for the period, net of income taxes, which is attributable to the parent."
+      },
+      "missing_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "name": "net_income",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://data.sec.gov/api/xbrl/companyfacts/0001652044.json"
+      ],
+      "type": {
+        "source": "https://data.sec.gov/api/xbrl/companyfacts/0001652044.json",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": "https://data.sec.gov/api/xbrl/companyfacts/0001652044.json",
+        "status": "documented",
+        "value": "USD"
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": "https://data.sec.gov/api/xbrl/companyfacts/0001652044.json",
+        "status": "documented",
+        "value": "The net result for the period of deducting operating expenses from operating revenues."
+      },
+      "missing_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "name": "operating_income",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://data.sec.gov/api/xbrl/companyfacts/0001652044.json"
+      ],
+      "type": {
+        "source": "https://data.sec.gov/api/xbrl/companyfacts/0001652044.json",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": "https://data.sec.gov/api/xbrl/companyfacts/0001652044.json",
+        "status": "documented",
+        "value": "USD"
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": "https://data.sec.gov/api/xbrl/companyfacts/0001652044.json",
+        "status": "documented",
+        "value": "Amount of cash inflow (outflow) from operating activities, including discontinued operations. Operating activity cash flows include transactions, adjustments, and changes in value not defined as investing or financing activities."
+      },
+      "missing_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "name": "operating_cash_flow",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://data.sec.gov/api/xbrl/companyfacts/0001652044.json"
+      ],
+      "type": {
+        "source": "https://data.sec.gov/api/xbrl/companyfacts/0001652044.json",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": "https://data.sec.gov/api/xbrl/companyfacts/0001652044.json",
+        "status": "documented",
+        "value": "USD"
+      }
+    }
+  ],
+  "dataset": {
+    "availability": "official_companyfacts_2020_2025",
+    "cik": {
+      "source": "https://data.sec.gov/api/xbrl/companyfacts/0001652044.json",
+      "status": "documented",
+      "value": 1652044
+    },
+    "coverage": {
+      "assets": {
+        "fact_count": 47,
+        "tag": "Assets",
+        "units": [
+          "USD"
+        ],
+        "years": [
+          2020,
+          2021,
+          2022,
+          2023,
+          2024,
+          2025
+        ]
+      },
+      "liabilities": {
+        "fact_count": 47,
+        "tag": "Liabilities",
+        "units": [
+          "USD"
+        ],
+        "years": [
+          2020,
+          2021,
+          2022,
+          2023,
+          2024,
+          2025
+        ]
+      },
+      "net_income": {
+        "fact_count": 80,
+        "tag": "NetIncomeLoss",
+        "units": [
+          "USD"
+        ],
+        "years": [
+          2020,
+          2021,
+          2022,
+          2023,
+          2024,
+          2025
+        ]
+      },
+      "operating_cash_flow": {
+        "fact_count": 51,
+        "tag": "NetCashProvidedByUsedInOperatingActivities",
+        "units": [
+          "USD"
+        ],
+        "years": [
+          2020,
+          2021,
+          2022,
+          2023,
+          2024,
+          2025
+        ]
+      },
+      "operating_income": {
+        "fact_count": 75,
+        "tag": "OperatingIncomeLoss",
+        "units": [
+          "USD"
+        ],
+        "years": [
+          2020,
+          2021,
+          2022,
+          2023,
+          2024,
+          2025
+        ]
+      },
+      "revenue": {
+        "fact_count": 56,
+        "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "units": [
+          "USD"
+        ],
+        "years": [
+          2020,
+          2021,
+          2022,
+          2023,
+          2024,
+          2025
+        ]
+      }
+    },
+    "description": {
+      "source": "https://www.sec.gov/edgar/sec-api-documentation",
+      "status": "documented",
+      "value": "This API returns all the company concepts data for a company into a single API call:"
+    },
+    "domain": "financial reporting",
+    "entity": {
+      "source": "https://data.sec.gov/api/xbrl/companyfacts/0001652044.json",
+      "status": "documented",
+      "value": "Alphabet Inc."
+    },
+    "id": "sec-companyfacts-1652044",
+    "name": "SEC Company Facts: Alphabet Inc.",
+    "taxonomy": {
+      "source": "https://data.sec.gov/api/xbrl/companyfacts/0001652044.json",
+      "status": "documented",
+      "value": "us-gaap"
+    },
+    "year_range": {
+      "end": 2025,
+      "start": 2020
+    }
+  },
+  "provenance": {
+    "limitations": [
+      "Company Facts is a retained API snapshot. Facts cover 2020-2025 and may include quarterly and annual filings or restatements."
+    ],
+    "records_sampled": 356,
+    "sources": [
+      {
+        "file": "data/originals/sec/companyfacts/0001652044_alphabet.json",
+        "sha256": "f87bc183f74b45ecf9a0933e0e0a1b6b97ead51a9d29367a7dae436574e1c1d0",
+        "url": "https://data.sec.gov/api/xbrl/companyfacts/0001652044.json"
+      },
+      {
+        "file": "data/originals/sec/api-documentation.html",
+        "sha256": "a7999ece02302a29386dffdb9731faa036c50363a0658a2c3261f29e008a8ea6",
+        "url": "https://www.sec.gov/edgar/sec-api-documentation"
+      }
+    ]
+  },
+  "schema_version": "1.0"
+}

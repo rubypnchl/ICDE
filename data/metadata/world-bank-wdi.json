@@ -1,0 +1,170 @@
+{
+  "columns": [
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": "https://api.worldbank.org/v2/indicator/NY.GDP.PCAP.CD?format=json",
+        "status": "documented",
+        "value": "Gross domestic product is the total income earned through the production of goods and services in an economic territory during an accounting period. It can be measured in three different ways: using either the expenditure approach, the income approach, or the production approach. The core indicator has been divided by the general population to achieve a per capita estimate.This indicator is expressed in current prices, meaning no adjustment has been made to account for price changes over time. This indicator is expressed in United States dollars."
+      },
+      "missing_values": {
+        "source": "https://api.worldbank.org/v2/country/all/indicator/NY.GDP.PCAP.CD?date=2020%3A2024&format=json&per_page=2000",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 50
+        }
+      },
+      "name": "NY.GDP.PCAP.CD",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://api.worldbank.org/v2/country/all/indicator/NY.GDP.PCAP.CD?date=2020%3A2024&format=json&per_page=2000"
+      ],
+      "type": {
+        "source": "https://api.worldbank.org/v2/country/all/indicator/NY.GDP.PCAP.CD?date=2020%3A2024&format=json&per_page=2000",
+        "status": "inferred",
+        "value": "number"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": "https://api.worldbank.org/v2/indicator/SP.POP.TOTL?format=json",
+        "status": "documented",
+        "value": "Total population is based on the de facto definition of population, which counts all residents regardless of legal status or citizenship. The values shown are midyear estimates."
+      },
+      "missing_values": {
+        "source": "https://api.worldbank.org/v2/country/all/indicator/SP.POP.TOTL?date=2020%3A2024&format=json&per_page=2000",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 50
+        }
+      },
+      "name": "SP.POP.TOTL",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://api.worldbank.org/v2/country/all/indicator/SP.POP.TOTL?date=2020%3A2024&format=json&per_page=2000"
+      ],
+      "type": {
+        "source": "https://api.worldbank.org/v2/country/all/indicator/SP.POP.TOTL?date=2020%3A2024&format=json&per_page=2000",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    }
+  ],
+  "dataset": {
+    "availability": "official_api_sample",
+    "coverage": {
+      "NY.GDP.PCAP.CD": {
+        "countries": [
+          "BRA",
+          "CAN",
+          "CHN",
+          "DEU",
+          "FRA",
+          "GBR",
+          "IND",
+          "JPN",
+          "USA",
+          "ZAF"
+        ],
+        "indicator_name": "GDP per capita (current US$)",
+        "observations": 50,
+        "years": [
+          2020,
+          2021,
+          2022,
+          2023,
+          2024
+        ]
+      },
+      "SP.POP.TOTL": {
+        "countries": [
+          "BRA",
+          "CAN",
+          "CHN",
+          "DEU",
+          "FRA",
+          "GBR",
+          "IND",
+          "JPN",
+          "USA",
+          "ZAF"
+        ],
+        "indicator_name": "Population, total",
+        "observations": 50,
+        "years": [
+          2020,
+          2021,
+          2022,
+          2023,
+          2024
+        ]
+      }
+    },
+    "description": {
+      "source": null,
+      "status": "unknown",
+      "value": null
+    },
+    "domain": "economics and development",
+    "id": "world-bank-wdi-2020-2024",
+    "name": "World Bank World Development Indicators sample"
+  },
+  "provenance": {
+    "limitations": [
+      "Indicator API responses cover all economies; metadata coverage is restricted to the ten selected ISO-3 countries."
+    ],
+    "records_sampled": 100,
+    "sources": [
+      {
+        "file": "data/originals/worldbank/NY_GDP_PCAP_CD.json",
+        "sha256": "86afd5aa57707b599e9ef117f46471b5ec60abb609e027797012bff7fd49b7bb",
+        "url": "https://api.worldbank.org/v2/country/all/indicator/NY.GDP.PCAP.CD?date=2020%3A2024&format=json&per_page=2000"
+      },
+      {
+        "file": "data/originals/worldbank/indicator-NY_GDP_PCAP_CD.json",
+        "sha256": "96520c3a22b1f9da1c7456349a6e70b1643db88d427671faced17cb8b9eaf907",
+        "url": "https://api.worldbank.org/v2/indicator/NY.GDP.PCAP.CD?format=json"
+      },
+      {
+        "file": "data/originals/worldbank/SP_POP_TOTL.json",
+        "sha256": "9e0cf6ba6bb9c44f7e935de26177a3cc00f7f5b7a3c8530ba86dce35d8464dc5",
+        "url": "https://api.worldbank.org/v2/country/all/indicator/SP.POP.TOTL?date=2020%3A2024&format=json&per_page=2000"
+      },
+      {
+        "file": "data/originals/worldbank/indicator-SP_POP_TOTL.json",
+        "sha256": "2f8491efc00bf2c0995112ff8e87aba69e5e9d22d0880b22f7e3a4ec757ba05c",
+        "url": "https://api.worldbank.org/v2/indicator/SP.POP.TOTL?format=json"
+      }
+    ]
+  },
+  "schema_version": "1.0"
+}

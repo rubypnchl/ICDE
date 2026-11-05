@@ -1,0 +1,1357 @@
+{
+  "columns": [
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.htm",
+        "status": "documented",
+        "value": "Respondent sequence number."
+      },
+      "missing_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.XPT",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 1000
+        }
+      },
+      "name": "SEQN",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.XPT",
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.htm"
+      ],
+      "type": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.XPT",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.htm",
+        "status": "documented",
+        "value": [
+          {
+            "code": "1.9 to 74.2",
+            "description": "Range of Values"
+          },
+          {
+            "code": "400",
+            "description": "400 and over"
+          }
+        ]
+      },
+      "description": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.htm",
+        "status": "documented",
+        "value": "White blood cell count (1000 cells/uL)"
+      },
+      "missing_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.XPT",
+        "status": "inferred",
+        "value": {
+          "documented_categories": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.htm",
+            "status": "documented",
+            "value": [
+              {
+                "code": ".",
+                "description": "Missing"
+              }
+            ]
+          },
+          "observed_in_sample": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.XPT",
+            "status": "inferred",
+            "value": {
+              "count_in_sample": 93,
+              "sample_size": 1000
+            }
+          }
+        }
+      },
+      "name": "LBXWBCSI",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.XPT",
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.htm"
+      ],
+      "type": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.XPT",
+        "status": "inferred",
+        "value": "number"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.htm",
+        "status": "documented",
+        "value": [
+          {
+            "code": "4.4 to 89.7",
+            "description": "Range of Values"
+          }
+        ]
+      },
+      "description": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.htm",
+        "status": "documented",
+        "value": "Lymphocyte percent (%)"
+      },
+      "missing_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.XPT",
+        "status": "inferred",
+        "value": {
+          "documented_categories": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.htm",
+            "status": "documented",
+            "value": [
+              {
+                "code": ".",
+                "description": "Missing"
+              }
+            ]
+          },
+          "observed_in_sample": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.XPT",
+            "status": "inferred",
+            "value": {
+              "count_in_sample": 93,
+              "sample_size": 1000
+            }
+          }
+        }
+      },
+      "name": "LBXLYPCT",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.XPT",
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.htm"
+      ],
+      "type": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.XPT",
+        "status": "inferred",
+        "value": "number"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.htm",
+        "status": "documented",
+        "value": [
+          {
+            "code": "0.7 to 57.2",
+            "description": "Range of Values"
+          }
+        ]
+      },
+      "description": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.htm",
+        "status": "documented",
+        "value": "Monocyte percent (%)"
+      },
+      "missing_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.XPT",
+        "status": "inferred",
+        "value": {
+          "documented_categories": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.htm",
+            "status": "documented",
+            "value": [
+              {
+                "code": ".",
+                "description": "Missing"
+              }
+            ]
+          },
+          "observed_in_sample": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.XPT",
+            "status": "inferred",
+            "value": {
+              "count_in_sample": 93,
+              "sample_size": 1000
+            }
+          }
+        }
+      },
+      "name": "LBXMOPCT",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.XPT",
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.htm"
+      ],
+      "type": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.XPT",
+        "status": "inferred",
+        "value": "number"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.htm",
+        "status": "documented",
+        "value": [
+          {
+            "code": "8.4 to 92.8",
+            "description": "Range of Values"
+          }
+        ]
+      },
+      "description": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.htm",
+        "status": "documented",
+        "value": "Segmented neutrophils percent (%)"
+      },
+      "missing_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.XPT",
+        "status": "inferred",
+        "value": {
+          "documented_categories": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.htm",
+            "status": "documented",
+            "value": [
+              {
+                "code": ".",
+                "description": "Missing"
+              }
+            ]
+          },
+          "observed_in_sample": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.XPT",
+            "status": "inferred",
+            "value": {
+              "count_in_sample": 93,
+              "sample_size": 1000
+            }
+          }
+        }
+      },
+      "name": "LBXNEPCT",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.XPT",
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.htm"
+      ],
+      "type": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.XPT",
+        "status": "inferred",
+        "value": "number"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.htm",
+        "status": "documented",
+        "value": [
+          {
+            "code": "0 to 29.1",
+            "description": "Range of Values"
+          }
+        ]
+      },
+      "description": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.htm",
+        "status": "documented",
+        "value": "Eosinophils percent (%)"
+      },
+      "missing_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.XPT",
+        "status": "inferred",
+        "value": {
+          "documented_categories": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.htm",
+            "status": "documented",
+            "value": [
+              {
+                "code": ".",
+                "description": "Missing"
+              }
+            ]
+          },
+          "observed_in_sample": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.XPT",
+            "status": "inferred",
+            "value": {
+              "count_in_sample": 93,
+              "sample_size": 1000
+            }
+          }
+        }
+      },
+      "name": "LBXEOPCT",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.XPT",
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.htm"
+      ],
+      "type": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.XPT",
+        "status": "inferred",
+        "value": "number"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.htm",
+        "status": "documented",
+        "value": [
+          {
+            "code": "0.1 to 4.8",
+            "description": "Range of Values"
+          }
+        ]
+      },
+      "description": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.htm",
+        "status": "documented",
+        "value": "Basophils percent (%)"
+      },
+      "missing_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.XPT",
+        "status": "inferred",
+        "value": {
+          "documented_categories": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.htm",
+            "status": "documented",
+            "value": [
+              {
+                "code": ".",
+                "description": "Missing"
+              }
+            ]
+          },
+          "observed_in_sample": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.XPT",
+            "status": "inferred",
+            "value": {
+              "count_in_sample": 93,
+              "sample_size": 1000
+            }
+          }
+        }
+      },
+      "name": "LBXBAPCT",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.XPT",
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.htm"
+      ],
+      "type": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.XPT",
+        "status": "inferred",
+        "value": "number"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.htm",
+        "status": "documented",
+        "value": [
+          {
+            "code": "0.4 to 358.8",
+            "description": "Range of Values"
+          }
+        ]
+      },
+      "description": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.htm",
+        "status": "documented",
+        "value": "Lymphocyte number (1000 cells/uL)"
+      },
+      "missing_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.XPT",
+        "status": "inferred",
+        "value": {
+          "documented_categories": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.htm",
+            "status": "documented",
+            "value": [
+              {
+                "code": ".",
+                "description": "Missing"
+              }
+            ]
+          },
+          "observed_in_sample": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.XPT",
+            "status": "inferred",
+            "value": {
+              "count_in_sample": 93,
+              "sample_size": 1000
+            }
+          }
+        }
+      },
+      "name": "LBDLYMNO",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.XPT",
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.htm"
+      ],
+      "type": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.XPT",
+        "status": "inferred",
+        "value": "number"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.htm",
+        "status": "documented",
+        "value": [
+          {
+            "code": "0.1 to 6.7",
+            "description": "Range of Values"
+          }
+        ]
+      },
+      "description": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.htm",
+        "status": "documented",
+        "value": "Monocyte number (1000 cells/uL)"
+      },
+      "missing_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.XPT",
+        "status": "inferred",
+        "value": {
+          "documented_categories": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.htm",
+            "status": "documented",
+            "value": [
+              {
+                "code": ".",
+                "description": "Missing"
+              }
+            ]
+          },
+          "observed_in_sample": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.XPT",
+            "status": "inferred",
+            "value": {
+              "count_in_sample": 93,
+              "sample_size": 1000
+            }
+          }
+        }
+      },
+      "name": "LBDMONO",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.XPT",
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.htm"
+      ],
+      "type": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.XPT",
+        "status": "inferred",
+        "value": "number"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.htm",
+        "status": "documented",
+        "value": [
+          {
+            "code": "0.4 to 35.2",
+            "description": "Range of Values"
+          }
+        ]
+      },
+      "description": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.htm",
+        "status": "documented",
+        "value": "Segmented neutrophils number (1000 cell/uL)"
+      },
+      "missing_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.XPT",
+        "status": "inferred",
+        "value": {
+          "documented_categories": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.htm",
+            "status": "documented",
+            "value": [
+              {
+                "code": ".",
+                "description": "Missing"
+              }
+            ]
+          },
+          "observed_in_sample": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.XPT",
+            "status": "inferred",
+            "value": {
+              "count_in_sample": 93,
+              "sample_size": 1000
+            }
+          }
+        }
+      },
+      "name": "LBDNENO",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.XPT",
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.htm"
+      ],
+      "type": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.XPT",
+        "status": "inferred",
+        "value": "number"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.htm",
+        "status": "documented",
+        "value": [
+          {
+            "code": "0 to 3.2",
+            "description": "Range of Values"
+          }
+        ]
+      },
+      "description": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.htm",
+        "status": "documented",
+        "value": "Eosinophils number (1000 cells/uL)"
+      },
+      "missing_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.XPT",
+        "status": "inferred",
+        "value": {
+          "documented_categories": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.htm",
+            "status": "documented",
+            "value": [
+              {
+                "code": ".",
+                "description": "Missing"
+              }
+            ]
+          },
+          "observed_in_sample": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.XPT",
+            "status": "inferred",
+            "value": {
+              "count_in_sample": 93,
+              "sample_size": 1000
+            }
+          }
+        }
+      },
+      "name": "LBDEONO",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.XPT",
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.htm"
+      ],
+      "type": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.XPT",
+        "status": "inferred",
+        "value": "number"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.htm",
+        "status": "documented",
+        "value": [
+          {
+            "code": "0 to 0.5",
+            "description": "Range of Values"
+          }
+        ]
+      },
+      "description": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.htm",
+        "status": "documented",
+        "value": "Basophils number (1000 cells/uL)"
+      },
+      "missing_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.XPT",
+        "status": "inferred",
+        "value": {
+          "documented_categories": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.htm",
+            "status": "documented",
+            "value": [
+              {
+                "code": ".",
+                "description": "Missing"
+              }
+            ]
+          },
+          "observed_in_sample": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.XPT",
+            "status": "inferred",
+            "value": {
+              "count_in_sample": 93,
+              "sample_size": 1000
+            }
+          }
+        }
+      },
+      "name": "LBDBANO",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.XPT",
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.htm"
+      ],
+      "type": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.XPT",
+        "status": "inferred",
+        "value": "number"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.htm",
+        "status": "documented",
+        "value": [
+          {
+            "code": "2.32 to 7.84",
+            "description": "Range of Values"
+          }
+        ]
+      },
+      "description": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.htm",
+        "status": "documented",
+        "value": "Red blood cell count (million cells/uL)"
+      },
+      "missing_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.XPT",
+        "status": "inferred",
+        "value": {
+          "documented_categories": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.htm",
+            "status": "documented",
+            "value": [
+              {
+                "code": ".",
+                "description": "Missing"
+              }
+            ]
+          },
+          "observed_in_sample": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.XPT",
+            "status": "inferred",
+            "value": {
+              "count_in_sample": 93,
+              "sample_size": 1000
+            }
+          }
+        }
+      },
+      "name": "LBXRBCSI",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.XPT",
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.htm"
+      ],
+      "type": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.XPT",
+        "status": "inferred",
+        "value": "number"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.htm",
+        "status": "documented",
+        "value": [
+          {
+            "code": "6.4 to 19.9",
+            "description": "Range of Values"
+          }
+        ]
+      },
+      "description": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.htm",
+        "status": "documented",
+        "value": "Hemoglobin (g/dL)"
+      },
+      "missing_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.XPT",
+        "status": "inferred",
+        "value": {
+          "documented_categories": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.htm",
+            "status": "documented",
+            "value": [
+              {
+                "code": ".",
+                "description": "Missing"
+              }
+            ]
+          },
+          "observed_in_sample": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.XPT",
+            "status": "inferred",
+            "value": {
+              "count_in_sample": 93,
+              "sample_size": 1000
+            }
+          }
+        }
+      },
+      "name": "LBXHGB",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.XPT",
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.htm"
+      ],
+      "type": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.XPT",
+        "status": "inferred",
+        "value": "number"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.htm",
+        "status": "documented",
+        "value": [
+          {
+            "code": "23 to 58.8",
+            "description": "Range of Values"
+          }
+        ]
+      },
+      "description": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.htm",
+        "status": "documented",
+        "value": "Hematocrit (%)"
+      },
+      "missing_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.XPT",
+        "status": "inferred",
+        "value": {
+          "documented_categories": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.htm",
+            "status": "documented",
+            "value": [
+              {
+                "code": ".",
+                "description": "Missing"
+              }
+            ]
+          },
+          "observed_in_sample": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.XPT",
+            "status": "inferred",
+            "value": {
+              "count_in_sample": 93,
+              "sample_size": 1000
+            }
+          }
+        }
+      },
+      "name": "LBXHCT",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.XPT",
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.htm"
+      ],
+      "type": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.XPT",
+        "status": "inferred",
+        "value": "number"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.htm",
+        "status": "documented",
+        "value": [
+          {
+            "code": "35.4 to 114.6",
+            "description": "Range of Values"
+          }
+        ]
+      },
+      "description": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.htm",
+        "status": "documented",
+        "value": "Mean cell volume (fL)"
+      },
+      "missing_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.XPT",
+        "status": "inferred",
+        "value": {
+          "documented_categories": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.htm",
+            "status": "documented",
+            "value": [
+              {
+                "code": ".",
+                "description": "Missing"
+              }
+            ]
+          },
+          "observed_in_sample": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.XPT",
+            "status": "inferred",
+            "value": {
+              "count_in_sample": 93,
+              "sample_size": 1000
+            }
+          }
+        }
+      },
+      "name": "LBXMCVSI",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.XPT",
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.htm"
+      ],
+      "type": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.XPT",
+        "status": "inferred",
+        "value": "number"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.htm",
+        "status": "documented",
+        "value": [
+          {
+            "code": "12.4 to 39.2",
+            "description": "Range of Values"
+          }
+        ]
+      },
+      "description": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.htm",
+        "status": "documented",
+        "value": "Mean cell hemoglobin (pg)"
+      },
+      "missing_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.XPT",
+        "status": "inferred",
+        "value": {
+          "documented_categories": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.htm",
+            "status": "documented",
+            "value": [
+              {
+                "code": ".",
+                "description": "Missing"
+              }
+            ]
+          },
+          "observed_in_sample": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.XPT",
+            "status": "inferred",
+            "value": {
+              "count_in_sample": 93,
+              "sample_size": 1000
+            }
+          }
+        }
+      },
+      "name": "LBXMCHSI",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.XPT",
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.htm"
+      ],
+      "type": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.XPT",
+        "status": "inferred",
+        "value": "number"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.htm",
+        "status": "documented",
+        "value": [
+          {
+            "code": "25.2 to 38.3",
+            "description": "Range of Values"
+          }
+        ]
+      },
+      "description": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.htm",
+        "status": "documented",
+        "value": "Mean cell hemoglobin concentration (g/dL)"
+      },
+      "missing_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.XPT",
+        "status": "inferred",
+        "value": {
+          "documented_categories": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.htm",
+            "status": "documented",
+            "value": [
+              {
+                "code": ".",
+                "description": "Missing"
+              }
+            ]
+          },
+          "observed_in_sample": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.XPT",
+            "status": "inferred",
+            "value": {
+              "count_in_sample": 93,
+              "sample_size": 1000
+            }
+          }
+        }
+      },
+      "name": "LBXMC",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.XPT",
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.htm"
+      ],
+      "type": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.XPT",
+        "status": "inferred",
+        "value": "number"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.htm",
+        "status": "documented",
+        "value": [
+          {
+            "code": "11.3 to 29.2",
+            "description": "Range of Values"
+          }
+        ]
+      },
+      "description": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.htm",
+        "status": "documented",
+        "value": "Red cell distribution width (%)"
+      },
+      "missing_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.XPT",
+        "status": "inferred",
+        "value": {
+          "documented_categories": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.htm",
+            "status": "documented",
+            "value": [
+              {
+                "code": ".",
+                "description": "Missing"
+              }
+            ]
+          },
+          "observed_in_sample": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.XPT",
+            "status": "inferred",
+            "value": {
+              "count_in_sample": 93,
+              "sample_size": 1000
+            }
+          }
+        }
+      },
+      "name": "LBXRDW",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.XPT",
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.htm"
+      ],
+      "type": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.XPT",
+        "status": "inferred",
+        "value": "number"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.htm",
+        "status": "documented",
+        "value": [
+          {
+            "code": "8 to 818",
+            "description": "Range of Values"
+          }
+        ]
+      },
+      "description": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.htm",
+        "status": "documented",
+        "value": "Platelet count (1000 cells/uL)"
+      },
+      "missing_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.XPT",
+        "status": "inferred",
+        "value": {
+          "documented_categories": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.htm",
+            "status": "documented",
+            "value": [
+              {
+                "code": ".",
+                "description": "Missing"
+              }
+            ]
+          },
+          "observed_in_sample": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.XPT",
+            "status": "inferred",
+            "value": {
+              "count_in_sample": 93,
+              "sample_size": 1000
+            }
+          }
+        }
+      },
+      "name": "LBXPLTSI",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.XPT",
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.htm"
+      ],
+      "type": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.XPT",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.htm",
+        "status": "documented",
+        "value": [
+          {
+            "code": "5.4 to 13",
+            "description": "Range of Values"
+          }
+        ]
+      },
+      "description": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.htm",
+        "status": "documented",
+        "value": "Mean platelet volume (fL)"
+      },
+      "missing_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.XPT",
+        "status": "inferred",
+        "value": {
+          "documented_categories": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.htm",
+            "status": "documented",
+            "value": [
+              {
+                "code": ".",
+                "description": "Missing"
+              }
+            ]
+          },
+          "observed_in_sample": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.XPT",
+            "status": "inferred",
+            "value": {
+              "count_in_sample": 93,
+              "sample_size": 1000
+            }
+          }
+        }
+      },
+      "name": "LBXMPSI",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.XPT",
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.htm"
+      ],
+      "type": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.XPT",
+        "status": "inferred",
+        "value": "number"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.htm",
+        "status": "documented",
+        "value": [
+          {
+            "code": "0 to 2",
+            "description": "Range of Values"
+          }
+        ]
+      },
+      "description": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.htm",
+        "status": "documented",
+        "value": "Nucleated red blood cells (/100 WBC)"
+      },
+      "missing_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.XPT",
+        "status": "inferred",
+        "value": {
+          "documented_categories": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.htm",
+            "status": "documented",
+            "value": [
+              {
+                "code": ".",
+                "description": "Missing"
+              }
+            ]
+          },
+          "observed_in_sample": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.XPT",
+            "status": "inferred",
+            "value": {
+              "count_in_sample": 93,
+              "sample_size": 1000
+            }
+          }
+        }
+      },
+      "name": "LBXNRBC",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.XPT",
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.htm"
+      ],
+      "type": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.XPT",
+        "status": "inferred",
+        "value": "number"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    }
+  ],
+  "dataset": {
+    "availability": "data_and_official_codebook",
+    "description": {
+      "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.htm",
+      "status": "documented",
+      "value": "The complete blood count (CBC) with 5-part differential counts red blood cells (RBCs), white blood cells (WBCs), and platelets; measures hemoglobin; estimates the red cells’ volume and sorts the WBCs into subtypes. A CBC is a routine blood test used to evaluate your overall health and detect a wide range of disorders, including anemia, infection, and leukemia."
+    },
+    "domain": "health and demographics",
+    "id": "nhanes-2017-2018-cbc-j",
+    "name": "NHANES 2017-2018 CBC_J"
+  },
+  "provenance": {
+    "limitations": [],
+    "records_sampled": 1000,
+    "sources": [
+      {
+        "file": "data/originals/nhanes/CBC_J.XPT",
+        "sha256": "00f964098dc91272e415344554cbf1b627ecaeb2eda201518527446a7d81e742",
+        "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.XPT"
+      },
+      {
+        "file": "data/originals/nhanes/CBC_J.htm",
+        "sha256": "e27fe77e503e3576060957233f83252bf34ccd012b9b5b3e753a4aac363b96ad",
+        "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/CBC_J.htm"
+      }
+    ]
+  },
+  "schema_version": "1.0"
+}

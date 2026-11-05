@@ -1,0 +1,3413 @@
+{
+  "columns": [
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+        "status": "documented",
+        "value": "Respondent sequence number."
+      },
+      "missing_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 1000
+        }
+      },
+      "name": "SEQN",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm"
+      ],
+      "type": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+        "status": "documented",
+        "value": [
+          {
+            "code": "10",
+            "description": "NHANES 2017-2018 public release"
+          }
+        ]
+      },
+      "description": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+        "status": "documented",
+        "value": "Data release cycle"
+      },
+      "missing_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "status": "inferred",
+        "value": {
+          "documented_categories": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+            "status": "documented",
+            "value": [
+              {
+                "code": ".",
+                "description": "Missing"
+              }
+            ]
+          },
+          "observed_in_sample": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+            "status": "inferred",
+            "value": {
+              "count_in_sample": 0,
+              "sample_size": 1000
+            }
+          }
+        }
+      },
+      "name": "SDDSRVYR",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm"
+      ],
+      "type": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+        "status": "documented",
+        "value": [
+          {
+            "code": "1",
+            "description": "Interviewed only"
+          },
+          {
+            "code": "2",
+            "description": "Both interviewed and MEC examined"
+          }
+        ]
+      },
+      "description": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+        "status": "documented",
+        "value": "Interview and examination status of the participant."
+      },
+      "missing_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "status": "inferred",
+        "value": {
+          "documented_categories": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+            "status": "documented",
+            "value": [
+              {
+                "code": ".",
+                "description": "Missing"
+              }
+            ]
+          },
+          "observed_in_sample": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+            "status": "inferred",
+            "value": {
+              "count_in_sample": 0,
+              "sample_size": 1000
+            }
+          }
+        }
+      },
+      "name": "RIDSTATR",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm"
+      ],
+      "type": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+        "status": "documented",
+        "value": [
+          {
+            "code": "1",
+            "description": "Male"
+          },
+          {
+            "code": "2",
+            "description": "Female"
+          }
+        ]
+      },
+      "description": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+        "status": "documented",
+        "value": "Gender of the participant."
+      },
+      "missing_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "status": "inferred",
+        "value": {
+          "documented_categories": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+            "status": "documented",
+            "value": [
+              {
+                "code": ".",
+                "description": "Missing"
+              }
+            ]
+          },
+          "observed_in_sample": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+            "status": "inferred",
+            "value": {
+              "count_in_sample": 0,
+              "sample_size": 1000
+            }
+          }
+        }
+      },
+      "name": "RIAGENDR",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm"
+      ],
+      "type": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+        "status": "documented",
+        "value": [
+          {
+            "code": "0 to 79",
+            "description": "Range of Values"
+          },
+          {
+            "code": "80",
+            "description": "80 years of age and over"
+          }
+        ]
+      },
+      "description": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+        "status": "documented",
+        "value": "Age in years of the participant at the time of screening. Individuals 80 and over are topcoded at 80 years of age."
+      },
+      "missing_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "status": "inferred",
+        "value": {
+          "documented_categories": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+            "status": "documented",
+            "value": [
+              {
+                "code": ".",
+                "description": "Missing"
+              }
+            ]
+          },
+          "observed_in_sample": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+            "status": "inferred",
+            "value": {
+              "count_in_sample": 0,
+              "sample_size": 1000
+            }
+          }
+        }
+      },
+      "name": "RIDAGEYR",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm"
+      ],
+      "type": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+        "status": "documented",
+        "value": [
+          {
+            "code": "0 to 24",
+            "description": "Range of Values"
+          }
+        ]
+      },
+      "description": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+        "status": "documented",
+        "value": "Age in months of the participant at the time of screening. Reported for persons aged 24 months or younger at the time of exam (or screening if not examined)."
+      },
+      "missing_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "status": "inferred",
+        "value": {
+          "documented_categories": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+            "status": "documented",
+            "value": [
+              {
+                "code": ".",
+                "description": "Missing"
+              }
+            ]
+          },
+          "observed_in_sample": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+            "status": "inferred",
+            "value": {
+              "count_in_sample": 937,
+              "sample_size": 1000
+            }
+          }
+        }
+      },
+      "name": "RIDAGEMN",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm"
+      ],
+      "type": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+        "status": "documented",
+        "value": [
+          {
+            "code": "1",
+            "description": "Mexican American"
+          },
+          {
+            "code": "2",
+            "description": "Other Hispanic"
+          },
+          {
+            "code": "3",
+            "description": "Non-Hispanic White"
+          },
+          {
+            "code": "4",
+            "description": "Non-Hispanic Black"
+          },
+          {
+            "code": "5",
+            "description": "Other Race - Including Multi-Racial"
+          }
+        ]
+      },
+      "description": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+        "status": "documented",
+        "value": "Recode of reported race and Hispanic origin information"
+      },
+      "missing_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "status": "inferred",
+        "value": {
+          "documented_categories": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+            "status": "documented",
+            "value": [
+              {
+                "code": ".",
+                "description": "Missing"
+              }
+            ]
+          },
+          "observed_in_sample": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+            "status": "inferred",
+            "value": {
+              "count_in_sample": 0,
+              "sample_size": 1000
+            }
+          }
+        }
+      },
+      "name": "RIDRETH1",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm"
+      ],
+      "type": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+        "status": "documented",
+        "value": [
+          {
+            "code": "1",
+            "description": "Mexican American"
+          },
+          {
+            "code": "2",
+            "description": "Other Hispanic"
+          },
+          {
+            "code": "3",
+            "description": "Non-Hispanic White"
+          },
+          {
+            "code": "4",
+            "description": "Non-Hispanic Black"
+          },
+          {
+            "code": "6",
+            "description": "Non-Hispanic Asian"
+          },
+          {
+            "code": "7",
+            "description": "Other Race - Including Multi-Racial"
+          }
+        ]
+      },
+      "description": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+        "status": "documented",
+        "value": "Recode of reported race and Hispanic origin information, with Non-Hispanic Asian Category"
+      },
+      "missing_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "status": "inferred",
+        "value": {
+          "documented_categories": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+            "status": "documented",
+            "value": [
+              {
+                "code": ".",
+                "description": "Missing"
+              }
+            ]
+          },
+          "observed_in_sample": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+            "status": "inferred",
+            "value": {
+              "count_in_sample": 0,
+              "sample_size": 1000
+            }
+          }
+        }
+      },
+      "name": "RIDRETH3",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm"
+      ],
+      "type": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+        "status": "documented",
+        "value": [
+          {
+            "code": "1",
+            "description": "November 1 through April 30"
+          },
+          {
+            "code": "2",
+            "description": "May 1 through October 31"
+          }
+        ]
+      },
+      "description": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+        "status": "documented",
+        "value": "Six month time period when the examination was performed - two categories: November 1 through April 30, May 1 through October 31."
+      },
+      "missing_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "status": "inferred",
+        "value": {
+          "documented_categories": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+            "status": "documented",
+            "value": [
+              {
+                "code": ".",
+                "description": "Missing"
+              }
+            ]
+          },
+          "observed_in_sample": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+            "status": "inferred",
+            "value": {
+              "count_in_sample": 51,
+              "sample_size": 1000
+            }
+          }
+        }
+      },
+      "name": "RIDEXMON",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm"
+      ],
+      "type": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+        "status": "documented",
+        "value": [
+          {
+            "code": "0 to 239",
+            "description": "Range of Values"
+          }
+        ]
+      },
+      "description": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+        "status": "documented",
+        "value": "Age in months of the participant at the time of examination. Reported for persons aged 19 years or younger at the time of examination."
+      },
+      "missing_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "status": "inferred",
+        "value": {
+          "documented_categories": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+            "status": "documented",
+            "value": [
+              {
+                "code": ".",
+                "description": "Missing"
+              }
+            ]
+          },
+          "observed_in_sample": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+            "status": "inferred",
+            "value": {
+              "count_in_sample": 645,
+              "sample_size": 1000
+            }
+          }
+        }
+      },
+      "name": "RIDEXAGM",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm"
+      ],
+      "type": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+        "status": "documented",
+        "value": [
+          {
+            "code": "1",
+            "description": "Yes"
+          },
+          {
+            "code": "2",
+            "description": "No"
+          },
+          {
+            "code": "7",
+            "description": "Refused"
+          },
+          {
+            "code": "9",
+            "description": "Don't know"
+          }
+        ]
+      },
+      "description": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+        "status": "documented",
+        "value": "{Have you/Has SP} ever served on active duty in the U.S. Armed Forces, military Reserves, or National Guard? (Active duty does not include training for the Reserves or National Guard, but does include activation, for service in the U.S. or in a foreign country, in support of military or humanitarian operations.)"
+      },
+      "missing_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "status": "inferred",
+        "value": {
+          "documented_categories": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+            "status": "documented",
+            "value": [
+              {
+                "code": ".",
+                "description": "Missing"
+              }
+            ]
+          },
+          "observed_in_sample": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+            "status": "inferred",
+            "value": {
+              "count_in_sample": 327,
+              "sample_size": 1000
+            }
+          }
+        }
+      },
+      "name": "DMQMILIZ",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm"
+      ],
+      "type": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+        "status": "documented",
+        "value": [
+          {
+            "code": "1",
+            "description": "Yes"
+          },
+          {
+            "code": "2",
+            "description": "No"
+          },
+          {
+            "code": "7",
+            "description": "Refused"
+          },
+          {
+            "code": "9",
+            "description": "Don't know"
+          }
+        ]
+      },
+      "description": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+        "status": "documented",
+        "value": "Did {you/SP} ever serve in a foreign country during a time of armed conflict or on a humanitarian or peace-keeping mission? (This would include National Guard or reserve or active duty monitoring or conducting peace keeping operations in Bosnia and Kosovo, in the Sinai between Egypt and Israel, or in response to the 2004 tsunami or Haiti in 2010.)"
+      },
+      "missing_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "status": "inferred",
+        "value": {
+          "documented_categories": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+            "status": "documented",
+            "value": [
+              {
+                "code": ".",
+                "description": "Missing"
+              }
+            ]
+          },
+          "observed_in_sample": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+            "status": "inferred",
+            "value": {
+              "count_in_sample": 944,
+              "sample_size": 1000
+            }
+          }
+        }
+      },
+      "name": "DMQADFC",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm"
+      ],
+      "type": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+        "status": "documented",
+        "value": [
+          {
+            "code": "1",
+            "description": "Born in 50 US states or Washington, DC"
+          },
+          {
+            "code": "2",
+            "description": "Others"
+          },
+          {
+            "code": "77",
+            "description": "Refused"
+          },
+          {
+            "code": "99",
+            "description": "Don't know"
+          }
+        ]
+      },
+      "description": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+        "status": "documented",
+        "value": "In what country {were you/was SP} born?"
+      },
+      "missing_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "status": "inferred",
+        "value": {
+          "documented_categories": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+            "status": "documented",
+            "value": [
+              {
+                "code": ".",
+                "description": "Missing"
+              }
+            ]
+          },
+          "observed_in_sample": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+            "status": "inferred",
+            "value": {
+              "count_in_sample": 0,
+              "sample_size": 1000
+            }
+          }
+        }
+      },
+      "name": "DMDBORN4",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm"
+      ],
+      "type": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+        "status": "documented",
+        "value": [
+          {
+            "code": "1",
+            "description": "Citizen by birth or naturalization"
+          },
+          {
+            "code": "2",
+            "description": "Not a citizen of the US"
+          },
+          {
+            "code": "7",
+            "description": "Refused"
+          },
+          {
+            "code": "9",
+            "description": "Don't know"
+          }
+        ]
+      },
+      "description": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+        "status": "documented",
+        "value": "{Are you/Is SP} a citizen of the United States? [Information about citizenship is being collected by the U.S. Public Health Service to perform health related research. Providing this information is voluntary and is collected under the authority of the Public Health Service Act. There will be no effect on pending immigration or citizenship petitions.]"
+      },
+      "missing_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "status": "inferred",
+        "value": {
+          "documented_categories": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+            "status": "documented",
+            "value": [
+              {
+                "code": ".",
+                "description": "Missing"
+              }
+            ]
+          },
+          "observed_in_sample": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+            "status": "inferred",
+            "value": {
+              "count_in_sample": 0,
+              "sample_size": 1000
+            }
+          }
+        }
+      },
+      "name": "DMDCITZN",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm"
+      ],
+      "type": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+        "status": "documented",
+        "value": [
+          {
+            "code": "1",
+            "description": "Less than 1 year"
+          },
+          {
+            "code": "2",
+            "description": "1 year or more, but less than 5 years"
+          },
+          {
+            "code": "3",
+            "description": "5 year or more, but less than 10 years"
+          },
+          {
+            "code": "4",
+            "description": "10 year or more, but less than 15 years"
+          },
+          {
+            "code": "5",
+            "description": "15 year or more, but less than 20 years"
+          },
+          {
+            "code": "6",
+            "description": "20 year or more, but less than 30 years"
+          },
+          {
+            "code": "7",
+            "description": "30 year or more, but less than 40 years"
+          },
+          {
+            "code": "8",
+            "description": "40 year or more, but less than 50 years"
+          },
+          {
+            "code": "9",
+            "description": "50 years or more"
+          },
+          {
+            "code": "77",
+            "description": "Refused"
+          },
+          {
+            "code": "99",
+            "description": "Don't know"
+          }
+        ]
+      },
+      "description": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+        "status": "documented",
+        "value": "Length of time the participant has been in the US."
+      },
+      "missing_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "status": "inferred",
+        "value": {
+          "documented_categories": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+            "status": "documented",
+            "value": [
+              {
+                "code": ".",
+                "description": "Missing"
+              }
+            ]
+          },
+          "observed_in_sample": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+            "status": "inferred",
+            "value": {
+              "count_in_sample": 778,
+              "sample_size": 1000
+            }
+          }
+        }
+      },
+      "name": "DMDYRSUS",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm"
+      ],
+      "type": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+        "status": "documented",
+        "value": [
+          {
+            "code": "0",
+            "description": "Never attended / kindergarten only"
+          },
+          {
+            "code": "1",
+            "description": "1st grade"
+          },
+          {
+            "code": "2",
+            "description": "2nd grade"
+          },
+          {
+            "code": "3",
+            "description": "3rd grade"
+          },
+          {
+            "code": "4",
+            "description": "4th grade"
+          },
+          {
+            "code": "5",
+            "description": "5th grade"
+          },
+          {
+            "code": "6",
+            "description": "6th grade"
+          },
+          {
+            "code": "7",
+            "description": "7th grade"
+          },
+          {
+            "code": "8",
+            "description": "8th grade"
+          },
+          {
+            "code": "9",
+            "description": "9th grade"
+          },
+          {
+            "code": "10",
+            "description": "10th grade"
+          },
+          {
+            "code": "11",
+            "description": "11th grade"
+          },
+          {
+            "code": "12",
+            "description": "12th grade, no diploma"
+          },
+          {
+            "code": "13",
+            "description": "High school graduate"
+          },
+          {
+            "code": "14",
+            "description": "GED or equivalent"
+          },
+          {
+            "code": "15",
+            "description": "More than high school"
+          },
+          {
+            "code": "55",
+            "description": "Less than 5th grade"
+          },
+          {
+            "code": "66",
+            "description": "Less than 9th grade"
+          },
+          {
+            "code": "77",
+            "description": "Refused"
+          },
+          {
+            "code": "99",
+            "description": "Don't know"
+          }
+        ]
+      },
+      "description": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+        "status": "documented",
+        "value": "What is the highest grade or level of school {you have/SP has} completed or the highest degree {you have/s/he has} received?"
+      },
+      "missing_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "status": "inferred",
+        "value": {
+          "documented_categories": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+            "status": "documented",
+            "value": [
+              {
+                "code": ".",
+                "description": "Missing"
+              }
+            ]
+          },
+          "observed_in_sample": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+            "status": "inferred",
+            "value": {
+              "count_in_sample": 773,
+              "sample_size": 1000
+            }
+          }
+        }
+      },
+      "name": "DMDEDUC3",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm"
+      ],
+      "type": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+        "status": "documented",
+        "value": [
+          {
+            "code": "1",
+            "description": "Less than 9th grade"
+          },
+          {
+            "code": "2",
+            "description": "9-11th grade (Includes 12th grade with no diploma)"
+          },
+          {
+            "code": "3",
+            "description": "High school graduate/GED or equivalent"
+          },
+          {
+            "code": "4",
+            "description": "Some college or AA degree"
+          },
+          {
+            "code": "5",
+            "description": "College graduate or above"
+          },
+          {
+            "code": "7",
+            "description": "Refused"
+          },
+          {
+            "code": "9",
+            "description": "Don't know"
+          }
+        ]
+      },
+      "description": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+        "status": "documented",
+        "value": "What is the highest grade or level of school {you have/SP has} completed or the highest degree {you have/s/he has} received?"
+      },
+      "missing_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "status": "inferred",
+        "value": {
+          "documented_categories": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+            "status": "documented",
+            "value": [
+              {
+                "code": ".",
+                "description": "Missing"
+              }
+            ]
+          },
+          "observed_in_sample": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+            "status": "inferred",
+            "value": {
+              "count_in_sample": 375,
+              "sample_size": 1000
+            }
+          }
+        }
+      },
+      "name": "DMDEDUC2",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm"
+      ],
+      "type": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+        "status": "documented",
+        "value": [
+          {
+            "code": "1",
+            "description": "Married"
+          },
+          {
+            "code": "2",
+            "description": "Widowed"
+          },
+          {
+            "code": "3",
+            "description": "Divorced"
+          },
+          {
+            "code": "4",
+            "description": "Separated"
+          },
+          {
+            "code": "5",
+            "description": "Never married"
+          },
+          {
+            "code": "6",
+            "description": "Living with partner"
+          },
+          {
+            "code": "77",
+            "description": "Refused"
+          },
+          {
+            "code": "99",
+            "description": "Don't know"
+          }
+        ]
+      },
+      "description": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+        "status": "documented",
+        "value": "Marital status"
+      },
+      "missing_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "status": "inferred",
+        "value": {
+          "documented_categories": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+            "status": "documented",
+            "value": [
+              {
+                "code": ".",
+                "description": "Missing"
+              }
+            ]
+          },
+          "observed_in_sample": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+            "status": "inferred",
+            "value": {
+              "count_in_sample": 375,
+              "sample_size": 1000
+            }
+          }
+        }
+      },
+      "name": "DMDMARTL",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm"
+      ],
+      "type": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+        "status": "documented",
+        "value": [
+          {
+            "code": "1",
+            "description": "Yes, positive lab pregnancy test or self-reported pregnant at exam"
+          },
+          {
+            "code": "2",
+            "description": "The participant was not pregnant at exam"
+          },
+          {
+            "code": "3",
+            "description": "Cannot ascertain if the participant is pregnant at exam"
+          }
+        ]
+      },
+      "description": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+        "status": "documented",
+        "value": "Pregnancy status for females between 20 and 44 years of age at the time of MEC exam."
+      },
+      "missing_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "status": "inferred",
+        "value": {
+          "documented_categories": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+            "status": "documented",
+            "value": [
+              {
+                "code": ".",
+                "description": "Missing"
+              }
+            ]
+          },
+          "observed_in_sample": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+            "status": "inferred",
+            "value": {
+              "count_in_sample": 872,
+              "sample_size": 1000
+            }
+          }
+        }
+      },
+      "name": "RIDEXPRG",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm"
+      ],
+      "type": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+        "status": "documented",
+        "value": [
+          {
+            "code": "1",
+            "description": "English"
+          },
+          {
+            "code": "2",
+            "description": "Spanish"
+          }
+        ]
+      },
+      "description": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+        "status": "documented",
+        "value": "Language of the Sample Person Interview Instrument"
+      },
+      "missing_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "status": "inferred",
+        "value": {
+          "documented_categories": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+            "status": "documented",
+            "value": [
+              {
+                "code": ".",
+                "description": "Missing"
+              }
+            ]
+          },
+          "observed_in_sample": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+            "status": "inferred",
+            "value": {
+              "count_in_sample": 0,
+              "sample_size": 1000
+            }
+          }
+        }
+      },
+      "name": "SIALANG",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm"
+      ],
+      "type": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+        "status": "documented",
+        "value": [
+          {
+            "code": "1",
+            "description": "Yes"
+          },
+          {
+            "code": "2",
+            "description": "No"
+          }
+        ]
+      },
+      "description": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+        "status": "documented",
+        "value": "Was a Proxy respondent used in conducting the Sample Person (SP) interview?"
+      },
+      "missing_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "status": "inferred",
+        "value": {
+          "documented_categories": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+            "status": "documented",
+            "value": [
+              {
+                "code": ".",
+                "description": "Missing"
+              }
+            ]
+          },
+          "observed_in_sample": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+            "status": "inferred",
+            "value": {
+              "count_in_sample": 0,
+              "sample_size": 1000
+            }
+          }
+        }
+      },
+      "name": "SIAPROXY",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm"
+      ],
+      "type": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+        "status": "documented",
+        "value": [
+          {
+            "code": "1",
+            "description": "Yes"
+          },
+          {
+            "code": "2",
+            "description": "No"
+          }
+        ]
+      },
+      "description": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+        "status": "documented",
+        "value": "Was an interpreter used to conduct the Sample Person (SP) interview?"
+      },
+      "missing_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "status": "inferred",
+        "value": {
+          "documented_categories": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+            "status": "documented",
+            "value": [
+              {
+                "code": ".",
+                "description": "Missing"
+              }
+            ]
+          },
+          "observed_in_sample": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+            "status": "inferred",
+            "value": {
+              "count_in_sample": 0,
+              "sample_size": 1000
+            }
+          }
+        }
+      },
+      "name": "SIAINTRP",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm"
+      ],
+      "type": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+        "status": "documented",
+        "value": [
+          {
+            "code": "1",
+            "description": "English"
+          },
+          {
+            "code": "2",
+            "description": "Spanish"
+          }
+        ]
+      },
+      "description": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+        "status": "documented",
+        "value": "Language of the Family Interview Instrument"
+      },
+      "missing_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "status": "inferred",
+        "value": {
+          "documented_categories": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+            "status": "documented",
+            "value": [
+              {
+                "code": ".",
+                "description": "Missing"
+              }
+            ]
+          },
+          "observed_in_sample": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+            "status": "inferred",
+            "value": {
+              "count_in_sample": 41,
+              "sample_size": 1000
+            }
+          }
+        }
+      },
+      "name": "FIALANG",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm"
+      ],
+      "type": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+        "status": "documented",
+        "value": [
+          {
+            "code": "1",
+            "description": "Yes"
+          },
+          {
+            "code": "2",
+            "description": "No"
+          }
+        ]
+      },
+      "description": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+        "status": "documented",
+        "value": "Was a Proxy respondent used in conducting the Family Interview?"
+      },
+      "missing_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "status": "inferred",
+        "value": {
+          "documented_categories": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+            "status": "documented",
+            "value": [
+              {
+                "code": ".",
+                "description": "Missing"
+              }
+            ]
+          },
+          "observed_in_sample": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+            "status": "inferred",
+            "value": {
+              "count_in_sample": 41,
+              "sample_size": 1000
+            }
+          }
+        }
+      },
+      "name": "FIAPROXY",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm"
+      ],
+      "type": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+        "status": "documented",
+        "value": [
+          {
+            "code": "1",
+            "description": "Yes"
+          },
+          {
+            "code": "2",
+            "description": "No"
+          }
+        ]
+      },
+      "description": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+        "status": "documented",
+        "value": "Was an interpreter used to conduct the Family interview?"
+      },
+      "missing_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "status": "inferred",
+        "value": {
+          "documented_categories": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+            "status": "documented",
+            "value": [
+              {
+                "code": ".",
+                "description": "Missing"
+              }
+            ]
+          },
+          "observed_in_sample": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+            "status": "inferred",
+            "value": {
+              "count_in_sample": 41,
+              "sample_size": 1000
+            }
+          }
+        }
+      },
+      "name": "FIAINTRP",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm"
+      ],
+      "type": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+        "status": "documented",
+        "value": [
+          {
+            "code": "1",
+            "description": "English"
+          },
+          {
+            "code": "2",
+            "description": "Spanish"
+          }
+        ]
+      },
+      "description": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+        "status": "documented",
+        "value": "Language of the MEC CAPI Interview Instrument"
+      },
+      "missing_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "status": "inferred",
+        "value": {
+          "documented_categories": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+            "status": "documented",
+            "value": [
+              {
+                "code": ".",
+                "description": "Missing"
+              }
+            ]
+          },
+          "observed_in_sample": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+            "status": "inferred",
+            "value": {
+              "count_in_sample": 271,
+              "sample_size": 1000
+            }
+          }
+        }
+      },
+      "name": "MIALANG",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm"
+      ],
+      "type": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+        "status": "documented",
+        "value": [
+          {
+            "code": "1",
+            "description": "Yes"
+          },
+          {
+            "code": "2",
+            "description": "No"
+          }
+        ]
+      },
+      "description": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+        "status": "documented",
+        "value": "Was a Proxy respondent used in conducting the MEC CAPI Interview?"
+      },
+      "missing_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "status": "inferred",
+        "value": {
+          "documented_categories": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+            "status": "documented",
+            "value": [
+              {
+                "code": ".",
+                "description": "Missing"
+              }
+            ]
+          },
+          "observed_in_sample": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+            "status": "inferred",
+            "value": {
+              "count_in_sample": 271,
+              "sample_size": 1000
+            }
+          }
+        }
+      },
+      "name": "MIAPROXY",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm"
+      ],
+      "type": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+        "status": "documented",
+        "value": [
+          {
+            "code": "1",
+            "description": "Yes"
+          },
+          {
+            "code": "2",
+            "description": "No"
+          }
+        ]
+      },
+      "description": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+        "status": "documented",
+        "value": "Was an interpreter used to conduct the MEC CAPI interview?"
+      },
+      "missing_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "status": "inferred",
+        "value": {
+          "documented_categories": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+            "status": "documented",
+            "value": [
+              {
+                "code": ".",
+                "description": "Missing"
+              }
+            ]
+          },
+          "observed_in_sample": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+            "status": "inferred",
+            "value": {
+              "count_in_sample": 271,
+              "sample_size": 1000
+            }
+          }
+        }
+      },
+      "name": "MIAINTRP",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm"
+      ],
+      "type": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+        "status": "documented",
+        "value": [
+          {
+            "code": "1",
+            "description": "English"
+          },
+          {
+            "code": "2",
+            "description": "Spanish"
+          },
+          {
+            "code": "3",
+            "description": "Asian languages"
+          }
+        ]
+      },
+      "description": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+        "status": "documented",
+        "value": "Language of the MEC ACASI Interview Instrument"
+      },
+      "missing_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "status": "inferred",
+        "value": {
+          "documented_categories": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+            "status": "documented",
+            "value": [
+              {
+                "code": ".",
+                "description": "Missing"
+              }
+            ]
+          },
+          "observed_in_sample": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+            "status": "inferred",
+            "value": {
+              "count_in_sample": 443,
+              "sample_size": 1000
+            }
+          }
+        }
+      },
+      "name": "AIALANGA",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm"
+      ],
+      "type": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+        "status": "documented",
+        "value": [
+          {
+            "code": "1",
+            "description": "1"
+          },
+          {
+            "code": "2",
+            "description": "2"
+          },
+          {
+            "code": "3",
+            "description": "3"
+          },
+          {
+            "code": "4",
+            "description": "4"
+          },
+          {
+            "code": "5",
+            "description": "5"
+          },
+          {
+            "code": "6",
+            "description": "6"
+          },
+          {
+            "code": "7",
+            "description": "7 or more people in the Household"
+          }
+        ]
+      },
+      "description": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+        "status": "documented",
+        "value": "Total number of people in the Household"
+      },
+      "missing_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "status": "inferred",
+        "value": {
+          "documented_categories": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+            "status": "documented",
+            "value": [
+              {
+                "code": ".",
+                "description": "Missing"
+              }
+            ]
+          },
+          "observed_in_sample": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+            "status": "inferred",
+            "value": {
+              "count_in_sample": 0,
+              "sample_size": 1000
+            }
+          }
+        }
+      },
+      "name": "DMDHHSIZ",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm"
+      ],
+      "type": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+        "status": "documented",
+        "value": [
+          {
+            "code": "1",
+            "description": "1"
+          },
+          {
+            "code": "2",
+            "description": "2"
+          },
+          {
+            "code": "3",
+            "description": "3"
+          },
+          {
+            "code": "4",
+            "description": "4"
+          },
+          {
+            "code": "5",
+            "description": "5"
+          },
+          {
+            "code": "6",
+            "description": "6"
+          },
+          {
+            "code": "7",
+            "description": "7 or more people in the Family"
+          }
+        ]
+      },
+      "description": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+        "status": "documented",
+        "value": "Total number of people in the Family"
+      },
+      "missing_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "status": "inferred",
+        "value": {
+          "documented_categories": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+            "status": "documented",
+            "value": [
+              {
+                "code": ".",
+                "description": "Missing"
+              }
+            ]
+          },
+          "observed_in_sample": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+            "status": "inferred",
+            "value": {
+              "count_in_sample": 0,
+              "sample_size": 1000
+            }
+          }
+        }
+      },
+      "name": "DMDFMSIZ",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm"
+      ],
+      "type": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+        "status": "documented",
+        "value": [
+          {
+            "code": "0",
+            "description": "0"
+          },
+          {
+            "code": "1",
+            "description": "1"
+          },
+          {
+            "code": "2",
+            "description": "2"
+          },
+          {
+            "code": "3",
+            "description": "3 or more"
+          }
+        ]
+      },
+      "description": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+        "status": "documented",
+        "value": "Number of children aged 5 years or younger in the household"
+      },
+      "missing_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "status": "inferred",
+        "value": {
+          "documented_categories": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+            "status": "documented",
+            "value": [
+              {
+                "code": ".",
+                "description": "Missing"
+              }
+            ]
+          },
+          "observed_in_sample": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+            "status": "inferred",
+            "value": {
+              "count_in_sample": 0,
+              "sample_size": 1000
+            }
+          }
+        }
+      },
+      "name": "DMDHHSZA",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm"
+      ],
+      "type": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+        "status": "documented",
+        "value": [
+          {
+            "code": "0",
+            "description": "0"
+          },
+          {
+            "code": "1",
+            "description": "1"
+          },
+          {
+            "code": "2",
+            "description": "2"
+          },
+          {
+            "code": "3",
+            "description": "3 or more"
+          }
+        ]
+      },
+      "description": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+        "status": "documented",
+        "value": "Number of children aged 6-17 years old in the household"
+      },
+      "missing_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "status": "inferred",
+        "value": {
+          "documented_categories": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+            "status": "documented",
+            "value": [
+              {
+                "code": ".",
+                "description": "Missing"
+              }
+            ]
+          },
+          "observed_in_sample": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+            "status": "inferred",
+            "value": {
+              "count_in_sample": 0,
+              "sample_size": 1000
+            }
+          }
+        }
+      },
+      "name": "DMDHHSZB",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm"
+      ],
+      "type": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+        "status": "documented",
+        "value": [
+          {
+            "code": "0",
+            "description": "0"
+          },
+          {
+            "code": "1",
+            "description": "1"
+          },
+          {
+            "code": "2",
+            "description": "2"
+          },
+          {
+            "code": "3",
+            "description": "3 or more"
+          }
+        ]
+      },
+      "description": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+        "status": "documented",
+        "value": "Number of adults aged 60 years or older in the household"
+      },
+      "missing_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "status": "inferred",
+        "value": {
+          "documented_categories": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+            "status": "documented",
+            "value": [
+              {
+                "code": ".",
+                "description": "Missing"
+              }
+            ]
+          },
+          "observed_in_sample": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+            "status": "inferred",
+            "value": {
+              "count_in_sample": 0,
+              "sample_size": 1000
+            }
+          }
+        }
+      },
+      "name": "DMDHHSZE",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm"
+      ],
+      "type": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+        "status": "documented",
+        "value": [
+          {
+            "code": "1",
+            "description": "Male"
+          },
+          {
+            "code": "2",
+            "description": "Female"
+          }
+        ]
+      },
+      "description": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+        "status": "documented",
+        "value": "HH reference person's gender"
+      },
+      "missing_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "status": "inferred",
+        "value": {
+          "documented_categories": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+            "status": "documented",
+            "value": [
+              {
+                "code": ".",
+                "description": "Missing"
+              }
+            ]
+          },
+          "observed_in_sample": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+            "status": "inferred",
+            "value": {
+              "count_in_sample": 0,
+              "sample_size": 1000
+            }
+          }
+        }
+      },
+      "name": "DMDHRGND",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm"
+      ],
+      "type": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+        "status": "documented",
+        "value": [
+          {
+            "code": "1",
+            "description": "<20 years"
+          },
+          {
+            "code": "2",
+            "description": "20-39 years"
+          },
+          {
+            "code": "3",
+            "description": "40-59 years"
+          },
+          {
+            "code": "4",
+            "description": "60+ years"
+          }
+        ]
+      },
+      "description": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+        "status": "documented",
+        "value": "HH reference person's age in years"
+      },
+      "missing_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "status": "inferred",
+        "value": {
+          "documented_categories": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+            "status": "documented",
+            "value": [
+              {
+                "code": ".",
+                "description": "Missing"
+              }
+            ]
+          },
+          "observed_in_sample": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+            "status": "inferred",
+            "value": {
+              "count_in_sample": 0,
+              "sample_size": 1000
+            }
+          }
+        }
+      },
+      "name": "DMDHRAGZ",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm"
+      ],
+      "type": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+        "status": "documented",
+        "value": [
+          {
+            "code": "1",
+            "description": "Less than high school degree"
+          },
+          {
+            "code": "2",
+            "description": "High school grad/GED or some college/AA degree"
+          },
+          {
+            "code": "3",
+            "description": "College graduate or above"
+          },
+          {
+            "code": "7",
+            "description": "Refused"
+          },
+          {
+            "code": "9",
+            "description": "Don't know"
+          }
+        ]
+      },
+      "description": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+        "status": "documented",
+        "value": "HH reference person's education level"
+      },
+      "missing_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "status": "inferred",
+        "value": {
+          "documented_categories": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+            "status": "documented",
+            "value": [
+              {
+                "code": ".",
+                "description": "Missing"
+              }
+            ]
+          },
+          "observed_in_sample": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+            "status": "inferred",
+            "value": {
+              "count_in_sample": 46,
+              "sample_size": 1000
+            }
+          }
+        }
+      },
+      "name": "DMDHREDZ",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm"
+      ],
+      "type": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+        "status": "documented",
+        "value": [
+          {
+            "code": "1",
+            "description": "Married/Living with partner"
+          },
+          {
+            "code": "2",
+            "description": "Widowed/Divorced/Separated"
+          },
+          {
+            "code": "3",
+            "description": "Never Married"
+          },
+          {
+            "code": "77",
+            "description": "Refused"
+          },
+          {
+            "code": "99",
+            "description": "Don't know"
+          }
+        ]
+      },
+      "description": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+        "status": "documented",
+        "value": "HH reference person's marital status"
+      },
+      "missing_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "status": "inferred",
+        "value": {
+          "documented_categories": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+            "status": "documented",
+            "value": [
+              {
+                "code": ".",
+                "description": "Missing"
+              }
+            ]
+          },
+          "observed_in_sample": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+            "status": "inferred",
+            "value": {
+              "count_in_sample": 18,
+              "sample_size": 1000
+            }
+          }
+        }
+      },
+      "name": "DMDHRMAZ",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm"
+      ],
+      "type": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+        "status": "documented",
+        "value": [
+          {
+            "code": "1",
+            "description": "Less than high school degree"
+          },
+          {
+            "code": "2",
+            "description": "High school grad/GED or some college/AA degree"
+          },
+          {
+            "code": "3",
+            "description": "College graduate or above"
+          },
+          {
+            "code": "7",
+            "description": "Refused"
+          },
+          {
+            "code": "9",
+            "description": "Don't know"
+          }
+        ]
+      },
+      "description": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+        "status": "documented",
+        "value": "HH reference person's spouse's education level"
+      },
+      "missing_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "status": "inferred",
+        "value": {
+          "documented_categories": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+            "status": "documented",
+            "value": [
+              {
+                "code": ".",
+                "description": "Missing"
+              }
+            ]
+          },
+          "observed_in_sample": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+            "status": "inferred",
+            "value": {
+              "count_in_sample": 493,
+              "sample_size": 1000
+            }
+          }
+        }
+      },
+      "name": "DMDHSEDZ",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm"
+      ],
+      "type": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+        "status": "documented",
+        "value": [
+          {
+            "code": "2571.0687123 to 433085.00526",
+            "description": "Range of Values"
+          }
+        ]
+      },
+      "description": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+        "status": "documented",
+        "value": "Full sample 2 year interview weight."
+      },
+      "missing_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "status": "inferred",
+        "value": {
+          "documented_categories": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+            "status": "documented",
+            "value": [
+              {
+                "code": ".",
+                "description": "Missing"
+              }
+            ]
+          },
+          "observed_in_sample": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+            "status": "inferred",
+            "value": {
+              "count_in_sample": 0,
+              "sample_size": 1000
+            }
+          }
+        }
+      },
+      "name": "WTINT2YR",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm"
+      ],
+      "type": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "status": "inferred",
+        "value": "number"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+        "status": "documented",
+        "value": [
+          {
+            "code": "2566.1838545 to 419762.83649",
+            "description": "Range of Values"
+          },
+          {
+            "code": "0",
+            "description": "Not MEC Examined"
+          }
+        ]
+      },
+      "description": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+        "status": "documented",
+        "value": "Full sample 2 year MEC exam weight."
+      },
+      "missing_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "status": "inferred",
+        "value": {
+          "documented_categories": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+            "status": "documented",
+            "value": [
+              {
+                "code": ".",
+                "description": "Missing"
+              }
+            ]
+          },
+          "observed_in_sample": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+            "status": "inferred",
+            "value": {
+              "count_in_sample": 0,
+              "sample_size": 1000
+            }
+          }
+        }
+      },
+      "name": "WTMEC2YR",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm"
+      ],
+      "type": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "status": "inferred",
+        "value": "number"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+        "status": "documented",
+        "value": [
+          {
+            "code": "1 to 2",
+            "description": "Range of Values"
+          }
+        ]
+      },
+      "description": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+        "status": "documented",
+        "value": "Masked variance unit pseudo-PSU variable for variance estimation"
+      },
+      "missing_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "status": "inferred",
+        "value": {
+          "documented_categories": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+            "status": "documented",
+            "value": [
+              {
+                "code": ".",
+                "description": "Missing"
+              }
+            ]
+          },
+          "observed_in_sample": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+            "status": "inferred",
+            "value": {
+              "count_in_sample": 0,
+              "sample_size": 1000
+            }
+          }
+        }
+      },
+      "name": "SDMVPSU",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm"
+      ],
+      "type": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+        "status": "documented",
+        "value": [
+          {
+            "code": "134 to 148",
+            "description": "Range of Values"
+          }
+        ]
+      },
+      "description": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+        "status": "documented",
+        "value": "Masked variance unit pseudo-stratum variable for variance estimation"
+      },
+      "missing_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "status": "inferred",
+        "value": {
+          "documented_categories": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+            "status": "documented",
+            "value": [
+              {
+                "code": ".",
+                "description": "Missing"
+              }
+            ]
+          },
+          "observed_in_sample": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+            "status": "inferred",
+            "value": {
+              "count_in_sample": 0,
+              "sample_size": 1000
+            }
+          }
+        }
+      },
+      "name": "SDMVSTRA",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm"
+      ],
+      "type": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+        "status": "documented",
+        "value": [
+          {
+            "code": "1",
+            "description": "$ 0 to $ 4,999"
+          },
+          {
+            "code": "2",
+            "description": "$ 5,000 to $ 9,999"
+          },
+          {
+            "code": "3",
+            "description": "$10,000 to $14,999"
+          },
+          {
+            "code": "4",
+            "description": "$15,000 to $19,999"
+          },
+          {
+            "code": "5",
+            "description": "$20,000 to $24,999"
+          },
+          {
+            "code": "6",
+            "description": "$25,000 to $34,999"
+          },
+          {
+            "code": "7",
+            "description": "$35,000 to $44,999"
+          },
+          {
+            "code": "8",
+            "description": "$45,000 to $54,999"
+          },
+          {
+            "code": "9",
+            "description": "$55,000 to $64,999"
+          },
+          {
+            "code": "10",
+            "description": "$65,000 to $74,999"
+          },
+          {
+            "code": "12",
+            "description": "$20,000 and Over"
+          },
+          {
+            "code": "13",
+            "description": "Under $20,000"
+          },
+          {
+            "code": "14",
+            "description": "$75,000 to $99,999"
+          },
+          {
+            "code": "15",
+            "description": "$100,000 and Over"
+          },
+          {
+            "code": "77",
+            "description": "Refused"
+          },
+          {
+            "code": "99",
+            "description": "Don't know"
+          }
+        ]
+      },
+      "description": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+        "status": "documented",
+        "value": "Total household income (reported as a range value in dollars)"
+      },
+      "missing_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "status": "inferred",
+        "value": {
+          "documented_categories": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+            "status": "documented",
+            "value": [
+              {
+                "code": ".",
+                "description": "Missing"
+              }
+            ]
+          },
+          "observed_in_sample": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+            "status": "inferred",
+            "value": {
+              "count_in_sample": 44,
+              "sample_size": 1000
+            }
+          }
+        }
+      },
+      "name": "INDHHIN2",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm"
+      ],
+      "type": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+        "status": "documented",
+        "value": [
+          {
+            "code": "1",
+            "description": "$ 0 to $ 4,999"
+          },
+          {
+            "code": "2",
+            "description": "$ 5,000 to $ 9,999"
+          },
+          {
+            "code": "3",
+            "description": "$10,000 to $14,999"
+          },
+          {
+            "code": "4",
+            "description": "$15,000 to $19,999"
+          },
+          {
+            "code": "5",
+            "description": "$20,000 to $24,999"
+          },
+          {
+            "code": "6",
+            "description": "$25,000 to $34,999"
+          },
+          {
+            "code": "7",
+            "description": "$35,000 to $44,999"
+          },
+          {
+            "code": "8",
+            "description": "$45,000 to $54,999"
+          },
+          {
+            "code": "9",
+            "description": "$55,000 to $64,999"
+          },
+          {
+            "code": "10",
+            "description": "$65,000 to $74,999"
+          },
+          {
+            "code": "12",
+            "description": "$20,000 and Over"
+          },
+          {
+            "code": "13",
+            "description": "Under $20,000"
+          },
+          {
+            "code": "14",
+            "description": "$75,000 to $99,999"
+          },
+          {
+            "code": "15",
+            "description": "$100,000 and Over"
+          },
+          {
+            "code": "77",
+            "description": "Refused"
+          },
+          {
+            "code": "99",
+            "description": "Don't know"
+          }
+        ]
+      },
+      "description": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+        "status": "documented",
+        "value": "Total family income (reported as a range value in dollars)"
+      },
+      "missing_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "status": "inferred",
+        "value": {
+          "documented_categories": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+            "status": "documented",
+            "value": [
+              {
+                "code": ".",
+                "description": "Missing"
+              }
+            ]
+          },
+          "observed_in_sample": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+            "status": "inferred",
+            "value": {
+              "count_in_sample": 41,
+              "sample_size": 1000
+            }
+          }
+        }
+      },
+      "name": "INDFMIN2",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm"
+      ],
+      "type": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+        "status": "documented",
+        "value": [
+          {
+            "code": "0 to 4.98",
+            "description": "Range of Values"
+          },
+          {
+            "code": "5",
+            "description": "Value greater than or equal to 5.00"
+          }
+        ]
+      },
+      "description": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+        "status": "documented",
+        "value": "A ratio of family income to poverty guidelines."
+      },
+      "missing_values": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "status": "inferred",
+        "value": {
+          "documented_categories": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+            "status": "documented",
+            "value": [
+              {
+                "code": ".",
+                "description": "Missing"
+              }
+            ]
+          },
+          "observed_in_sample": {
+            "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+            "status": "inferred",
+            "value": {
+              "count_in_sample": 118,
+              "sample_size": 1000
+            }
+          }
+        }
+      },
+      "name": "INDFMPIR",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm"
+      ],
+      "type": {
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT",
+        "status": "inferred",
+        "value": "number"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    }
+  ],
+  "dataset": {
+    "availability": "data_and_official_codebook",
+    "description": {
+      "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm",
+      "status": "documented",
+      "value": "The demographics file provides individual, family, and household-level information on the following topics:"
+    },
+    "domain": "health and demographics",
+    "id": "nhanes-2017-2018-demo-j",
+    "name": "NHANES 2017-2018 DEMO_J"
+  },
+  "provenance": {
+    "limitations": [],
+    "records_sampled": 1000,
+    "sources": [
+      {
+        "file": "data/originals/nhanes/DEMO_J.XPT",
+        "sha256": "c0b46e0345ea19404928656277c8b0d10b0cca348a9b2fe4fc3c67e8b7ee73ec",
+        "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.XPT"
+      },
+      {
+        "file": "data/originals/nhanes/DEMO_J.htm",
+        "sha256": "07f8f1e7f884fab180ccf53c705652de9d663833fdad85b0d759919c8464cde0",
+        "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DEMO_J.htm"
+      }
+    ]
+  },
+  "schema_version": "1.0"
+}

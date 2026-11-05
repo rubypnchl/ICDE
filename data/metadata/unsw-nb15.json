@@ -1,0 +1,2058 @@
+{
+  "columns": [
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 100000
+        }
+      },
+      "name": "id",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/train.csv",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/test.csv",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/README.md",
+        "https://research.unsw.edu.au/projects/unsw-nb15-dataset"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 100000
+        }
+      },
+      "name": "dur",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/train.csv",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/test.csv",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/README.md",
+        "https://research.unsw.edu.au/projects/unsw-nb15-dataset"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "status": "inferred",
+        "value": "number"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 100000
+        }
+      },
+      "name": "proto",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/train.csv",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/test.csv",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/README.md",
+        "https://research.unsw.edu.au/projects/unsw-nb15-dataset"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "status": "inferred",
+        "value": "string"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 100000
+        }
+      },
+      "name": "service",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/train.csv",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/test.csv",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/README.md",
+        "https://research.unsw.edu.au/projects/unsw-nb15-dataset"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "status": "inferred",
+        "value": "string"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 100000
+        }
+      },
+      "name": "state",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/train.csv",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/test.csv",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/README.md",
+        "https://research.unsw.edu.au/projects/unsw-nb15-dataset"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "status": "inferred",
+        "value": "string"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 100000
+        }
+      },
+      "name": "spkts",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/train.csv",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/test.csv",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/README.md",
+        "https://research.unsw.edu.au/projects/unsw-nb15-dataset"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 100000
+        }
+      },
+      "name": "dpkts",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/train.csv",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/test.csv",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/README.md",
+        "https://research.unsw.edu.au/projects/unsw-nb15-dataset"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 100000
+        }
+      },
+      "name": "sbytes",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/train.csv",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/test.csv",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/README.md",
+        "https://research.unsw.edu.au/projects/unsw-nb15-dataset"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 100000
+        }
+      },
+      "name": "dbytes",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/train.csv",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/test.csv",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/README.md",
+        "https://research.unsw.edu.au/projects/unsw-nb15-dataset"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 100000
+        }
+      },
+      "name": "rate",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/train.csv",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/test.csv",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/README.md",
+        "https://research.unsw.edu.au/projects/unsw-nb15-dataset"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "status": "inferred",
+        "value": "number"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 100000
+        }
+      },
+      "name": "sttl",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/train.csv",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/test.csv",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/README.md",
+        "https://research.unsw.edu.au/projects/unsw-nb15-dataset"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 100000
+        }
+      },
+      "name": "dttl",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/train.csv",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/test.csv",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/README.md",
+        "https://research.unsw.edu.au/projects/unsw-nb15-dataset"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 100000
+        }
+      },
+      "name": "sload",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/train.csv",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/test.csv",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/README.md",
+        "https://research.unsw.edu.au/projects/unsw-nb15-dataset"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "status": "inferred",
+        "value": "number"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 100000
+        }
+      },
+      "name": "dload",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/train.csv",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/test.csv",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/README.md",
+        "https://research.unsw.edu.au/projects/unsw-nb15-dataset"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "status": "inferred",
+        "value": "number"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 100000
+        }
+      },
+      "name": "sloss",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/train.csv",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/test.csv",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/README.md",
+        "https://research.unsw.edu.au/projects/unsw-nb15-dataset"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 100000
+        }
+      },
+      "name": "dloss",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/train.csv",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/test.csv",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/README.md",
+        "https://research.unsw.edu.au/projects/unsw-nb15-dataset"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 100000
+        }
+      },
+      "name": "sinpkt",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/train.csv",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/test.csv",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/README.md",
+        "https://research.unsw.edu.au/projects/unsw-nb15-dataset"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "status": "inferred",
+        "value": "number"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 100000
+        }
+      },
+      "name": "dinpkt",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/train.csv",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/test.csv",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/README.md",
+        "https://research.unsw.edu.au/projects/unsw-nb15-dataset"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "status": "inferred",
+        "value": "number"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 100000
+        }
+      },
+      "name": "sjit",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/train.csv",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/test.csv",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/README.md",
+        "https://research.unsw.edu.au/projects/unsw-nb15-dataset"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "status": "inferred",
+        "value": "number"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 100000
+        }
+      },
+      "name": "djit",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/train.csv",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/test.csv",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/README.md",
+        "https://research.unsw.edu.au/projects/unsw-nb15-dataset"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "status": "inferred",
+        "value": "number"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 100000
+        }
+      },
+      "name": "swin",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/train.csv",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/test.csv",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/README.md",
+        "https://research.unsw.edu.au/projects/unsw-nb15-dataset"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 100000
+        }
+      },
+      "name": "stcpb",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/train.csv",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/test.csv",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/README.md",
+        "https://research.unsw.edu.au/projects/unsw-nb15-dataset"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 100000
+        }
+      },
+      "name": "dtcpb",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/train.csv",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/test.csv",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/README.md",
+        "https://research.unsw.edu.au/projects/unsw-nb15-dataset"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 100000
+        }
+      },
+      "name": "dwin",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/train.csv",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/test.csv",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/README.md",
+        "https://research.unsw.edu.au/projects/unsw-nb15-dataset"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 100000
+        }
+      },
+      "name": "tcprtt",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/train.csv",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/test.csv",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/README.md",
+        "https://research.unsw.edu.au/projects/unsw-nb15-dataset"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "status": "inferred",
+        "value": "number"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 100000
+        }
+      },
+      "name": "synack",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/train.csv",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/test.csv",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/README.md",
+        "https://research.unsw.edu.au/projects/unsw-nb15-dataset"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "status": "inferred",
+        "value": "number"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 100000
+        }
+      },
+      "name": "ackdat",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/train.csv",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/test.csv",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/README.md",
+        "https://research.unsw.edu.au/projects/unsw-nb15-dataset"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "status": "inferred",
+        "value": "number"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 100000
+        }
+      },
+      "name": "smean",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/train.csv",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/test.csv",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/README.md",
+        "https://research.unsw.edu.au/projects/unsw-nb15-dataset"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 100000
+        }
+      },
+      "name": "dmean",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/train.csv",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/test.csv",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/README.md",
+        "https://research.unsw.edu.au/projects/unsw-nb15-dataset"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 100000
+        }
+      },
+      "name": "trans_depth",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/train.csv",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/test.csv",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/README.md",
+        "https://research.unsw.edu.au/projects/unsw-nb15-dataset"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 100000
+        }
+      },
+      "name": "response_body_len",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/train.csv",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/test.csv",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/README.md",
+        "https://research.unsw.edu.au/projects/unsw-nb15-dataset"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 100000
+        }
+      },
+      "name": "ct_srv_src",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/train.csv",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/test.csv",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/README.md",
+        "https://research.unsw.edu.au/projects/unsw-nb15-dataset"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 100000
+        }
+      },
+      "name": "ct_state_ttl",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/train.csv",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/test.csv",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/README.md",
+        "https://research.unsw.edu.au/projects/unsw-nb15-dataset"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 100000
+        }
+      },
+      "name": "ct_dst_ltm",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/train.csv",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/test.csv",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/README.md",
+        "https://research.unsw.edu.au/projects/unsw-nb15-dataset"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 100000
+        }
+      },
+      "name": "ct_src_dport_ltm",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/train.csv",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/test.csv",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/README.md",
+        "https://research.unsw.edu.au/projects/unsw-nb15-dataset"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 100000
+        }
+      },
+      "name": "ct_dst_sport_ltm",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/train.csv",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/test.csv",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/README.md",
+        "https://research.unsw.edu.au/projects/unsw-nb15-dataset"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 100000
+        }
+      },
+      "name": "ct_dst_src_ltm",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/train.csv",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/test.csv",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/README.md",
+        "https://research.unsw.edu.au/projects/unsw-nb15-dataset"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 100000
+        }
+      },
+      "name": "is_ftp_login",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/train.csv",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/test.csv",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/README.md",
+        "https://research.unsw.edu.au/projects/unsw-nb15-dataset"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 100000
+        }
+      },
+      "name": "ct_ftp_cmd",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/train.csv",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/test.csv",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/README.md",
+        "https://research.unsw.edu.au/projects/unsw-nb15-dataset"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 100000
+        }
+      },
+      "name": "ct_flw_http_mthd",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/train.csv",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/test.csv",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/README.md",
+        "https://research.unsw.edu.au/projects/unsw-nb15-dataset"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 100000
+        }
+      },
+      "name": "ct_src_ltm",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/train.csv",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/test.csv",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/README.md",
+        "https://research.unsw.edu.au/projects/unsw-nb15-dataset"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 100000
+        }
+      },
+      "name": "ct_srv_dst",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/train.csv",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/test.csv",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/README.md",
+        "https://research.unsw.edu.au/projects/unsw-nb15-dataset"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 100000
+        }
+      },
+      "name": "is_sm_ips_ports",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/train.csv",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/test.csv",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/README.md",
+        "https://research.unsw.edu.au/projects/unsw-nb15-dataset"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 100000
+        }
+      },
+      "name": "attack_cat",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/train.csv",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/test.csv",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/README.md",
+        "https://research.unsw.edu.au/projects/unsw-nb15-dataset"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "status": "inferred",
+        "value": "string"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    },
+    {
+      "allowed_values": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "description": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "missing_values": {
+        "source": "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "status": "inferred",
+        "value": {
+          "count_in_sample": 0,
+          "sample_size": 100000
+        }
+      },
+      "name": "label",
+      "relationships": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      },
+      "sources": [
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/train.csv",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/test.csv",
+        "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/README.md",
+        "https://research.unsw.edu.au/projects/unsw-nb15-dataset"
+      ],
+      "type": {
+        "source": "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+        "status": "inferred",
+        "value": "integer"
+      },
+      "unit": {
+        "source": null,
+        "status": "unknown",
+        "value": null
+      }
+    }
+  ],
+  "dataset": {
+    "availability": "verified_public_mirror_train_test",
+    "class_coverage": {
+      "attack_cat": {
+        "Analysis": 1082,
+        "Backdoor": 896,
+        "DoS": 6365,
+        "Exploits": 17376,
+        "Fuzzers": 9316,
+        "Generic": 22966,
+        "Normal": 35944,
+        "Reconnaissance": 5388,
+        "Shellcode": 592,
+        "Worms": 75
+      },
+      "label": {
+        "0": 35944,
+        "1": 64056
+      }
+    },
+    "description": {
+      "source": null,
+      "status": "unknown",
+      "value": null
+    },
+    "domain": "network intrusion detection",
+    "id": "unsw-nb15",
+    "licensing_note": "Pinned mirror README declares GPL-3.0; original UNSW dataset attribution and citation are preserved.",
+    "mirror_source": "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15",
+    "name": "UNSW-NB15",
+    "source_file_records": {
+      "data/originals/unsw_nb15/test.csv": 175341,
+      "data/originals/unsw_nb15/train.csv": 82332
+    }
+  },
+  "provenance": {
+    "limitations": [
+      "The official UNSW SharePoint download returned HTTP 403 without credentials; no authentication was bypassed.",
+      "The pinned mirror identifies its files as train.csv and test.csv, but observed row counts are 82,332 and 175,341 respectively, opposite the official page's declared training/test counts. Original mirror filenames are retained; split identity is not silently relabeled.",
+      "The mirror README declares GPL-3.0; no standalone license file was present in the pinned repository revision."
+    ],
+    "records_sampled": 100000,
+    "sampling": {
+      "method": "uniform reservoir sample without replacement across source files",
+      "records_available": 257673,
+      "records_sampled": 100000,
+      "sample_class_distribution": {
+        "attack_cat": {
+          "Analysis": 1082,
+          "Backdoor": 896,
+          "DoS": 6365,
+          "Exploits": 17376,
+          "Fuzzers": 9316,
+          "Generic": 22966,
+          "Normal": 35944,
+          "Reconnaissance": 5388,
+          "Shellcode": 592,
+          "Worms": 75
+        },
+        "label": {
+          "0": 35944,
+          "1": 64056
+        }
+      },
+      "sample_file": "data/samples/unsw_nb15/flows-100000.csv",
+      "sample_sha256": "e2182a2f05a198f2dbfaf9b5dabe4e7b57a47fb259ae0f194ccaa7d13a99f55d",
+      "seed": 2015,
+      "source_class_distribution": {
+        "attack_cat": {
+          "Analysis": 2677,
+          "Backdoor": 2329,
+          "DoS": 16353,
+          "Exploits": 44525,
+          "Fuzzers": 24246,
+          "Generic": 58871,
+          "Normal": 93000,
+          "Reconnaissance": 13987,
+          "Shellcode": 1511,
+          "Worms": 174
+        },
+        "label": {
+          "0": 93000,
+          "1": 164673
+        }
+      },
+      "source_records": {
+        "data/originals/unsw_nb15/test.csv": 175341,
+        "data/originals/unsw_nb15/train.csv": 82332
+      },
+      "source_sample_records": {
+        "data/originals/unsw_nb15/test.csv": 68225,
+        "data/originals/unsw_nb15/train.csv": 31775
+      }
+    },
+    "source_records_total": 257673,
+    "sources": [
+      {
+        "file": "data/originals/unsw_nb15/train.csv",
+        "sha256": "734fe6642edf758f7c94d7d9149426b49d202fe8e7bf0bef47392489c3c0a559",
+        "url": "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/train.csv"
+      },
+      {
+        "file": "data/originals/unsw_nb15/test.csv",
+        "sha256": "bec7dd5ec88dc2a0ccc7a07879d338395ed7421750f675fd0339e07dfe0648fa",
+        "url": "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/test.csv"
+      },
+      {
+        "file": "data/originals/unsw_nb15/README.md",
+        "sha256": "719dbf574cf4e031c4b4e3cb74852dbc61315d65b888078901151cba22df0e8e",
+        "url": "https://huggingface.co/datasets/Mireu-Lab/UNSW-NB15/resolve/3eb02c4a0a29866b7abcb5ef77c45cf4fcc8f6b0/README.md"
+      },
+      {
+        "file": "data/originals/unsw_nb15/official-project-page.html",
+        "sha256": "2b232cf3f0272f6a0e1c4dc31459f9333a11b80692f5e4bb7299a67532afb6e0",
+        "url": "https://research.unsw.edu.au/projects/unsw-nb15-dataset"
+      }
+    ]
+  },
+  "schema_version": "1.0"
+}
