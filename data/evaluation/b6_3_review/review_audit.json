@@ -1,0 +1,36 @@
+{
+  "study_id": "b6_3_independent_source_and_case_review_v1",
+  "status": "review_in_progress",
+  "manufacturing_discrepancies": {
+    "forward": 18,
+    "reverse_exploratory": 9
+  },
+  "cases": {
+    "items_total": 27,
+    "reviewer_1_completed": 0,
+    "reviewer_2_completed": 0,
+    "both_completed": 0,
+    "agreed": 0,
+    "disagreed": 0,
+    "not_jointly_reviewed": 27,
+    "raw_agreement_among_jointly_reviewed": null,
+    "human_independence_verified_by_software": false
+  },
+  "source_rules": {
+    "items_total": 2,
+    "reviewer_1_completed": 0,
+    "reviewer_2_completed": 0,
+    "both_completed": 0,
+    "agreed": 0,
+    "disagreed": 0,
+    "not_jointly_reviewed": 2,
+    "raw_agreement_among_jointly_reviewed": null,
+    "human_independence_verified_by_software": false
+  },
+  "independently_adjudicated_gold_rules": 0,
+  "confirmed_natural_defects": 0,
+  "eligible_for_final_gold_scoring": false,
+  "human_independence_not_established_by_script": true,
+  "adjudicator_decisions_entered": false,
+  "warning": "Agreement between human votes alone is not independent evidence of true labels; unresolved source semantics and adjudicator review required."
+}

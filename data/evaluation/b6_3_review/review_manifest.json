@@ -1,0 +1,17 @@
+{
+  "study_id": "b6_3_independent_source_and_case_review_v1",
+  "phase": "blank_reviewer_templates_not_reviewed",
+  "baseline_sha256": {
+    "data/evaluation/b6_3_review_policy_v1.json": "9a3b9fa4648d74125686447c5cae7b20e4688610a280577bb4362e66d84fe103",
+    "data/evaluation/b6_2_ai4i_independent_review.csv": "903d15ae47b724621062e4d73765534f34b7d06bc237ee0d06fdf7d585951826",
+    "data/evaluation/b6_reference_catalogue.json": "46ed4bfb68348a155ae5be77982c835b9a57bbeb8278151e1a85081a1552eb3a",
+    "data/evaluation/b6_protocol_v1.json": "cf5b008690926bb67ead85845d6eadf4eaac7455983886fd9fab767d80d55dd5",
+    "data/evaluation/b6_1_real_baselines.json": "7c956321ecf2ac7f7490365c30cc26888767fc0a7cd031e718b086bdc70b2f5d",
+    "data/evaluation/b6_2_development_study.json": "7240696af671181f40dd95db8b3a56f155f0ff0190311e0944c268186daef8c9"
+  },
+  "case_rows": 27,
+  "rule_rows": 2,
+  "two_independent_reviews_completed": false,
+  "independent_gold_rule_count": 0,
+  "note": "Human reviewers must complete separate sheets independently; do not treat templates as evidence."
+}

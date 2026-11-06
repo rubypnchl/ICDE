@@ -1,0 +1,28 @@
+{
+  "study_id": "b6_3_independent_source_and_case_review_v1",
+  "parent_protocol_id": "b6-frozen-protocol-v1",
+  "starting_commit": "954f9f6d7a475391999f172c06bc93525fe98448",
+  "case_reference": "data/evaluation/b6_2_ai4i_independent_review.csv",
+  "required_case_count": 27,
+  "expected_case_breakdown": {
+    "forward_frozen_rule_violation": 18,
+    "reverse_exploratory_only_not_frozen_rule": 9
+  },
+  "source_rule_ids": ["B6-MAN-001", "B6-CYB-001"],
+  "case_decisions": ["supported_discrepancy", "explainable_exception", "ambiguous", "source_version_mismatch"],
+  "rule_decisions": ["supports_as_written", "supports_with_conditions", "not_supported", "needs_more_evidence"],
+  "required_reviewer_count": 2,
+  "reference_sources": {
+    "B6-MAN-001": ["https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset"],
+    "B6-CYB-001": ["https://github.com/ahlashkari/CICFlowMeter/blob/master/ReadMe.txt", "https://github.com/ahlashkari/CICFlowMeter/blob/master/src/main/java/cic/cs/unb/ca/jnetpcap/BasicFlow.java"]
+  },
+  "explicit_limits": [
+    "Separate reviews must be carried out by actual independent human reviewers; generated templates and agreement counts cannot establish independence.",
+    "No reviewer decisions are supplied or inferred by the software.",
+    "No natural defect or final gold reference is certified automatically.",
+    "RNF-only forward cases and exploratory converse cases are distinct denominators.",
+    "Original B6 catalogue/protocol and B6.2 experimental outputs remain immutable.",
+    "Official source describes five RNF cases; observed 18 RNF-only forward disagreements require version and label-semantics review.",
+    "CIC reference needs exact generator/source-version matching, not agreement-based source adjudication."
+  ]
+}
