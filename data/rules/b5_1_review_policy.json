@@ -1,0 +1,87 @@
+{
+  "policy_version": "metaverify-evidence-review-v0.1",
+  "development_stage": "posthoc_case_study_policy_developed_after_inspecting_luna_outputs",
+  "registry_file": "data/rules/b4_example_proposals.json",
+  "domain_policies": {
+    "nhanes-2017-2018-glu-j": {
+      "required_context_keys": [],
+      "notes": "Glucose conversion is a plausible pairing; the rounding selection was made on the same dataset and is not independent validation.",
+      "semantic_vetoes": []
+    },
+    "sec-companyfacts-320193": {
+      "required_context_keys": [
+        "entity",
+        "reporting_date",
+        "accounting_scope",
+        "currency"
+      ],
+      "notes": "Fact alignment is required; the parent-only StockholdersEquity tag cannot automatically stand for total equity including noncontrolling interests.",
+      "semantic_vetoes": [
+        {
+          "exact_columns": [
+            "Assets",
+            "Liabilities",
+            "StockholdersEquity"
+          ],
+          "reason": "A=L+parent-only StockholdersEquity is not generally entailed without evidence that noncontrolling and other separately classified equity components are absent or accounted for."
+        }
+      ]
+    }
+  },
+  "binding_authorizations": [
+    {
+      "dataset_id": "nhanes-2017-2018-glu-j",
+      "rule_id": "glucose_unit_conversion",
+      "authorization": "manual_posthoc_exact_structure_mapping_not_model_discovery",
+      "expected_structure": {
+        "assertions": [
+          {
+            "left": {
+              "column": "LBDGLUSI"
+            },
+            "op": "eq",
+            "right": {
+              "multiply": [
+                {
+                  "column": "LBXGLU"
+                },
+                {
+                  "parameter": "k1"
+                }
+              ]
+            },
+            "round_right": {
+              "parameter": "t1"
+            },
+            "abs_tolerance": null
+          }
+        ],
+        "when": null,
+        "context_keys": [],
+        "passage_ids": [
+          "P03",
+          "P04"
+        ]
+      },
+      "parameter_map": {
+        "k1": "nhanes-2017-2018-glu-j:glucose_factor",
+        "t1": "nhanes-2017-2018-glu-j:glucose_rounding"
+      },
+      "limitation": "This is a human-reviewed binding for one exact observed Luna structure; not autonomous semantic evidence resolution, independent numerical calibration, or a transferable parameter aliasing algorithm.",
+      "expected_evidence_passages": [
+        {
+          "id": "P03",
+          "column": "LBXGLU",
+          "description": "Fasting Glucose (mg/dL)",
+          "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/GLU_J.htm"
+        },
+        {
+          "id": "P04",
+          "column": "LBDGLUSI",
+          "description": "Fasting Glucose (mmol/L)",
+          "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/GLU_J.htm"
+        }
+      ]
+    }
+  ]
+}

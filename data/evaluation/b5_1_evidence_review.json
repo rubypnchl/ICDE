@@ -1,0 +1,103 @@
+{
+  "stage": "B5.1",
+  "method": "Post-hoc human-authorized matching and independent-policy applicability gate, no API calls",
+  "model_reports": [
+    {
+      "domain": "healthcare",
+      "dataset_id": "nhanes-2017-2018-glu-j",
+      "model": "gpt-6-luna",
+      "request_sha256": "4fb49b607ac0e72c9a885c473018dfa40b9c45f2cadc46e9a7dec008e1e4f1ca",
+      "input_bundle_sha256": "df1e8925f235085f513263a37265b848b912bc06b1b8745c4e1a465818613f38",
+      "policy_sha256": "ad30cf2c3d0015a6f5ec91185c9f4051eaa75985a2a28987243db4fae4b94c25",
+      "policy_development_stage": "posthoc_case_study_policy_developed_after_inspecting_luna_outputs",
+      "scope": "Local post-hoc evidence/applicability review; not blinded model evaluation",
+      "decisions": [
+        {
+          "proposal_id": "glucose_unit_conversion",
+          "status": "compiled_unverified_posthoc",
+          "reasons": [
+            "B4 structurally compiled; no independently established semantic acceptance",
+            "parameter authorization: manual_posthoc_exact_structure_mapping_not_model_discovery"
+          ],
+          "b5_original_compilation_status": "blocked_unresolved",
+          "compiled_rule": {
+            "schema_version": "metaverify-exec-v0.1",
+            "id": "glucose_unit_conversion",
+            "dataset_id": "nhanes-2017-2018-glu-j",
+            "assertions": [
+              {
+                "left": {
+                  "column": "LBDGLUSI"
+                },
+                "op": "eq",
+                "right": {
+                  "multiply": [
+                    {
+                      "column": "LBXGLU"
+                    },
+                    {
+                      "constant": "0.05551"
+                    }
+                  ]
+                },
+                "round_right": {
+                  "mode": "significant_figures",
+                  "digits": 3
+                }
+              }
+            ],
+            "context_keys": [],
+            "evidence_status": "candidate_unverified",
+            "proposal_origin": "gpt-6-luna_B5.1_posthoc"
+          },
+          "parameter_provenance": {
+            "k1": {
+              "origin": "documented_reference",
+              "source_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/GLU_J.htm",
+              "rationale": "Conversion multiplier reported in CDC documentation; catalogue is curator supplied and not automatically fact-checked"
+            },
+            "t1": {
+              "origin": "empirical_same_dataset",
+              "source_url": null,
+              "rationale": "Selected using this same GLU_J snapshot; not an independently established reference rule"
+            }
+          },
+          "semantically_verified": false,
+          "independently_validated": false,
+          "confirmed_data_errors": false,
+          "safe_to_deploy_as_integrity_constraint": false
+        }
+      ],
+      "warning": "Manual bindings do NOT constitute automatic parameter discovery or independent rule validation."
+    },
+    {
+      "domain": "finance",
+      "dataset_id": "sec-companyfacts-320193",
+      "model": "gpt-6-luna",
+      "request_sha256": "17fb8bcf5fc272290e450bc044b07b70c3d2ba767cec0d8bd8b02a1dc13e9bd7",
+      "input_bundle_sha256": "db1605a5b689b1a354494f637fb03be5a29b3ee130e05b2178f67d5946cb14fc",
+      "policy_sha256": "ad30cf2c3d0015a6f5ec91185c9f4051eaa75985a2a28987243db4fae4b94c25",
+      "policy_development_stage": "posthoc_case_study_policy_developed_after_inspecting_luna_outputs",
+      "scope": "Local post-hoc evidence/applicability review; not blinded model evaluation",
+      "decisions": [
+        {
+          "proposal_id": "balance_sheet_equation",
+          "status": "blocked_applicability_or_scope",
+          "reasons": [
+            "model omitted required reporting contexts: entity, reporting_date, accounting_scope, currency",
+            "semantic scope unresolved: A=L+parent-only StockholdersEquity is not generally entailed without evidence that noncontrolling and other separately classified equity components are absent or accounted for."
+          ],
+          "b5_original_compilation_status": "candidate_executable_unverified",
+          "compiled_rule": null,
+          "parameter_provenance": {},
+          "semantically_verified": false,
+          "independently_validated": false,
+          "confirmed_data_errors": false,
+          "safe_to_deploy_as_integrity_constraint": false
+        }
+      ],
+      "warning": "Manual bindings do NOT constitute automatic parameter discovery or independent rule validation."
+    }
+  ],
+  "scientific_warning": "Original B5 output files remain unchanged. B5.1 was designed after viewing Luna outputs; do not use B5.1 success rates as unbiased Luna-vs-Sol evidence."
+}
