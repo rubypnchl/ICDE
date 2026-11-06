@@ -1,0 +1,22 @@
+{
+  "rule_id": "health-glucose-3sig",
+  "dataset_id": "nhanes-2017-2018-glu-j",
+  "record_count": 3036,
+  "eligible_records": 3036,
+  "evaluated_records": 2891,
+  "counts": {
+    "satisfied": 2891,
+    "violated": 0,
+    "not_applicable": 0,
+    "abstained": 145
+  },
+  "coverage_on_eligible": 0.9522397891963109,
+  "interpretation": "Violations are expression mismatches, NOT independently adjudicated data errors.",
+  "comparison_with_prior_study": {
+    "same_source_hash": true,
+    "matched_count_agrees": true,
+    "evaluable_count_agrees": true
+  },
+  "source_sha256": "5b38897d0d7bfbc69dd9ca74ffdaf2f6a9bed5a91d4a7bf46e07f1332cc3379e",
+  "scientific_limitation": "3-significant-figure precision was selected using the same dataset; reproducing agreement on this snapshot is NOT an independent held-out validation."
+}
