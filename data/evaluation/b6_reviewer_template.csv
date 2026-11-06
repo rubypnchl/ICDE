@@ -1,0 +1,11 @@
+rule_id,reviewer_id,decision,source_checked,expression_entailed,applicability_verified,rounding_and_units_verified,notes,review_date_utc
+B6-HLT-001,reviewer_A,,,,,,,
+B6-HLT-001,reviewer_B,,,,,,,
+B6-FIN-001,reviewer_A,,,,,,,
+B6-FIN-001,reviewer_B,,,,,,,
+B6-FIN-002,reviewer_A,,,,,,,
+B6-FIN-002,reviewer_B,,,,,,,
+B6-MAN-001,reviewer_A,,,,,,,
+B6-MAN-001,reviewer_B,,,,,,,
+B6-CYB-001,reviewer_A,,,,,,,
+B6-CYB-001,reviewer_B,,,,,,,

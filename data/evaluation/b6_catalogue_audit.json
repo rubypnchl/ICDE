@@ -1,0 +1,83 @@
+{
+  "protocol_id": "b6-frozen-protocol-v1",
+  "baseline_commit": "b68e3be3c8ab832a6b550545121187970b0a7672",
+  "entry_count": 5,
+  "status_counts": {
+    "excluded": 1,
+    "partially_supported": 1,
+    "provisional_source_supported": 2,
+    "scope_pending": 1
+  },
+  "final_gold_eligible_count": 0,
+  "source_url_contents_checked": false,
+  "source_entailment_adjudicated": false,
+  "real_data_evaluated_by_this_script": false,
+  "all_metadata_and_structural_checks_passed": true,
+  "entries": [
+    {
+      "id": "B6-HLT-001",
+      "domain": "healthcare",
+      "status": "partially_supported",
+      "scoring_eligible": false,
+      "metadata_scope": "repository_columns",
+      "source_urls": [
+        "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/GLU_J.htm"
+      ],
+      "dsl_structurally_valid": true
+    },
+    {
+      "id": "B6-FIN-001",
+      "domain": "finance",
+      "status": "scope_pending",
+      "scoring_eligible": false,
+      "metadata_scope": "external_taxonomy_pending",
+      "source_urls": [
+        "https://xbrl.us/data-rule/dqc_0015-le-V2pr/",
+        "https://www.sec.gov/search-filings/edgar-application-programming-interfaces"
+      ],
+      "dsl_structurally_valid": true
+    },
+    {
+      "id": "B6-FIN-002",
+      "domain": "finance",
+      "status": "excluded",
+      "scoring_eligible": false,
+      "metadata_scope": "external_taxonomy_pending",
+      "source_urls": [
+        "https://xbrl.us/data-rule/dqc_0015-le-V2pr/"
+      ],
+      "dsl_structurally_valid": false
+    },
+    {
+      "id": "B6-MAN-001",
+      "domain": "manufacturing",
+      "status": "provisional_source_supported",
+      "scoring_eligible": false,
+      "metadata_scope": "repository_columns",
+      "source_urls": [
+        "https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset"
+      ],
+      "dsl_structurally_valid": true
+    },
+    {
+      "id": "B6-CYB-001",
+      "domain": "cybersecurity",
+      "status": "provisional_source_supported",
+      "scoring_eligible": false,
+      "metadata_scope": "repository_columns",
+      "source_urls": [
+        "https://github.com/ahlashkari/CICFlowMeter/blob/master/ReadMe.txt",
+        "https://github.com/ahlashkari/CICFlowMeter/blob/master/src/main/java/cic/cs/unb/ca/jnetpcap/BasicFlow.java"
+      ],
+      "dsl_structurally_valid": true
+    }
+  ],
+  "next_requirements": [
+    "Independent two-reviewer adjudication",
+    "Check finance taxonomy and context adapter",
+    "Lock precision before independent healthcare test",
+    "Execute real held-out/grouped data where available"
+  ],
+  "catalogue_sha256": "46ed4bfb68348a155ae5be77982c835b9a57bbeb8278151e1a85081a1552eb3a",
+  "protocol_sha256": "cf5b008690926bb67ead85845d6eadf4eaac7455983886fd9fab767d80d55dd5"
+}

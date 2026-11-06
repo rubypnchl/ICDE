@@ -1,0 +1,299 @@
+{
+  "catalogue_version": "b6-reference-seed-v0.1",
+  "protocol_id": "b6-frozen-protocol-v1",
+  "baseline_commit": "b68e3be3c8ab832a6b550545121187970b0a7672",
+  "created_date_utc": "2026-11-06",
+  "catalogue_scope": "Initial auditable candidate catalogue; not an independently adjudicated gold set. No rules are eligible for final gold scoring yet.",
+  "status_definitions": {
+    "provisional_source_supported": "Source supports candidate semantics, but independent reviewer adjudication and external real-data evaluation remain outstanding.",
+    "partially_supported": "A component of rule is documented; full executable semantics not independently justified.",
+    "scope_pending": "Potentially correct concept relationship, but context/column availability/semantic scope requires adjudication.",
+    "excluded": "Known unreliable or unjustified form excluded from reference pool."
+  },
+  "entries": [
+    {
+      "id": "B6-HLT-001",
+      "domain": "healthcare",
+      "dataset_id": "nhanes-2017-2018-glu-j",
+      "status": "partially_supported",
+      "scoring_eligible": false,
+      "metadata_scope": "repository_columns",
+      "columns": [
+        "LBXGLU",
+        "LBDGLUSI"
+      ],
+      "semantic_statement": "LBDGLUSI is a unit-converted representation of LBXGLU using factor 0.05551; precision is not independently settled.",
+      "reference_rule": {
+        "schema_version": "metaverify-exec-v0.1",
+        "id": "B6-HLT-001",
+        "dataset_id": "nhanes-2017-2018-glu-j",
+        "assertions": [
+          {
+            "left": {
+              "column": "LBDGLUSI"
+            },
+            "op": "eq",
+            "right": {
+              "multiply": [
+                {
+                  "column": "LBXGLU"
+                },
+                {
+                  "constant": "0.05551"
+                }
+              ]
+            },
+            "round_right": {
+              "mode": "significant_figures",
+              "digits": 3
+            }
+          }
+        ],
+        "context_keys": [],
+        "evidence_status": "coefficient_documented_precision_selected_on_same_dataset"
+      },
+      "applicability": "Both observations must be present for the same participant.",
+      "evidence": [
+        {
+          "url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/GLU_J.htm",
+          "kind": "official_methodology",
+          "supports": "CDC explicitly documents multiplier 0.05551 and describes rounding to three decimals."
+        }
+      ],
+      "unresolved": [
+        "The current three-significant-figure rule was selected on the same GLU_J data; CDC wording states three decimals, so exact precision is not independently established.",
+        "An independent dataset/cycle is required before scoring the chosen precision."
+      ],
+      "known_prior_observation": {
+        "source_file_sha256": "5b38897d0d7bfbc69dd9ca74ffdaf2f6a9bed5a91d4a7bf46e07f1332cc3379e",
+        "records_total": 3036,
+        "evaluable": 2891,
+        "satisfied_at_selected_3sig": 2891,
+        "abstained": 145,
+        "is_independent_test": false
+      }
+    },
+    {
+      "id": "B6-FIN-001",
+      "domain": "finance",
+      "dataset_id": "sec-companyfacts-320193",
+      "status": "scope_pending",
+      "scoring_eligible": false,
+      "metadata_scope": "external_taxonomy_pending",
+      "columns": [
+        "Assets",
+        "LiabilitiesAndStockholdersEquity"
+      ],
+      "semantic_statement": "Assets equal total LiabilitiesAndStockholdersEquity when complete, aligned balance-sheet facts are reported in the same accounting context.",
+      "reference_rule": {
+        "schema_version": "metaverify-exec-v0.1",
+        "id": "B6-FIN-001",
+        "dataset_id": "sec-companyfacts-320193",
+        "assertions": [
+          {
+            "left": {
+              "column": "Assets"
+            },
+            "op": "eq",
+            "right": {
+              "column": "LiabilitiesAndStockholdersEquity"
+            }
+          }
+        ],
+        "context_keys": [
+          "entity",
+          "reporting_date",
+          "accounting_scope",
+          "currency",
+          "accession"
+        ],
+        "evidence_status": "scope_and_column_availability_unconfirmed"
+      },
+      "applicability": "Same entity, instant reporting date, currency, consolidated accounting scope and filing accession; only if both concepts exist.",
+      "evidence": [
+        {
+          "url": "https://xbrl.us/data-rule/dqc_0015-le-V2pr/",
+          "kind": "standard_taxonomy_definition",
+          "supports": "LiabilitiesAndStockholdersEquity includes the liabilities and all equity, including noncontrolling interests."
+        },
+        {
+          "url": "https://www.sec.gov/search-filings/edgar-application-programming-interfaces",
+          "kind": "official_api_documentation",
+          "supports": "Companyfacts facts have taxonomy/tag and units; this does not by itself prove a per-context balance-sheet identity."
+        }
+      ],
+      "unresolved": [
+        "The right-hand taxonomy concept is not among six summary fields in current SEC metadata; confirm availability in each raw filing.",
+        "Implement trustworthy accession/date/unit/scope grouping before evaluation.",
+        "Independent accounting adjudication still required; do not infer from LLM proposal."
+      ]
+    },
+    {
+      "id": "B6-FIN-002",
+      "domain": "finance",
+      "dataset_id": "sec-companyfacts-320193",
+      "status": "excluded",
+      "scoring_eligible": false,
+      "metadata_scope": "external_taxonomy_pending",
+      "columns": [
+        "Assets",
+        "Liabilities",
+        "StockholdersEquity"
+      ],
+      "semantic_statement": "Assets = Liabilities + parent-only StockholdersEquity is not a universal consolidated identity.",
+      "reference_rule": null,
+      "applicability": "Only with separately verified treatment of noncontrolling/redeemable equity; this form is excluded.",
+      "evidence": [
+        {
+          "url": "https://xbrl.us/data-rule/dqc_0015-le-V2pr/",
+          "kind": "standard_taxonomy_definition",
+          "supports": "Total liabilities/equity concept includes noncontrolling interests; parent-only equity may omit them."
+        }
+      ],
+      "unresolved": [
+        "No safe global identity from these three concepts alone."
+      ],
+      "exclusion_reason": "Luna B5 proposal omits context and excludes potential noncontrolling/redeemable equity components."
+    },
+    {
+      "id": "B6-MAN-001",
+      "domain": "manufacturing",
+      "dataset_id": "ai4i-2020",
+      "status": "provisional_source_supported",
+      "scoring_eligible": false,
+      "metadata_scope": "repository_columns",
+      "columns": [
+        "TWF",
+        "HDF",
+        "PWF",
+        "OSF",
+        "RNF",
+        "Machine failure"
+      ],
+      "semantic_statement": "If any one of the five mode labels is 1, Machine failure is 1. (One-way implication; converse not imposed.)",
+      "reference_rule": {
+        "schema_version": "metaverify-exec-v0.1",
+        "id": "B6-MAN-001",
+        "dataset_id": "ai4i-2020",
+        "when": {
+          "any": [
+            {
+              "column": "TWF",
+              "op": "eq",
+              "value": 1
+            },
+            {
+              "column": "HDF",
+              "op": "eq",
+              "value": 1
+            },
+            {
+              "column": "PWF",
+              "op": "eq",
+              "value": 1
+            },
+            {
+              "column": "OSF",
+              "op": "eq",
+              "value": 1
+            },
+            {
+              "column": "RNF",
+              "op": "eq",
+              "value": 1
+            }
+          ]
+        },
+        "assertions": [
+          {
+            "left": {
+              "column": "Machine failure"
+            },
+            "op": "eq",
+            "right": {
+              "constant": "1"
+            }
+          }
+        ],
+        "context_keys": [],
+        "evidence_status": "source_documented_label_generation_rule_provisional"
+      },
+      "applicability": "Same AI4I record with all required mode-label fields available; binary labels interpreted as 0/1.",
+      "evidence": [
+        {
+          "url": "https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset",
+          "kind": "dataset_generation_methodology",
+          "supports": "UCI describes machine failure as set when at least one enumerated failure mode is true, and lists the failure indicators."
+        }
+      ],
+      "unresolved": [
+        "Dataset is synthetic and has already been explored in development; not an untouched external test.",
+        "Independently check label semantics with a second reviewer and verify source version."
+      ]
+    },
+    {
+      "id": "B6-CYB-001",
+      "domain": "cybersecurity",
+      "dataset_id": "cic-ids2017",
+      "status": "provisional_source_supported",
+      "scoring_eligible": false,
+      "metadata_scope": "repository_columns",
+      "columns": [
+        " Total Fwd Packets",
+        " Fwd Packet Length Min",
+        " Fwd Packet Length Mean",
+        " Fwd Packet Length Max"
+      ],
+      "semantic_statement": "For flows containing at least one forward packet, forward packet minimum <= mean <= maximum.",
+      "reference_rule": {
+        "schema_version": "metaverify-exec-v0.1",
+        "id": "B6-CYB-001",
+        "dataset_id": "cic-ids2017",
+        "when": {
+          "column": " Total Fwd Packets",
+          "op": "gt",
+          "value": 0
+        },
+        "assertions": [
+          {
+            "left": {
+              "column": " Fwd Packet Length Min"
+            },
+            "op": "lte",
+            "right": {
+              "column": " Fwd Packet Length Mean"
+            }
+          },
+          {
+            "left": {
+              "column": " Fwd Packet Length Mean"
+            },
+            "op": "lte",
+            "right": {
+              "column": " Fwd Packet Length Max"
+            }
+          }
+        ],
+        "context_keys": [],
+        "evidence_status": "derived_mathematical_order_from_documented_feature_definitions"
+      },
+      "applicability": "Positive forward packet count and finite, matched packet-length statistics for the same flow; skip zero-packet flows.",
+      "evidence": [
+        {
+          "url": "https://github.com/ahlashkari/CICFlowMeter/blob/master/ReadMe.txt",
+          "kind": "feature_definition",
+          "supports": "CICFlowMeter describes minimum, maximum and mean packet length for the forward direction."
+        },
+        {
+          "url": "https://github.com/ahlashkari/CICFlowMeter/blob/master/src/main/java/cic/cs/unb/ca/jnetpcap/BasicFlow.java",
+          "kind": "reference_implementation",
+          "supports": "Flow feature generation computes forward min/mean/max from the same forward-packet statistics."
+        }
+      ],
+      "unresolved": [
+        "Exact CSV header aliases and source processing version must be checked for retained CIC-IDS2017 mirror.",
+        "Data corruption is not established from expression mismatch without independent row-level adjudication."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "protocol_id": "b6-frozen-protocol-v1",
+  "frozen_date_utc": "2026-11-06",
+  "baseline_git_commit": "b68e3be3c8ab832a6b550545121187970b0a7672",
+  "scope": "Pre-registered evaluation design; no unseen-data results or performance claims.",
+  "primary_question": "Does evidence-aware context gating improve rule precision and actionable defect detection at reported coverage over data-only and prompt-only baselines?",
+  "source_leakage_policy": [
+    "Freeze source/reference catalogue and model prompts before independent test acquisition.",
+    "Do not include reference-rule equations in the LLM metadata input bundle (only independently allowed attribute descriptions).",
+    "Use the same metadata fields, model budgets and temperature/reasoning settings for each model comparison.",
+    "Do not tune tolerances, rounding, thresholds, or policies using a purported held-out test set.",
+    "Retain raw LLM outputs, prompt hashes, review decisions, reference-source links and sampling seeds.",
+    "Any change after unblinding must increment protocol version and label affected results exploratory."
+  ],
+  "reference_adjudication": {
+    "required_independent_reviewers": 2,
+    "disagreement_resolution": "adjudicator checks official source and full applicability conditions; consensus and raw votes retained",
+    "must_record": [
+      "exact expression",
+      "required context",
+      "source/evidence URL",
+      "scope exclusions",
+      "version/source snapshot",
+      "rounding/units",
+      "reviewer_decision",
+      "unresolved_conflicts"
+    ],
+    "final_gold_requires": "Two independent reviews with conflict resolution and locked reference snapshot. Provisional entries cannot enter gold-rule precision denominator."
+  },
+  "data_holds": {
+    "healthcare": {
+      "development": "NHANES 2017-2018 GLU_J: all 3036 rows previously inspected; not a blind test.",
+      "confirmatory": "Choose an untouched non-overlapping NHANES cycle such as 2015-2016 GLU_I; freeze conversion/precision interpretation before inspecting values; document method changes."
+    },
+    "finance": {
+      "development": "Ten SEC companyfacts and the examined 2024-2025 contexts are exploratory; not untouched confirmation.",
+      "confirmatory": "Select unseen CIKs before inspecting values. Match filing accession, balance date, taxonomy/tag, currency, unit and consolidation scope; avoid duplicate fact-frames."
+    },
+    "manufacturing": {
+      "development": "AI4I 2020 (10,000 synthetic observations) has already been inspected.",
+      "confirmatory": "If only AI4I is available, report internal held-out analysis without claiming new external data; external generalisation needs a separately sourced manufacturing dataset."
+    },
+    "cybersecurity": {
+      "development": "Previously sampled CIC-IDS2017 flow files have been inspected.",
+      "confirmatory": "Partition by capture/day/source group when available; check no shared flows across splits; if group provenance absent, mark confirmation limited."
+    }
+  },
+  "reference_inclusion": {
+    "provisional_source_supported": "Not scored until independent review",
+    "partially_supported": "Excluded from final gold scoring",
+    "scope_pending": "Excluded from final gold scoring",
+    "excluded": "Excluded always"
+  },
+  "methods_to_compare": [
+    "MetaVerify B5+B5.1 evidence gate (frozen revision)",
+    "metadata-only deterministic discovery (existing B3/rule_discovery)",
+    "data-only range/association heuristic with matched opportunity budget",
+    "LLM proposal without evidence/context gate (ablation)",
+    "LLM proposal with B4 structural compilation only (ablation)"
+  ],
+  "outcomes": {
+    "rule_precision": "# independently adjudicated correct proposed rules / # proposed rules assigned a correctness judgement; unresolved/abstained proposals are separately reported, not silently dropped.",
+    "proposal_coverage": "# valid proposals produced / # predeclared discovery opportunities; explicitly report proposals without available reference status.",
+    "verifier_coverage": "(satisfied + violated) / (satisfied + violated + abstained) among applicable rows; condition-false rows are not_applicable and excluded from denominator.",
+    "abstention_rate": "abstained / eligible rows; report by evidence, missing context, missing values and unresolved parameter.",
+    "injected_defect_precision": "TP / (TP + FP) for predefined injected defect labels; undefined if denominator zero.",
+    "injected_defect_recall": "TP / (TP + FN) among injected defects eligible for evaluation; report unevaluable injections separately.",
+    "false_positive_rate_clean": "FP / (FP + TN) on independently reviewed clean eligible rows; undefined if denominator zero.",
+    "runtime": "wall-clock median and p95 per method over repeated fixed-hardware runs; record dataset size and platform.",
+    "cost": "API input/output token counts and nominal dollar costs separated from local compute and review time."
+  },
+  "injection_controls": [
+    "Inject only errors guaranteed to violate a qualified rule within its applicability scope.",
+    "Use deterministic mutation seeds, mutation families, sample identifiers and positive/negative controls.",
+    "Do not equate injected-error recall with real natural-defect precision.",
+    "Keep no-op/correct-preserving mutations and context-mismatch controls."
+  ],
+  "reports_required": [
+    "reference_rule_id",
+    "source_snapshot_hash",
+    "dataset_split_key",
+    "candidate_origin",
+    "rule_status",
+    "rule_proposal_hash",
+    "reviewer_decisions",
+    "candidate_count",
+    "matched_reference_count",
+    "eligible_rows",
+    "satisfied",
+    "violated",
+    "abstained",
+    "not_applicable",
+    "reason_counts",
+    "TP",
+    "FP",
+    "FN",
+    "TN",
+    "cost_usd_estimated",
+    "elapsed_seconds"
+  ],
+  "frozen_before_future_paid_comparison": true,
+  "caveat": "Protocol is pinned; reference catalogue will be expanded under version control. No result is currently a final, independently reviewed four-domain gold benchmark."
+}
