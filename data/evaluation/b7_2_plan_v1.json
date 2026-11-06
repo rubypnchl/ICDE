@@ -1,0 +1,27 @@
+{
+  "study_id": "b7_2_four_domain_pair_screen_v1",
+  "parent_protocol_id": "b6-frozen-protocol-v1",
+  "baseline_reference_commit": "58d1d80",
+  "scope": "retrospective_previously_inspected_metadata_not_unseen",
+  "domain_order": ["finance", "healthcare", "manufacturing", "cybersecurity"],
+  "metadata_paths": {
+    "finance": "data/metadata/sec-companyfacts-0000320193.json",
+    "healthcare": "data/metadata/nhanes-glu-j.json",
+    "manufacturing": "data/metadata/ai4i-2020.json",
+    "cybersecurity": "data/metadata/cic-ids2017.json"
+  },
+  "max_candidates_per_method_per_domain": 12,
+  "fixed_seed": 72026,
+  "methods": ["token_similarity_rank", "seeded_uniform_random_pairs"],
+  "ablation": "Mask documentary descriptions during token-rank selection; no data modifications and no claimed accuracy metrics",
+  "gold_labels_available": false,
+  "model_calls_allowed": false,
+  "separate_optional_data_only_miner": "python -m src.rule_discovery --output data/evaluation/b7_2_existing_dataonly_discovery.json",
+  "limits": [
+    "This is a retrospective ranking of column pairs, not semantic constraint discovery or MetaVerify-versus-published-system accuracy.",
+    "No independently reviewed labels or held-out datasets.",
+    "Candidate budgets match within domains but domains have unequal potential numeric pairs.",
+    "Do not interpret random or lexically similar pairs as wrong/correct without real reviewer decisions.",
+    "The optional existing miner applies only to AI4I and SEC and uses source rows (different information budget)."
+  ]
+}
