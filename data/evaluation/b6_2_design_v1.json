@@ -1,0 +1,24 @@
+{
+  "study_id": "b6_2_development_rule_checker_and_injections_v1",
+  "parent_protocol_id": "b6-frozen-protocol-v1",
+  "baseline_reference_commit": "1d0bed572f1e37e0f306bb81abe66bb538b9e645",
+  "reference_rule_ids": {"manufacturing": "B6-MAN-001", "cybersecurity": "B6-CYB-001"},
+  "source_artifact": "data/evaluation/b6_1_real_baselines.json",
+  "n_satisfied_source_rows_per_domain": 64,
+  "sample_seed": {"manufacturing": 628401, "cybersecurity": 628402},
+  "mutation_policy": {
+    "manufacturing": "On originally satisfied rule-eligible row, set Machine failure to 0 without changing active failure modes",
+    "cybersecurity": "On originally satisfied positive-forward-count row, set Fwd Packet Length Mean to Max + 1",
+    "controls": ["unaltered satisfying row", "condition-false copy", "missing required field copy"]
+  },
+  "methods": ["frozen B3 generic verifier with B6.1 invalid-value guards", "independently written simple same-rule checker"],
+  "adjudication": "Provide blank two-reviewer worksheet; do not populate independent opinions or gold status automatically",
+  "limits": [
+    "Development datasets were inspected before this study",
+    "Source-supported reference rules remain provisional, not gold",
+    "Injected violations are constructed from the same rule; perfect detection is circular, not evidence of natural-defect precision",
+    "Identical explicit rules give same-rule execution baselines no discovery advantage",
+    "RNF and reverse-implication cases need source-version and human review",
+    "No original CSV, protocol or reference catalogue may be modified"
+  ]
+}
