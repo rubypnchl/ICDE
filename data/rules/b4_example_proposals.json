@@ -1,0 +1,52 @@
+{
+  "note": "ALL are HAND-AUTHORED STRUCTURAL FIXTURES, not automatically extracted LLM ASTs or independently validated rules.",
+  "examples": [
+    {
+      "proposal_version": "metaverify-proposal-v0.1",
+      "id": "health-glucose-proposal-structured-demo",
+      "dataset_id": "nhanes-2017-2018-glu-j",
+      "origin": "hand_authored_translation_of_luna_hypothesis_not_llm_structured_output",
+      "assertions": [{"left": {"column": "LBDGLUSI"}, "op": "eq", "right": {"multiply": [{"column": "LBXGLU"}, {"parameter": "glucose_factor"}]}, "round_right": {"parameter": "glucose_rounding"}}],
+      "context_keys": []
+    },
+    {
+      "proposal_version": "metaverify-proposal-v0.1",
+      "id": "finance-simple-balance-sheet-demo",
+      "dataset_id": "sec-companyfacts",
+      "origin": "hand_authored_fixture_not_llm_structured_output",
+      "assertions": [{"left": {"column": "Assets"}, "op": "eq", "right": {"add": [{"column": "Liabilities"}, {"column": "StockholdersEquity"}]}}],
+      "context_keys": ["entity", "reporting_date", "accounting_scope", "currency"]
+    },
+    {
+      "proposal_version": "metaverify-proposal-v0.1",
+      "id": "cyber-packet-order-demo",
+      "dataset_id": "cic-ids2017",
+      "origin": "hand_authored_fixture_not_llm_structured_output",
+      "when": {"column": " Total Fwd Packets", "op": "gt", "value": {"parameter": "zero"}},
+      "assertions": [
+        {"left": {"column": " Fwd Packet Length Min"}, "op": "lte", "right": {"column": " Fwd Packet Length Mean"}},
+        {"left": {"column": " Fwd Packet Length Mean"}, "op": "lte", "right": {"column": " Fwd Packet Length Max"}}
+      ],
+      "context_keys": []
+    },
+    {
+      "proposal_version": "metaverify-proposal-v0.1",
+      "id": "manufacturing-torque-demo",
+      "dataset_id": "ai4i-2020",
+      "origin": "hand_authored_fixture_not_llm_structured_output",
+      "when": {"column": "Type", "op": "eq", "value": "L"},
+      "assertions": [{"left": {"column": "Torque [Nm]"}, "op": "gte", "right": {"parameter": "zero"}}],
+      "context_keys": []
+    }
+  ],
+  "registrations": {
+    "nhanes-2017-2018-glu-j:glucose_factor": {
+      "kind": "number", "value": "0.05551", "origin": "documented_reference", "source_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/GLU_J.htm", "rationale": "Conversion multiplier reported in CDC documentation; catalogue is curator supplied and not automatically fact-checked"
+    },
+    "nhanes-2017-2018-glu-j:glucose_rounding": {
+      "kind": "rounding", "value": {"mode": "significant_figures", "digits": 3}, "origin": "empirical_same_dataset", "rationale": "Selected using this same GLU_J snapshot; not an independently established reference rule"
+    },
+    "cic-ids2017:zero": {"kind": "number", "value": "0", "origin": "fixture_only", "rationale": "Demonstration threshold only, not adjudicated packet-feature semantics"},
+    "ai4i-2020:zero": {"kind": "number", "value": "0", "origin": "fixture_only", "rationale": "Illustrative nonnegative threshold, not independently validated against documentation"}
+  }
+}
