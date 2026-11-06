@@ -1,0 +1,23 @@
+{
+  "study_id": "b7_1_saved_pilot_opportunity_audit_v1",
+  "parent_protocol_id": "b6-frozen-protocol-v1",
+  "baseline_reference_commit": "67f358509551b18b47838abff4974396e661820b",
+  "opportunity_domains": ["healthcare", "finance"],
+  "input_paths": {
+    "input_bundles": "data/llm_pilot/structured/inputs.json",
+    "llm_reports": {
+      "healthcare": "data/llm_pilot/structured/luna_healthcare.json",
+      "finance": "data/llm_pilot/structured/luna_finance.json"
+    },
+    "posthoc_gate": "data/evaluation/b5_1_evidence_review.json"
+  },
+  "methods": {
+    "simple_metadata_heuristic": "generic normalized-description and differing-parenthesized-unit pairing; unresolved unit-conversion hypothesis only",
+    "llm": "read previously saved B5 Luna typed proposals, B4 statuses and B5.1 posthoc decisions; do not re-run"
+  },
+  "max_hypotheses_per_opportunity": 2,
+  "previously_observed_pilot": true,
+  "score_semantic_rule_precision": false,
+  "frozen_protocol_unchanged": true,
+  "scientific_caveat": "Retrospective analysis of two manually focused B5 inputs. No independent gold, no new API calls, no published-baseline reproduction and no model advantage claim."
+}

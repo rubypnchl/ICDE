@@ -1,0 +1,91 @@
+\documentclass[conference]{IEEEtran}
+\usepackage{amsmath,amssymb,booktabs,tabularx,array}
+\usepackage[hidelinks]{hyperref}
+\usepackage{url}
+
+\title{MetaVerify: Evidence-Aware Hypothesis Compilation and Contextual Verification of Dataset Metadata}
+\author{\IEEEauthorblockN{Author names to be confirmed before submission}
+\IEEEauthorblockA{Affiliations and ORCIDs to be inserted by the authors}}
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Metadata-informed data quality checks are challenging when source definitions are incomplete, reporting contexts differ, or machine-generated candidate constraints are not independently justified. We investigate MetaVerify, a research prototype that separates candidate generation from typed compilation, applicability checks, executable verification, and source adjudication. Its implementation includes a restricted expression language and auditable abstention behaviour. In development evaluations, a provisional manufacturing implication was satisfied by 330 of 348 applicable synthetic AI4I records, with 18 mismatches; nine reverse-direction discrepancies were separately observed. A forward-packet length ordering relation held on 50,000 sampled CIC-IDS2017 flows. Controlled rule-breaking injections validate execution but do not establish semantic discovery accuracy. A two-opportunity saved-model pilot illustrates the importance of blocking unresolved conversion parameters and incomplete financial reporting context. We present this evidence as a preliminary system characterization, not as a completed independently adjudicated superiority benchmark. Future evaluation must compare candidate discovery and context-aware acceptance against matched baselines on independently qualified reference constraints.
+\end{abstract}
+
+\begin{IEEEkeywords}
+data quality, metadata, integrity constraints, verification, evidence provenance, abstention
+\end{IEEEkeywords}
+
+\section{Introduction}
+Database-quality checks are often implemented as explicit constraints whose semantics are supplied by domain experts. Automatic data profiling and integrity-constraint synthesis attempt to reduce this reliance, yet observed correlations alone need not be authoritative requirements, and superficially plausible formulas can fail under real-world context and reporting conventions. Metanome supports extensible profiling algorithms; Auto-Test proposes learned semantic-domain constraints; Guardrail synthesizes constraints from noisy tables; and Deequ provides large-scale validation infrastructure~\cite{metanome,chen2025autotest,ma2025guardrail,schelter2018deequ}. These approaches address overlapping but not identical tasks; published-method comparisons cannot be substituted with hand-coded checkers executing our own rules.
+
+We study a narrower question: \emph{can a metadata-derived hypothesis be compiled to an executable check while explicitly distinguishing syntactic feasibility, source evidence, context compatibility, and independent rule validity?} We implemented a typed rule compiler and a generic verifier, together with explicit status and abstention tracking. The current system is not yet shown to discover more correct rules than prior methods.
+
+\textbf{Current contributions, with scope.} (i) A restricted, auditable hypothesis-to-constraint processing pipeline; (ii) reproducible development-only evaluations in manufacturing and cybersecurity, including a same-rule deterministic checker and controlled negative controls; (iii) a provenance-preserving independent-review protocol that keeps disputed constraints outside the gold set. The third item is a \emph{process}, not completed human adjudication.
+
+\section{Problem Setting}
+Let $M$ denote schema metadata and documentary passages, $D$ a dataset, and $H(M)$ a set of proposed relational hypotheses. A candidate $h\in H(M)$ may have an application predicate $p_h$, context requirements $c_h$, and one or more numeric/Boolean assertions $a_h$. The decision for row $r$ must distinguish
+\begin{equation}
+V(h,r)\in\{\mathrm{sat},\mathrm{viol},\mathrm{abstain},\mathrm{n/a}\}.
+\end{equation}
+A compilation success establishes only syntactic admissibility and parameter resolution, not that $h$ is true or well justified. A rule may be \emph{blocked} if the source is inadequate or necessary financial scope, provenance, conversion factors, or measurement precision is unresolved. A violated expression is a \emph{candidate discrepancy}, not an independently labelled data defect.
+
+\section{MetaVerify Prototype}
+\subsection{Rule construction and safe compilation}
+The existing pipeline parses provenance-bearing metadata from dataset/API snapshots, derives preliminary candidate relationships, and accepts typed structured proposals. The restricted AST supports column references, named numeric parameters, addition, subtraction, multiplication, and comparison predicates. Literal model-supplied numeric constants are rejected; named numeric parameters require curator-supplied provenance before compilation. Expressions are interpreted without evaluating arbitrary generated Python code.
+
+\subsection{Evidence and applicability checks}
+The saved healthcare proposal represented the fasting glucose unit relationship with an unresolved multiplier and rounding parameter, and was initially blocked at compilation. A later curator-provided registration enabled structural compilation; however, the selected three-significant-figure formatting was calibrated on the same development snapshot, so it is \emph{not} independently verified. The saved finance proposal expressed $\mathrm{Assets}=\mathrm{Liabilities}+\mathrm{StockholdersEquity}$ without requisite filing contexts and omitted potential noncontrolling interests. An explicitly \emph{post-hoc} evidence policy blocked this candidate. The policy was developed after viewing model outputs and must not be presented as a prospective benchmark.
+
+\subsection{Four-state verification and reference review}
+A generic verifier returns satisfied, violated, abstained (e.g., missing/nonfinite values), or not applicable (false antecedent). Candidate references are stored in a versioned catalogue with source URLs, unresolved semantic issues and preliminary eligibility status. For independently defensible gold scoring, two human reviewers are expected to assess rule applicability and relevant source/version evidence; current review forms contain no completed decisions.
+
+\section{Development Evaluation}
+\subsection{Datasets and reference status}
+The retained manufacturing source is the \emph{synthetic} 10,000-row UCI AI4I 2020 dataset~\cite{uci2020ai4i}. The cybersecurity source is a fixed-seed reservoir of 50,000 flows drawn from two mirrored CIC-IDS2017 Friday-afternoon CSVs, not the entire original corpus. Both were previously inspected; neither forms an untouched holdout. A healthcare NHANES GLU\_J snapshot and SEC Company Facts were used for earlier feasibility pilots, with no independently adjudicated executable reference yet.
+
+\begin{table}[t]
+\caption{Previously observed B6.1 development agreement (\emph{not} gold accuracy).}
+\label{tab:b61}
+\centering\small
+\begin{tabular}{lrr}
+\toprule
+Outcome & AI4I & CIC subset\\
+\midrule
+Total rows & 10,000 & 50,000\\
+Satisfied & 330 & 50,000\\
+Violated & 18 & 0\\
+Abstained & 0 & 0\\
+Not applicable & 9,652 & 0\\
+Eligible rows & 348 & 50,000\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Manufacturing candidate discrepancies}
+The provisional manufacturing rule asserts only that a mode flag among TWF, HDF, PWF, OSF, and RNF implies the overall machine-failure label. All 18 forward disagreements are RNF-only; nine records have the reverse pattern (overall failure 1, all mode flags zero) and are \emph{not} violations of this one-way rule. The published UCI description and the recorded label configurations require independent semantic and version adjudication before any of these 27 discrepancies can be labelled defects. The frozen reference catalogue was not changed after these observations.
+
+\subsection{Cybersecurity and controlled probes}
+The provisional cybersecurity check requires a positive forward-packet count and $\mathrm{min}\leq\mathrm{mean}\leq\mathrm{max}$ for the corresponding forward-packet length statistics. The observed 50,000/50,000 agreement verifies this candidate expression over the retained sample, not source-generation semantics or defect-detection capability. B6.2 additionally used 64 original satisfying rows per domain and 64 corresponding mutated copies plus applicability/missingness controls. Both the generic verifier and a separate checker identified all constructed violations. This is an intentionally \emph{circular execution sanity check}: the mutation was designed to break the very rule being checked. No superiority claim follows.
+
+\subsection{Saved metadata-only pilot comparison}
+B7.1 records a retrospective comparison over only two manually focused metadata opportunities: healthcare (four passages) and finance (three passages). A simple generic description-based pair matcher proposes uncalibrated paired-unit hypotheses; the stored Luna output contains one candidate per opportunity. Compiler/gate statuses are reported verbatim without independent semantic labels. This is a \emph{small feasibility audit}; it is neither a true independent constraint-discovery benchmark nor a reproduction of Auto-Test, Guardrail, or Metanome. \textbf{B7.1 result values must be inserted only after the frozen design is executed and verified.}
+
+\section{Limitations and Required Experiments}
+\begin{enumerate}
+\item \textbf{Independent reference truth.} Complete two genuinely independent human reviews, source-version resolution, adjudicator decisions and eligibility criteria. Until then, semantic rule precision is undefined.
+\item \textbf{Matched discovery baselines.} Use a larger, predeclared opportunity pool; compare metadata-only heuristics, data-only profiling, saved/controlled LLM hypotheses, and available published baseline implementations with clearly matched inputs, candidate budgets, and compute costs. A hand-coded checker is not a discovery baseline.
+\item \textbf{Prospective test sources.} Add independently selected and uninspected datasets or disjoint source groups; separate natural defect labels, controlled mutations and missing-data/context-negative controls.
+\item \textbf{Ablation and costs.} Measure how removal of evidence, context gating, and abstention affects incorrect rule acceptance, precision, coverage and compute; report uncertainty and repeated timing measurements.
+\end{enumerate}
+
+\section{Conclusion}
+The present evidence supports the construction and reproducible execution of a provenance-aware constraint-verification pipeline. It does not establish that the pipeline learns more correct constraints or identifies more genuine defects than simpler or published systems. The next scientific milestone is an independently reviewed reference set and a matched, prospective comparison of candidate discovery and acceptance.
+
+\section*{AI-Generated Content Acknowledgement}
+This draft was prepared with generative-AI writing and coding assistance. The authors must review all statements, experiments, source attributions, and code outputs before submission and replace this acknowledgement with the disclosure required by the final ICDE 2027 policy.
+
+\bibliographystyle{IEEEtran}
+\bibliography{references}
+\end{document}
