@@ -1,0 +1,2077 @@
+{
+  "entities": [
+    {
+      "ablation_methods": {
+        "naive": "minimum semantically labeled one-equity expression; no empirical-fit ranking",
+        "semantic_evidence": "pre-evaluation US-GAAP component definitions require complete parent/NCI and disclosed temporary-equity composition; generic identity evidence is ignored; abstains on incomplete or ambiguous components",
+        "statistical_only": "highest 2020-2023 match rate, then minimum complexity; evidence ignored"
+      },
+      "candidate_count": 5,
+      "discovery_contexts_2020_2023": 175,
+      "entity": 19617,
+      "evaluation_2024_2025": {
+        "naive": {
+          "abstentions": 24,
+          "classification": "documented",
+          "coverage": 0.38461538461538464,
+          "documented_identity_contexts": 15,
+          "eligible_contexts": 39,
+          "evaluated_contexts": 15,
+          "evaluation_runtime_seconds": 0.00015360000543296337,
+          "evidence": {
+            "authority": "US Securities and Exchange Commission",
+            "id": "SEC-BALANCE-001",
+            "requirements": [
+              "same entity",
+              "same reporting date",
+              "same accounting scope",
+              "same currency"
+            ],
+            "source_url": "https://www.sec.gov/file/balance-sheet-building-blocks"
+          },
+          "false_alarms_against_documented_identity": 0,
+          "selected_formula": {
+            "assets": "Assets",
+            "equity_terms": [
+              "StockholdersEquity"
+            ],
+            "liabilities": "Liabilities",
+            "unit": "USD"
+          },
+          "selection_runtime_seconds": 0.0023459999938495457,
+          "total_runtime_seconds": 0.002499599999282509,
+          "violations": 0
+        },
+        "semantic_evidence": {
+          "abstentions": 78,
+          "classification": "abstain_no_candidate",
+          "coverage": 0.0,
+          "documented_identity_contexts": 0,
+          "eligible_contexts": 78,
+          "evaluated_contexts": 0,
+          "evaluation_runtime_seconds": 8.00006091594696e-07,
+          "evidence": null,
+          "false_alarms_against_documented_identity": 0,
+          "selected_formula": null,
+          "selection_runtime_seconds": 0.006648600043263286,
+          "total_runtime_seconds": 0.006649400049354881,
+          "violations": 0
+        },
+        "statistical_only": {
+          "abstentions": 24,
+          "classification": "documented",
+          "coverage": 0.38461538461538464,
+          "documented_identity_contexts": 15,
+          "eligible_contexts": 39,
+          "evaluated_contexts": 15,
+          "evaluation_runtime_seconds": 0.00013450003461912274,
+          "evidence": {
+            "authority": "US Securities and Exchange Commission",
+            "id": "SEC-BALANCE-001",
+            "requirements": [
+              "same entity",
+              "same reporting date",
+              "same accounting scope",
+              "same currency"
+            ],
+            "source_url": "https://www.sec.gov/file/balance-sheet-building-blocks"
+          },
+          "false_alarms_against_documented_identity": 0,
+          "selected_formula": {
+            "assets": "Assets",
+            "equity_terms": [
+              "StockholdersEquity"
+            ],
+            "liabilities": "Liabilities",
+            "unit": "USD"
+          },
+          "selection_runtime_seconds": 0.006616200029384345,
+          "total_runtime_seconds": 0.0067507000640034676,
+          "violations": 0
+        }
+      },
+      "evaluation_contexts_2024_2025": 78,
+      "ranked_candidates": [
+        {
+          "classification": "documented",
+          "complexity": 2,
+          "discovery": {
+            "contexts": 32,
+            "match_rate": 1.0,
+            "matches": 32
+          },
+          "evidence": {
+            "authority": "US Securities and Exchange Commission",
+            "id": "SEC-BALANCE-001",
+            "requirements": [
+              "same entity",
+              "same reporting date",
+              "same accounting scope",
+              "same currency"
+            ],
+            "source_url": "https://www.sec.gov/file/balance-sheet-building-blocks"
+          },
+          "expression": {
+            "assets": "Assets",
+            "equity_terms": [
+              "StockholdersEquity"
+            ],
+            "liabilities": "Liabilities",
+            "unit": "USD"
+          },
+          "rank": 1,
+          "semantic_score": 2
+        },
+        {
+          "classification": "statistically_discovered",
+          "complexity": 2,
+          "discovery": {
+            "contexts": 32,
+            "match_rate": 0.0,
+            "matches": 0
+          },
+          "evidence": null,
+          "expression": {
+            "assets": "Assets",
+            "equity_terms": [
+              "LiabilitiesAndStockholdersEquity"
+            ],
+            "liabilities": "Liabilities",
+            "unit": "USD"
+          },
+          "rank": 2,
+          "semantic_score": 1
+        },
+        {
+          "classification": "statistically_discovered",
+          "complexity": 2,
+          "discovery": {
+            "contexts": 32,
+            "match_rate": 0.0,
+            "matches": 0
+          },
+          "evidence": null,
+          "expression": {
+            "assets": "Assets",
+            "equity_terms": [
+              "EquitySecuritiesWithoutReadilyDeterminableFairValueAmount"
+            ],
+            "liabilities": "Liabilities",
+            "unit": "USD"
+          },
+          "rank": 3,
+          "semantic_score": 1
+        },
+        {
+          "classification": "statistically_discovered",
+          "complexity": 2,
+          "discovery": {
+            "contexts": 16,
+            "match_rate": 0.0,
+            "matches": 0
+          },
+          "evidence": null,
+          "expression": {
+            "assets": "Assets",
+            "equity_terms": [
+              "EquitySecuritiesWithoutReadilyDeterminableFairValueUpwardPriceAdjustmentCumulativeAmount"
+            ],
+            "liabilities": "Liabilities",
+            "unit": "USD"
+          },
+          "rank": 4,
+          "semantic_score": 1
+        },
+        {
+          "classification": "statistically_discovered",
+          "complexity": 2,
+          "discovery": {
+            "contexts": 16,
+            "match_rate": 0.0,
+            "matches": 0
+          },
+          "evidence": null,
+          "expression": {
+            "assets": "Assets",
+            "equity_terms": [
+              "EquitySecuritiesWithoutReadilyDeterminableFairValueDownwardPriceAdjustmentCumulativeAmount"
+            ],
+            "liabilities": "Liabilities",
+            "unit": "USD"
+          },
+          "rank": 5,
+          "semantic_score": 1
+        }
+      ],
+      "runtime_seconds": {
+        "naive": 0.002499599999282509,
+        "semantic_evidence": 0.006649400049354881,
+        "statistical_only": 0.0067507000640034676
+      },
+      "shared_heldout_context_count": 78,
+      "source_file": "data/originals/sec/companyfacts/0000019617_jpmorgan.json",
+      "status": "ok"
+    },
+    {
+      "ablation_methods": {
+        "naive": "minimum semantically labeled one-equity expression; no empirical-fit ranking",
+        "semantic_evidence": "pre-evaluation US-GAAP component definitions require complete parent/NCI and disclosed temporary-equity composition; generic identity evidence is ignored; abstains on incomplete or ambiguous components",
+        "statistical_only": "highest 2020-2023 match rate, then minimum complexity; evidence ignored"
+      },
+      "candidate_count": 11,
+      "discovery_contexts_2020_2023": 186,
+      "entity": 34088,
+      "evaluation_2024_2025": {
+        "naive": {
+          "abstentions": 11,
+          "classification": "documented",
+          "coverage": 0.5416666666666666,
+          "documented_identity_contexts": 0,
+          "eligible_contexts": 24,
+          "evaluated_contexts": 13,
+          "evaluation_runtime_seconds": 9.599997429177165e-05,
+          "evidence": {
+            "authority": "US Securities and Exchange Commission",
+            "id": "SEC-BALANCE-001",
+            "requirements": [
+              "same entity",
+              "same reporting date",
+              "same accounting scope",
+              "same currency"
+            ],
+            "source_url": "https://www.sec.gov/file/balance-sheet-building-blocks"
+          },
+          "false_alarms_against_documented_identity": 0,
+          "selected_formula": {
+            "assets": "Assets",
+            "equity_terms": [
+              "StockholdersEquity"
+            ],
+            "liabilities": "Liabilities",
+            "unit": "USD"
+          },
+          "selection_runtime_seconds": 0.0018814000068232417,
+          "total_runtime_seconds": 0.0019773999811150134,
+          "violations": 13
+        },
+        "semantic_evidence": {
+          "abstentions": 11,
+          "classification": "taxonomy_component_evidence",
+          "coverage": 0.5416666666666666,
+          "documented_identity_contexts": 0,
+          "eligible_contexts": 24,
+          "evaluated_contexts": 13,
+          "evaluation_runtime_seconds": 7.650000043213367e-05,
+          "evidence": {
+            "basis": "pre-evaluation embedded US-GAAP taxonomy component definitions",
+            "components": [
+              {
+                "concept": "Assets",
+                "definition": "Sum of the carrying amounts as of the balance sheet date of all assets that are recognized. Assets are probable future economic benefits obtained or controlled by an entity as a result of past transactions or events.",
+                "role": "assets",
+                "source_field": "facts.us-gaap.Assets.description",
+                "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000034088.json",
+                "taxonomy": "us-gaap"
+              },
+              {
+                "concept": "Liabilities",
+                "definition": "Sum of the carrying amounts as of the balance sheet date of all liabilities that are recognized. Liabilities are probable future sacrifices of economic benefits arising from present obligations of an entity to transfer assets or provide services to other entities in the future.",
+                "role": "liabilities",
+                "source_field": "facts.us-gaap.Liabilities.description",
+                "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000034088.json",
+                "taxonomy": "us-gaap"
+              },
+              {
+                "concept": "StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest",
+                "definition": "Amount of stockholders' equity (deficit), net of receivables from officers, directors, owners, and affiliates of the entity, attributable to both the parent and noncontrolling interests. Amount excludes temporary equity. Alternate caption for the concept is permanent equity.",
+                "role": "parent_and_nci_equity",
+                "source_field": "facts.us-gaap.StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest.description",
+                "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000034088.json",
+                "taxonomy": "us-gaap"
+              }
+            ]
+          },
+          "false_alarms_against_documented_identity": 0,
+          "selected_formula": {
+            "assets": "Assets",
+            "equity_terms": [
+              "StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest"
+            ],
+            "liabilities": "Liabilities",
+            "unit": "USD"
+          },
+          "selection_runtime_seconds": 0.022823199979029596,
+          "total_runtime_seconds": 0.02289969997946173,
+          "violations": 0
+        },
+        "statistical_only": {
+          "abstentions": 11,
+          "classification": "statistically_discovered",
+          "coverage": 0.5416666666666666,
+          "documented_identity_contexts": 0,
+          "eligible_contexts": 24,
+          "evaluated_contexts": 13,
+          "evaluation_runtime_seconds": 7.750000804662704e-05,
+          "evidence": null,
+          "false_alarms_against_documented_identity": 0,
+          "selected_formula": {
+            "assets": "Assets",
+            "equity_terms": [
+              "StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest"
+            ],
+            "liabilities": "Liabilities",
+            "unit": "USD"
+          },
+          "selection_runtime_seconds": 0.021926499961409718,
+          "total_runtime_seconds": 0.022003999969456345,
+          "violations": 0
+        }
+      },
+      "evaluation_contexts_2024_2025": 57,
+      "ranked_candidates": [
+        {
+          "classification": "statistically_discovered",
+          "complexity": 3,
+          "discovery": {
+            "contexts": 32,
+            "match_rate": 1.0,
+            "matches": 32
+          },
+          "evidence": null,
+          "expression": {
+            "assets": "Assets",
+            "equity_terms": [
+              "StockholdersEquity",
+              "MinorityInterest"
+            ],
+            "liabilities": "Liabilities",
+            "unit": "USD"
+          },
+          "rank": 1,
+          "semantic_score": 4
+        },
+        {
+          "classification": "statistically_discovered",
+          "complexity": 2,
+          "discovery": {
+            "contexts": 32,
+            "match_rate": 1.0,
+            "matches": 32
+          },
+          "evidence": null,
+          "expression": {
+            "assets": "Assets",
+            "equity_terms": [
+              "StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest"
+            ],
+            "liabilities": "Liabilities",
+            "unit": "USD"
+          },
+          "rank": 2,
+          "semantic_score": 2
+        },
+        {
+          "classification": "documented",
+          "complexity": 2,
+          "discovery": {
+            "contexts": 32,
+            "match_rate": 0.0,
+            "matches": 0
+          },
+          "evidence": {
+            "authority": "US Securities and Exchange Commission",
+            "id": "SEC-BALANCE-001",
+            "requirements": [
+              "same entity",
+              "same reporting date",
+              "same accounting scope",
+              "same currency"
+            ],
+            "source_url": "https://www.sec.gov/file/balance-sheet-building-blocks"
+          },
+          "expression": {
+            "assets": "Assets",
+            "equity_terms": [
+              "StockholdersEquity"
+            ],
+            "liabilities": "Liabilities",
+            "unit": "USD"
+          },
+          "rank": 3,
+          "semantic_score": 2
+        },
+        {
+          "classification": "statistically_discovered",
+          "complexity": 4,
+          "discovery": {
+            "contexts": 32,
+            "match_rate": 0.0,
+            "matches": 0
+          },
+          "evidence": null,
+          "expression": {
+            "assets": "Assets",
+            "equity_terms": [
+              "StockholdersEquity",
+              "MinorityInterest",
+              "StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest"
+            ],
+            "liabilities": "Liabilities",
+            "unit": "USD"
+          },
+          "rank": 4,
+          "semantic_score": 6
+        },
+        {
+          "classification": "statistically_discovered",
+          "complexity": 4,
+          "discovery": {
+            "contexts": 32,
+            "match_rate": 0.0,
+            "matches": 0
+          },
+          "evidence": null,
+          "expression": {
+            "assets": "Assets",
+            "equity_terms": [
+              "LiabilitiesAndStockholdersEquity",
+              "MinorityInterest",
+              "StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest"
+            ],
+            "liabilities": "Liabilities",
+            "unit": "USD"
+          },
+          "rank": 5,
+          "semantic_score": 5
+        },
+        {
+          "classification": "statistically_discovered",
+          "complexity": 3,
+          "discovery": {
+            "contexts": 32,
+            "match_rate": 0.0,
+            "matches": 0
+          },
+          "evidence": null,
+          "expression": {
+            "assets": "Assets",
+            "equity_terms": [
+              "StockholdersEquity",
+              "StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest"
+            ],
+            "liabilities": "Liabilities",
+            "unit": "USD"
+          },
+          "rank": 6,
+          "semantic_score": 4
+        },
+        {
+          "classification": "statistically_discovered",
+          "complexity": 3,
+          "discovery": {
+            "contexts": 32,
+            "match_rate": 0.0,
+            "matches": 0
+          },
+          "evidence": null,
+          "expression": {
+            "assets": "Assets",
+            "equity_terms": [
+              "MinorityInterest",
+              "StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest"
+            ],
+            "liabilities": "Liabilities",
+            "unit": "USD"
+          },
+          "rank": 7,
+          "semantic_score": 4
+        },
+        {
+          "classification": "statistically_discovered",
+          "complexity": 3,
+          "discovery": {
+            "contexts": 32,
+            "match_rate": 0.0,
+            "matches": 0
+          },
+          "evidence": null,
+          "expression": {
+            "assets": "Assets",
+            "equity_terms": [
+              "LiabilitiesAndStockholdersEquity",
+              "StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest"
+            ],
+            "liabilities": "Liabilities",
+            "unit": "USD"
+          },
+          "rank": 8,
+          "semantic_score": 3
+        },
+        {
+          "classification": "statistically_discovered",
+          "complexity": 3,
+          "discovery": {
+            "contexts": 32,
+            "match_rate": 0.0,
+            "matches": 0
+          },
+          "evidence": null,
+          "expression": {
+            "assets": "Assets",
+            "equity_terms": [
+              "LiabilitiesAndStockholdersEquity",
+              "MinorityInterest"
+            ],
+            "liabilities": "Liabilities",
+            "unit": "USD"
+          },
+          "rank": 9,
+          "semantic_score": 3
+        },
+        {
+          "classification": "statistically_discovered",
+          "complexity": 2,
+          "discovery": {
+            "contexts": 32,
+            "match_rate": 0.0,
+            "matches": 0
+          },
+          "evidence": null,
+          "expression": {
+            "assets": "Assets",
+            "equity_terms": [
+              "MinorityInterest"
+            ],
+            "liabilities": "Liabilities",
+            "unit": "USD"
+          },
+          "rank": 10,
+          "semantic_score": 2
+        }
+      ],
+      "runtime_seconds": {
+        "naive": 0.0019773999811150134,
+        "semantic_evidence": 0.02289969997946173,
+        "statistical_only": 0.022003999969456345
+      },
+      "shared_heldout_context_count": 57,
+      "source_file": "data/originals/sec/companyfacts/0000034088_exxon.json",
+      "status": "ok"
+    },
+    {
+      "ablation_methods": {
+        "naive": "minimum semantically labeled one-equity expression; no empirical-fit ranking",
+        "semantic_evidence": "pre-evaluation US-GAAP component definitions require complete parent/NCI and disclosed temporary-equity composition; generic identity evidence is ignored; abstains on incomplete or ambiguous components",
+        "statistical_only": "highest 2020-2023 match rate, then minimum complexity; evidence ignored"
+      },
+      "candidate_count": 0,
+      "discovery_contexts_2020_2023": 113,
+      "entity": 104169,
+      "evaluation_2024_2025": {
+        "naive": {
+          "abstentions": 56,
+          "classification": "abstain_no_candidate",
+          "coverage": 0.0,
+          "documented_identity_contexts": 0,
+          "eligible_contexts": 56,
+          "evaluated_contexts": 0,
+          "evaluation_runtime_seconds": 1.600012183189392e-06,
+          "evidence": null,
+          "false_alarms_against_documented_identity": 0,
+          "selected_formula": null,
+          "selection_runtime_seconds": 0.0009715999476611614,
+          "total_runtime_seconds": 0.0009731999598443508,
+          "violations": 0
+        },
+        "semantic_evidence": {
+          "abstentions": 56,
+          "classification": "abstain_no_candidate",
+          "coverage": 0.0,
+          "documented_identity_contexts": 0,
+          "eligible_contexts": 56,
+          "evaluated_contexts": 0,
+          "evaluation_runtime_seconds": 3.00002284348011e-07,
+          "evidence": null,
+          "false_alarms_against_documented_identity": 0,
+          "selected_formula": null,
+          "selection_runtime_seconds": 0.0009358000243082643,
+          "total_runtime_seconds": 0.0009361000265926123,
+          "violations": 0
+        },
+        "statistical_only": {
+          "abstentions": 56,
+          "classification": "abstain_no_candidate",
+          "coverage": 0.0,
+          "documented_identity_contexts": 0,
+          "eligible_contexts": 56,
+          "evaluated_contexts": 0,
+          "evaluation_runtime_seconds": 3.00002284348011e-07,
+          "evidence": null,
+          "false_alarms_against_documented_identity": 0,
+          "selected_formula": null,
+          "selection_runtime_seconds": 0.0009349000174552202,
+          "total_runtime_seconds": 0.0009352000197395682,
+          "violations": 0
+        }
+      },
+      "evaluation_contexts_2024_2025": 56,
+      "ranked_candidates": [],
+      "runtime_seconds": {
+        "naive": 0.0009731999598443508,
+        "semantic_evidence": 0.0009361000265926123,
+        "statistical_only": 0.0009352000197395682
+      },
+      "shared_heldout_context_count": 56,
+      "source_file": "data/originals/sec/companyfacts/0000104169_walmart.json",
+      "status": "abstain_no_candidate"
+    },
+    {
+      "ablation_methods": {
+        "naive": "minimum semantically labeled one-equity expression; no empirical-fit ranking",
+        "semantic_evidence": "pre-evaluation US-GAAP component definitions require complete parent/NCI and disclosed temporary-equity composition; generic identity evidence is ignored; abstains on incomplete or ambiguous components",
+        "statistical_only": "highest 2020-2023 match rate, then minimum complexity; evidence ignored"
+      },
+      "candidate_count": 3,
+      "discovery_contexts_2020_2023": 149,
+      "entity": 320193,
+      "evaluation_2024_2025": {
+        "naive": {
+          "abstentions": 16,
+          "classification": "documented",
+          "coverage": 0.5,
+          "documented_identity_contexts": 16,
+          "eligible_contexts": 32,
+          "evaluated_contexts": 16,
+          "evaluation_runtime_seconds": 0.00022260000696405768,
+          "evidence": {
+            "authority": "US Securities and Exchange Commission",
+            "id": "SEC-BALANCE-001",
+            "requirements": [
+              "same entity",
+              "same reporting date",
+              "same accounting scope",
+              "same currency"
+            ],
+            "source_url": "https://www.sec.gov/file/balance-sheet-building-blocks"
+          },
+          "false_alarms_against_documented_identity": 0,
+          "selected_formula": {
+            "assets": "Assets",
+            "equity_terms": [
+              "StockholdersEquity"
+            ],
+            "liabilities": "Liabilities",
+            "unit": "USD"
+          },
+          "selection_runtime_seconds": 0.001263399957679212,
+          "total_runtime_seconds": 0.0014859999646432698,
+          "violations": 0
+        },
+        "semantic_evidence": {
+          "abstentions": 64,
+          "classification": "abstain_no_candidate",
+          "coverage": 0.0,
+          "documented_identity_contexts": 0,
+          "eligible_contexts": 64,
+          "evaluated_contexts": 0,
+          "evaluation_runtime_seconds": 1.100008375942707e-06,
+          "evidence": null,
+          "false_alarms_against_documented_identity": 0,
+          "selected_formula": null,
+          "selection_runtime_seconds": 0.0017454999615438282,
+          "total_runtime_seconds": 0.001746599969919771,
+          "violations": 0
+        },
+        "statistical_only": {
+          "abstentions": 16,
+          "classification": "documented",
+          "coverage": 0.5,
+          "documented_identity_contexts": 16,
+          "eligible_contexts": 32,
+          "evaluated_contexts": 16,
+          "evaluation_runtime_seconds": 0.00015949999215081334,
+          "evidence": {
+            "authority": "US Securities and Exchange Commission",
+            "id": "SEC-BALANCE-001",
+            "requirements": [
+              "same entity",
+              "same reporting date",
+              "same accounting scope",
+              "same currency"
+            ],
+            "source_url": "https://www.sec.gov/file/balance-sheet-building-blocks"
+          },
+          "false_alarms_against_documented_identity": 0,
+          "selected_formula": {
+            "assets": "Assets",
+            "equity_terms": [
+              "StockholdersEquity"
+            ],
+            "liabilities": "Liabilities",
+            "unit": "USD"
+          },
+          "selection_runtime_seconds": 0.0017244999762624502,
+          "total_runtime_seconds": 0.0018839999684132636,
+          "violations": 0
+        }
+      },
+      "evaluation_contexts_2024_2025": 64,
+      "ranked_candidates": [
+        {
+          "classification": "documented",
+          "complexity": 2,
+          "discovery": {
+            "contexts": 32,
+            "match_rate": 1.0,
+            "matches": 32
+          },
+          "evidence": {
+            "authority": "US Securities and Exchange Commission",
+            "id": "SEC-BALANCE-001",
+            "requirements": [
+              "same entity",
+              "same reporting date",
+              "same accounting scope",
+              "same currency"
+            ],
+            "source_url": "https://www.sec.gov/file/balance-sheet-building-blocks"
+          },
+          "expression": {
+            "assets": "Assets",
+            "equity_terms": [
+              "StockholdersEquity"
+            ],
+            "liabilities": "Liabilities",
+            "unit": "USD"
+          },
+          "rank": 1,
+          "semantic_score": 2
+        },
+        {
+          "classification": "statistically_discovered",
+          "complexity": 2,
+          "discovery": {
+            "contexts": 32,
+            "match_rate": 0.0,
+            "matches": 0
+          },
+          "evidence": null,
+          "expression": {
+            "assets": "Assets",
+            "equity_terms": [
+              "LiabilitiesAndStockholdersEquity"
+            ],
+            "liabilities": "Liabilities",
+            "unit": "USD"
+          },
+          "rank": 2,
+          "semantic_score": 1
+        },
+        {
+          "classification": "statistically_discovered",
+          "complexity": 2,
+          "discovery": {
+            "contexts": 9,
+            "match_rate": 0.0,
+            "matches": 0
+          },
+          "evidence": null,
+          "expression": {
+            "assets": "Assets",
+            "equity_terms": [
+              "EquitySecuritiesWithoutReadilyDeterminableFairValueAmount"
+            ],
+            "liabilities": "Liabilities",
+            "unit": "USD"
+          },
+          "rank": 3,
+          "semantic_score": 1
+        }
+      ],
+      "runtime_seconds": {
+        "naive": 0.0014859999646432698,
+        "semantic_evidence": 0.001746599969919771,
+        "statistical_only": 0.0018839999684132636
+      },
+      "shared_heldout_context_count": 64,
+      "source_file": "data/originals/sec/companyfacts/0000320193_apple.json",
+      "status": "ok"
+    },
+    {
+      "ablation_methods": {
+        "naive": "minimum semantically labeled one-equity expression; no empirical-fit ranking",
+        "semantic_evidence": "pre-evaluation US-GAAP component definitions require complete parent/NCI and disclosed temporary-equity composition; generic identity evidence is ignored; abstains on incomplete or ambiguous components",
+        "statistical_only": "highest 2020-2023 match rate, then minimum complexity; evidence ignored"
+      },
+      "candidate_count": 3,
+      "discovery_contexts_2020_2023": 166,
+      "entity": 789019,
+      "evaluation_2024_2025": {
+        "naive": {
+          "abstentions": 21,
+          "classification": "documented",
+          "coverage": 0.43243243243243246,
+          "documented_identity_contexts": 16,
+          "eligible_contexts": 37,
+          "evaluated_contexts": 16,
+          "evaluation_runtime_seconds": 0.00013910001143813133,
+          "evidence": {
+            "authority": "US Securities and Exchange Commission",
+            "id": "SEC-BALANCE-001",
+            "requirements": [
+              "same entity",
+              "same reporting date",
+              "same accounting scope",
+              "same currency"
+            ],
+            "source_url": "https://www.sec.gov/file/balance-sheet-building-blocks"
+          },
+          "false_alarms_against_documented_identity": 0,
+          "selected_formula": {
+            "assets": "Assets",
+            "equity_terms": [
+              "StockholdersEquity"
+            ],
+            "liabilities": "Liabilities",
+            "unit": "USD"
+          },
+          "selection_runtime_seconds": 0.0015518000000156462,
+          "total_runtime_seconds": 0.0016909000114537776,
+          "violations": 0
+        },
+        "semantic_evidence": {
+          "abstentions": 70,
+          "classification": "abstain_no_candidate",
+          "coverage": 0.0,
+          "documented_identity_contexts": 0,
+          "eligible_contexts": 70,
+          "evaluated_contexts": 0,
+          "evaluation_runtime_seconds": 7.999478839337826e-07,
+          "evidence": null,
+          "false_alarms_against_documented_identity": 0,
+          "selected_formula": null,
+          "selection_runtime_seconds": 0.003194199991412461,
+          "total_runtime_seconds": 0.0031949999392963946,
+          "violations": 0
+        },
+        "statistical_only": {
+          "abstentions": 21,
+          "classification": "documented",
+          "coverage": 0.43243243243243246,
+          "documented_identity_contexts": 16,
+          "eligible_contexts": 37,
+          "evaluated_contexts": 16,
+          "evaluation_runtime_seconds": 0.000125700025819242,
+          "evidence": {
+            "authority": "US Securities and Exchange Commission",
+            "id": "SEC-BALANCE-001",
+            "requirements": [
+              "same entity",
+              "same reporting date",
+              "same accounting scope",
+              "same currency"
+            ],
+            "source_url": "https://www.sec.gov/file/balance-sheet-building-blocks"
+          },
+          "false_alarms_against_documented_identity": 0,
+          "selected_formula": {
+            "assets": "Assets",
+            "equity_terms": [
+              "StockholdersEquity"
+            ],
+            "liabilities": "Liabilities",
+            "unit": "USD"
+          },
+          "selection_runtime_seconds": 0.003174100012984127,
+          "total_runtime_seconds": 0.003299800038803369,
+          "violations": 0
+        }
+      },
+      "evaluation_contexts_2024_2025": 70,
+      "ranked_candidates": [
+        {
+          "classification": "documented",
+          "complexity": 2,
+          "discovery": {
+            "contexts": 32,
+            "match_rate": 1.0,
+            "matches": 32
+          },
+          "evidence": {
+            "authority": "US Securities and Exchange Commission",
+            "id": "SEC-BALANCE-001",
+            "requirements": [
+              "same entity",
+              "same reporting date",
+              "same accounting scope",
+              "same currency"
+            ],
+            "source_url": "https://www.sec.gov/file/balance-sheet-building-blocks"
+          },
+          "expression": {
+            "assets": "Assets",
+            "equity_terms": [
+              "StockholdersEquity"
+            ],
+            "liabilities": "Liabilities",
+            "unit": "USD"
+          },
+          "rank": 1,
+          "semantic_score": 2
+        },
+        {
+          "classification": "statistically_discovered",
+          "complexity": 2,
+          "discovery": {
+            "contexts": 32,
+            "match_rate": 0.0,
+            "matches": 0
+          },
+          "evidence": null,
+          "expression": {
+            "assets": "Assets",
+            "equity_terms": [
+              "LiabilitiesAndStockholdersEquity"
+            ],
+            "liabilities": "Liabilities",
+            "unit": "USD"
+          },
+          "rank": 2,
+          "semantic_score": 1
+        },
+        {
+          "classification": "statistically_discovered",
+          "complexity": 2,
+          "discovery": {
+            "contexts": 32,
+            "match_rate": 0.0,
+            "matches": 0
+          },
+          "evidence": null,
+          "expression": {
+            "assets": "Assets",
+            "equity_terms": [
+              "EquitySecuritiesWithoutReadilyDeterminableFairValueAmount"
+            ],
+            "liabilities": "Liabilities",
+            "unit": "USD"
+          },
+          "rank": 3,
+          "semantic_score": 1
+        }
+      ],
+      "runtime_seconds": {
+        "naive": 0.0016909000114537776,
+        "semantic_evidence": 0.0031949999392963946,
+        "statistical_only": 0.003299800038803369
+      },
+      "shared_heldout_context_count": 70,
+      "source_file": "data/originals/sec/companyfacts/0000789019_microsoft.json",
+      "status": "ok"
+    },
+    {
+      "ablation_methods": {
+        "naive": "minimum semantically labeled one-equity expression; no empirical-fit ranking",
+        "semantic_evidence": "pre-evaluation US-GAAP component definitions require complete parent/NCI and disclosed temporary-equity composition; generic identity evidence is ignored; abstains on incomplete or ambiguous components",
+        "statistical_only": "highest 2020-2023 match rate, then minimum complexity; evidence ignored"
+      },
+      "candidate_count": 0,
+      "discovery_contexts_2020_2023": 203,
+      "entity": 1018724,
+      "evaluation_2024_2025": {
+        "naive": {
+          "abstentions": 82,
+          "classification": "abstain_no_candidate",
+          "coverage": 0.0,
+          "documented_identity_contexts": 0,
+          "eligible_contexts": 82,
+          "evaluated_contexts": 0,
+          "evaluation_runtime_seconds": 2.00001522898674e-06,
+          "evidence": null,
+          "false_alarms_against_documented_identity": 0,
+          "selected_formula": null,
+          "selection_runtime_seconds": 0.0011974000371992588,
+          "total_runtime_seconds": 0.0011994000524282455,
+          "violations": 0
+        },
+        "semantic_evidence": {
+          "abstentions": 82,
+          "classification": "abstain_no_candidate",
+          "coverage": 0.0,
+          "documented_identity_contexts": 0,
+          "eligible_contexts": 82,
+          "evaluated_contexts": 0,
+          "evaluation_runtime_seconds": 3.00002284348011e-07,
+          "evidence": null,
+          "false_alarms_against_documented_identity": 0,
+          "selected_formula": null,
+          "selection_runtime_seconds": 0.0011354999733157456,
+          "total_runtime_seconds": 0.0011357999756000936,
+          "violations": 0
+        },
+        "statistical_only": {
+          "abstentions": 82,
+          "classification": "abstain_no_candidate",
+          "coverage": 0.0,
+          "documented_identity_contexts": 0,
+          "eligible_contexts": 82,
+          "evaluated_contexts": 0,
+          "evaluation_runtime_seconds": 3.00002284348011e-07,
+          "evidence": null,
+          "false_alarms_against_documented_identity": 0,
+          "selected_formula": null,
+          "selection_runtime_seconds": 0.0011345999664627016,
+          "total_runtime_seconds": 0.0011348999687470496,
+          "violations": 0
+        }
+      },
+      "evaluation_contexts_2024_2025": 82,
+      "ranked_candidates": [],
+      "runtime_seconds": {
+        "naive": 0.0011994000524282455,
+        "semantic_evidence": 0.0011357999756000936,
+        "statistical_only": 0.0011348999687470496
+      },
+      "shared_heldout_context_count": 82,
+      "source_file": "data/originals/sec/companyfacts/0001018724_amazon.json",
+      "status": "abstain_no_candidate"
+    },
+    {
+      "ablation_methods": {
+        "naive": "minimum semantically labeled one-equity expression; no empirical-fit ranking",
+        "semantic_evidence": "pre-evaluation US-GAAP component definitions require complete parent/NCI and disclosed temporary-equity composition; generic identity evidence is ignored; abstains on incomplete or ambiguous components",
+        "statistical_only": "highest 2020-2023 match rate, then minimum complexity; evidence ignored"
+      },
+      "candidate_count": 3,
+      "discovery_contexts_2020_2023": 148,
+      "entity": 1045810,
+      "evaluation_2024_2025": {
+        "naive": {
+          "abstentions": 18,
+          "classification": "documented",
+          "coverage": 0.47058823529411764,
+          "documented_identity_contexts": 16,
+          "eligible_contexts": 34,
+          "evaluated_contexts": 16,
+          "evaluation_runtime_seconds": 0.00012740003876388073,
+          "evidence": {
+            "authority": "US Securities and Exchange Commission",
+            "id": "SEC-BALANCE-001",
+            "requirements": [
+              "same entity",
+              "same reporting date",
+              "same accounting scope",
+              "same currency"
+            ],
+            "source_url": "https://www.sec.gov/file/balance-sheet-building-blocks"
+          },
+          "false_alarms_against_documented_identity": 0,
+          "selected_formula": {
+            "assets": "Assets",
+            "equity_terms": [
+              "StockholdersEquity"
+            ],
+            "liabilities": "Liabilities",
+            "unit": "USD"
+          },
+          "selection_runtime_seconds": 0.001694299979135394,
+          "total_runtime_seconds": 0.0018217000178992748,
+          "violations": 0
+        },
+        "semantic_evidence": {
+          "abstentions": 63,
+          "classification": "abstain_no_candidate",
+          "coverage": 0.0,
+          "documented_identity_contexts": 0,
+          "eligible_contexts": 63,
+          "evaluated_contexts": 0,
+          "evaluation_runtime_seconds": 9.00006853044033e-07,
+          "evidence": null,
+          "false_alarms_against_documented_identity": 0,
+          "selected_formula": null,
+          "selection_runtime_seconds": 0.00529690005350858,
+          "total_runtime_seconds": 0.005297800060361624,
+          "violations": 0
+        },
+        "statistical_only": {
+          "abstentions": 18,
+          "classification": "documented",
+          "coverage": 0.47058823529411764,
+          "documented_identity_contexts": 16,
+          "eligible_contexts": 34,
+          "evaluated_contexts": 16,
+          "evaluation_runtime_seconds": 0.00011299998732283711,
+          "evidence": {
+            "authority": "US Securities and Exchange Commission",
+            "id": "SEC-BALANCE-001",
+            "requirements": [
+              "same entity",
+              "same reporting date",
+              "same accounting scope",
+              "same currency"
+            ],
+            "source_url": "https://www.sec.gov/file/balance-sheet-building-blocks"
+          },
+          "false_alarms_against_documented_identity": 0,
+          "selected_formula": {
+            "assets": "Assets",
+            "equity_terms": [
+              "StockholdersEquity"
+            ],
+            "liabilities": "Liabilities",
+            "unit": "USD"
+          },
+          "selection_runtime_seconds": 0.005275300005450845,
+          "total_runtime_seconds": 0.005388299992773682,
+          "violations": 0
+        }
+      },
+      "evaluation_contexts_2024_2025": 63,
+      "ranked_candidates": [
+        {
+          "classification": "documented",
+          "complexity": 2,
+          "discovery": {
+            "contexts": 32,
+            "match_rate": 1.0,
+            "matches": 32
+          },
+          "evidence": {
+            "authority": "US Securities and Exchange Commission",
+            "id": "SEC-BALANCE-001",
+            "requirements": [
+              "same entity",
+              "same reporting date",
+              "same accounting scope",
+              "same currency"
+            ],
+            "source_url": "https://www.sec.gov/file/balance-sheet-building-blocks"
+          },
+          "expression": {
+            "assets": "Assets",
+            "equity_terms": [
+              "StockholdersEquity"
+            ],
+            "liabilities": "Liabilities",
+            "unit": "USD"
+          },
+          "rank": 1,
+          "semantic_score": 2
+        },
+        {
+          "classification": "statistically_discovered",
+          "complexity": 2,
+          "discovery": {
+            "contexts": 32,
+            "match_rate": 0.0,
+            "matches": 0
+          },
+          "evidence": null,
+          "expression": {
+            "assets": "Assets",
+            "equity_terms": [
+              "LiabilitiesAndStockholdersEquity"
+            ],
+            "liabilities": "Liabilities",
+            "unit": "USD"
+          },
+          "rank": 2,
+          "semantic_score": 1
+        },
+        {
+          "classification": "statistically_discovered",
+          "complexity": 2,
+          "discovery": {
+            "contexts": 4,
+            "match_rate": 0.0,
+            "matches": 0
+          },
+          "evidence": null,
+          "expression": {
+            "assets": "Assets",
+            "equity_terms": [
+              "EquitySecuritiesFvNi"
+            ],
+            "liabilities": "Liabilities",
+            "unit": "USD"
+          },
+          "rank": 3,
+          "semantic_score": 1
+        }
+      ],
+      "runtime_seconds": {
+        "naive": 0.0018217000178992748,
+        "semantic_evidence": 0.005297800060361624,
+        "statistical_only": 0.005388299992773682
+      },
+      "shared_heldout_context_count": 63,
+      "source_file": "data/originals/sec/companyfacts/0001045810_nvidia.json",
+      "status": "ok"
+    },
+    {
+      "ablation_methods": {
+        "naive": "minimum semantically labeled one-equity expression; no empirical-fit ranking",
+        "semantic_evidence": "pre-evaluation US-GAAP component definitions require complete parent/NCI and disclosed temporary-equity composition; generic identity evidence is ignored; abstains on incomplete or ambiguous components",
+        "statistical_only": "highest 2020-2023 match rate, then minimum complexity; evidence ignored"
+      },
+      "candidate_count": 70,
+      "discovery_contexts_2020_2023": 201,
+      "entity": 1318605,
+      "evaluation_2024_2025": {
+        "naive": {
+          "abstentions": 46,
+          "classification": "documented",
+          "coverage": 0.2459016393442623,
+          "documented_identity_contexts": 0,
+          "eligible_contexts": 61,
+          "evaluated_contexts": 15,
+          "evaluation_runtime_seconds": 0.0002046999870799482,
+          "evidence": {
+            "authority": "US Securities and Exchange Commission",
+            "id": "SEC-BALANCE-001",
+            "requirements": [
+              "same entity",
+              "same reporting date",
+              "same accounting scope",
+              "same currency"
+            ],
+            "source_url": "https://www.sec.gov/file/balance-sheet-building-blocks"
+          },
+          "false_alarms_against_documented_identity": 0,
+          "selected_formula": {
+            "assets": "Assets",
+            "equity_terms": [
+              "StockholdersEquity"
+            ],
+            "liabilities": "Liabilities",
+            "unit": "USD"
+          },
+          "selection_runtime_seconds": 0.0015571999829262495,
+          "total_runtime_seconds": 0.0017618999700061977,
+          "violations": 15
+        },
+        "semantic_evidence": {
+          "abstentions": 94,
+          "classification": "abstain_no_candidate",
+          "coverage": 0.0,
+          "documented_identity_contexts": 0,
+          "eligible_contexts": 94,
+          "evaluated_contexts": 0,
+          "evaluation_runtime_seconds": 5.999463610351086e-07,
+          "evidence": null,
+          "false_alarms_against_documented_identity": 0,
+          "selected_formula": null,
+          "selection_runtime_seconds": 0.12679010001011193,
+          "total_runtime_seconds": 0.12679069995647296,
+          "violations": 0
+        },
+        "statistical_only": {
+          "abstentions": 46,
+          "classification": "statistically_discovered",
+          "coverage": 0.2459016393442623,
+          "documented_identity_contexts": 0,
+          "eligible_contexts": 61,
+          "evaluated_contexts": 15,
+          "evaluation_runtime_seconds": 0.00020330003462731838,
+          "evidence": null,
+          "false_alarms_against_documented_identity": 0,
+          "selected_formula": {
+            "assets": "Assets",
+            "equity_terms": [
+              "TemporaryEquityCarryingAmountIncludingPortionAttributableToNoncontrollingInterests",
+              "StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest"
+            ],
+            "liabilities": "Liabilities",
+            "unit": "USD"
+          },
+          "selection_runtime_seconds": 0.11290690000168979,
+          "total_runtime_seconds": 0.11311020003631711,
+          "violations": 0
+        }
+      },
+      "evaluation_contexts_2024_2025": 94,
+      "ranked_candidates": [
+        {
+          "classification": "statistically_discovered",
+          "complexity": 4,
+          "discovery": {
+            "contexts": 8,
+            "match_rate": 1.0,
+            "matches": 8
+          },
+          "evidence": null,
+          "expression": {
+            "assets": "Assets",
+            "equity_terms": [
+              "StockholdersEquity",
+              "MinorityInterest",
+              "TemporaryEquityCarryingAmountIncludingPortionAttributableToNoncontrollingInterests"
+            ],
+            "liabilities": "Liabilities",
+            "unit": "USD"
+          },
+          "rank": 1,
+          "semantic_score": 5
+        },
+        {
+          "classification": "statistically_discovered",
+          "complexity": 4,
+          "discovery": {
+            "contexts": 8,
+            "match_rate": 1.0,
+            "matches": 8
+          },
+          "evidence": null,
+          "expression": {
+            "assets": "Assets",
+            "equity_terms": [
+              "TemporaryEquityCarryingAmountAttributableToParent",
+              "RedeemableNoncontrollingInterestEquityCarryingAmount",
+              "StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest"
+            ],
+            "liabilities": "Liabilities",
+            "unit": "USD"
+          },
+          "rank": 2,
+          "semantic_score": 4
+        },
+        {
+          "classification": "statistically_discovered",
+          "complexity": 4,
+          "discovery": {
+            "contexts": 8,
+            "match_rate": 1.0,
+            "matches": 8
+          },
+          "evidence": null,
+          "expression": {
+            "assets": "Assets",
+            "equity_terms": [
+              "StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest",
+              "RedeemableNoncontrollingInterestEquityCarryingAmount",
+              "TemporaryEquityCarryingAmountAttributableToParent"
+            ],
+            "liabilities": "Liabilities",
+            "unit": "USD"
+          },
+          "rank": 3,
+          "semantic_score": 4
+        },
+        {
+          "classification": "statistically_discovered",
+          "complexity": 4,
+          "discovery": {
+            "contexts": 8,
+            "match_rate": 1.0,
+            "matches": 8
+          },
+          "evidence": null,
+          "expression": {
+            "assets": "Assets",
+            "equity_terms": [
+              "RedeemableNoncontrollingInterestEquityCarryingAmount",
+              "StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest",
+              "TemporaryEquityCarryingAmountAttributableToParent"
+            ],
+            "liabilities": "Liabilities",
+            "unit": "USD"
+          },
+          "rank": 4,
+          "semantic_score": 4
+        },
+        {
+          "classification": "statistically_discovered",
+          "complexity": 3,
+          "discovery": {
+            "contexts": 8,
+            "match_rate": 1.0,
+            "matches": 8
+          },
+          "evidence": null,
+          "expression": {
+            "assets": "Assets",
+            "equity_terms": [
+              "TemporaryEquityCarryingAmountIncludingPortionAttributableToNoncontrollingInterests",
+              "StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest"
+            ],
+            "liabilities": "Liabilities",
+            "unit": "USD"
+          },
+          "rank": 5,
+          "semantic_score": 3
+        },
+        {
+          "classification": "statistically_discovered",
+          "complexity": 3,
+          "discovery": {
+            "contexts": 8,
+            "match_rate": 1.0,
+            "matches": 8
+          },
+          "evidence": null,
+          "expression": {
+            "assets": "Assets",
+            "equity_terms": [
+              "StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest",
+              "TemporaryEquityCarryingAmountIncludingPortionAttributableToNoncontrollingInterests"
+            ],
+            "liabilities": "Liabilities",
+            "unit": "USD"
+          },
+          "rank": 6,
+          "semantic_score": 3
+        },
+        {
+          "classification": "statistically_discovered",
+          "complexity": 4,
+          "discovery": {
+            "contexts": 32,
+            "match_rate": 0.75,
+            "matches": 24
+          },
+          "evidence": null,
+          "expression": {
+            "assets": "Assets",
+            "equity_terms": [
+              "StockholdersEquity",
+              "MinorityInterest",
+              "RedeemableNoncontrollingInterestEquityCarryingAmount"
+            ],
+            "liabilities": "Liabilities",
+            "unit": "USD"
+          },
+          "rank": 7,
+          "semantic_score": 5
+        },
+        {
+          "classification": "statistically_discovered",
+          "complexity": 3,
+          "discovery": {
+            "contexts": 32,
+            "match_rate": 0.75,
+            "matches": 24
+          },
+          "evidence": null,
+          "expression": {
+            "assets": "Assets",
+            "equity_terms": [
+              "StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest",
+              "RedeemableNoncontrollingInterestEquityCarryingAmount"
+            ],
+            "liabilities": "Liabilities",
+            "unit": "USD"
+          },
+          "rank": 8,
+          "semantic_score": 3
+        },
+        {
+          "classification": "statistically_discovered",
+          "complexity": 3,
+          "discovery": {
+            "contexts": 32,
+            "match_rate": 0.75,
+            "matches": 24
+          },
+          "evidence": null,
+          "expression": {
+            "assets": "Assets",
+            "equity_terms": [
+              "RedeemableNoncontrollingInterestEquityCarryingAmount",
+              "StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest"
+            ],
+            "liabilities": "Liabilities",
+            "unit": "USD"
+          },
+          "rank": 9,
+          "semantic_score": 3
+        },
+        {
+          "classification": "documented",
+          "complexity": 2,
+          "discovery": {
+            "contexts": 32,
+            "match_rate": 0.0,
+            "matches": 0
+          },
+          "evidence": {
+            "authority": "US Securities and Exchange Commission",
+            "id": "SEC-BALANCE-001",
+            "requirements": [
+              "same entity",
+              "same reporting date",
+              "same accounting scope",
+              "same currency"
+            ],
+            "source_url": "https://www.sec.gov/file/balance-sheet-building-blocks"
+          },
+          "expression": {
+            "assets": "Assets",
+            "equity_terms": [
+              "StockholdersEquity"
+            ],
+            "liabilities": "Liabilities",
+            "unit": "USD"
+          },
+          "rank": 10,
+          "semantic_score": 2
+        }
+      ],
+      "runtime_seconds": {
+        "naive": 0.0017618999700061977,
+        "semantic_evidence": 0.12679069995647296,
+        "statistical_only": 0.11311020003631711
+      },
+      "shared_heldout_context_count": 94,
+      "source_file": "data/originals/sec/companyfacts/0001318605_tesla.json",
+      "status": "ok"
+    },
+    {
+      "ablation_methods": {
+        "naive": "minimum semantically labeled one-equity expression; no empirical-fit ranking",
+        "semantic_evidence": "pre-evaluation US-GAAP component definitions require complete parent/NCI and disclosed temporary-equity composition; generic identity evidence is ignored; abstains on incomplete or ambiguous components",
+        "statistical_only": "highest 2020-2023 match rate, then minimum complexity; evidence ignored"
+      },
+      "candidate_count": 5,
+      "discovery_contexts_2020_2023": 165,
+      "entity": 1326801,
+      "evaluation_2024_2025": {
+        "naive": {
+          "abstentions": 19,
+          "classification": "documented",
+          "coverage": 0.4411764705882353,
+          "documented_identity_contexts": 15,
+          "eligible_contexts": 34,
+          "evaluated_contexts": 15,
+          "evaluation_runtime_seconds": 0.00011409999569877982,
+          "evidence": {
+            "authority": "US Securities and Exchange Commission",
+            "id": "SEC-BALANCE-001",
+            "requirements": [
+              "same entity",
+              "same reporting date",
+              "same accounting scope",
+              "same currency"
+            ],
+            "source_url": "https://www.sec.gov/file/balance-sheet-building-blocks"
+          },
+          "false_alarms_against_documented_identity": 0,
+          "selected_formula": {
+            "assets": "Assets",
+            "equity_terms": [
+              "StockholdersEquity"
+            ],
+            "liabilities": "Liabilities",
+            "unit": "USD"
+          },
+          "selection_runtime_seconds": 0.0011091000051237643,
+          "total_runtime_seconds": 0.001223200000822544,
+          "violations": 0
+        },
+        "semantic_evidence": {
+          "abstentions": 59,
+          "classification": "abstain_no_candidate",
+          "coverage": 0.0,
+          "documented_identity_contexts": 0,
+          "eligible_contexts": 59,
+          "evaluated_contexts": 0,
+          "evaluation_runtime_seconds": 7.00005330145359e-07,
+          "evidence": null,
+          "false_alarms_against_documented_identity": 0,
+          "selected_formula": null,
+          "selection_runtime_seconds": 0.0027747999993152916,
+          "total_runtime_seconds": 0.002775500004645437,
+          "violations": 0
+        },
+        "statistical_only": {
+          "abstentions": 19,
+          "classification": "documented",
+          "coverage": 0.4411764705882353,
+          "documented_identity_contexts": 15,
+          "eligible_contexts": 34,
+          "evaluated_contexts": 15,
+          "evaluation_runtime_seconds": 0.00010880001354962587,
+          "evidence": {
+            "authority": "US Securities and Exchange Commission",
+            "id": "SEC-BALANCE-001",
+            "requirements": [
+              "same entity",
+              "same reporting date",
+              "same accounting scope",
+              "same currency"
+            ],
+            "source_url": "https://www.sec.gov/file/balance-sheet-building-blocks"
+          },
+          "false_alarms_against_documented_identity": 0,
+          "selected_formula": {
+            "assets": "Assets",
+            "equity_terms": [
+              "StockholdersEquity"
+            ],
+            "liabilities": "Liabilities",
+            "unit": "USD"
+          },
+          "selection_runtime_seconds": 0.0027487999759614468,
+          "total_runtime_seconds": 0.0028575999895110726,
+          "violations": 0
+        }
+      },
+      "evaluation_contexts_2024_2025": 59,
+      "ranked_candidates": [
+        {
+          "classification": "documented",
+          "complexity": 2,
+          "discovery": {
+            "contexts": 32,
+            "match_rate": 1.0,
+            "matches": 32
+          },
+          "evidence": {
+            "authority": "US Securities and Exchange Commission",
+            "id": "SEC-BALANCE-001",
+            "requirements": [
+              "same entity",
+              "same reporting date",
+              "same accounting scope",
+              "same currency"
+            ],
+            "source_url": "https://www.sec.gov/file/balance-sheet-building-blocks"
+          },
+          "expression": {
+            "assets": "Assets",
+            "equity_terms": [
+              "StockholdersEquity"
+            ],
+            "liabilities": "Liabilities",
+            "unit": "USD"
+          },
+          "rank": 1,
+          "semantic_score": 2
+        },
+        {
+          "classification": "statistically_discovered",
+          "complexity": 2,
+          "discovery": {
+            "contexts": 32,
+            "match_rate": 0.0,
+            "matches": 0
+          },
+          "evidence": null,
+          "expression": {
+            "assets": "Assets",
+            "equity_terms": [
+              "LiabilitiesAndStockholdersEquity"
+            ],
+            "liabilities": "Liabilities",
+            "unit": "USD"
+          },
+          "rank": 2,
+          "semantic_score": 1
+        },
+        {
+          "classification": "statistically_discovered",
+          "complexity": 2,
+          "discovery": {
+            "contexts": 30,
+            "match_rate": 0.0,
+            "matches": 0
+          },
+          "evidence": null,
+          "expression": {
+            "assets": "Assets",
+            "equity_terms": [
+              "EquitySecuritiesWithoutReadilyDeterminableFairValueAmount"
+            ],
+            "liabilities": "Liabilities",
+            "unit": "USD"
+          },
+          "rank": 3,
+          "semantic_score": 1
+        },
+        {
+          "classification": "statistically_discovered",
+          "complexity": 2,
+          "discovery": {
+            "contexts": 22,
+            "match_rate": 0.0,
+            "matches": 0
+          },
+          "evidence": null,
+          "expression": {
+            "assets": "Assets",
+            "equity_terms": [
+              "EquitySecuritiesWithoutReadilyDeterminableFairValueUpwardPriceAdjustmentCumulativeAmount"
+            ],
+            "liabilities": "Liabilities",
+            "unit": "USD"
+          },
+          "rank": 4,
+          "semantic_score": 1
+        },
+        {
+          "classification": "statistically_discovered",
+          "complexity": 2,
+          "discovery": {
+            "contexts": 10,
+            "match_rate": 0.0,
+            "matches": 0
+          },
+          "evidence": null,
+          "expression": {
+            "assets": "Assets",
+            "equity_terms": [
+              "EquitySecuritiesFvNi"
+            ],
+            "liabilities": "Liabilities",
+            "unit": "USD"
+          },
+          "rank": 5,
+          "semantic_score": 1
+        }
+      ],
+      "runtime_seconds": {
+        "naive": 0.001223200000822544,
+        "semantic_evidence": 0.002775500004645437,
+        "statistical_only": 0.0028575999895110726
+      },
+      "shared_heldout_context_count": 59,
+      "source_file": "data/originals/sec/companyfacts/0001326801_meta.json",
+      "status": "ok"
+    },
+    {
+      "ablation_methods": {
+        "naive": "minimum semantically labeled one-equity expression; no empirical-fit ranking",
+        "semantic_evidence": "pre-evaluation US-GAAP component definitions require complete parent/NCI and disclosed temporary-equity composition; generic identity evidence is ignored; abstains on incomplete or ambiguous components",
+        "statistical_only": "highest 2020-2023 match rate, then minimum complexity; evidence ignored"
+      },
+      "candidate_count": 16,
+      "discovery_contexts_2020_2023": 159,
+      "entity": 1652044,
+      "evaluation_2024_2025": {
+        "naive": {
+          "abstentions": 17,
+          "classification": "documented",
+          "coverage": 0.46875,
+          "documented_identity_contexts": 15,
+          "eligible_contexts": 32,
+          "evaluated_contexts": 15,
+          "evaluation_runtime_seconds": 0.00011889997404068708,
+          "evidence": {
+            "authority": "US Securities and Exchange Commission",
+            "id": "SEC-BALANCE-001",
+            "requirements": [
+              "same entity",
+              "same reporting date",
+              "same accounting scope",
+              "same currency"
+            ],
+            "source_url": "https://www.sec.gov/file/balance-sheet-building-blocks"
+          },
+          "false_alarms_against_documented_identity": 0,
+          "selected_formula": {
+            "assets": "Assets",
+            "equity_terms": [
+              "StockholdersEquity"
+            ],
+            "liabilities": "Liabilities",
+            "unit": "USD"
+          },
+          "selection_runtime_seconds": 0.0012855999520979822,
+          "total_runtime_seconds": 0.0014044999261386693,
+          "violations": 0
+        },
+        "semantic_evidence": {
+          "abstentions": 74,
+          "classification": "abstain_no_candidate",
+          "coverage": 0.0,
+          "documented_identity_contexts": 0,
+          "eligible_contexts": 74,
+          "evaluated_contexts": 0,
+          "evaluation_runtime_seconds": 9.00006853044033e-07,
+          "evidence": null,
+          "false_alarms_against_documented_identity": 0,
+          "selected_formula": null,
+          "selection_runtime_seconds": 0.01825949997873977,
+          "total_runtime_seconds": 0.018260399985592812,
+          "violations": 0
+        },
+        "statistical_only": {
+          "abstentions": 17,
+          "classification": "documented",
+          "coverage": 0.46875,
+          "documented_identity_contexts": 15,
+          "eligible_contexts": 32,
+          "evaluated_contexts": 15,
+          "evaluation_runtime_seconds": 0.00010200001997873187,
+          "evidence": {
+            "authority": "US Securities and Exchange Commission",
+            "id": "SEC-BALANCE-001",
+            "requirements": [
+              "same entity",
+              "same reporting date",
+              "same accounting scope",
+              "same currency"
+            ],
+            "source_url": "https://www.sec.gov/file/balance-sheet-building-blocks"
+          },
+          "false_alarms_against_documented_identity": 0,
+          "selected_formula": {
+            "assets": "Assets",
+            "equity_terms": [
+              "StockholdersEquity"
+            ],
+            "liabilities": "Liabilities",
+            "unit": "USD"
+          },
+          "selection_runtime_seconds": 0.018179699953179806,
+          "total_runtime_seconds": 0.01828169997315854,
+          "violations": 0
+        }
+      },
+      "evaluation_contexts_2024_2025": 74,
+      "ranked_candidates": [
+        {
+          "classification": "documented",
+          "complexity": 2,
+          "discovery": {
+            "contexts": 32,
+            "match_rate": 1.0,
+            "matches": 32
+          },
+          "evidence": {
+            "authority": "US Securities and Exchange Commission",
+            "id": "SEC-BALANCE-001",
+            "requirements": [
+              "same entity",
+              "same reporting date",
+              "same accounting scope",
+              "same currency"
+            ],
+            "source_url": "https://www.sec.gov/file/balance-sheet-building-blocks"
+          },
+          "expression": {
+            "assets": "Assets",
+            "equity_terms": [
+              "StockholdersEquity"
+            ],
+            "liabilities": "Liabilities",
+            "unit": "USD"
+          },
+          "rank": 1,
+          "semantic_score": 2
+        },
+        {
+          "classification": "statistically_discovered",
+          "complexity": 3,
+          "discovery": {
+            "contexts": 32,
+            "match_rate": 0.0,
+            "matches": 0
+          },
+          "evidence": null,
+          "expression": {
+            "assets": "Assets",
+            "equity_terms": [
+              "StockholdersEquity",
+              "NoncontrollingInterestInVariableInterestEntity"
+            ],
+            "liabilities": "Liabilities",
+            "unit": "USD"
+          },
+          "rank": 2,
+          "semantic_score": 3
+        },
+        {
+          "classification": "statistically_discovered",
+          "complexity": 3,
+          "discovery": {
+            "contexts": 32,
+            "match_rate": 0.0,
+            "matches": 0
+          },
+          "evidence": null,
+          "expression": {
+            "assets": "Assets",
+            "equity_terms": [
+              "LiabilitiesAndStockholdersEquity",
+              "NoncontrollingInterestInVariableInterestEntity"
+            ],
+            "liabilities": "Liabilities",
+            "unit": "USD"
+          },
+          "rank": 3,
+          "semantic_score": 2
+        },
+        {
+          "classification": "statistically_discovered",
+          "complexity": 3,
+          "discovery": {
+            "contexts": 32,
+            "match_rate": 0.0,
+            "matches": 0
+          },
+          "evidence": null,
+          "expression": {
+            "assets": "Assets",
+            "equity_terms": [
+              "EquitySecuritiesWithoutReadilyDeterminableFairValueAmount",
+              "NoncontrollingInterestInVariableInterestEntity"
+            ],
+            "liabilities": "Liabilities",
+            "unit": "USD"
+          },
+          "rank": 4,
+          "semantic_score": 2
+        },
+        {
+          "classification": "statistically_discovered",
+          "complexity": 3,
+          "discovery": {
+            "contexts": 32,
+            "match_rate": 0.0,
+            "matches": 0
+          },
+          "evidence": null,
+          "expression": {
+            "assets": "Assets",
+            "equity_terms": [
+              "EquitySecuritiesFvNiCost",
+              "NoncontrollingInterestInVariableInterestEntity"
+            ],
+            "liabilities": "Liabilities",
+            "unit": "USD"
+          },
+          "rank": 5,
+          "semantic_score": 2
+        },
+        {
+          "classification": "statistically_discovered",
+          "complexity": 3,
+          "discovery": {
+            "contexts": 32,
+            "match_rate": 0.0,
+            "matches": 0
+          },
+          "evidence": null,
+          "expression": {
+            "assets": "Assets",
+            "equity_terms": [
+              "EquitySecuritiesFvNiAndWithoutReadilyDeterminableFairValue",
+              "NoncontrollingInterestInVariableInterestEntity"
+            ],
+            "liabilities": "Liabilities",
+            "unit": "USD"
+          },
+          "rank": 6,
+          "semantic_score": 2
+        },
+        {
+          "classification": "statistically_discovered",
+          "complexity": 3,
+          "discovery": {
+            "contexts": 32,
+            "match_rate": 0.0,
+            "matches": 0
+          },
+          "evidence": null,
+          "expression": {
+            "assets": "Assets",
+            "equity_terms": [
+              "EquitySecuritiesFvNi",
+              "NoncontrollingInterestInVariableInterestEntity"
+            ],
+            "liabilities": "Liabilities",
+            "unit": "USD"
+          },
+          "rank": 7,
+          "semantic_score": 2
+        },
+        {
+          "classification": "statistically_discovered",
+          "complexity": 3,
+          "discovery": {
+            "contexts": 29,
+            "match_rate": 0.0,
+            "matches": 0
+          },
+          "evidence": null,
+          "expression": {
+            "assets": "Assets",
+            "equity_terms": [
+              "EquitySecuritiesWithoutReadilyDeterminableFairValueUpwardPriceAdjustmentCumulativeAmount",
+              "NoncontrollingInterestInVariableInterestEntity"
+            ],
+            "liabilities": "Liabilities",
+            "unit": "USD"
+          },
+          "rank": 8,
+          "semantic_score": 2
+        },
+        {
+          "classification": "statistically_discovered",
+          "complexity": 3,
+          "discovery": {
+            "contexts": 29,
+            "match_rate": 0.0,
+            "matches": 0
+          },
+          "evidence": null,
+          "expression": {
+            "assets": "Assets",
+            "equity_terms": [
+              "EquitySecuritiesWithoutReadilyDeterminableFairValueDownwardPriceAdjustmentCumulativeAmount",
+              "NoncontrollingInterestInVariableInterestEntity"
+            ],
+            "liabilities": "Liabilities",
+            "unit": "USD"
+          },
+          "rank": 9,
+          "semantic_score": 2
+        },
+        {
+          "classification": "statistically_discovered",
+          "complexity": 2,
+          "discovery": {
+            "contexts": 32,
+            "match_rate": 0.0,
+            "matches": 0
+          },
+          "evidence": null,
+          "expression": {
+            "assets": "Assets",
+            "equity_terms": [
+              "LiabilitiesAndStockholdersEquity"
+            ],
+            "liabilities": "Liabilities",
+            "unit": "USD"
+          },
+          "rank": 10,
+          "semantic_score": 1
+        }
+      ],
+      "runtime_seconds": {
+        "naive": 0.0014044999261386693,
+        "semantic_evidence": 0.018260399985592812,
+        "statistical_only": 0.01828169997315854
+      },
+      "shared_heldout_context_count": 74,
+      "source_file": "data/originals/sec/companyfacts/0001652044_alphabet.json",
+      "status": "ok"
+    }
+  ],
+  "method": {
+    "context_key": [
+      "entity",
+      "accession",
+      "reporting date",
+      "form",
+      "unit"
+    ],
+    "discovery_period": "2020-2023",
+    "evaluation_period": "2024-2025",
+    "missing_or_ambiguous": "abstain; excluded from passes",
+    "ranking": "component-level taxonomy semantic compatibility and minimum expression complexity; only 2020-2023 discovery contexts are used",
+    "status_labels": "only exact evidence-registry matches are documented; all other formulas are statistical candidates",
+    "violation_semantics": "observed equation mismatches, not adjudicated data errors; statistical candidates remain unverified"
+  },
+  "module": "SEC automatic accounting-constraint resolution"
+}

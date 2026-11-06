@@ -1,0 +1,2214 @@
+{
+  "datasets": {
+    "ai4i-2020": {
+      "baseline_comparison": {
+        "conditional": {
+          "applicable_rows": 26399,
+          "candidate_count": 17,
+          "descriptive_pass_rate": 0.99973483844085,
+          "error_metrics": {
+            "false_positive_rate": "N/A",
+            "precision": "N/A"
+          },
+          "violations": 7
+        },
+        "context_only": {
+          "applicable_rows": 26399,
+          "candidate_count": 17,
+          "descriptive_pass_rate": null,
+          "error_metrics": {
+            "false_positive_rate": "N/A",
+            "precision": "N/A"
+          },
+          "violations": null
+        },
+        "global": {
+          "applicable_rows": 51000,
+          "candidate_count": 17,
+          "descriptive_pass_rate": 0.999078431372549,
+          "error_metrics": {
+            "false_positive_rate": "N/A",
+            "precision": "N/A"
+          },
+          "violations": 47
+        }
+      },
+      "candidate_count": 17,
+      "candidates": [
+        {
+          "baselines": {
+            "conditional": {
+              "applicable_rows": 3000,
+              "descriptive_pass_rate": 1.0,
+              "violations": 0
+            },
+            "context_only": {
+              "applicable_rows": 3000,
+              "descriptive_pass_rate": null,
+              "violations": null
+            },
+            "global": {
+              "applicable_rows": 3000,
+              "descriptive_pass_rate": 1.0,
+              "violations": 0
+            }
+          },
+          "discovery": {
+            "complexity": 0,
+            "complexity_penalty": 0.0,
+            "pass_rate": 1.0,
+            "rows": 7000,
+            "score": 1.0,
+            "support": 7000
+          },
+          "documented_evidence": {
+            "status": "not_found"
+          },
+          "heldout": {
+            "applicable_rows": 3000,
+            "decision": "abstain",
+            "violations": 0
+          },
+          "rule": {
+            "assertion": {
+              "column": "Air temperature [K]",
+              "lower": 295.3,
+              "op": "between",
+              "upper": 304.5
+            },
+            "columns": [
+              "Air temperature [K]"
+            ],
+            "condition": null,
+            "confidence": 0.25,
+            "dataset_id": "ai4i-2020",
+            "evidence": [
+              {
+                "description": "Statistical candidate mined from discovery records; no integrity constraint is asserted by this source.",
+                "source_url": "https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset"
+              }
+            ],
+            "id": "ai4i-2020-air-temperature-k-ab5a097a1c",
+            "provenance": {
+              "metadata_file": "data/metadata/ai4i-2020.json",
+              "metadata_sha256": "fe531127f52abad4eeec28a86fcddc4970d6c4c63e73c01226bf30e4fdbd77fb",
+              "source_files": [
+                {
+                  "file": "data/originals/ai4i/uci-dataset-page.html",
+                  "sha256": "470818f3ebd7b46c7db1ccbab2a6ff2643038ca3057c1866394b86aa2be70509",
+                  "url": "https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset"
+                }
+              ]
+            },
+            "rule_type": "conditional_range",
+            "schema_version": "1.0",
+            "verification_status": "candidate"
+          }
+        },
+        {
+          "baselines": {
+            "conditional": {
+              "applicable_rows": 296,
+              "descriptive_pass_rate": 1.0,
+              "violations": 0
+            },
+            "context_only": {
+              "applicable_rows": 296,
+              "descriptive_pass_rate": null,
+              "violations": null
+            },
+            "global": {
+              "applicable_rows": 3000,
+              "descriptive_pass_rate": 0.9973333333333333,
+              "violations": 8
+            }
+          },
+          "discovery": {
+            "complexity": 1,
+            "complexity_penalty": 0.01,
+            "pass_rate": 1.0,
+            "rows": 7000,
+            "score": 0.09100000000000001,
+            "support": 707
+          },
+          "documented_evidence": {
+            "status": "not_found"
+          },
+          "heldout": {
+            "applicable_rows": 296,
+            "decision": "abstain",
+            "violations": 0
+          },
+          "rule": {
+            "assertion": {
+              "column": "Air temperature [K]",
+              "lower": 295.5,
+              "op": "between",
+              "upper": 304.2
+            },
+            "columns": [
+              "Type",
+              "Air temperature [K]"
+            ],
+            "condition": {
+              "column": "Type",
+              "op": "eq",
+              "value": "H"
+            },
+            "confidence": 0.25,
+            "dataset_id": "ai4i-2020",
+            "evidence": [
+              {
+                "description": "Statistical candidate mined from discovery records; no integrity constraint is asserted by this source.",
+                "source_url": "https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset"
+              }
+            ],
+            "id": "ai4i-2020-type-8675ca1628",
+            "provenance": {
+              "metadata_file": "data/metadata/ai4i-2020.json",
+              "metadata_sha256": "fe531127f52abad4eeec28a86fcddc4970d6c4c63e73c01226bf30e4fdbd77fb",
+              "source_files": [
+                {
+                  "file": "data/originals/ai4i/uci-dataset-page.html",
+                  "sha256": "470818f3ebd7b46c7db1ccbab2a6ff2643038ca3057c1866394b86aa2be70509",
+                  "url": "https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset"
+                }
+              ]
+            },
+            "rule_type": "conditional_range",
+            "schema_version": "1.0",
+            "verification_status": "candidate"
+          }
+        },
+        {
+          "baselines": {
+            "conditional": {
+              "applicable_rows": 1807,
+              "descriptive_pass_rate": 0.9994465965688988,
+              "violations": 1
+            },
+            "context_only": {
+              "applicable_rows": 1807,
+              "descriptive_pass_rate": null,
+              "violations": null
+            },
+            "global": {
+              "applicable_rows": 3000,
+              "descriptive_pass_rate": 0.9996666666666667,
+              "violations": 1
+            }
+          },
+          "discovery": {
+            "complexity": 1,
+            "complexity_penalty": 0.01,
+            "pass_rate": 1.0,
+            "rows": 7000,
+            "score": 0.589,
+            "support": 4193
+          },
+          "documented_evidence": {
+            "status": "not_found"
+          },
+          "heldout": {
+            "applicable_rows": 1807,
+            "decision": "abstain",
+            "violations": 1
+          },
+          "rule": {
+            "assertion": {
+              "column": "Air temperature [K]",
+              "lower": 295.4,
+              "op": "between",
+              "upper": 304.5
+            },
+            "columns": [
+              "Type",
+              "Air temperature [K]"
+            ],
+            "condition": {
+              "column": "Type",
+              "op": "eq",
+              "value": "L"
+            },
+            "confidence": 0.25,
+            "dataset_id": "ai4i-2020",
+            "evidence": [
+              {
+                "description": "Statistical candidate mined from discovery records; no integrity constraint is asserted by this source.",
+                "source_url": "https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset"
+              }
+            ],
+            "id": "ai4i-2020-type-34dde4e5e9",
+            "provenance": {
+              "metadata_file": "data/metadata/ai4i-2020.json",
+              "metadata_sha256": "fe531127f52abad4eeec28a86fcddc4970d6c4c63e73c01226bf30e4fdbd77fb",
+              "source_files": [
+                {
+                  "file": "data/originals/ai4i/uci-dataset-page.html",
+                  "sha256": "470818f3ebd7b46c7db1ccbab2a6ff2643038ca3057c1866394b86aa2be70509",
+                  "url": "https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset"
+                }
+              ]
+            },
+            "rule_type": "conditional_range",
+            "schema_version": "1.0",
+            "verification_status": "candidate"
+          }
+        },
+        {
+          "baselines": {
+            "conditional": {
+              "applicable_rows": 897,
+              "descriptive_pass_rate": 1.0,
+              "violations": 0
+            },
+            "context_only": {
+              "applicable_rows": 897,
+              "descriptive_pass_rate": null,
+              "violations": null
+            },
+            "global": {
+              "applicable_rows": 3000,
+              "descriptive_pass_rate": 1.0,
+              "violations": 0
+            }
+          },
+          "discovery": {
+            "complexity": 1,
+            "complexity_penalty": 0.01,
+            "pass_rate": 1.0,
+            "rows": 7000,
+            "score": 0.29,
+            "support": 2100
+          },
+          "documented_evidence": {
+            "status": "not_found"
+          },
+          "heldout": {
+            "applicable_rows": 897,
+            "decision": "abstain",
+            "violations": 0
+          },
+          "rule": {
+            "assertion": {
+              "column": "Air temperature [K]",
+              "lower": 295.3,
+              "op": "between",
+              "upper": 304.4
+            },
+            "columns": [
+              "Type",
+              "Air temperature [K]"
+            ],
+            "condition": {
+              "column": "Type",
+              "op": "eq",
+              "value": "M"
+            },
+            "confidence": 0.25,
+            "dataset_id": "ai4i-2020",
+            "evidence": [
+              {
+                "description": "Statistical candidate mined from discovery records; no integrity constraint is asserted by this source.",
+                "source_url": "https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset"
+              }
+            ],
+            "id": "ai4i-2020-type-7c45d0d46f",
+            "provenance": {
+              "metadata_file": "data/metadata/ai4i-2020.json",
+              "metadata_sha256": "fe531127f52abad4eeec28a86fcddc4970d6c4c63e73c01226bf30e4fdbd77fb",
+              "source_files": [
+                {
+                  "file": "data/originals/ai4i/uci-dataset-page.html",
+                  "sha256": "470818f3ebd7b46c7db1ccbab2a6ff2643038ca3057c1866394b86aa2be70509",
+                  "url": "https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset"
+                }
+              ]
+            },
+            "rule_type": "conditional_range",
+            "schema_version": "1.0",
+            "verification_status": "candidate"
+          }
+        },
+        {
+          "baselines": {
+            "conditional": {
+              "applicable_rows": 3000,
+              "descriptive_pass_rate": 1.0,
+              "violations": 0
+            },
+            "context_only": {
+              "applicable_rows": 3000,
+              "descriptive_pass_rate": null,
+              "violations": null
+            },
+            "global": {
+              "applicable_rows": 3000,
+              "descriptive_pass_rate": 1.0,
+              "violations": 0
+            }
+          },
+          "discovery": {
+            "complexity": 0,
+            "complexity_penalty": 0.0,
+            "pass_rate": 1.0,
+            "rows": 7000,
+            "score": 1.0,
+            "support": 7000
+          },
+          "documented_evidence": {
+            "status": "not_found"
+          },
+          "heldout": {
+            "applicable_rows": 3000,
+            "decision": "abstain",
+            "violations": 0
+          },
+          "rule": {
+            "assertion": {
+              "column": "Process temperature [K]",
+              "lower": 305.7,
+              "op": "between",
+              "upper": 313.8
+            },
+            "columns": [
+              "Process temperature [K]"
+            ],
+            "condition": null,
+            "confidence": 0.25,
+            "dataset_id": "ai4i-2020",
+            "evidence": [
+              {
+                "description": "Statistical candidate mined from discovery records; no integrity constraint is asserted by this source.",
+                "source_url": "https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset"
+              }
+            ],
+            "id": "ai4i-2020-process-temperature-k-5309c7ce55",
+            "provenance": {
+              "metadata_file": "data/metadata/ai4i-2020.json",
+              "metadata_sha256": "fe531127f52abad4eeec28a86fcddc4970d6c4c63e73c01226bf30e4fdbd77fb",
+              "source_files": [
+                {
+                  "file": "data/originals/ai4i/uci-dataset-page.html",
+                  "sha256": "470818f3ebd7b46c7db1ccbab2a6ff2643038ca3057c1866394b86aa2be70509",
+                  "url": "https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset"
+                }
+              ]
+            },
+            "rule_type": "conditional_range",
+            "schema_version": "1.0",
+            "verification_status": "candidate"
+          }
+        },
+        {
+          "baselines": {
+            "conditional": {
+              "applicable_rows": 296,
+              "descriptive_pass_rate": 1.0,
+              "violations": 0
+            },
+            "context_only": {
+              "applicable_rows": 296,
+              "descriptive_pass_rate": null,
+              "violations": null
+            },
+            "global": {
+              "applicable_rows": 3000,
+              "descriptive_pass_rate": 0.9976666666666667,
+              "violations": 7
+            }
+          },
+          "discovery": {
+            "complexity": 1,
+            "complexity_penalty": 0.01,
+            "pass_rate": 1.0,
+            "rows": 7000,
+            "score": 0.09100000000000001,
+            "support": 707
+          },
+          "documented_evidence": {
+            "status": "not_found"
+          },
+          "heldout": {
+            "applicable_rows": 296,
+            "decision": "abstain",
+            "violations": 0
+          },
+          "rule": {
+            "assertion": {
+              "column": "Process temperature [K]",
+              "lower": 305.9,
+              "op": "between",
+              "upper": 313.5
+            },
+            "columns": [
+              "Type",
+              "Process temperature [K]"
+            ],
+            "condition": {
+              "column": "Type",
+              "op": "eq",
+              "value": "H"
+            },
+            "confidence": 0.25,
+            "dataset_id": "ai4i-2020",
+            "evidence": [
+              {
+                "description": "Statistical candidate mined from discovery records; no integrity constraint is asserted by this source.",
+                "source_url": "https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset"
+              }
+            ],
+            "id": "ai4i-2020-type-e064a78851",
+            "provenance": {
+              "metadata_file": "data/metadata/ai4i-2020.json",
+              "metadata_sha256": "fe531127f52abad4eeec28a86fcddc4970d6c4c63e73c01226bf30e4fdbd77fb",
+              "source_files": [
+                {
+                  "file": "data/originals/ai4i/uci-dataset-page.html",
+                  "sha256": "470818f3ebd7b46c7db1ccbab2a6ff2643038ca3057c1866394b86aa2be70509",
+                  "url": "https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset"
+                }
+              ]
+            },
+            "rule_type": "conditional_range",
+            "schema_version": "1.0",
+            "verification_status": "candidate"
+          }
+        },
+        {
+          "baselines": {
+            "conditional": {
+              "applicable_rows": 1807,
+              "descriptive_pass_rate": 0.9988931931377975,
+              "violations": 2
+            },
+            "context_only": {
+              "applicable_rows": 1807,
+              "descriptive_pass_rate": null,
+              "violations": null
+            },
+            "global": {
+              "applicable_rows": 3000,
+              "descriptive_pass_rate": 0.9993333333333333,
+              "violations": 2
+            }
+          },
+          "discovery": {
+            "complexity": 1,
+            "complexity_penalty": 0.01,
+            "pass_rate": 1.0,
+            "rows": 7000,
+            "score": 0.589,
+            "support": 4193
+          },
+          "documented_evidence": {
+            "status": "not_found"
+          },
+          "heldout": {
+            "applicable_rows": 1807,
+            "decision": "abstain",
+            "violations": 2
+          },
+          "rule": {
+            "assertion": {
+              "column": "Process temperature [K]",
+              "lower": 305.8,
+              "op": "between",
+              "upper": 313.7
+            },
+            "columns": [
+              "Type",
+              "Process temperature [K]"
+            ],
+            "condition": {
+              "column": "Type",
+              "op": "eq",
+              "value": "L"
+            },
+            "confidence": 0.25,
+            "dataset_id": "ai4i-2020",
+            "evidence": [
+              {
+                "description": "Statistical candidate mined from discovery records; no integrity constraint is asserted by this source.",
+                "source_url": "https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset"
+              }
+            ],
+            "id": "ai4i-2020-type-3377b61f2a",
+            "provenance": {
+              "metadata_file": "data/metadata/ai4i-2020.json",
+              "metadata_sha256": "fe531127f52abad4eeec28a86fcddc4970d6c4c63e73c01226bf30e4fdbd77fb",
+              "source_files": [
+                {
+                  "file": "data/originals/ai4i/uci-dataset-page.html",
+                  "sha256": "470818f3ebd7b46c7db1ccbab2a6ff2643038ca3057c1866394b86aa2be70509",
+                  "url": "https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset"
+                }
+              ]
+            },
+            "rule_type": "conditional_range",
+            "schema_version": "1.0",
+            "verification_status": "candidate"
+          }
+        },
+        {
+          "baselines": {
+            "conditional": {
+              "applicable_rows": 3000,
+              "descriptive_pass_rate": 1.0,
+              "violations": 0
+            },
+            "context_only": {
+              "applicable_rows": 3000,
+              "descriptive_pass_rate": null,
+              "violations": null
+            },
+            "global": {
+              "applicable_rows": 3000,
+              "descriptive_pass_rate": 1.0,
+              "violations": 0
+            }
+          },
+          "discovery": {
+            "complexity": 0,
+            "complexity_penalty": 0.0,
+            "pass_rate": 1.0,
+            "rows": 7000,
+            "score": 1.0,
+            "support": 7000
+          },
+          "documented_evidence": {
+            "status": "not_found"
+          },
+          "heldout": {
+            "applicable_rows": 3000,
+            "decision": "abstain",
+            "violations": 0
+          },
+          "rule": {
+            "assertion": {
+              "column": "Rotational speed [rpm]",
+              "lower": 1168.0,
+              "op": "between",
+              "upper": 2886.0
+            },
+            "columns": [
+              "Rotational speed [rpm]"
+            ],
+            "condition": null,
+            "confidence": 0.25,
+            "dataset_id": "ai4i-2020",
+            "evidence": [
+              {
+                "description": "Statistical candidate mined from discovery records; no integrity constraint is asserted by this source.",
+                "source_url": "https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset"
+              }
+            ],
+            "id": "ai4i-2020-rotational-speed-rpm-155a4a1aed",
+            "provenance": {
+              "metadata_file": "data/metadata/ai4i-2020.json",
+              "metadata_sha256": "fe531127f52abad4eeec28a86fcddc4970d6c4c63e73c01226bf30e4fdbd77fb",
+              "source_files": [
+                {
+                  "file": "data/originals/ai4i/uci-dataset-page.html",
+                  "sha256": "470818f3ebd7b46c7db1ccbab2a6ff2643038ca3057c1866394b86aa2be70509",
+                  "url": "https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset"
+                }
+              ]
+            },
+            "rule_type": "conditional_range",
+            "schema_version": "1.0",
+            "verification_status": "candidate"
+          }
+        },
+        {
+          "baselines": {
+            "conditional": {
+              "applicable_rows": 296,
+              "descriptive_pass_rate": 1.0,
+              "violations": 0
+            },
+            "context_only": {
+              "applicable_rows": 296,
+              "descriptive_pass_rate": null,
+              "violations": null
+            },
+            "global": {
+              "applicable_rows": 3000,
+              "descriptive_pass_rate": 0.9976666666666667,
+              "violations": 7
+            }
+          },
+          "discovery": {
+            "complexity": 1,
+            "complexity_penalty": 0.01,
+            "pass_rate": 1.0,
+            "rows": 7000,
+            "score": 0.09100000000000001,
+            "support": 707
+          },
+          "documented_evidence": {
+            "status": "not_found"
+          },
+          "heldout": {
+            "applicable_rows": 296,
+            "decision": "abstain",
+            "violations": 0
+          },
+          "rule": {
+            "assertion": {
+              "column": "Rotational speed [rpm]",
+              "lower": 1212.0,
+              "op": "between",
+              "upper": 2636.0
+            },
+            "columns": [
+              "Type",
+              "Rotational speed [rpm]"
+            ],
+            "condition": {
+              "column": "Type",
+              "op": "eq",
+              "value": "H"
+            },
+            "confidence": 0.25,
+            "dataset_id": "ai4i-2020",
+            "evidence": [
+              {
+                "description": "Statistical candidate mined from discovery records; no integrity constraint is asserted by this source.",
+                "source_url": "https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset"
+              }
+            ],
+            "id": "ai4i-2020-type-441f0b928e",
+            "provenance": {
+              "metadata_file": "data/metadata/ai4i-2020.json",
+              "metadata_sha256": "fe531127f52abad4eeec28a86fcddc4970d6c4c63e73c01226bf30e4fdbd77fb",
+              "source_files": [
+                {
+                  "file": "data/originals/ai4i/uci-dataset-page.html",
+                  "sha256": "470818f3ebd7b46c7db1ccbab2a6ff2643038ca3057c1866394b86aa2be70509",
+                  "url": "https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset"
+                }
+              ]
+            },
+            "rule_type": "conditional_range",
+            "schema_version": "1.0",
+            "verification_status": "candidate"
+          }
+        },
+        {
+          "baselines": {
+            "conditional": {
+              "applicable_rows": 1807,
+              "descriptive_pass_rate": 1.0,
+              "violations": 0
+            },
+            "context_only": {
+              "applicable_rows": 1807,
+              "descriptive_pass_rate": null,
+              "violations": null
+            },
+            "global": {
+              "applicable_rows": 3000,
+              "descriptive_pass_rate": 1.0,
+              "violations": 0
+            }
+          },
+          "discovery": {
+            "complexity": 1,
+            "complexity_penalty": 0.01,
+            "pass_rate": 1.0,
+            "rows": 7000,
+            "score": 0.589,
+            "support": 4193
+          },
+          "documented_evidence": {
+            "status": "not_found"
+          },
+          "heldout": {
+            "applicable_rows": 1807,
+            "decision": "abstain",
+            "violations": 0
+          },
+          "rule": {
+            "assertion": {
+              "column": "Rotational speed [rpm]",
+              "lower": 1181.0,
+              "op": "between",
+              "upper": 2886.0
+            },
+            "columns": [
+              "Type",
+              "Rotational speed [rpm]"
+            ],
+            "condition": {
+              "column": "Type",
+              "op": "eq",
+              "value": "L"
+            },
+            "confidence": 0.25,
+            "dataset_id": "ai4i-2020",
+            "evidence": [
+              {
+                "description": "Statistical candidate mined from discovery records; no integrity constraint is asserted by this source.",
+                "source_url": "https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset"
+              }
+            ],
+            "id": "ai4i-2020-type-cd3dfbd5f0",
+            "provenance": {
+              "metadata_file": "data/metadata/ai4i-2020.json",
+              "metadata_sha256": "fe531127f52abad4eeec28a86fcddc4970d6c4c63e73c01226bf30e4fdbd77fb",
+              "source_files": [
+                {
+                  "file": "data/originals/ai4i/uci-dataset-page.html",
+                  "sha256": "470818f3ebd7b46c7db1ccbab2a6ff2643038ca3057c1866394b86aa2be70509",
+                  "url": "https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset"
+                }
+              ]
+            },
+            "rule_type": "conditional_range",
+            "schema_version": "1.0",
+            "verification_status": "candidate"
+          }
+        },
+        {
+          "baselines": {
+            "conditional": {
+              "applicable_rows": 897,
+              "descriptive_pass_rate": 1.0,
+              "violations": 0
+            },
+            "context_only": {
+              "applicable_rows": 897,
+              "descriptive_pass_rate": null,
+              "violations": null
+            },
+            "global": {
+              "applicable_rows": 3000,
+              "descriptive_pass_rate": 0.9996666666666667,
+              "violations": 1
+            }
+          },
+          "discovery": {
+            "complexity": 1,
+            "complexity_penalty": 0.01,
+            "pass_rate": 1.0,
+            "rows": 7000,
+            "score": 0.29,
+            "support": 2100
+          },
+          "documented_evidence": {
+            "status": "not_found"
+          },
+          "heldout": {
+            "applicable_rows": 897,
+            "decision": "abstain",
+            "violations": 0
+          },
+          "rule": {
+            "assertion": {
+              "column": "Rotational speed [rpm]",
+              "lower": 1168.0,
+              "op": "between",
+              "upper": 2710.0
+            },
+            "columns": [
+              "Type",
+              "Rotational speed [rpm]"
+            ],
+            "condition": {
+              "column": "Type",
+              "op": "eq",
+              "value": "M"
+            },
+            "confidence": 0.25,
+            "dataset_id": "ai4i-2020",
+            "evidence": [
+              {
+                "description": "Statistical candidate mined from discovery records; no integrity constraint is asserted by this source.",
+                "source_url": "https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset"
+              }
+            ],
+            "id": "ai4i-2020-type-f08d9fb87f",
+            "provenance": {
+              "metadata_file": "data/metadata/ai4i-2020.json",
+              "metadata_sha256": "fe531127f52abad4eeec28a86fcddc4970d6c4c63e73c01226bf30e4fdbd77fb",
+              "source_files": [
+                {
+                  "file": "data/originals/ai4i/uci-dataset-page.html",
+                  "sha256": "470818f3ebd7b46c7db1ccbab2a6ff2643038ca3057c1866394b86aa2be70509",
+                  "url": "https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset"
+                }
+              ]
+            },
+            "rule_type": "conditional_range",
+            "schema_version": "1.0",
+            "verification_status": "candidate"
+          }
+        },
+        {
+          "baselines": {
+            "conditional": {
+              "applicable_rows": 3000,
+              "descriptive_pass_rate": 1.0,
+              "violations": 0
+            },
+            "context_only": {
+              "applicable_rows": 3000,
+              "descriptive_pass_rate": null,
+              "violations": null
+            },
+            "global": {
+              "applicable_rows": 3000,
+              "descriptive_pass_rate": 1.0,
+              "violations": 0
+            }
+          },
+          "discovery": {
+            "complexity": 0,
+            "complexity_penalty": 0.0,
+            "pass_rate": 1.0,
+            "rows": 7000,
+            "score": 1.0,
+            "support": 7000
+          },
+          "documented_evidence": {
+            "status": "not_found"
+          },
+          "heldout": {
+            "applicable_rows": 3000,
+            "decision": "abstain",
+            "violations": 0
+          },
+          "rule": {
+            "assertion": {
+              "column": "Tool wear [min]",
+              "lower": 0.0,
+              "op": "between",
+              "upper": 253.0
+            },
+            "columns": [
+              "Tool wear [min]"
+            ],
+            "condition": null,
+            "confidence": 0.25,
+            "dataset_id": "ai4i-2020",
+            "evidence": [
+              {
+                "description": "Statistical candidate mined from discovery records; no integrity constraint is asserted by this source.",
+                "source_url": "https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset"
+              }
+            ],
+            "id": "ai4i-2020-tool-wear-min-82d10acb93",
+            "provenance": {
+              "metadata_file": "data/metadata/ai4i-2020.json",
+              "metadata_sha256": "fe531127f52abad4eeec28a86fcddc4970d6c4c63e73c01226bf30e4fdbd77fb",
+              "source_files": [
+                {
+                  "file": "data/originals/ai4i/uci-dataset-page.html",
+                  "sha256": "470818f3ebd7b46c7db1ccbab2a6ff2643038ca3057c1866394b86aa2be70509",
+                  "url": "https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset"
+                }
+              ]
+            },
+            "rule_type": "conditional_range",
+            "schema_version": "1.0",
+            "verification_status": "candidate"
+          }
+        },
+        {
+          "baselines": {
+            "conditional": {
+              "applicable_rows": 296,
+              "descriptive_pass_rate": 1.0,
+              "violations": 0
+            },
+            "context_only": {
+              "applicable_rows": 296,
+              "descriptive_pass_rate": null,
+              "violations": null
+            },
+            "global": {
+              "applicable_rows": 3000,
+              "descriptive_pass_rate": 1.0,
+              "violations": 0
+            }
+          },
+          "discovery": {
+            "complexity": 1,
+            "complexity_penalty": 0.01,
+            "pass_rate": 1.0,
+            "rows": 7000,
+            "score": 0.09100000000000001,
+            "support": 707
+          },
+          "documented_evidence": {
+            "status": "not_found"
+          },
+          "heldout": {
+            "applicable_rows": 296,
+            "decision": "abstain",
+            "violations": 0
+          },
+          "rule": {
+            "assertion": {
+              "column": "Tool wear [min]",
+              "lower": 0.0,
+              "op": "between",
+              "upper": 246.0
+            },
+            "columns": [
+              "Type",
+              "Tool wear [min]"
+            ],
+            "condition": {
+              "column": "Type",
+              "op": "eq",
+              "value": "H"
+            },
+            "confidence": 0.25,
+            "dataset_id": "ai4i-2020",
+            "evidence": [
+              {
+                "description": "Statistical candidate mined from discovery records; no integrity constraint is asserted by this source.",
+                "source_url": "https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset"
+              }
+            ],
+            "id": "ai4i-2020-type-647a2bd497",
+            "provenance": {
+              "metadata_file": "data/metadata/ai4i-2020.json",
+              "metadata_sha256": "fe531127f52abad4eeec28a86fcddc4970d6c4c63e73c01226bf30e4fdbd77fb",
+              "source_files": [
+                {
+                  "file": "data/originals/ai4i/uci-dataset-page.html",
+                  "sha256": "470818f3ebd7b46c7db1ccbab2a6ff2643038ca3057c1866394b86aa2be70509",
+                  "url": "https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset"
+                }
+              ]
+            },
+            "rule_type": "conditional_range",
+            "schema_version": "1.0",
+            "verification_status": "candidate"
+          }
+        },
+        {
+          "baselines": {
+            "conditional": {
+              "applicable_rows": 1807,
+              "descriptive_pass_rate": 1.0,
+              "violations": 0
+            },
+            "context_only": {
+              "applicable_rows": 1807,
+              "descriptive_pass_rate": null,
+              "violations": null
+            },
+            "global": {
+              "applicable_rows": 3000,
+              "descriptive_pass_rate": 1.0,
+              "violations": 0
+            }
+          },
+          "discovery": {
+            "complexity": 1,
+            "complexity_penalty": 0.01,
+            "pass_rate": 1.0,
+            "rows": 7000,
+            "score": 0.589,
+            "support": 4193
+          },
+          "documented_evidence": {
+            "status": "not_found"
+          },
+          "heldout": {
+            "applicable_rows": 1807,
+            "decision": "abstain",
+            "violations": 0
+          },
+          "rule": {
+            "assertion": {
+              "column": "Tool wear [min]",
+              "lower": 0.0,
+              "op": "between",
+              "upper": 251.0
+            },
+            "columns": [
+              "Type",
+              "Tool wear [min]"
+            ],
+            "condition": {
+              "column": "Type",
+              "op": "eq",
+              "value": "L"
+            },
+            "confidence": 0.25,
+            "dataset_id": "ai4i-2020",
+            "evidence": [
+              {
+                "description": "Statistical candidate mined from discovery records; no integrity constraint is asserted by this source.",
+                "source_url": "https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset"
+              }
+            ],
+            "id": "ai4i-2020-type-16101d0ec8",
+            "provenance": {
+              "metadata_file": "data/metadata/ai4i-2020.json",
+              "metadata_sha256": "fe531127f52abad4eeec28a86fcddc4970d6c4c63e73c01226bf30e4fdbd77fb",
+              "source_files": [
+                {
+                  "file": "data/originals/ai4i/uci-dataset-page.html",
+                  "sha256": "470818f3ebd7b46c7db1ccbab2a6ff2643038ca3057c1866394b86aa2be70509",
+                  "url": "https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset"
+                }
+              ]
+            },
+            "rule_type": "conditional_range",
+            "schema_version": "1.0",
+            "verification_status": "candidate"
+          }
+        },
+        {
+          "baselines": {
+            "conditional": {
+              "applicable_rows": 3000,
+              "descriptive_pass_rate": 0.9993333333333333,
+              "violations": 2
+            },
+            "context_only": {
+              "applicable_rows": 3000,
+              "descriptive_pass_rate": null,
+              "violations": null
+            },
+            "global": {
+              "applicable_rows": 3000,
+              "descriptive_pass_rate": 0.9993333333333333,
+              "violations": 2
+            }
+          },
+          "discovery": {
+            "complexity": 0,
+            "complexity_penalty": 0.0,
+            "pass_rate": 1.0,
+            "rows": 7000,
+            "score": 1.0,
+            "support": 7000
+          },
+          "documented_evidence": {
+            "status": "not_found"
+          },
+          "heldout": {
+            "applicable_rows": 3000,
+            "decision": "abstain",
+            "violations": 2
+          },
+          "rule": {
+            "assertion": {
+              "column": "Torque [Nm]",
+              "lower": 3.8,
+              "op": "between",
+              "upper": 75.4
+            },
+            "columns": [
+              "Torque [Nm]"
+            ],
+            "condition": null,
+            "confidence": 0.25,
+            "dataset_id": "ai4i-2020",
+            "evidence": [
+              {
+                "description": "Statistical candidate mined from discovery records; no integrity constraint is asserted by this source.",
+                "source_url": "https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset"
+              }
+            ],
+            "id": "ai4i-2020-torque-nm-4585563d18",
+            "provenance": {
+              "metadata_file": "data/metadata/ai4i-2020.json",
+              "metadata_sha256": "fe531127f52abad4eeec28a86fcddc4970d6c4c63e73c01226bf30e4fdbd77fb",
+              "source_files": [
+                {
+                  "file": "data/originals/ai4i/uci-dataset-page.html",
+                  "sha256": "470818f3ebd7b46c7db1ccbab2a6ff2643038ca3057c1866394b86aa2be70509",
+                  "url": "https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset"
+                }
+              ]
+            },
+            "rule_type": "conditional_range",
+            "schema_version": "1.0",
+            "verification_status": "candidate"
+          }
+        },
+        {
+          "baselines": {
+            "conditional": {
+              "applicable_rows": 296,
+              "descriptive_pass_rate": 0.9966216216216216,
+              "violations": 1
+            },
+            "context_only": {
+              "applicable_rows": 296,
+              "descriptive_pass_rate": null,
+              "violations": null
+            },
+            "global": {
+              "applicable_rows": 3000,
+              "descriptive_pass_rate": 0.9946666666666667,
+              "violations": 16
+            }
+          },
+          "discovery": {
+            "complexity": 1,
+            "complexity_penalty": 0.01,
+            "pass_rate": 1.0,
+            "rows": 7000,
+            "score": 0.09100000000000001,
+            "support": 707
+          },
+          "documented_evidence": {
+            "status": "not_found"
+          },
+          "heldout": {
+            "applicable_rows": 296,
+            "decision": "abstain",
+            "violations": 1
+          },
+          "rule": {
+            "assertion": {
+              "column": "Torque [Nm]",
+              "lower": 12.8,
+              "op": "between",
+              "upper": 68.6
+            },
+            "columns": [
+              "Type",
+              "Torque [Nm]"
+            ],
+            "condition": {
+              "column": "Type",
+              "op": "eq",
+              "value": "H"
+            },
+            "confidence": 0.25,
+            "dataset_id": "ai4i-2020",
+            "evidence": [
+              {
+                "description": "Statistical candidate mined from discovery records; no integrity constraint is asserted by this source.",
+                "source_url": "https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset"
+              }
+            ],
+            "id": "ai4i-2020-type-e60cec33e4",
+            "provenance": {
+              "metadata_file": "data/metadata/ai4i-2020.json",
+              "metadata_sha256": "fe531127f52abad4eeec28a86fcddc4970d6c4c63e73c01226bf30e4fdbd77fb",
+              "source_files": [
+                {
+                  "file": "data/originals/ai4i/uci-dataset-page.html",
+                  "sha256": "470818f3ebd7b46c7db1ccbab2a6ff2643038ca3057c1866394b86aa2be70509",
+                  "url": "https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset"
+                }
+              ]
+            },
+            "rule_type": "conditional_range",
+            "schema_version": "1.0",
+            "verification_status": "candidate"
+          }
+        },
+        {
+          "baselines": {
+            "conditional": {
+              "applicable_rows": 897,
+              "descriptive_pass_rate": 0.9988851727982163,
+              "violations": 1
+            },
+            "context_only": {
+              "applicable_rows": 897,
+              "descriptive_pass_rate": null,
+              "violations": null
+            },
+            "global": {
+              "applicable_rows": 3000,
+              "descriptive_pass_rate": 0.999,
+              "violations": 3
+            }
+          },
+          "discovery": {
+            "complexity": 1,
+            "complexity_penalty": 0.01,
+            "pass_rate": 1.0,
+            "rows": 7000,
+            "score": 0.29,
+            "support": 2100
+          },
+          "documented_evidence": {
+            "status": "not_found"
+          },
+          "heldout": {
+            "applicable_rows": 897,
+            "decision": "abstain",
+            "violations": 1
+          },
+          "rule": {
+            "assertion": {
+              "column": "Torque [Nm]",
+              "lower": 9.7,
+              "op": "between",
+              "upper": 74.5
+            },
+            "columns": [
+              "Type",
+              "Torque [Nm]"
+            ],
+            "condition": {
+              "column": "Type",
+              "op": "eq",
+              "value": "M"
+            },
+            "confidence": 0.25,
+            "dataset_id": "ai4i-2020",
+            "evidence": [
+              {
+                "description": "Statistical candidate mined from discovery records; no integrity constraint is asserted by this source.",
+                "source_url": "https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset"
+              }
+            ],
+            "id": "ai4i-2020-type-7e21cee47e",
+            "provenance": {
+              "metadata_file": "data/metadata/ai4i-2020.json",
+              "metadata_sha256": "fe531127f52abad4eeec28a86fcddc4970d6c4c63e73c01226bf30e4fdbd77fb",
+              "source_files": [
+                {
+                  "file": "data/originals/ai4i/uci-dataset-page.html",
+                  "sha256": "470818f3ebd7b46c7db1ccbab2a6ff2643038ca3057c1866394b86aa2be70509",
+                  "url": "https://archive.ics.uci.edu/dataset/601/ai4i+2020+predictive+maintenance+dataset"
+                }
+              ]
+            },
+            "rule_type": "conditional_range",
+            "schema_version": "1.0",
+            "verification_status": "candidate"
+          }
+        }
+      ],
+      "dataset_id": "ai4i-2020",
+      "decision_counts": {
+        "abstain": 17,
+        "documented_conflict": 0,
+        "documented_support": 0
+      },
+      "discovery_rows": 7000,
+      "error_metrics": {
+        "false_positive_rate": "N/A",
+        "precision": "N/A",
+        "reason": "No independent rule-level labels are present in Module 1 metadata."
+      },
+      "heldout_rows": 3000,
+      "split": "seeded 70/30 random rows"
+    },
+    "sec-companyfacts-320193": {
+      "baseline_comparison": {
+        "conditional": {
+          "applicable_rows": 211,
+          "candidate_count": 11,
+          "descriptive_pass_rate": 1.0,
+          "error_metrics": {
+            "false_positive_rate": "N/A",
+            "precision": "N/A"
+          },
+          "violations": 0
+        },
+        "context_only": {
+          "applicable_rows": 2343,
+          "candidate_count": 11,
+          "descriptive_pass_rate": null,
+          "error_metrics": {
+            "false_positive_rate": "N/A",
+            "precision": "N/A"
+          },
+          "violations": null
+        },
+        "global": {
+          "applicable_rows": 211,
+          "candidate_count": 11,
+          "descriptive_pass_rate": 1.0,
+          "error_metrics": {
+            "false_positive_rate": "N/A",
+            "precision": "N/A"
+          },
+          "violations": 0
+        }
+      },
+      "candidate_count": 11,
+      "candidates": [
+        {
+          "baselines": {
+            "conditional": {
+              "applicable_rows": 23,
+              "descriptive_pass_rate": 1.0,
+              "violations": 0
+            },
+            "context_only": {
+              "applicable_rows": 213,
+              "descriptive_pass_rate": null,
+              "violations": null
+            },
+            "global": {
+              "applicable_rows": 23,
+              "descriptive_pass_rate": 1.0,
+              "violations": 0
+            }
+          },
+          "discovery": {
+            "complexity": 2,
+            "complexity_penalty": 0.02,
+            "pass_rate": 1.0,
+            "rows": 515,
+            "score": 0.06349514563106795,
+            "support": 43
+          },
+          "documented_evidence": {
+            "status": "not_found"
+          },
+          "heldout": {
+            "applicable_rows": 23,
+            "decision": "abstain",
+            "violations": 0
+          },
+          "rule": {
+            "assertion": {
+              "op": "sum_eq",
+              "result_column": "Assets [USD]",
+              "term_columns": [
+                "AssetsCurrent [USD]",
+                "AssetsNoncurrent [USD]"
+              ],
+              "tolerance": 0
+            },
+            "columns": [
+              "Assets [USD]",
+              "AssetsCurrent [USD]",
+              "AssetsNoncurrent [USD]"
+            ],
+            "condition": null,
+            "confidence": 0.25,
+            "dataset_id": "sec-companyfacts-320193",
+            "evidence": [
+              {
+                "description": "Statistical candidate mined from discovery records; no integrity constraint is asserted by this source.",
+                "source_url": "https://www.sec.gov/edgar/sec-api-documentation"
+              }
+            ],
+            "id": "sec-companyfacts-320193-assets-usd-4b627b7173",
+            "provenance": {
+              "metadata_file": "data/metadata/sec-companyfacts-0000320193.json",
+              "metadata_sha256": "7bdf5187454ae353fe4dc3907baab106debfb65c5b089f5cad2ad37a0ecad043",
+              "source_files": [
+                {
+                  "file": "data/originals/sec/api-documentation.html",
+                  "sha256": "a7999ece02302a29386dffdb9731faa036c50363a0658a2c3261f29e008a8ea6",
+                  "url": "https://www.sec.gov/edgar/sec-api-documentation"
+                }
+              ]
+            },
+            "rule_type": "cross_field",
+            "schema_version": "1.0",
+            "verification_status": "candidate"
+          }
+        },
+        {
+          "baselines": {
+            "conditional": {
+              "applicable_rows": 41,
+              "descriptive_pass_rate": 1.0,
+              "violations": 0
+            },
+            "context_only": {
+              "applicable_rows": 213,
+              "descriptive_pass_rate": null,
+              "violations": null
+            },
+            "global": {
+              "applicable_rows": 41,
+              "descriptive_pass_rate": 1.0,
+              "violations": 0
+            }
+          },
+          "discovery": {
+            "complexity": 2,
+            "complexity_penalty": 0.02,
+            "pass_rate": 1.0,
+            "rows": 515,
+            "score": 0.17223300970873787,
+            "support": 99
+          },
+          "documented_evidence": {
+            "citation": {
+              "authority": "US Securities and Exchange Commission",
+              "evidence_status": "documented_reference",
+              "id": "SEC-BALANCE-001",
+              "source_url": "https://www.sec.gov/file/balance-sheet-building-blocks"
+            },
+            "context_compatibility": {
+              "same accounting scope": true,
+              "same currency": true,
+              "same entity": true,
+              "same reporting date": true
+            },
+            "requirements": [
+              "same entity",
+              "same reporting date",
+              "same accounting scope",
+              "same currency"
+            ],
+            "status": "documented"
+          },
+          "heldout": {
+            "applicable_rows": 41,
+            "decision": "documented_support",
+            "violations": 0
+          },
+          "rule": {
+            "assertion": {
+              "op": "sum_eq",
+              "result_column": "Assets [USD]",
+              "term_columns": [
+                "Liabilities [USD]",
+                "StockholdersEquity [USD]"
+              ],
+              "tolerance": 0
+            },
+            "columns": [
+              "Assets [USD]",
+              "Liabilities [USD]",
+              "StockholdersEquity [USD]"
+            ],
+            "condition": null,
+            "confidence": 0.25,
+            "dataset_id": "sec-companyfacts-320193",
+            "evidence": [
+              {
+                "description": "Statistical candidate mined from discovery records; no integrity constraint is asserted by this source.",
+                "source_url": "https://www.sec.gov/edgar/sec-api-documentation"
+              },
+              {
+                "description": "US Securities and Exchange Commission: SEC-BALANCE-001",
+                "source_url": "https://www.sec.gov/file/balance-sheet-building-blocks"
+              }
+            ],
+            "id": "sec-companyfacts-320193-assets-usd-5829762e6f",
+            "provenance": {
+              "metadata_file": "data/metadata/sec-companyfacts-0000320193.json",
+              "metadata_sha256": "7bdf5187454ae353fe4dc3907baab106debfb65c5b089f5cad2ad37a0ecad043",
+              "source_files": [
+                {
+                  "file": "data/originals/sec/api-documentation.html",
+                  "sha256": "a7999ece02302a29386dffdb9731faa036c50363a0658a2c3261f29e008a8ea6",
+                  "url": "https://www.sec.gov/edgar/sec-api-documentation"
+                }
+              ]
+            },
+            "rule_type": "cross_field",
+            "schema_version": "1.0",
+            "verification_status": "candidate"
+          }
+        },
+        {
+          "baselines": {
+            "conditional": {
+              "applicable_rows": 6,
+              "descriptive_pass_rate": 1.0,
+              "violations": 0
+            },
+            "context_only": {
+              "applicable_rows": 213,
+              "descriptive_pass_rate": null,
+              "violations": null
+            },
+            "global": {
+              "applicable_rows": 6,
+              "descriptive_pass_rate": 1.0,
+              "violations": 0
+            }
+          },
+          "discovery": {
+            "complexity": 2,
+            "complexity_penalty": 0.02,
+            "pass_rate": 1.0,
+            "rows": 515,
+            "score": 0.00524271844660194,
+            "support": 13
+          },
+          "documented_evidence": {
+            "status": "not_found"
+          },
+          "heldout": {
+            "applicable_rows": 6,
+            "decision": "abstain",
+            "violations": 0
+          },
+          "rule": {
+            "assertion": {
+              "op": "sum_eq",
+              "result_column": "DeferredTaxAssetsNet [USD]",
+              "term_columns": [
+                "DeferredIncomeTaxLiabilities [USD]",
+                "DeferredTaxAssetsLiabilitiesNet [USD]"
+              ],
+              "tolerance": 0
+            },
+            "columns": [
+              "DeferredTaxAssetsNet [USD]",
+              "DeferredIncomeTaxLiabilities [USD]",
+              "DeferredTaxAssetsLiabilitiesNet [USD]"
+            ],
+            "condition": null,
+            "confidence": 0.25,
+            "dataset_id": "sec-companyfacts-320193",
+            "evidence": [
+              {
+                "description": "Statistical candidate mined from discovery records; no integrity constraint is asserted by this source.",
+                "source_url": "https://www.sec.gov/edgar/sec-api-documentation"
+              }
+            ],
+            "id": "sec-companyfacts-320193-deferredtaxassetsnet-usd-32cd80a4d3",
+            "provenance": {
+              "metadata_file": "data/metadata/sec-companyfacts-0000320193.json",
+              "metadata_sha256": "7bdf5187454ae353fe4dc3907baab106debfb65c5b089f5cad2ad37a0ecad043",
+              "source_files": [
+                {
+                  "file": "data/originals/sec/api-documentation.html",
+                  "sha256": "a7999ece02302a29386dffdb9731faa036c50363a0658a2c3261f29e008a8ea6",
+                  "url": "https://www.sec.gov/edgar/sec-api-documentation"
+                }
+              ]
+            },
+            "rule_type": "cross_field",
+            "schema_version": "1.0",
+            "verification_status": "candidate"
+          }
+        },
+        {
+          "baselines": {
+            "conditional": {
+              "applicable_rows": 2,
+              "descriptive_pass_rate": 1.0,
+              "violations": 0
+            },
+            "context_only": {
+              "applicable_rows": 213,
+              "descriptive_pass_rate": null,
+              "violations": null
+            },
+            "global": {
+              "applicable_rows": 2,
+              "descriptive_pass_rate": 1.0,
+              "violations": 0
+            }
+          },
+          "discovery": {
+            "complexity": 2,
+            "complexity_penalty": 0.02,
+            "pass_rate": 1.0,
+            "rows": 515,
+            "score": 0.014951456310679612,
+            "support": 18
+          },
+          "documented_evidence": {
+            "status": "not_found"
+          },
+          "heldout": {
+            "applicable_rows": 2,
+            "decision": "abstain",
+            "violations": 0
+          },
+          "rule": {
+            "assertion": {
+              "op": "sum_eq",
+              "result_column": "IntangibleAssetsGrossExcludingGoodwill [USD]",
+              "term_columns": [
+                "FiniteLivedIntangibleAssetsAccumulatedAmortization [USD]",
+                "IntangibleAssetsNetExcludingGoodwill [USD]"
+              ],
+              "tolerance": 0
+            },
+            "columns": [
+              "IntangibleAssetsGrossExcludingGoodwill [USD]",
+              "FiniteLivedIntangibleAssetsAccumulatedAmortization [USD]",
+              "IntangibleAssetsNetExcludingGoodwill [USD]"
+            ],
+            "condition": null,
+            "confidence": 0.25,
+            "dataset_id": "sec-companyfacts-320193",
+            "evidence": [
+              {
+                "description": "Statistical candidate mined from discovery records; no integrity constraint is asserted by this source.",
+                "source_url": "https://www.sec.gov/edgar/sec-api-documentation"
+              }
+            ],
+            "id": "sec-companyfacts-320193-intangibleassetsgrossexcludinggoodwi-5c5ffc046a",
+            "provenance": {
+              "metadata_file": "data/metadata/sec-companyfacts-0000320193.json",
+              "metadata_sha256": "7bdf5187454ae353fe4dc3907baab106debfb65c5b089f5cad2ad37a0ecad043",
+              "source_files": [
+                {
+                  "file": "data/originals/sec/api-documentation.html",
+                  "sha256": "a7999ece02302a29386dffdb9731faa036c50363a0658a2c3261f29e008a8ea6",
+                  "url": "https://www.sec.gov/edgar/sec-api-documentation"
+                }
+              ]
+            },
+            "rule_type": "cross_field",
+            "schema_version": "1.0",
+            "verification_status": "candidate"
+          }
+        },
+        {
+          "baselines": {
+            "conditional": {
+              "applicable_rows": 2,
+              "descriptive_pass_rate": 1.0,
+              "violations": 0
+            },
+            "context_only": {
+              "applicable_rows": 213,
+              "descriptive_pass_rate": null,
+              "violations": null
+            },
+            "global": {
+              "applicable_rows": 2,
+              "descriptive_pass_rate": 1.0,
+              "violations": 0
+            }
+          },
+          "discovery": {
+            "complexity": 2,
+            "complexity_penalty": 0.02,
+            "pass_rate": 1.0,
+            "rows": 515,
+            "score": 0.007184466019417475,
+            "support": 14
+          },
+          "documented_evidence": {
+            "status": "not_found"
+          },
+          "heldout": {
+            "applicable_rows": 2,
+            "decision": "abstain",
+            "violations": 0
+          },
+          "rule": {
+            "assertion": {
+              "op": "sum_eq",
+              "result_column": "IntangibleAssetsGrossExcludingGoodwill [USD]",
+              "term_columns": [
+                "FiniteLivedIntangibleAssetsGross [USD]",
+                "IndefiniteLivedIntangibleAssetsExcludingGoodwill [USD]"
+              ],
+              "tolerance": 0
+            },
+            "columns": [
+              "IntangibleAssetsGrossExcludingGoodwill [USD]",
+              "FiniteLivedIntangibleAssetsGross [USD]",
+              "IndefiniteLivedIntangibleAssetsExcludingGoodwill [USD]"
+            ],
+            "condition": null,
+            "confidence": 0.25,
+            "dataset_id": "sec-companyfacts-320193",
+            "evidence": [
+              {
+                "description": "Statistical candidate mined from discovery records; no integrity constraint is asserted by this source.",
+                "source_url": "https://www.sec.gov/edgar/sec-api-documentation"
+              }
+            ],
+            "id": "sec-companyfacts-320193-intangibleassetsgrossexcludinggoodwi-4641b5d05d",
+            "provenance": {
+              "metadata_file": "data/metadata/sec-companyfacts-0000320193.json",
+              "metadata_sha256": "7bdf5187454ae353fe4dc3907baab106debfb65c5b089f5cad2ad37a0ecad043",
+              "source_files": [
+                {
+                  "file": "data/originals/sec/api-documentation.html",
+                  "sha256": "a7999ece02302a29386dffdb9731faa036c50363a0658a2c3261f29e008a8ea6",
+                  "url": "https://www.sec.gov/edgar/sec-api-documentation"
+                }
+              ]
+            },
+            "rule_type": "cross_field",
+            "schema_version": "1.0",
+            "verification_status": "candidate"
+          }
+        },
+        {
+          "baselines": {
+            "conditional": {
+              "applicable_rows": 6,
+              "descriptive_pass_rate": 1.0,
+              "violations": 0
+            },
+            "context_only": {
+              "applicable_rows": 213,
+              "descriptive_pass_rate": null,
+              "violations": null
+            },
+            "global": {
+              "applicable_rows": 6,
+              "descriptive_pass_rate": 1.0,
+              "violations": 0
+            }
+          },
+          "discovery": {
+            "complexity": 2,
+            "complexity_penalty": 0.02,
+            "pass_rate": 1.0,
+            "rows": 515,
+            "score": 0.034368932038834954,
+            "support": 28
+          },
+          "documented_evidence": {
+            "status": "not_found"
+          },
+          "heldout": {
+            "applicable_rows": 6,
+            "decision": "abstain",
+            "violations": 0
+          },
+          "rule": {
+            "assertion": {
+              "op": "sum_eq",
+              "result_column": "IntangibleAssetsNetExcludingGoodwill [USD]",
+              "term_columns": [
+                "FiniteLivedIntangibleAssetsNet [USD]",
+                "IndefiniteLivedIntangibleAssetsExcludingGoodwill [USD]"
+              ],
+              "tolerance": 0
+            },
+            "columns": [
+              "IntangibleAssetsNetExcludingGoodwill [USD]",
+              "FiniteLivedIntangibleAssetsNet [USD]",
+              "IndefiniteLivedIntangibleAssetsExcludingGoodwill [USD]"
+            ],
+            "condition": null,
+            "confidence": 0.25,
+            "dataset_id": "sec-companyfacts-320193",
+            "evidence": [
+              {
+                "description": "Statistical candidate mined from discovery records; no integrity constraint is asserted by this source.",
+                "source_url": "https://www.sec.gov/edgar/sec-api-documentation"
+              }
+            ],
+            "id": "sec-companyfacts-320193-intangibleassetsnetexcludinggoodwill-90bc19d6ab",
+            "provenance": {
+              "metadata_file": "data/metadata/sec-companyfacts-0000320193.json",
+              "metadata_sha256": "7bdf5187454ae353fe4dc3907baab106debfb65c5b089f5cad2ad37a0ecad043",
+              "source_files": [
+                {
+                  "file": "data/originals/sec/api-documentation.html",
+                  "sha256": "a7999ece02302a29386dffdb9731faa036c50363a0658a2c3261f29e008a8ea6",
+                  "url": "https://www.sec.gov/edgar/sec-api-documentation"
+                }
+              ]
+            },
+            "rule_type": "cross_field",
+            "schema_version": "1.0",
+            "verification_status": "candidate"
+          }
+        },
+        {
+          "baselines": {
+            "conditional": {
+              "applicable_rows": 7,
+              "descriptive_pass_rate": 1.0,
+              "violations": 0
+            },
+            "context_only": {
+              "applicable_rows": 213,
+              "descriptive_pass_rate": null,
+              "violations": null
+            },
+            "global": {
+              "applicable_rows": 7,
+              "descriptive_pass_rate": 1.0,
+              "violations": 0
+            }
+          },
+          "discovery": {
+            "complexity": 2,
+            "complexity_penalty": 0.02,
+            "pass_rate": 1.0,
+            "rows": 515,
+            "score": 0.00524271844660194,
+            "support": 13
+          },
+          "documented_evidence": {
+            "status": "not_found"
+          },
+          "heldout": {
+            "applicable_rows": 7,
+            "decision": "abstain",
+            "violations": 0
+          },
+          "rule": {
+            "assertion": {
+              "op": "sum_eq",
+              "result_column": "InventoryNet [USD]",
+              "term_columns": [
+                "InventoryFinishedGoodsNetOfReserves [USD]",
+                "InventoryPartsAndComponentsNetOfReserves [USD]"
+              ],
+              "tolerance": 0
+            },
+            "columns": [
+              "InventoryNet [USD]",
+              "InventoryFinishedGoodsNetOfReserves [USD]",
+              "InventoryPartsAndComponentsNetOfReserves [USD]"
+            ],
+            "condition": null,
+            "confidence": 0.25,
+            "dataset_id": "sec-companyfacts-320193",
+            "evidence": [
+              {
+                "description": "Statistical candidate mined from discovery records; no integrity constraint is asserted by this source.",
+                "source_url": "https://www.sec.gov/edgar/sec-api-documentation"
+              }
+            ],
+            "id": "sec-companyfacts-320193-inventorynet-usd-c536cb5b11",
+            "provenance": {
+              "metadata_file": "data/metadata/sec-companyfacts-0000320193.json",
+              "metadata_sha256": "7bdf5187454ae353fe4dc3907baab106debfb65c5b089f5cad2ad37a0ecad043",
+              "source_files": [
+                {
+                  "file": "data/originals/sec/api-documentation.html",
+                  "sha256": "a7999ece02302a29386dffdb9731faa036c50363a0658a2c3261f29e008a8ea6",
+                  "url": "https://www.sec.gov/edgar/sec-api-documentation"
+                }
+              ]
+            },
+            "rule_type": "cross_field",
+            "schema_version": "1.0",
+            "verification_status": "candidate"
+          }
+        },
+        {
+          "baselines": {
+            "conditional": {
+              "applicable_rows": 23,
+              "descriptive_pass_rate": 1.0,
+              "violations": 0
+            },
+            "context_only": {
+              "applicable_rows": 213,
+              "descriptive_pass_rate": null,
+              "violations": null
+            },
+            "global": {
+              "applicable_rows": 23,
+              "descriptive_pass_rate": 1.0,
+              "violations": 0
+            }
+          },
+          "discovery": {
+            "complexity": 2,
+            "complexity_penalty": 0.02,
+            "pass_rate": 1.0,
+            "rows": 515,
+            "score": 0.06349514563106795,
+            "support": 43
+          },
+          "documented_evidence": {
+            "status": "not_found"
+          },
+          "heldout": {
+            "applicable_rows": 23,
+            "decision": "abstain",
+            "violations": 0
+          },
+          "rule": {
+            "assertion": {
+              "op": "sum_eq",
+              "result_column": "Liabilities [USD]",
+              "term_columns": [
+                "LiabilitiesCurrent [USD]",
+                "LiabilitiesNoncurrent [USD]"
+              ],
+              "tolerance": 0
+            },
+            "columns": [
+              "Liabilities [USD]",
+              "LiabilitiesCurrent [USD]",
+              "LiabilitiesNoncurrent [USD]"
+            ],
+            "condition": null,
+            "confidence": 0.25,
+            "dataset_id": "sec-companyfacts-320193",
+            "evidence": [
+              {
+                "description": "Statistical candidate mined from discovery records; no integrity constraint is asserted by this source.",
+                "source_url": "https://www.sec.gov/edgar/sec-api-documentation"
+              }
+            ],
+            "id": "sec-companyfacts-320193-liabilities-usd-bdda67025f",
+            "provenance": {
+              "metadata_file": "data/metadata/sec-companyfacts-0000320193.json",
+              "metadata_sha256": "7bdf5187454ae353fe4dc3907baab106debfb65c5b089f5cad2ad37a0ecad043",
+              "source_files": [
+                {
+                  "file": "data/originals/sec/api-documentation.html",
+                  "sha256": "a7999ece02302a29386dffdb9731faa036c50363a0658a2c3261f29e008a8ea6",
+                  "url": "https://www.sec.gov/edgar/sec-api-documentation"
+                }
+              ]
+            },
+            "rule_type": "cross_field",
+            "schema_version": "1.0",
+            "verification_status": "candidate"
+          }
+        },
+        {
+          "baselines": {
+            "conditional": {
+              "applicable_rows": 23,
+              "descriptive_pass_rate": 1.0,
+              "violations": 0
+            },
+            "context_only": {
+              "applicable_rows": 213,
+              "descriptive_pass_rate": null,
+              "violations": null
+            },
+            "global": {
+              "applicable_rows": 23,
+              "descriptive_pass_rate": 1.0,
+              "violations": 0
+            }
+          },
+          "discovery": {
+            "complexity": 2,
+            "complexity_penalty": 0.02,
+            "pass_rate": 1.0,
+            "rows": 515,
+            "score": 0.06349514563106795,
+            "support": 43
+          },
+          "documented_evidence": {
+            "status": "not_found"
+          },
+          "heldout": {
+            "applicable_rows": 23,
+            "decision": "abstain",
+            "violations": 0
+          },
+          "rule": {
+            "assertion": {
+              "op": "sum_eq",
+              "result_column": "LiabilitiesAndStockholdersEquity [USD]",
+              "term_columns": [
+                "AssetsCurrent [USD]",
+                "AssetsNoncurrent [USD]"
+              ],
+              "tolerance": 0
+            },
+            "columns": [
+              "LiabilitiesAndStockholdersEquity [USD]",
+              "AssetsCurrent [USD]",
+              "AssetsNoncurrent [USD]"
+            ],
+            "condition": null,
+            "confidence": 0.25,
+            "dataset_id": "sec-companyfacts-320193",
+            "evidence": [
+              {
+                "description": "Statistical candidate mined from discovery records; no integrity constraint is asserted by this source.",
+                "source_url": "https://www.sec.gov/edgar/sec-api-documentation"
+              }
+            ],
+            "id": "sec-companyfacts-320193-liabilitiesandstockholdersequity-usd-dcd4a79b5c",
+            "provenance": {
+              "metadata_file": "data/metadata/sec-companyfacts-0000320193.json",
+              "metadata_sha256": "7bdf5187454ae353fe4dc3907baab106debfb65c5b089f5cad2ad37a0ecad043",
+              "source_files": [
+                {
+                  "file": "data/originals/sec/api-documentation.html",
+                  "sha256": "a7999ece02302a29386dffdb9731faa036c50363a0658a2c3261f29e008a8ea6",
+                  "url": "https://www.sec.gov/edgar/sec-api-documentation"
+                }
+              ]
+            },
+            "rule_type": "cross_field",
+            "schema_version": "1.0",
+            "verification_status": "candidate"
+          }
+        },
+        {
+          "baselines": {
+            "conditional": {
+              "applicable_rows": 41,
+              "descriptive_pass_rate": 1.0,
+              "violations": 0
+            },
+            "context_only": {
+              "applicable_rows": 213,
+              "descriptive_pass_rate": null,
+              "violations": null
+            },
+            "global": {
+              "applicable_rows": 41,
+              "descriptive_pass_rate": 1.0,
+              "violations": 0
+            }
+          },
+          "discovery": {
+            "complexity": 2,
+            "complexity_penalty": 0.02,
+            "pass_rate": 1.0,
+            "rows": 515,
+            "score": 0.17223300970873787,
+            "support": 99
+          },
+          "documented_evidence": {
+            "status": "not_found"
+          },
+          "heldout": {
+            "applicable_rows": 41,
+            "decision": "abstain",
+            "violations": 0
+          },
+          "rule": {
+            "assertion": {
+              "op": "sum_eq",
+              "result_column": "LiabilitiesAndStockholdersEquity [USD]",
+              "term_columns": [
+                "Liabilities [USD]",
+                "StockholdersEquity [USD]"
+              ],
+              "tolerance": 0
+            },
+            "columns": [
+              "LiabilitiesAndStockholdersEquity [USD]",
+              "Liabilities [USD]",
+              "StockholdersEquity [USD]"
+            ],
+            "condition": null,
+            "confidence": 0.25,
+            "dataset_id": "sec-companyfacts-320193",
+            "evidence": [
+              {
+                "description": "Statistical candidate mined from discovery records; no integrity constraint is asserted by this source.",
+                "source_url": "https://www.sec.gov/edgar/sec-api-documentation"
+              }
+            ],
+            "id": "sec-companyfacts-320193-liabilitiesandstockholdersequity-usd-9ba1ae4b23",
+            "provenance": {
+              "metadata_file": "data/metadata/sec-companyfacts-0000320193.json",
+              "metadata_sha256": "7bdf5187454ae353fe4dc3907baab106debfb65c5b089f5cad2ad37a0ecad043",
+              "source_files": [
+                {
+                  "file": "data/originals/sec/api-documentation.html",
+                  "sha256": "a7999ece02302a29386dffdb9731faa036c50363a0658a2c3261f29e008a8ea6",
+                  "url": "https://www.sec.gov/edgar/sec-api-documentation"
+                }
+              ]
+            },
+            "rule_type": "cross_field",
+            "schema_version": "1.0",
+            "verification_status": "candidate"
+          }
+        },
+        {
+          "baselines": {
+            "conditional": {
+              "applicable_rows": 37,
+              "descriptive_pass_rate": 1.0,
+              "violations": 0
+            },
+            "context_only": {
+              "applicable_rows": 213,
+              "descriptive_pass_rate": null,
+              "violations": null
+            },
+            "global": {
+              "applicable_rows": 37,
+              "descriptive_pass_rate": 1.0,
+              "violations": 0
+            }
+          },
+          "discovery": {
+            "complexity": 2,
+            "complexity_penalty": 0.02,
+            "pass_rate": 1.0,
+            "rows": 515,
+            "score": 0.13728155339805825,
+            "support": 81
+          },
+          "documented_evidence": {
+            "status": "not_found"
+          },
+          "heldout": {
+            "applicable_rows": 37,
+            "decision": "abstain",
+            "violations": 0
+          },
+          "rule": {
+            "assertion": {
+              "op": "sum_eq",
+              "result_column": "PropertyPlantAndEquipmentGross [USD]",
+              "term_columns": [
+                "AccumulatedDepreciationDepletionAndAmortizationPropertyPlantAndEquipment [USD]",
+                "PropertyPlantAndEquipmentNet [USD]"
+              ],
+              "tolerance": 0
+            },
+            "columns": [
+              "PropertyPlantAndEquipmentGross [USD]",
+              "AccumulatedDepreciationDepletionAndAmortizationPropertyPlantAndEquipment [USD]",
+              "PropertyPlantAndEquipmentNet [USD]"
+            ],
+            "condition": null,
+            "confidence": 0.25,
+            "dataset_id": "sec-companyfacts-320193",
+            "evidence": [
+              {
+                "description": "Statistical candidate mined from discovery records; no integrity constraint is asserted by this source.",
+                "source_url": "https://www.sec.gov/edgar/sec-api-documentation"
+              }
+            ],
+            "id": "sec-companyfacts-320193-propertyplantandequipmentgross-usd-4910ea97f4",
+            "provenance": {
+              "metadata_file": "data/metadata/sec-companyfacts-0000320193.json",
+              "metadata_sha256": "7bdf5187454ae353fe4dc3907baab106debfb65c5b089f5cad2ad37a0ecad043",
+              "source_files": [
+                {
+                  "file": "data/originals/sec/api-documentation.html",
+                  "sha256": "a7999ece02302a29386dffdb9731faa036c50363a0658a2c3261f29e008a8ea6",
+                  "url": "https://www.sec.gov/edgar/sec-api-documentation"
+                }
+              ]
+            },
+            "rule_type": "cross_field",
+            "schema_version": "1.0",
+            "verification_status": "candidate"
+          }
+        }
+      ],
+      "dataset_id": "sec-companyfacts-320193",
+      "decision_counts": {
+        "abstain": 10,
+        "documented_conflict": 0,
+        "documented_support": 1
+      },
+      "discovery_rows": 515,
+      "error_metrics": {
+        "false_positive_rate": "N/A",
+        "precision": "N/A",
+        "reason": "No independent rule-level labels are present in Module 1 metadata."
+      },
+      "heldout_rows": 213,
+      "split": "seeded 70/30 reporting-end-date groups"
+    }
+  },
+  "method": {
+    "SEC_alignment": "same end, accession, form, filing date, and unit; instant facts only",
+    "complexity_penalty_per_context_or_relation": 0.01,
+    "decisions": "independent documentation plus compatible reporting context and held-out checks: documented_support, documented_conflict, or abstain; empirical fit alone is not semantic proof",
+    "minimum_SEC_identity_rate": 0.99,
+    "minimum_support": 10,
+    "numeric_contexts": "single categorical equality predicates; redundant global-equivalent contexts omitted",
+    "seed": 2401,
+    "split": "deterministic 70/30; SEC grouped by reporting end date"
+  },
+  "module": "MetaVerify Module 2B"
+}

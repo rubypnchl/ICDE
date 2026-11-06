@@ -51,7 +51,8 @@
       "oneOf": [
         { "$ref": "#/$defs/predicate" },
         { "$ref": "#/$defs/rangeAssertion" },
-        { "$ref": "#/$defs/relationAssertion" }
+        { "$ref": "#/$defs/relationAssertion" },
+        { "$ref": "#/$defs/arithmeticAssertion" }
       ]
     },
     "evidence": {
@@ -162,6 +163,23 @@
         },
         "left_column": { "type": "string", "minLength": 1 },
         "right_column": { "type": "string", "minLength": 1 }
+      },
+      "additionalProperties": false
+    },
+    "arithmeticAssertion": {
+      "type": "object",
+      "required": ["op", "result_column", "term_columns"],
+      "properties": {
+        "op": { "const": "sum_eq" },
+        "result_column": { "type": "string", "minLength": 1 },
+        "term_columns": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 2,
+          "uniqueItems": true,
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "tolerance": { "type": "number", "minimum": 0 }
       },
       "additionalProperties": false
     },

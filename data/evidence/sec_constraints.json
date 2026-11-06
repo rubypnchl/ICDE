@@ -1,0 +1,26 @@
+{
+  "registry_version": "1.0",
+  "entries": [
+    {
+      "id": "SEC-BALANCE-001",
+      "source_url": "https://www.sec.gov/file/balance-sheet-building-blocks",
+      "authority": "US Securities and Exchange Commission",
+      "assertion": {
+        "op": "sum_eq",
+        "result_column": "Assets [USD]",
+        "term_columns": [
+          "Liabilities [USD]",
+          "StockholdersEquity [USD]"
+        ],
+        "tolerance": 0
+      },
+      "requirements": [
+        "same entity",
+        "same reporting date",
+        "same accounting scope",
+        "same currency"
+      ],
+      "evidence_status": "documented_reference"
+    }
+  ]
+}
