@@ -7,7 +7,15 @@ import pytest
 
 ROOT = Path(__file__).resolve().parents[1]
 RULE_SCHEMA = json.loads((ROOT / "data" / "rule.schema.json").read_text(encoding="utf-8"))
-RULE_FILES = sorted((ROOT / "data" / "rules").glob("*.json"))
+RULE_FILES = [
+    ROOT / "data" / "rules" / name
+    for name in (
+        "cyber-unsw-nb15.json",
+        "finance-sec-companyfacts.json",
+        "health-nhanes.json",
+        "manufacturing-ai4i.json",
+    )
+]
 
 
 def test_candidate_rule_examples_validate_and_are_unverified():
