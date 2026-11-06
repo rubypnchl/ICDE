@@ -1,0 +1,16 @@
+{
+  "dataset_id": "nhanes-2017-2018-glu-j",
+  "source_file": "data/originals/nhanes/GLU_J.XPT",
+  "source_sha256": "5b38897d0d7bfbc69dd9ca74ffdaf2f6a9bed5a91d4a7bf46e07f1332cc3379e",
+  "conversion_factor": "0.05551",
+  "records_total": 3036,
+  "records_evaluable": 2891,
+  "rounding_matches": {
+    "1_decimal_places": 367,
+    "2_decimal_places": 2773,
+    "3_decimal_places": 284,
+    "3_significant_figures": 2891
+  },
+  "interpretation": "Empirical comparison on the same dataset used to select rounding; no independent held-out confirmation.",
+  "rule_status": "candidate_empirically_supported_not_independently_validated"
+}
