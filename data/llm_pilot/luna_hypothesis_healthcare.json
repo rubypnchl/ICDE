@@ -1,0 +1,102 @@
+{
+  "domain": "healthcare",
+  "proposal_mode": "hypothesis",
+  "model": "gpt-6-luna",
+  "model_id_requested": "gpt-6-luna",
+  "reasoning_effort": "none",
+  "prompt_sha256": "b09fbf1f20dc696500fa472563ea5f9fd63adfa4ac530fd2aa195971a5012c01",
+  "input_bundle": {
+    "domain": "healthcare",
+    "dataset_id": "nhanes-2017-2018-glu-j",
+    "scope_note": "Feasibility pilot with manually chosen relevant columns; source passages can be incomplete; no data values or reference rules supplied.",
+    "passages": [
+      {
+        "id": "P01",
+        "column": "SEQN",
+        "description": "Respondent sequence number",
+        "unit": "unknown",
+        "type": "integer",
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/GLU_J.htm"
+      },
+      {
+        "id": "P02",
+        "column": "WTSAF2YR",
+        "description": "Fasting Subsample 2 Year MEC Weight",
+        "unit": "unknown",
+        "type": "number",
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/GLU_J.htm"
+      },
+      {
+        "id": "P03",
+        "column": "LBXGLU",
+        "description": "Fasting Glucose (mg/dL)",
+        "unit": "unknown",
+        "type": "integer",
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/GLU_J.htm"
+      },
+      {
+        "id": "P04",
+        "column": "LBDGLUSI",
+        "description": "Fasting Glucose (mmol/L)",
+        "unit": "unknown",
+        "type": "number",
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/GLU_J.htm"
+      }
+    ]
+  },
+  "api_response_id": "resp_0a7d8116cee2808f016aed5427b62487d2909cc012e5fbb0d9",
+  "response_status": "completed",
+  "output": {
+    "rules": [
+      {
+        "rule_type": "unit_conversion",
+        "columns": [
+          "LBXGLU",
+          "LBDGLUSI"
+        ],
+        "expression": "LBDGLUSI approximately equals LBXGLU / k, where k is the glucose unit-conversion factor (unknown here)",
+        "applicability": "Rows where both glucose measurements are present and refer to the same observation; verify the conversion factor, rounding, and any special or missing-value codes against the data documentation.",
+        "passage_ids": [
+          "P03",
+          "P04"
+        ],
+        "uncertainty": "The passages document the respective units but do not state the conversion equation or factor, so this is a testable hypothesis, not a validated constraint."
+      }
+    ]
+  },
+  "proposals_with_reference_checks": [
+    {
+      "rule_type": "unit_conversion",
+      "columns": [
+        "LBXGLU",
+        "LBDGLUSI"
+      ],
+      "expression": "LBDGLUSI approximately equals LBXGLU / k, where k is the glucose unit-conversion factor (unknown here)",
+      "applicability": "Rows where both glucose measurements are present and refer to the same observation; verify the conversion factor, rounding, and any special or missing-value codes against the data documentation.",
+      "passage_ids": [
+        "P03",
+        "P04"
+      ],
+      "uncertainty": "The passages document the respective units but do not state the conversion equation or factor, so this is a testable hypothesis, not a validated constraint.",
+      "syntax_and_reference_check": "pass",
+      "verification_status": "hypothesis_unverified",
+      "has_documented_definition_passage": true,
+      "note": "Syntax and reference existence only; uncited hypotheses are allowed in hypothesis mode. Citing an attribute definition does NOT establish that it supports the proposed relationship. Semantic entailment, applicability, and data accuracy are NOT checked."
+    }
+  ],
+  "error": null,
+  "usage": {
+    "input_tokens": 645,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0
+    },
+    "output_tokens": 149,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 794
+  },
+  "estimated_cost_usd": 0.000139,
+  "research_warning": "NOT VERIFIED: no independent semantic adjudication or held-out evaluation has been performed. Hypotheses must not be reported as accepted rules."
+}

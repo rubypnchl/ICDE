@@ -1,0 +1,56 @@
+{
+  "domain": "finance",
+  "model": "gpt-6-luna",
+  "model_id_requested": "gpt-6-luna",
+  "reasoning_effort": "none",
+  "prompt_sha256": "45a3c79dd7fa780ed288d596376cf5640afdc76803130a22c6bb9dd0654f1a72",
+  "input_bundle": {
+    "domain": "finance",
+    "dataset_id": "sec-companyfacts-320193",
+    "scope_note": "Feasibility pilot with manually chosen relevant columns; source passages can be incomplete; no data values or reference rules supplied.",
+    "passages": [
+      {
+        "id": "P01",
+        "column": "Assets",
+        "description": "Sum of the carrying amounts as of the balance sheet date of all assets that are recognized. Assets are probable future economic benefits obtained or controlled by an entity as a result of past transactions or events.",
+        "unit": "USD (candidate; fact-level units require verification)",
+        "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000320193.json"
+      },
+      {
+        "id": "P02",
+        "column": "Liabilities",
+        "description": "Sum of the carrying amounts as of the balance sheet date of all liabilities that are recognized. Liabilities are probable future sacrifices of economic benefits arising from present obligations of an entity to transfer assets or provide services to other entities in the future.",
+        "unit": "USD (candidate; fact-level units require verification)",
+        "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000320193.json"
+      },
+      {
+        "id": "P03",
+        "column": "StockholdersEquity",
+        "description": "Total of all stockholders' equity (deficit) items, net of receivables from officers, directors, owners, and affiliates of the entity which are attributable to the parent. The amount of the economic entity's stockholders' equity attributable to the parent excludes the amount of stockholders' equity which is allocable to that ownership interest in subsidiary equity which is not attributable to the parent (noncontrolling interest, minority",
+        "unit": "USD (candidate; fact-level units require verification)",
+        "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000320193.json"
+      }
+    ]
+  },
+  "api_response_id": "resp_0f85698b6f455e15016aed525891f087d2b01d86df9b8e478d",
+  "response_status": "completed",
+  "output": {
+    "rules": []
+  },
+  "proposals_with_reference_checks": [],
+  "error": null,
+  "usage": {
+    "input_tokens": 618,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0
+    },
+    "output_tokens": 16,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 634
+  },
+  "estimated_cost_usd": 6.98e-05,
+  "research_warning": "NOT VERIFIED: no independent semantic adjudication or held-out evaluation has been performed."
+}

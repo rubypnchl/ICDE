@@ -1,0 +1,98 @@
+{
+  "domain": "finance",
+  "proposal_mode": "hypothesis",
+  "model": "gpt-6-luna",
+  "model_id_requested": "gpt-6-luna",
+  "reasoning_effort": "none",
+  "prompt_sha256": "8b39242c1bbd7339fb6cf2db3fdd6c8c27c86bfbc7f51b737ad41c074a419eda",
+  "input_bundle": {
+    "domain": "finance",
+    "dataset_id": "sec-companyfacts-320193",
+    "scope_note": "Feasibility pilot with manually chosen relevant columns; source passages can be incomplete; no data values or reference rules supplied.",
+    "passages": [
+      {
+        "id": "P01",
+        "column": "Assets",
+        "description": "Sum of the carrying amounts as of the balance sheet date of all assets that are recognized. Assets are probable future economic benefits obtained or controlled by an entity as a result of past transactions or events.",
+        "unit": "USD (candidate; fact-level units require verification)",
+        "type": "number (candidate; fact-level type requires verification)",
+        "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000320193.json"
+      },
+      {
+        "id": "P02",
+        "column": "Liabilities",
+        "description": "Sum of the carrying amounts as of the balance sheet date of all liabilities that are recognized. Liabilities are probable future sacrifices of economic benefits arising from present obligations of an entity to transfer assets or provide services to other entities in the future.",
+        "unit": "USD (candidate; fact-level units require verification)",
+        "type": "number (candidate; fact-level type requires verification)",
+        "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000320193.json"
+      },
+      {
+        "id": "P03",
+        "column": "StockholdersEquity",
+        "description": "Total of all stockholders' equity (deficit) items, net of receivables from officers, directors, owners, and affiliates of the entity which are attributable to the parent. The amount of the economic entity's stockholders' equity attributable to the parent excludes the amount of stockholders' equity which is allocable to that ownership interest in subsidiary equity which is not attributable to the parent (noncontrolling interest, minority",
+        "unit": "USD (candidate; fact-level units require verification)",
+        "type": "number (candidate; fact-level type requires verification)",
+        "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000320193.json"
+      }
+    ]
+  },
+  "api_response_id": "resp_059bd4bbdca92119016aed5429dde487d29acba60bc7d4d24d",
+  "response_status": "completed",
+  "output": {
+    "rules": [
+      {
+        "rule_type": "arithmetic",
+        "columns": [
+          "Assets",
+          "Liabilities",
+          "StockholdersEquity"
+        ],
+        "expression": "Assets approximately equals Liabilities + StockholdersEquity + k (k accounts for any excluded or separately classified balance-sheet components; expected to be zero only if the reported definitions and reporting scope align)",
+        "applicability": "Compare facts for the same entity, balance-sheet date, reporting scope, and compatible units; only where all three values are present and their fact-level units and definitions have been verified.",
+        "passage_ids": [
+          "P01",
+          "P02",
+          "P03"
+        ],
+        "uncertainty": "The passages define each column individually but do not document the equation or establish that the measures have matching scope. StockholdersEquity is described as attributable to the parent, which may differ from total equity; verify XBRL concepts, presentation, and reporting scope before testing. This is a hypothesis, not a guaranteed constraint."
+      }
+    ]
+  },
+  "proposals_with_reference_checks": [
+    {
+      "rule_type": "arithmetic",
+      "columns": [
+        "Assets",
+        "Liabilities",
+        "StockholdersEquity"
+      ],
+      "expression": "Assets approximately equals Liabilities + StockholdersEquity + k (k accounts for any excluded or separately classified balance-sheet components; expected to be zero only if the reported definitions and reporting scope align)",
+      "applicability": "Compare facts for the same entity, balance-sheet date, reporting scope, and compatible units; only where all three values are present and their fact-level units and definitions have been verified.",
+      "passage_ids": [
+        "P01",
+        "P02",
+        "P03"
+      ],
+      "uncertainty": "The passages define each column individually but do not document the equation or establish that the measures have matching scope. StockholdersEquity is described as attributable to the parent, which may differ from total equity; verify XBRL concepts, presentation, and reporting scope before testing. This is a hypothesis, not a guaranteed constraint.",
+      "syntax_and_reference_check": "pass",
+      "verification_status": "hypothesis_unverified",
+      "has_documented_definition_passage": true,
+      "note": "Syntax and reference existence only; uncited hypotheses are allowed in hypothesis mode. Citing an attribute definition does NOT establish that it supports the proposed relationship. Semantic entailment, applicability, and data accuracy are NOT checked."
+    }
+  ],
+  "error": null,
+  "usage": {
+    "input_tokens": 761,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0
+    },
+    "output_tokens": 201,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 962
+  },
+  "estimated_cost_usd": 0.0001766,
+  "research_warning": "NOT VERIFIED: no independent semantic adjudication or held-out evaluation has been performed. Hypotheses must not be reported as accepted rules."
+}
