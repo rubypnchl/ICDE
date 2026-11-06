@@ -1,0 +1,117 @@
+{
+  "study_id": "b7_1_saved_pilot_opportunity_audit_v1",
+  "type": "retrospective_metadata_only_opportunity_accounting_not_published_baseline_replication",
+  "plan_sha256": "047b1e12bd6657284577e2864a6f846e79f9d675d2ec1afcbffefb57ace593e8",
+  "input_sha256": {
+    "input_bundles": "d42a50b344bb8b821ce9773d9c958208179611f8cc82a76d471e8578f0917c22",
+    "luna_healthcare": "05d0b5c62dd7dc342d3c77087bbcda1d4416921b834d349968cf6f9fc02a6d29",
+    "luna_finance": "86334e314ccf227fd98a911b5249e2450c2c6a46fae66d45028501a6b6d5fd68",
+    "b5_1_review": "fcb89b978e2e96b27aa38ff76f7402ef244433a2e527f5155087297f9090ff24"
+  },
+  "opportunities_total": 2,
+  "manual_selection_acknowledged": true,
+  "independent_gold_rule_count": 0,
+  "independent_gold_precision": null,
+  "published_method_reproduction": false,
+  "prospective_comparison": false,
+  "new_api_calls": 0,
+  "results": [
+    {
+      "domain": "healthcare",
+      "dataset_id": "nhanes-2017-2018-glu-j",
+      "scope": "manually_focused_prior_B5_pilot_not_unseen",
+      "input_bundle_sha256": "df1e8925f235085f513263a37265b848b912bc06b1b8745c4e1a465818613f38",
+      "metadata_column_count": 4,
+      "lexical_heuristic": {
+        "candidate_count": 1,
+        "candidates": [
+          {
+            "kind": "possible_paired_measurement_different_unit",
+            "columns": [
+              "LBDGLUSI",
+              "LBXGLU"
+            ],
+            "passage_ids": [
+              "P04",
+              "P03"
+            ],
+            "description_stem": "fasting glucose",
+            "observed_unit_strings": [
+              "mmol/l",
+              "mg/dl"
+            ],
+            "status": "hypothesis_only_parameters_and_direction_unresolved",
+            "executable_rule": null,
+            "semantic_verified": false
+          }
+        ],
+        "verified_rules": 0,
+        "independently_adjudicated": false
+      },
+      "saved_luna_pilot": {
+        "hypothesis_count": 1,
+        "proposals": [
+          {
+            "id": "glucose_unit_conversion",
+            "passage_ids": [
+              "P03",
+              "P04"
+            ],
+            "b4_status": "blocked_unresolved",
+            "b5_1_posthoc_status": "compiled_unverified_posthoc"
+          }
+        ],
+        "estimated_nominal_api_cost_usd_from_saved_report": 0.0001527,
+        "new_model_calls": 0,
+        "independently_adjudicated": false
+      },
+      "rule_precision": null,
+      "rule_recall": null,
+      "confidence_interval": null,
+      "reason_metrics_unavailable": "No independently adjudicated reference rules; convenience selected pilots and retrospective gate"
+    },
+    {
+      "domain": "finance",
+      "dataset_id": "sec-companyfacts-320193",
+      "scope": "manually_focused_prior_B5_pilot_not_unseen",
+      "input_bundle_sha256": "db1605a5b689b1a354494f637fb03be5a29b3ee130e05b2178f67d5946cb14fc",
+      "metadata_column_count": 3,
+      "lexical_heuristic": {
+        "candidate_count": 0,
+        "candidates": [],
+        "verified_rules": 0,
+        "independently_adjudicated": false
+      },
+      "saved_luna_pilot": {
+        "hypothesis_count": 1,
+        "proposals": [
+          {
+            "id": "balance_sheet_equation",
+            "passage_ids": [
+              "P01",
+              "P02",
+              "P03"
+            ],
+            "b4_status": "candidate_executable_unverified",
+            "b5_1_posthoc_status": "blocked_applicability_or_scope"
+          }
+        ],
+        "estimated_nominal_api_cost_usd_from_saved_report": 0.0001648,
+        "new_model_calls": 0,
+        "independently_adjudicated": false
+      },
+      "rule_precision": null,
+      "rule_recall": null,
+      "confidence_interval": null,
+      "reason_metrics_unavailable": "No independently adjudicated reference rules; convenience selected pilots and retrospective gate"
+    }
+  ],
+  "limits": [
+    "Manually selected two earlier-pilot metadata bundles; not a random sample and no untouched test set.",
+    "A generic lexical paired-unit heuristic is an original LOCAL baseline, not Metanome, Guardrail, Auto-Test or Deequ.",
+    "The saved Luna proposals came before this posthoc analysis; B5.1 policy was written after viewing Luna outputs.",
+    "Hypothesis yield/status do not measure semantic correctness, precision, recall or improvement.",
+    "The discovery baseline in src/rule_discovery.py uses a different data regime and cannot be scored as matched metadata-only here.",
+    "No independent gold adjudication and no four-domain automated discovery benchmark."
+  ]
+}
