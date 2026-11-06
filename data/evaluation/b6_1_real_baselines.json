@@ -1,0 +1,92 @@
+{
+  "experiment": "B6.1_local_real_source_development_baseline_v1",
+  "runner_revision": "header_compatibility_fix_v2_no_rule_change",
+  "protocol_id": "b6-frozen-protocol-v1",
+  "baseline_git_commit": "b68e3be3c8ab832a6b550545121187970b0a7672",
+  "catalogue_sha256": "46ed4bfb68348a155ae5be77982c835b9a57bbeb8278151e1a85081a1552eb3a",
+  "protocol_sha256": "cf5b008690926bb67ead85845d6eadf4eaac7455983886fd9fab767d80d55dd5",
+  "source_manifest_sha256": "73928e4a187650c9ab149520c299aeb05ad701faa20e95fc58d8c5f46f34a9b2",
+  "runner_sha256": "8efda450b4e5b4d5fdc8b20328c47845768618de90730bb36f0e397ac79035c7",
+  "mode": "development_only_no_independent_holdout_no_gold_scoring",
+  "independently_adjudicated_gold_rules": 0,
+  "results": [
+    {
+      "reference_rule_id": "B6-MAN-001",
+      "domain": "manufacturing",
+      "dataset_id": "ai4i-2020",
+      "source_type": "official_UCI_synthetic_dataset",
+      "source_file": "data/originals/ai4i/ai4i2020.csv",
+      "source_sha256": "dc6630cd9b1f0f853922fad78a1b6436570d3f1ec863f1dd5c4340ac56bc8a8e",
+      "source_file_bytes": 522048,
+      "csv_header_diagnostics": {
+        "field_count": 14,
+        "nonrequired_duplicate_names": [],
+        "blank_header_positions_1based": [],
+        "required_fields_unique": true,
+        "reader": "positional_csv_reader_no_header_overwrite"
+      },
+      "record_count": 10000,
+      "eligible_records": 348,
+      "evaluated_records": 348,
+      "counts": {
+        "satisfied": 330,
+        "violated": 18,
+        "abstained": 0,
+        "not_applicable": 9652
+      },
+      "reason_counts": {
+        "not_applicable:condition is false": 9652,
+        "satisfied:all executable expressions hold": 330,
+        "violated:one or more expressions disagree": 18
+      },
+      "coverage_on_eligible": 1.0,
+      "abstention_rate_on_eligible": 0.0,
+      "violation_fraction_on_evaluated": 0.05172413793103448,
+      "elapsed_seconds_single_run": 0.167704,
+      "rule_source_status": "provisional_source_supported",
+      "independently_adjudicated_gold_rule": false,
+      "independently_adjudicated_row_defects": false,
+      "data_partition": "previously_explored_development_data_not_held_out",
+      "interpretation": "Candidate-rule agreement only. Violations are not independently verified errors."
+    },
+    {
+      "reference_rule_id": "B6-CYB-001",
+      "domain": "cybersecurity",
+      "dataset_id": "cic-ids2017",
+      "source_type": "development_reservoir_sample_not_entire_CICIDS2017",
+      "source_file": "data/samples/cic_ids2017/flows-50000.csv",
+      "source_sha256": "3ee83d5ecbfd50541b0205293a462643309e253e095c41c82cc5c37cf6aef2d5",
+      "source_file_bytes": 15088951,
+      "csv_header_diagnostics": {
+        "field_count": 79,
+        "nonrequired_duplicate_names": [
+          " Fwd Header Length"
+        ],
+        "blank_header_positions_1based": [],
+        "required_fields_unique": true,
+        "reader": "positional_csv_reader_no_header_overwrite"
+      },
+      "record_count": 50000,
+      "eligible_records": 50000,
+      "evaluated_records": 50000,
+      "counts": {
+        "satisfied": 50000,
+        "violated": 0,
+        "abstained": 0,
+        "not_applicable": 0
+      },
+      "reason_counts": {
+        "satisfied:all executable expressions hold": 50000
+      },
+      "coverage_on_eligible": 1.0,
+      "abstention_rate_on_eligible": 0.0,
+      "violation_fraction_on_evaluated": 0.0,
+      "elapsed_seconds_single_run": 0.644215,
+      "rule_source_status": "provisional_source_supported",
+      "independently_adjudicated_gold_rule": false,
+      "independently_adjudicated_row_defects": false,
+      "data_partition": "previously_explored_development_data_not_held_out",
+      "interpretation": "Candidate-rule agreement only. Violations are not independently verified errors."
+    }
+  ]
+}
