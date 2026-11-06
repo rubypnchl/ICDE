@@ -1,0 +1,134 @@
+{
+  "experiment": "b6_2_development_rule_checker_and_injections_v1",
+  "protocol_id": "b6-frozen-protocol-v1",
+  "development_study": true,
+  "real_natural_defect_gold_labels": 0,
+  "reviewer_count_completed": 0,
+  "final_gold_reference_rules": 0,
+  "design_sha256": "5723251a2ea8335055b4978ff8e12274a24f2df5692797a2589e829dc1c7ad96",
+  "B6_1_report_sha256": "7c956321ecf2ac7f7490365c30cc26888767fc0a7cd031e718b086bdc70b2f5d",
+  "runner_sha256": "6d55476d9229b7b39854f7f203fac4b18c67d36062a488b2cce6ddb6bf36682f",
+  "source_frozen": true,
+  "no_network_or_paid_model_calls": true,
+  "domains": [
+    {
+      "domain": "manufacturing",
+      "reference_rule_id": "B6-MAN-001",
+      "source_sha256": "dc6630cd9b1f0f853922fad78a1b6436570d3f1ec863f1dd5c4340ac56bc8a8e",
+      "candidate_rule_status": "provisional_source_supported_not_gold",
+      "same_rule_simple_checker_counts": {
+        "satisfied": 330,
+        "violated": 18,
+        "abstained": 0,
+        "not_applicable": 9652
+      },
+      "agrees_with_B6_1_generic_engine": true,
+      "n_orig_satisfying_population": 330,
+      "n_deterministically_selected_originals": 64,
+      "selection_seed": 628401,
+      "source_rows_modified": false,
+      "probe_counts_by_expected_status": {
+        "no_op": 64,
+        "injected_violation": 64,
+        "out_of_scope": 64,
+        "missing_field": 64
+      },
+      "simple_checker_constructed_case_metrics": {
+        "confusion_by_rule_only": {
+          "TP": 64,
+          "FP": 0,
+          "TN": 64,
+          "FN": 0,
+          "unresolved": 0
+        },
+        "precision_on_constructed_cases": 1.0,
+        "recall_on_constructed_cases": 1.0,
+        "note": "Expected sanity-check results from mutations designed to break the same rule. Not independent natural-defect precision or generalisation."
+      },
+      "B3_generic_constructed_case_metrics": {
+        "confusion_by_rule_only": {
+          "TP": 64,
+          "FP": 0,
+          "TN": 64,
+          "FN": 0,
+          "unresolved": 0
+        },
+        "precision_on_constructed_cases": 1.0,
+        "recall_on_constructed_cases": 1.0,
+        "note": "Expected sanity-check results from mutations designed to break the same rule. Not independent natural-defect precision or generalisation."
+      },
+      "elapsed_seconds_single_pass_simple_checker": 0.154899,
+      "timing_warning": "Single pass on development data; not an apples-to-apples timed benchmark against saved B6.1 run",
+      "independent_source_review_complete": false,
+      "claim": "Same frozen-rule execution agrees; injected detection is by construction, not independent anomaly accuracy"
+    },
+    {
+      "domain": "cybersecurity",
+      "reference_rule_id": "B6-CYB-001",
+      "source_sha256": "3ee83d5ecbfd50541b0205293a462643309e253e095c41c82cc5c37cf6aef2d5",
+      "candidate_rule_status": "provisional_source_supported_not_gold",
+      "same_rule_simple_checker_counts": {
+        "satisfied": 50000,
+        "violated": 0,
+        "abstained": 0,
+        "not_applicable": 0
+      },
+      "agrees_with_B6_1_generic_engine": true,
+      "n_orig_satisfying_population": 50000,
+      "n_deterministically_selected_originals": 64,
+      "selection_seed": 628402,
+      "source_rows_modified": false,
+      "probe_counts_by_expected_status": {
+        "no_op": 64,
+        "injected_violation": 64,
+        "out_of_scope": 64,
+        "missing_field": 64
+      },
+      "simple_checker_constructed_case_metrics": {
+        "confusion_by_rule_only": {
+          "TP": 64,
+          "FP": 0,
+          "TN": 64,
+          "FN": 0,
+          "unresolved": 0
+        },
+        "precision_on_constructed_cases": 1.0,
+        "recall_on_constructed_cases": 1.0,
+        "note": "Expected sanity-check results from mutations designed to break the same rule. Not independent natural-defect precision or generalisation."
+      },
+      "B3_generic_constructed_case_metrics": {
+        "confusion_by_rule_only": {
+          "TP": 64,
+          "FP": 0,
+          "TN": 64,
+          "FN": 0,
+          "unresolved": 0
+        },
+        "precision_on_constructed_cases": 1.0,
+        "recall_on_constructed_cases": 1.0,
+        "note": "Expected sanity-check results from mutations designed to break the same rule. Not independent natural-defect precision or generalisation."
+      },
+      "elapsed_seconds_single_pass_simple_checker": 0.460971,
+      "timing_warning": "Single pass on development data; not an apples-to-apples timed benchmark against saved B6.1 run",
+      "independent_source_review_complete": false,
+      "claim": "Same frozen-rule execution agrees; injected detection is by construction, not independent anomaly accuracy"
+    }
+  ],
+  "manufacturing_discrepancy_review": {
+    "case_counts": {
+      "forward_frozen_rule_violation": 18,
+      "reverse_exploratory_only_not_frozen_rule": 9
+    },
+    "rnf_only_forward": 18,
+    "worksheets_generated": 27,
+    "independent_review_votes_filled": 0,
+    "interpretation": "Forward errors against provisional rule; reverse cases exploratory only. No confirmed natural defects."
+  },
+  "elapsed_seconds_total_single_pass": 0.860934,
+  "limitations": [
+    "No discovery or semantic-precision comparison: both checkers receive the same frozen reference rule",
+    "Constructed mutations are tautologically linked to the rule and not independent real-world defect labels",
+    "Previously inspected AI4I and CIC samples are development sets",
+    "Independent source adjudication has not occurred"
+  ]
+}
