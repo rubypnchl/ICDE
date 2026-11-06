@@ -1,0 +1,134 @@
+{
+  "dataset_id": "sec-companyfacts-320193",
+  "domain": "finance",
+  "model_id_requested": "gpt-6-luna",
+  "prompt_mode": "structured_hypothesis",
+  "request_sha256": "17fb8bcf5fc272290e450bc044b07b70c3d2ba767cec0d8bd8b02a1dc13e9bd7",
+  "input_bundle": {
+    "domain": "finance",
+    "dataset_id": "sec-companyfacts-320193",
+    "scope_note": "Feasibility pilot with manually chosen relevant columns; source passages can be incomplete; no data values or reference rules supplied.",
+    "passages": [
+      {
+        "id": "P01",
+        "column": "Assets",
+        "description": "Sum of the carrying amounts as of the balance sheet date of all assets that are recognized. Assets are probable future economic benefits obtained or controlled by an entity as a result of past transactions or events.",
+        "unit": "USD (candidate; fact-level units require verification)",
+        "type": "number (candidate; fact-level type requires verification)",
+        "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000320193.json"
+      },
+      {
+        "id": "P02",
+        "column": "Liabilities",
+        "description": "Sum of the carrying amounts as of the balance sheet date of all liabilities that are recognized. Liabilities are probable future sacrifices of economic benefits arising from present obligations of an entity to transfer assets or provide services to other entities in the future.",
+        "unit": "USD (candidate; fact-level units require verification)",
+        "type": "number (candidate; fact-level type requires verification)",
+        "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000320193.json"
+      },
+      {
+        "id": "P03",
+        "column": "StockholdersEquity",
+        "description": "Total of all stockholders' equity (deficit) items, net of receivables from officers, directors, owners, and affiliates of the entity which are attributable to the parent. The amount of the economic entity's stockholders' equity attributable to the parent excludes the amount of stockholders' equity which is allocable to that ownership interest in subsidiary equity which is not attributable to the parent (noncontrolling interest, minority",
+        "unit": "USD (candidate; fact-level units require verification)",
+        "type": "number (candidate; fact-level type requires verification)",
+        "source": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000320193.json"
+      }
+    ]
+  },
+  "response_status": "completed",
+  "output": {
+    "rules": [
+      {
+        "id": "balance_sheet_equation",
+        "assertions": [
+          {
+            "left": {
+              "column": "Assets"
+            },
+            "op": "eq",
+            "right": {
+              "add": [
+                {
+                  "column": "Liabilities"
+                },
+                {
+                  "column": "StockholdersEquity"
+                }
+              ]
+            },
+            "round_right": null,
+            "abs_tolerance": null
+          }
+        ],
+        "when": null,
+        "context_keys": [],
+        "passage_ids": [
+          "P01",
+          "P02",
+          "P03"
+        ],
+        "uncertainty": "Plausible accounting identity, but not documented by these definitions; scope, noncontrolling interests, and measurement alignment require verification."
+      }
+    ]
+  },
+  "compile_results": [
+    {
+      "id": "balance_sheet_equation",
+      "source_passage_ids": [
+        "P01",
+        "P02",
+        "P03"
+      ],
+      "uncertainty": "Plausible accounting identity, but not documented by these definitions; scope, noncontrolling interests, and measurement alignment require verification.",
+      "compilation": {
+        "status": "candidate_executable_unverified",
+        "proposal_id": "balance_sheet_equation",
+        "reason": "syntax and parameters resolved; NO semantic acceptance",
+        "rule": {
+          "schema_version": "metaverify-exec-v0.1",
+          "id": "balance_sheet_equation",
+          "dataset_id": "sec-companyfacts-320193",
+          "assertions": [
+            {
+              "left": {
+                "column": "Assets"
+              },
+              "op": "eq",
+              "right": {
+                "add": [
+                  {
+                    "column": "Liabilities"
+                  },
+                  {
+                    "column": "StockholdersEquity"
+                  }
+                ]
+              }
+            }
+          ],
+          "context_keys": [],
+          "evidence_status": "candidate_unverified",
+          "proposal_origin": "model_gpt-6-luna_b5"
+        },
+        "parameter_provenance": {},
+        "semantic_verified": false,
+        "data_errors_adjudicated": false
+      }
+    }
+  ],
+  "error": null,
+  "usage": {
+    "input_tokens": 1028,
+    "input_tokens_details": {
+      "cache_write_tokens": 1025,
+      "cached_tokens": 0
+    },
+    "output_tokens": 124,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 1152
+  },
+  "estimated_cost_usd": 0.0001648,
+  "scientific_warning": "No generated rule is semantically verified or independently benchmarked"
+}

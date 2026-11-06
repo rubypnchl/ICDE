@@ -1,0 +1,54 @@
+{
+  "method": "LLM typed-proposal feasibility pilot; no independently adjudicated rule correctness",
+  "records": [
+    {
+      "domain": "finance",
+      "model": "luna",
+      "model_proposals": 1,
+      "compilation_counts": {
+        "candidate_executable_unverified": 1,
+        "blocked_unresolved": 0,
+        "rejected_invalid": 0
+      },
+      "error": null,
+      "usage": {
+        "input_tokens": 1028,
+        "input_tokens_details": {
+          "cache_write_tokens": 1025,
+          "cached_tokens": 0
+        },
+        "output_tokens": 124,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 1152
+      },
+      "estimated_cost_usd": 0.0001648
+    },
+    {
+      "domain": "healthcare",
+      "model": "luna",
+      "model_proposals": 1,
+      "compilation_counts": {
+        "candidate_executable_unverified": 0,
+        "blocked_unresolved": 1,
+        "rejected_invalid": 0
+      },
+      "error": null,
+      "usage": {
+        "input_tokens": 912,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 123,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 1035
+      },
+      "estimated_cost_usd": 0.0001527
+    }
+  ],
+  "warning": "Compilable does NOT mean a valid or evidence-supported integrity constraint. Manual focused columns may bias proposal yield."
+}

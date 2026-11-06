@@ -1,0 +1,117 @@
+{
+  "dataset_id": "nhanes-2017-2018-glu-j",
+  "domain": "healthcare",
+  "model_id_requested": "gpt-6-luna",
+  "prompt_mode": "structured_hypothesis",
+  "request_sha256": "4fb49b607ac0e72c9a885c473018dfa40b9c45f2cadc46e9a7dec008e1e4f1ca",
+  "input_bundle": {
+    "domain": "healthcare",
+    "dataset_id": "nhanes-2017-2018-glu-j",
+    "scope_note": "Feasibility pilot with manually chosen relevant columns; source passages can be incomplete; no data values or reference rules supplied.",
+    "passages": [
+      {
+        "id": "P01",
+        "column": "SEQN",
+        "description": "Respondent sequence number",
+        "unit": "unknown",
+        "type": "integer",
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/GLU_J.htm"
+      },
+      {
+        "id": "P02",
+        "column": "WTSAF2YR",
+        "description": "Fasting Subsample 2 Year MEC Weight",
+        "unit": "unknown",
+        "type": "number",
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/GLU_J.htm"
+      },
+      {
+        "id": "P03",
+        "column": "LBXGLU",
+        "description": "Fasting Glucose (mg/dL)",
+        "unit": "unknown",
+        "type": "integer",
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/GLU_J.htm"
+      },
+      {
+        "id": "P04",
+        "column": "LBDGLUSI",
+        "description": "Fasting Glucose (mmol/L)",
+        "unit": "unknown",
+        "type": "number",
+        "source": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/GLU_J.htm"
+      }
+    ]
+  },
+  "response_status": "completed",
+  "output": {
+    "rules": [
+      {
+        "id": "glucose_unit_conversion",
+        "assertions": [
+          {
+            "left": {
+              "column": "LBDGLUSI"
+            },
+            "op": "eq",
+            "right": {
+              "multiply": [
+                {
+                  "column": "LBXGLU"
+                },
+                {
+                  "parameter": "k1"
+                }
+              ]
+            },
+            "round_right": {
+              "parameter": "t1"
+            },
+            "abs_tolerance": null
+          }
+        ],
+        "when": null,
+        "context_keys": [],
+        "passage_ids": [
+          "P03",
+          "P04"
+        ],
+        "uncertainty": "Plausible paired-unit conversion; the conversion factor and reporting precision are unresolved and should be validated."
+      }
+    ]
+  },
+  "compile_results": [
+    {
+      "id": "glucose_unit_conversion",
+      "source_passage_ids": [
+        "P03",
+        "P04"
+      ],
+      "uncertainty": "Plausible paired-unit conversion; the conversion factor and reporting precision are unresolved and should be validated.",
+      "compilation": {
+        "status": "blocked_unresolved",
+        "proposal_id": "glucose_unit_conversion",
+        "reason": "no independent parameter registration for k1",
+        "rule": null,
+        "parameter_provenance": {},
+        "semantic_verified": false,
+        "data_errors_adjudicated": false
+      }
+    }
+  ],
+  "error": null,
+  "usage": {
+    "input_tokens": 912,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0
+    },
+    "output_tokens": 123,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 1035
+  },
+  "estimated_cost_usd": 0.0001527,
+  "scientific_warning": "No generated rule is semantically verified or independently benchmarked"
+}
