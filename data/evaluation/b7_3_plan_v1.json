@@ -1,0 +1,28 @@
+{
+  "study_id": "b7_3_saved_sec_context_audit_v1",
+  "baseline_commit": "40a7ddb",
+  "parent_protocol_id": "b6-frozen-protocol-v1",
+  "target_rule_id": "sec-companyfacts-320193-assets-usd-5829762e6f",
+  "allowed_inputs": [
+    "data/evaluation/b7_2_existing_dataonly_discovery.json",
+    "data/evaluation/b6_reference_catalogue.json",
+    "data/evidence/sec_constraints.json",
+    "src/rule_discovery.py",
+    "data/evaluation/b7_2_candidate_screen/summary.json"
+  ],
+  "research_question": "Does a strict explicit-context policy differ from a previously recorded positive evidence decision for a financial identity whose accounting-scope proof was hardcoded?",
+  "design": "Retrospective source-code and frozen-reference audit plus ten explicitly constructed context-control scenarios; no real-data intervention.",
+  "independent_gold_available": false,
+  "model_calls_allowed": false,
+  "expected_legacy_supported_rule_count": 1,
+  "context_states": ["supported", "unknown", "contradicted"],
+  "context_requirements": ["same entity", "same reporting date", "same accounting scope", "same currency"],
+  "outcomes": ["blocked_context_incompatible", "abstain_context_unsubstantiated", "candidate_only_unverified", "blocked_unqualified_universal_identity"],
+  "caveats": [
+    "Constructed contexts are synthetic control probes, not real financial-reporting facts.",
+    "An all-supported control is hypothetical and does not independently establish source support for the parent-only identity.",
+    "The frozen B6-FIN-002 exclusion is previously known and unadjudicated, not new reviewer-labelled gold.",
+    "A changed result is a policy difference, not a measured gain in semantic accuracy or a discovered real-world error.",
+    "Do not modify historic B7.2 outputs or the legacy implementation to make this audit pass."
+  ]
+}

@@ -1,0 +1,2 @@
+rule_id,candidate_formula,source_reference,source_url,reviewer_id,decision,same_entity_evidence,same_reporting_date_evidence,same_currency_evidence,same_accounting_scope_evidence,taxonomy_noncontrolling_interest_evidence,source_version,source_evidence_locator,rationale
+sec-companyfacts-320193-assets-usd-5829762e6f,Assets = Liabilities + StockholdersEquity,SEC-BALANCE-001,https://www.sec.gov/file/balance-sheet-building-blocks,,,,,,,,,,
