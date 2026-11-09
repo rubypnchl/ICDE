@@ -1,0 +1,17 @@
+{
+  "packet_status": "manufacturing_27_ready; other original case values require local verified source exporter",
+  "rules": {
+    "manufacturing": 1,
+    "cybersecurity": 1,
+    "healthcare": 1,
+    "finance": 2
+  },
+  "cases": {
+    "manufacturing": 27,
+    "cybersecurity": 0,
+    "healthcare": 0,
+    "finance": 0
+  },
+  "decision_count": 0,
+  "not_human_reviews": true
+}
