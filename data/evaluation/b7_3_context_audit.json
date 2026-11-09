@@ -1,0 +1,237 @@
+{
+  "baseline_commit": "40a7ddb",
+  "conservative_saved_candidate_decisions": {
+    "is_independently_verified": false,
+    "with_frozen_B6_universal_exclusion": "blocked_unqualified_universal_identity",
+    "without_new_context_proof": "abstain_context_unsubstantiated"
+  },
+  "constructed_control_cases": [
+    {
+      "accuracy_label": null,
+      "context": {
+        "same accounting scope": "supported",
+        "same currency": "supported",
+        "same entity": "supported",
+        "same reporting date": "supported"
+      },
+      "fail_closed_context_only": "candidate_only_unverified",
+      "fail_closed_with_frozen_catalogue": "blocked_unqualified_universal_identity",
+      "id": "hypothetical_all_contexts_reviewed",
+      "nature": "counterfactual_hypothetical_not_real_data",
+      "recorded_legacy_saved_decision": "documented_support"
+    },
+    {
+      "accuracy_label": null,
+      "context": {
+        "same accounting scope": "supported",
+        "same currency": "supported",
+        "same entity": "unknown",
+        "same reporting date": "supported"
+      },
+      "fail_closed_context_only": "abstain_context_unsubstantiated",
+      "fail_closed_with_frozen_catalogue": "blocked_unqualified_universal_identity",
+      "id": "counterfactual_same_entity_unknown",
+      "nature": "counterfactual_hypothetical_not_real_data",
+      "recorded_legacy_saved_decision": "documented_support"
+    },
+    {
+      "accuracy_label": null,
+      "context": {
+        "same accounting scope": "supported",
+        "same currency": "supported",
+        "same entity": "contradicted",
+        "same reporting date": "supported"
+      },
+      "fail_closed_context_only": "blocked_context_incompatible",
+      "fail_closed_with_frozen_catalogue": "blocked_unqualified_universal_identity",
+      "id": "counterfactual_same_entity_contradicted",
+      "nature": "counterfactual_hypothetical_not_real_data",
+      "recorded_legacy_saved_decision": "documented_support"
+    },
+    {
+      "accuracy_label": null,
+      "context": {
+        "same accounting scope": "supported",
+        "same currency": "supported",
+        "same entity": "supported",
+        "same reporting date": "unknown"
+      },
+      "fail_closed_context_only": "abstain_context_unsubstantiated",
+      "fail_closed_with_frozen_catalogue": "blocked_unqualified_universal_identity",
+      "id": "counterfactual_same_reporting_date_unknown",
+      "nature": "counterfactual_hypothetical_not_real_data",
+      "recorded_legacy_saved_decision": "documented_support"
+    },
+    {
+      "accuracy_label": null,
+      "context": {
+        "same accounting scope": "supported",
+        "same currency": "supported",
+        "same entity": "supported",
+        "same reporting date": "contradicted"
+      },
+      "fail_closed_context_only": "blocked_context_incompatible",
+      "fail_closed_with_frozen_catalogue": "blocked_unqualified_universal_identity",
+      "id": "counterfactual_same_reporting_date_contradicted",
+      "nature": "counterfactual_hypothetical_not_real_data",
+      "recorded_legacy_saved_decision": "documented_support"
+    },
+    {
+      "accuracy_label": null,
+      "context": {
+        "same accounting scope": "unknown",
+        "same currency": "supported",
+        "same entity": "supported",
+        "same reporting date": "supported"
+      },
+      "fail_closed_context_only": "abstain_context_unsubstantiated",
+      "fail_closed_with_frozen_catalogue": "blocked_unqualified_universal_identity",
+      "id": "counterfactual_same_accounting_scope_unknown",
+      "nature": "counterfactual_hypothetical_not_real_data",
+      "recorded_legacy_saved_decision": "documented_support"
+    },
+    {
+      "accuracy_label": null,
+      "context": {
+        "same accounting scope": "contradicted",
+        "same currency": "supported",
+        "same entity": "supported",
+        "same reporting date": "supported"
+      },
+      "fail_closed_context_only": "blocked_context_incompatible",
+      "fail_closed_with_frozen_catalogue": "blocked_unqualified_universal_identity",
+      "id": "counterfactual_same_accounting_scope_contradicted",
+      "nature": "counterfactual_hypothetical_not_real_data",
+      "recorded_legacy_saved_decision": "documented_support"
+    },
+    {
+      "accuracy_label": null,
+      "context": {
+        "same accounting scope": "supported",
+        "same currency": "unknown",
+        "same entity": "supported",
+        "same reporting date": "supported"
+      },
+      "fail_closed_context_only": "abstain_context_unsubstantiated",
+      "fail_closed_with_frozen_catalogue": "blocked_unqualified_universal_identity",
+      "id": "counterfactual_same_currency_unknown",
+      "nature": "counterfactual_hypothetical_not_real_data",
+      "recorded_legacy_saved_decision": "documented_support"
+    },
+    {
+      "accuracy_label": null,
+      "context": {
+        "same accounting scope": "supported",
+        "same currency": "contradicted",
+        "same entity": "supported",
+        "same reporting date": "supported"
+      },
+      "fail_closed_context_only": "blocked_context_incompatible",
+      "fail_closed_with_frozen_catalogue": "blocked_unqualified_universal_identity",
+      "id": "counterfactual_same_currency_contradicted",
+      "nature": "counterfactual_hypothetical_not_real_data",
+      "recorded_legacy_saved_decision": "documented_support"
+    },
+    {
+      "accuracy_label": null,
+      "context": {
+        "same accounting scope": "unknown",
+        "same currency": "unknown",
+        "same entity": "unknown",
+        "same reporting date": "unknown"
+      },
+      "fail_closed_context_only": "abstain_context_unsubstantiated",
+      "fail_closed_with_frozen_catalogue": "blocked_unqualified_universal_identity",
+      "id": "all_contexts_unknown_real_proof_not_available_in_saved_output",
+      "nature": "conservative_evaluation_of_saved_candidate_evidence",
+      "recorded_legacy_saved_decision": "documented_support"
+    }
+  ],
+  "constructed_control_summary": {
+    "catalogue_aware_counts": {
+      "blocked_unqualified_universal_identity": 10
+    },
+    "context_only_counts": {
+      "abstain_context_unsubstantiated": 5,
+      "blocked_context_incompatible": 4,
+      "candidate_only_unverified": 1
+    },
+    "count": 10,
+    "is_real_data_accuracy_experiment": false
+  },
+  "frozen_catalogue_crosscheck": {
+    "reason": "Luna B5 proposal omits context and excludes potential noncontrolling/redeemable equity components.",
+    "reference_id": "B6-FIN-002",
+    "reference_status": "excluded",
+    "scope": "Universal parent-only-equity identity excluded; no claim that each observed numeric equality is false."
+  },
+  "independently_adjudicated_gold_rules": 0,
+  "input_sha256": {
+    "data/evaluation/b6_reference_catalogue.json": "46ed4bfb68348a155ae5be77982c835b9a57bbeb8278151e1a85081a1552eb3a",
+    "data/evaluation/b7_2_candidate_screen/summary.json": "ba0ed7f9625725de1f2c79e99e407e0f8b73766b185759495b06d8271b76c9ac",
+    "data/evaluation/b7_2_existing_dataonly_discovery.json": "7c371cdd804eb784b7155959ad38bdbdd01df096706d2ab52d19a8b93899b000",
+    "data/evidence/sec_constraints.json": "c76e4c04373232065576809ff0d672c3ea677a509868f19169718c103e32a58a",
+    "src/rule_discovery.py": "ed8e2b2e1284e0e1ed79cf5afc0bcc64d420544b3d370b4a0c5d37f23213348d"
+  },
+  "legacy_candidate_summary": {
+    "ai4i-2020": {
+      "candidates": 17,
+      "legacy_decision_counts": {
+        "abstain": 17
+      }
+    },
+    "sec-companyfacts-320193": {
+      "candidates": 11,
+      "legacy_decision_counts": {
+        "abstain": 10,
+        "documented_support": 1
+      }
+    }
+  },
+  "legacy_supported_rule": {
+    "assertion": {
+      "op": "sum_eq",
+      "result_column": "Assets [USD]",
+      "term_columns": [
+        "Liabilities [USD]",
+        "StockholdersEquity [USD]"
+      ],
+      "tolerance": 0
+    },
+    "does_not_establish_true_context": true,
+    "recorded_decision": "documented_support",
+    "recorded_heldout_rows": 41,
+    "recorded_violations": 0,
+    "rule_id": "sec-companyfacts-320193-assets-usd-5829762e6f",
+    "source_reference_id": "SEC-BALANCE-001",
+    "stored_context_compatibility": {
+      "same accounting scope": true,
+      "same currency": true,
+      "same entity": true,
+      "same reporting date": true
+    }
+  },
+  "natural_defect_confirmations": 0,
+  "plan_sha256": "5a090430cda15c7c4d3fc3b2ed6d85265d8eb5994950edafe11c67e6241d40d5",
+  "precision": null,
+  "recall": null,
+  "scientific_limits": [
+    "The comparison is retrospective; B6.3 independent adjudication remains empty.",
+    "The B6 catalogue exclusion was already known; this is not new external ground truth.",
+    "41/41 exact arithmetic matches do not demonstrate semantically valid reporting scope or independent gold precision.",
+    "Controlled scenario counts reflect our constructed cases and policy definitions, not measured natural error rates.",
+    "No new original-data access, published discovery baseline, prospective LLM outputs or independently established label.",
+    "The strict audit is a diagnostic policy simulation, not a deployment-ready refactoring of the legacy miner."
+  ],
+  "static_source_audit": {
+    "context_assignments": {
+      "same-accounting-scope": "hardcoded_true",
+      "same-currency": "computed_expression",
+      "same-entity": "computed_expression",
+      "same-reporting-date": "hardcoded_true"
+    },
+    "finding": "Legacy registry check hard-codes reporting-date and accounting-scope flags to True. Earlier SEC grouping uses reporting end dates, but this flag is not a separate proof; matching accounting scope is not established."
+  },
+  "study_id": "b7_3_saved_sec_context_audit_v1",
+  "type": "retrospective_audit_plus_constructed_control_probes"
+}
