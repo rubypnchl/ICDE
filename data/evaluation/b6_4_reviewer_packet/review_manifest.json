@@ -1,17 +1,102 @@
 {
-  "packet_status": "manufacturing_27_ready; other original case values require local verified source exporter",
-  "rules": {
-    "manufacturing": 1,
-    "cybersecurity": 1,
-    "healthcare": 1,
-    "finance": 2
+  "protocol": "B6.4-four-domain-independent-review-v1",
+  "classification": "prepared_blank_human_reviews_not_gold_not_adjudication",
+  "original_repository_source": "https://github.com/rubypnchl/ICDE",
+  "source_fingerprints": {
+    "ai4i": "dc6630cd9b1f0f853922fad78a1b6436570d3f1ec863f1dd5c4340ac56bc8a8e",
+    "cic_50000": "3ee83d5ecbfd50541b0205293a462643309e253e095c41c82cc5c37cf6aef2d5",
+    "nhanes_glu_j": "5b38897d0d7bfbc69dd9ca74ffdaf2f6a9bed5a91d4a7bf46e07f1332cc3379e",
+    "sec_sources": [
+      {
+        "file": "data/originals/sec/companyfacts/0000019617_jpmorgan.json",
+        "sha256": "5d4ff553699080d7de5fa8ea0ee307d56c724b8b6b794bdf01d682d4199d281a",
+        "cik": "0000019617"
+      },
+      {
+        "file": "data/originals/sec/companyfacts/0000034088_exxon.json",
+        "sha256": "9b95535419e5662e3deed01de803e83deead477a4c81316e1c45186368fdd8b8",
+        "cik": "0000034088"
+      },
+      {
+        "file": "data/originals/sec/companyfacts/0000104169_walmart.json",
+        "sha256": "49330f98609f70fcef4054edc90bc811398a58c4bf26dc0b218d607967a8dbe4",
+        "cik": "0000104169"
+      },
+      {
+        "file": "data/originals/sec/companyfacts/0000320193_apple.json",
+        "sha256": "75a78f918313f3336823517d6c34908d23dd07f07e90e625c61e705e3bb6d27b",
+        "cik": "0000320193"
+      },
+      {
+        "file": "data/originals/sec/companyfacts/0000789019_microsoft.json",
+        "sha256": "8c1903c041f5c27e86ed15f37debb1f41882b7904bba129ef9edc76478b1e8ea",
+        "cik": "0000789019"
+      },
+      {
+        "file": "data/originals/sec/companyfacts/0001018724_amazon.json",
+        "sha256": "acddb7c0a6973a1fd08372de3b292298a34eae7f42a7eedc4bdebd3ac659c8fd",
+        "cik": "0001018724"
+      },
+      {
+        "file": "data/originals/sec/companyfacts/0001045810_nvidia.json",
+        "sha256": "19ef503a5770f5660964b3c3aea6937579d9b359da344afe6a9adf59c63d26ff",
+        "cik": "0001045810"
+      },
+      {
+        "file": "data/originals/sec/companyfacts/0001318605_tesla.json",
+        "sha256": "c951e0ae2402dd8cf8f39319928adccc4196b997941fe40b0d4d6b8060802db1",
+        "cik": "0001318605"
+      },
+      {
+        "file": "data/originals/sec/companyfacts/0001326801_meta.json",
+        "sha256": "83c9002a70c6ecbcbe2c4dbcd7020bdacf027f514f29d1560dee3527d2bf55c8",
+        "cik": "0001326801"
+      },
+      {
+        "file": "data/originals/sec/companyfacts/0001652044_alphabet.json",
+        "sha256": "f87bc183f74b45ecf9a0933e0e0a1b6b97ead51a9d29367a7dae436574e1c1d0",
+        "cik": "0001652044"
+      }
+    ]
   },
-  "cases": {
-    "manufacturing": 27,
-    "cybersecurity": 0,
-    "healthcare": 0,
-    "finance": 0
+  "selection": {
+    "seed": 20271109,
+    "manufacturing": "all 27 previously frozen B6.3 cases (18 forward, 9 reverse exploratory)",
+    "cybersecurity": "20 deterministically stratified by original flow label; no rows invented",
+    "healthcare": "16 glucose values (four from each quartile) plus four missingness controls",
+    "finance": "up to 10 contexts per reference formula; exact join on issuer, accession, end, form, filed, USD; diversify CIK; no assumed accounting scope"
   },
-  "decision_count": 0,
-  "not_human_reviews": true
+  "finance_rule_counts": {
+    "B6-FIN-001": {
+      "available_contexts": 1348,
+      "selected": 10,
+      "requested": 10
+    },
+    "B6-FIN-002": {
+      "available_contexts": 957,
+      "selected": 10,
+      "requested": 10
+    }
+  },
+  "counts": {
+    "manufacturing": {
+      "rules": 1,
+      "cases": 27
+    },
+    "cybersecurity": {
+      "rules": 1,
+      "cases": 20
+    },
+    "healthcare": {
+      "rules": 1,
+      "cases": 20
+    },
+    "finance": {
+      "rules": 2,
+      "cases": 20
+    }
+  },
+  "review_status": "all_decisions_blank",
+  "independent_gold_count": 0,
+  "warning": "A record matched against a candidate does not mean clean/defective; exact SEC filing accounting scope is UNKNOWN; healthcare rounding not independently settled; cybersecurity zero natural violations in B6.1."
 }
