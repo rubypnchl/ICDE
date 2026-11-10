@@ -160,7 +160,7 @@ def preflight(root: Path) -> dict[str, Any]:
         raise B10Error('Frozen B5.1 policy differs from saved review')
     reports = {}
     for domain, path in REPORTS.items():
-        if sha_file(root / path) != hashes.get('luna_' + domain):
+        if not matches_frozen_hash(root / path, hashes.get('luna_' + domain)):
             raise B10Error('Frozen LLM proposal file checksum mismatch: '+domain)
         raw = load_json(root / path)
         items = raw.get('output', {}).get('rules', [])
