@@ -1,0 +1,17 @@
+{
+  "study_id": "b8_1_retrospective_paired_saved_decision_audit_v1",
+  "classification": "exploratory retrospective decision reconstruction, after access to earlier results and submitted human reviews",
+  "source_corpus_pinned_to_prior_b7_1_and_b7_3_report_hash_chains": true,
+  "main_question": "What changes in observed proposal disposition as compilation and source/context requirements are applied to the same already-saved proposals?",
+  "separate_cohorts": [
+    {"name":"saved_llm_pilot", "candidate_count":2,"domains":["healthcare","finance"],"comparison":"raw proposal, original B4 compile status, B5.1 posthoc status; cannot isolate gate due curator parameter intervention"},
+    {"name":"legacy_data_only_miner", "candidate_count":28,"domains":["manufacturing","finance"],"comparison":"saved legacy documentary decision vs B7.3 conservative context/catalogue reconstruction; no additional real context evidence"}
+  ],
+  "protocol_developed_prior_to_results": false,
+  "new_model_calls": 0,
+  "new_original_data_access": false,
+  "independent_gold_available": false,
+  "external_published_baseline_executed": false,
+  "prohibited_conclusions": ["measured semantic precision", "verified model improvement", "prospective controlled ablation", "published-baseline superiority", "confirmed natural data errors"],
+  "output": "data/evaluation/b8_1_gate_ablation/{summary.json,paired_saved_decisions.csv,README.md}"
+}
