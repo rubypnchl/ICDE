@@ -42,6 +42,20 @@ def sha_file(path: Path) -> str:
             h.update(b)
     return h.hexdigest()
 
+def matches_frozen_hash(path: Path, expected: str) -> bool:
+    raw = path.read_bytes()
+
+    if sha256(raw).hexdigest() == expected:
+        return True
+
+    # Accept only the original Windows CRLF representation.
+    if b'\r' in raw or b'\n' not in raw:
+        return False
+
+    return sha256(
+        raw.replace(b'\n', b'\r\n')
+    ).hexdigest() == expected
+
 def stable_hash(obj: Any) -> str:
     return sha256(json.dumps(obj, sort_keys=True, separators=(',', ':'), ensure_ascii=False).encode()).hexdigest()
 
@@ -135,7 +149,7 @@ def preflight(root: Path) -> dict[str, Any]:
             or policy.get('development_stage') != 'posthoc_case_study_policy_developed_after_inspecting_luna_outputs'):
         raise B10Error('Expected frozen B5.1/B7.1 source lineage missing')
     hashes = b71.get('input_sha256', {})
-    if sha_file(root / SAVED_REVIEW) != hashes.get('b5_1_review'):
+    if not matches_frozen_hash(root / SAVED_REVIEW, hashes.get('b5_1_review')):
         raise B10Error('Frozen B5.1 report checksum mismatch')
     model_reports = saved.get('model_reports', [])
     if len(model_reports) != 2:
