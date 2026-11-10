@@ -1,0 +1,30 @@
+﻿{
+    "study":  "MetaVerify ICDE 2027",
+    "rules_per_reviewer":  5,
+    "cases_per_reviewer":  87,
+    "domains":  {
+                    "healthcare":  20,
+                    "manufacturing":  27,
+                    "finance":  20,
+                    "cybersecurity":  20
+                },
+    "finance_reconciliation":  {
+                                   "reporting_date":  "2013-03-31",
+                                   "assets_usd":  2389349000000,
+                                   "liabilities_usd":  2182263000000,
+                                   "company":  "JPMorgan Chase",
+                                   "stockholders_equity_usd":  207086000000,
+                                   "source":  "SEC Company Facts",
+                                   "arithmetic_difference_usd":  0
+                               },
+    "review_date":  "2026-11-10",
+    "limitations":  [
+                        "Review independence requires confirmation",
+                        "Decision terminology requires reconciliation",
+                        "Final adjudication is not complete",
+                        "No confirmed natural defects established",
+                        "Original reviewer worksheets remain private"
+                    ],
+    "status":  "preliminary_review_comparison",
+    "reviewers":  2
+}
