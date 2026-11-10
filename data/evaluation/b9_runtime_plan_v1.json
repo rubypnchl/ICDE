@@ -1,0 +1,11 @@
+{
+  "id": "b9-repeated-fixed-rule-timing-v1",
+  "classification": "development_source_checker_parity_and_warm_runtime_not_scientific_accuracy",
+  "domains": ["manufacturing", "cybersecurity"],
+  "repetitions": 9,
+  "seed": 902711,
+  "comparators": ["MetaVerify B3 generic verifier", "B6 independent same-rule checker"],
+  "metrics": ["row_level_status_parity", "median_wall_seconds", "p95_linear_wall_seconds", "records_per_second_at_median"],
+  "exclusions": ["file_io", "source_hashing", "source_rule_adjudication", "llm_api_latency"],
+  "safety": "do_not_rewrite_B6_reports_or_original_CSVs; no network and no published baseline"
+}

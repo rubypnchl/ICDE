@@ -1,0 +1,226 @@
+{
+  "study": "b9-repeated-fixed-rule-timing-v1",
+  "classification": "repeated_same_rule_engine_timing_not_semantic_accuracy",
+  "run_provenance": {
+    "b9_plan_sha256": "21bb43ecaca3800c0e8f1d7a72516ff2072176f5458745724c8e373a3470a772",
+    "b61_report_sha256": "7c956321ecf2ac7f7490365c30cc26888767fc0a7cd031e718b086bdc70b2f5d",
+    "runner_sha256": "cb76ed22807a6749be854dd5ffb40c156097c5de1b11090e2654778fd38da014",
+    "python_version": "3.12.10",
+    "os": "Windows",
+    "machine_architecture": "AMD64"
+  },
+  "source_files_modified": false,
+  "published_method_executed": false,
+  "new_llm_queries": 0,
+  "independently_adjudicated_gold": false,
+  "results": [
+    {
+      "domain": "manufacturing",
+      "source_sha256": "dc6630cd9b1f0f853922fad78a1b6436570d3f1ec863f1dd5c4340ac56bc8a8e",
+      "record_count": 10000,
+      "statuses_both_methods": {
+        "satisfied": 330,
+        "violated": 18,
+        "abstained": 0,
+        "not_applicable": 9652
+      },
+      "source_csv_read_seconds_once": 0.02905,
+      "checker_parity_at_each_record": true,
+      "timing_excluding_read_and_hash": {
+        "repetitions": 9,
+        "seed": 902711,
+        "processed_records_per_repetition": 10000,
+        "clock": "time.perf_counter",
+        "order_per_repetition": [
+          [
+            "b6_same_rule_simple_checker",
+            "metaverify_b3_generic"
+          ],
+          [
+            "metaverify_b3_generic",
+            "b6_same_rule_simple_checker"
+          ],
+          [
+            "b6_same_rule_simple_checker",
+            "metaverify_b3_generic"
+          ],
+          [
+            "metaverify_b3_generic",
+            "b6_same_rule_simple_checker"
+          ],
+          [
+            "b6_same_rule_simple_checker",
+            "metaverify_b3_generic"
+          ],
+          [
+            "metaverify_b3_generic",
+            "b6_same_rule_simple_checker"
+          ],
+          [
+            "b6_same_rule_simple_checker",
+            "metaverify_b3_generic"
+          ],
+          [
+            "metaverify_b3_generic",
+            "b6_same_rule_simple_checker"
+          ],
+          [
+            "b6_same_rule_simple_checker",
+            "metaverify_b3_generic"
+          ]
+        ],
+        "status_counts_every_run": {
+          "satisfied": 330,
+          "violated": 18,
+          "abstained": 0,
+          "not_applicable": 9652
+        },
+        "methods": {
+          "metaverify_b3_generic": {
+            "elapsed_seconds_each_run": [
+              0.111196,
+              0.10819,
+              0.104729,
+              0.104486,
+              0.106653,
+              0.104659,
+              0.10579,
+              0.10596,
+              0.106727
+            ],
+            "median_seconds": 0.10596,
+            "p95_linear_seconds": 0.109993,
+            "records_per_second_at_median": 94374.9
+          },
+          "b6_same_rule_simple_checker": {
+            "elapsed_seconds_each_run": [
+              0.042367,
+              0.034714,
+              0.034347,
+              0.032686,
+              0.033581,
+              0.034887,
+              0.032605,
+              0.034551,
+              0.033898
+            ],
+            "median_seconds": 0.034347,
+            "p95_linear_seconds": 0.039375,
+            "records_per_second_at_median": 291149.6
+          }
+        },
+        "limits": [
+          "Same-rule execution comparison, not a constraint-discovery baseline",
+          "Both datasets are already inspected development sources",
+          "Rows are loaded before timing; timings exclude filesystem I/O and source hashing",
+          "Warm-process timings; Python runtime/CPU platform must be reported",
+          "No adjudicated defect ground truth, no clean false-positive rate"
+        ]
+      }
+    },
+    {
+      "domain": "cybersecurity",
+      "source_sha256": "3ee83d5ecbfd50541b0205293a462643309e253e095c41c82cc5c37cf6aef2d5",
+      "record_count": 50000,
+      "statuses_both_methods": {
+        "satisfied": 50000,
+        "violated": 0,
+        "abstained": 0,
+        "not_applicable": 0
+      },
+      "source_csv_read_seconds_once": 0.217688,
+      "checker_parity_at_each_record": true,
+      "timing_excluding_read_and_hash": {
+        "repetitions": 9,
+        "seed": 902711,
+        "processed_records_per_repetition": 50000,
+        "clock": "time.perf_counter",
+        "order_per_repetition": [
+          [
+            "b6_same_rule_simple_checker",
+            "metaverify_b3_generic"
+          ],
+          [
+            "metaverify_b3_generic",
+            "b6_same_rule_simple_checker"
+          ],
+          [
+            "b6_same_rule_simple_checker",
+            "metaverify_b3_generic"
+          ],
+          [
+            "metaverify_b3_generic",
+            "b6_same_rule_simple_checker"
+          ],
+          [
+            "b6_same_rule_simple_checker",
+            "metaverify_b3_generic"
+          ],
+          [
+            "metaverify_b3_generic",
+            "b6_same_rule_simple_checker"
+          ],
+          [
+            "b6_same_rule_simple_checker",
+            "metaverify_b3_generic"
+          ],
+          [
+            "metaverify_b3_generic",
+            "b6_same_rule_simple_checker"
+          ],
+          [
+            "b6_same_rule_simple_checker",
+            "metaverify_b3_generic"
+          ]
+        ],
+        "status_counts_every_run": {
+          "satisfied": 50000,
+          "violated": 0,
+          "abstained": 0,
+          "not_applicable": 0
+        },
+        "methods": {
+          "metaverify_b3_generic": {
+            "elapsed_seconds_each_run": [
+              0.678194,
+              0.632645,
+              0.581749,
+              0.589845,
+              0.584257,
+              0.589932,
+              0.610492,
+              0.616131,
+              0.520729
+            ],
+            "median_seconds": 0.589932,
+            "p95_linear_seconds": 0.659974,
+            "records_per_second_at_median": 84755.6
+          },
+          "b6_same_rule_simple_checker": {
+            "elapsed_seconds_each_run": [
+              0.089518,
+              0.166198,
+              0.149095,
+              0.144443,
+              0.158318,
+              0.133247,
+              0.161917,
+              0.11712,
+              0.141169
+            ],
+            "median_seconds": 0.144443,
+            "p95_linear_seconds": 0.164486,
+            "records_per_second_at_median": 346158.5
+          }
+        },
+        "limits": [
+          "Same-rule execution comparison, not a constraint-discovery baseline",
+          "Both datasets are already inspected development sources",
+          "Rows are loaded before timing; timings exclude filesystem I/O and source hashing",
+          "Warm-process timings; Python runtime/CPU platform must be reported",
+          "No adjudicated defect ground truth, no clean false-positive rate"
+        ]
+      }
+    }
+  ]
+}
