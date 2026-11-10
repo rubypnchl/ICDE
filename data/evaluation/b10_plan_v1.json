@@ -1,0 +1,14 @@
+{
+  "study_id": "b10_same_input_fixed_parameter_retrospective_gate_pilot_v1",
+  "approved_domains": ["healthcare", "finance"],
+  "source_code_form": "saved_B5_typed_Luna_proposals",
+  "design_class": "retrospective_not_blinded_not_gold",
+  "curator_binding_held_fixed": true,
+  "methods": ["candidate_only_no_gate", "b4_compiler_with_fixed_registry", "b5_1_existing_evidence_gate_with_same_registry"],
+  "disallowed_claims": ["independently_adjudicated_semantic_accuracy", "causal_efficacy_of_evidence_gate", "published_baseline_superiority", "new_four_domain_LLM_discovery"],
+  "source_lineage": "B5 original typed Luna JSON, B5.1 saved policy and decisions, B7.1 SHA-256 manifests; no source amendments",
+  "new_api_calls": false,
+  "new_source_data": false,
+  "data_or_model_changing_interventions": false,
+  "note": "B5.1 policy and curator authorization were post-hoc; holding them fixed is a within-saved-hypothesis procedural comparison, not prospective unbiased ablation."
+}

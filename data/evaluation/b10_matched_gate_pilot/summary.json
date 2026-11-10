@@ -1,0 +1,74 @@
+{
+  "study_id": "b10_same_input_fixed_parameter_retrospective_gate_pilot_v1",
+  "classification": "paired_fixed_inputs_fixed_curator_binding_retrospective_not_prospective_gate_effect",
+  "input_sha256": {
+    "data/evaluation/b7_1_pilot_comparison.json": "efc44afc1571df721e66586964311ef5869013e5934332a9de40e487482301a6",
+    "data/evaluation/b5_1_evidence_review.json": "fcb89b978e2e96b27aa38ff76f7402ef244433a2e527f5155087297f9090ff24",
+    "data/rules/b5_1_review_policy.json": "83fca3a3dcf5fbbc96777122e30f1938f7342efaf0d0448c87651f9c673cd8f9",
+    "data/rules/b4_example_proposals.json": "001b4876d96ffa1e74ccbc8bdce23d162b51e121438c183e03772ca201cfd90f",
+    "data/evaluation/b10_plan_v1.json": "fdb7b9269418c6960c8b2e88e574f60a7515ae85fbd1af35868fab18bdae29b0",
+    "data/llm_pilot/structured/luna_healthcare.json": "05d0b5c62dd7dc342d3c77087bbcda1d4416921b834d349968cf6f9fc02a6d29",
+    "data/llm_pilot/structured/luna_finance.json": "86334e314ccf227fd98a911b5249e2450c2c6a46fae66d45028501a6b6d5fd68"
+  },
+  "same_saved_candidate_input_in_each_arm": true,
+  "parameter_binding_identical_in_compiler_and_gate_arms": true,
+  "curator_registration_posthoc": true,
+  "original_compiler_without_curator_registration_is_separate_sensitivity": true,
+  "saved_proposals_created_in_earlier_manually_selected_two_opportunities": true,
+  "new_llm_calls": 0,
+  "new_raw_record_reads": 0,
+  "new_human_gold_labels": 0,
+  "published_baseline_executed": false,
+  "results": {
+    "candidate_proposals_present": 2,
+    "original_compiler_executable_without_curator_binding": 1,
+    "compiler_executable_with_fixed_curator_binding": 2,
+    "evidence_gate_status_counts": {
+      "blocked_applicability_or_scope": 1,
+      "compiled_unverified_posthoc": 1
+    },
+    "safe_for_deployment_according_to_existing_gate": 0,
+    "is_independent_accuracy_benchmark": false,
+    "accuracy": null,
+    "rule_precision": null
+  },
+  "candidate_details": [
+    {
+      "domain": "healthcare",
+      "proposal_id": "glucose_unit_conversion",
+      "candidate_only_no_gate": "proposed_unverified",
+      "original_compiler_status": "blocked_unresolved",
+      "fixed_compiler_status": "candidate_executable_unverified",
+      "fixed_curator_registry_entries": 2,
+      "evidence_review_status": "compiled_unverified_posthoc",
+      "gate_safe_to_deploy": false,
+      "evidence_gate_reasons": "B4 structurally compiled; no independently established semantic acceptance | parameter authorization: manual_posthoc_exact_structure_mapping_not_model_discovery",
+      "rule_expression_unchanged_where_both_compiled": true,
+      "gold_label_available": false,
+      "actual_data_errors_established": false
+    },
+    {
+      "domain": "finance",
+      "proposal_id": "balance_sheet_equation",
+      "candidate_only_no_gate": "proposed_unverified",
+      "original_compiler_status": "candidate_executable_unverified",
+      "fixed_compiler_status": "candidate_executable_unverified",
+      "fixed_curator_registry_entries": 0,
+      "evidence_review_status": "blocked_applicability_or_scope",
+      "gate_safe_to_deploy": false,
+      "evidence_gate_reasons": "model omitted required reporting contexts: entity, reporting_date, accounting_scope, currency | semantic scope unresolved: A=L+parent-only StockholdersEquity is not generally entailed without evidence that noncontrolling and other separately classified equity components are absent or accounted for.",
+      "rule_expression_unchanged_where_both_compiled": false,
+      "gold_label_available": false,
+      "actual_data_errors_established": false
+    }
+  ],
+  "limitations": [
+    "Only two manually selected previously inspected LLM hypotheses (healthcare and finance).",
+    "The B5.1 source policy and parameter authorization were designed after viewing these hypotheses.",
+    "A fixed binding isolates decision stages within this replay, but cannot remove post-hoc selection or establish causal efficacy.",
+    "Without-gate candidate exposure and compiler execution are not verified acceptance or deployment.",
+    "No adjudicated rule gold labels, so semantic accuracy/precision/recall and gating improvement are undefined.",
+    "The distinct B7.2 data-only 28-candidate cohort is excluded; this is not a published-method comparison.",
+    "The B10 output is a retrospective operational control comparison, not a prospective test-set experiment."
+  ]
+}
