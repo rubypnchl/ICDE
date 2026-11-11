@@ -1,0 +1,46 @@
+{
+  "study_id": "b13_5_context_declaration_policy_v2",
+  "parent_study_id": "b13_prospective_matched_evidence_gate_v1",
+  "status": "synthetic_scope_remediation_not_real_evaluation",
+  "policy_ancestry": {
+    "b13_3_policy_study_id": "b13_3_three_arm_admission_policy_spec_v1",
+    "b13_3_policy_canonical_sha256": "7c7b53c132ffa885133f7f0aebb0b999e2aaf8ecaa30ccb10670c5d7bdad58b7",
+    "b13_4_adapter_finding": "undeclared_required_rule_context_admitted_by_arm_C_in_synthetic_toy"
+  },
+  "arms": {
+    "A": "compiler_only",
+    "B": "compiler_plus_metadata",
+    "C": "compiler_plus_metadata_plus_document_and_context"
+  },
+  "frozen_toy_required_contexts_by_dataset": {
+    "b134-toy": [
+      "site"
+    ]
+  },
+  "context_source": "external_predeclared_policy_not_model_or_compiler_output",
+  "arm_C_rule_context_policy": {
+    "missing_predeclared_required_compiled_context": "block",
+    "unreviewed_extra_compiled_context": "abstain",
+    "all_required_declared_with_explicit_supported_evidence": "retain_B13_3_evidence_decision",
+    "contradicted_context_or_document": "block",
+    "missing_context_evidence": "abstain"
+  },
+  "original_policy_unchanged": true,
+  "only_toy_b4_compiler_and_b3_validator_calls": true,
+  "real_candidate_execution_allowed": false,
+  "reviewer_truth_read": false,
+  "source_documents_verified": false,
+  "source_cohorts_eligible": 0,
+  "adjudicated_gold_rules": 0,
+  "allowed_claims": [
+    "synthetic_scope_gap_fixed_in_versioned_toy_policy"
+  ],
+  "disallowed_claims": [
+    "prospective_gate_effect",
+    "source_document_truth",
+    "natural_error_detection_accuracy",
+    "production_safety",
+    "adjudicated_gold",
+    "real_candidate_gate_execution"
+  ]
+}
