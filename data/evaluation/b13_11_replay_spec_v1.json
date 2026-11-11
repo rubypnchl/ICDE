@@ -1,0 +1,42 @@
+{
+  "study_id": "b13_11_real_xpt_matched_compiler_diagnostic_v1",
+  "phase": "retrospective_pre_exposed_documented_pairs_not_prospective_not_gold",
+  "parent_b13_9_plan_canonical_sha256": "56262f13b5a701252e2bc6c2778f297d4a831efa549ace222ebe1315102f945e",
+  "parent_b13_10_register_canonical_sha256": "b153576309f8638ec6475fdd91f0a77e32322603247eedec8d5fe89553c353dc",
+  "dataset_ids": [
+    "b13_11_TRIGLY_TR_UNIT",
+    "b13_11_TRIGLY_LDL_UNIT",
+    "b13_11_TCHOL_TC_UNIT"
+  ],
+  "pair_ids": [
+    "TRIGLY_TR_UNIT",
+    "TRIGLY_LDL_UNIT",
+    "TCHOL_TC_UNIT"
+  ],
+  "context_key": "survey_cycle",
+  "context_source": "one_source_XPT_dataset_group_not_participant_eligibility",
+  "b3_numerical_assertion": "exact_equality_without_inferred_rounding_or_tolerance",
+  "compiler_invocations_per_pair": 1,
+  "arm_policy_mode": "B13_3_deterministic_semantics_reused_for_retrospective_engineering_diagnostic_only",
+  "diagnostic_metadata_signal": "supported",
+  "documentary_signal": "supported",
+  "documentary_independently_verified": false,
+  "survey_cycle_context_signal": "supported",
+  "real_source_context_policy_independently_frozen": false,
+  "independent_reference_judgments": 0,
+  "confirmatory_candidates": 0,
+  "allowed_claims": [
+    "B4_B3_executed_on_locally_receipt_verified_retrospective_XPT",
+    "diagnostic_three_arm_decisions_not_semantic_accuracy",
+    "exact_equality_execution_counts_not_defect_labels"
+  ],
+  "disallowed_claims": [
+    "prospective_gate_effect",
+    "independent_gold",
+    "novel_constraint_discovery",
+    "natural_data_error",
+    "verified_documentary_entailment",
+    "source_eligibility_confirmed",
+    "precision_truth"
+  ]
+}
