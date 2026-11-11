@@ -1,0 +1,41 @@
+{
+  "study_id": "b13_4_b4_compiler_adapter_toy_contract_v1",
+  "status": "synthetic_only_no_real_candidates",
+  "fixtures": [
+    {
+      "id": "B134-TOY-COMPILED",
+      "classification": "toy_structure_only_not_real_source",
+      "proposal": {"proposal_version": "metaverify-proposal-v0.1", "id": "B134-TOY-COMPILED", "dataset_id": "b134-toy", "origin": "hand_authored_unit_test", "assertions": [{"left": {"column": "x"}, "op": "eq", "right": {"column": "y"}}], "context_keys": ["site"]},
+      "allowed_columns": ["x", "y"], "registry": {},
+      "policy_evidence": {"metadata": "supported", "documentary": {"status": "supported", "verified": true, "evidence_url": "https://example.org/toy-not-real-evidence", "evidence_locator": "toy-only"}, "required_contexts": ["site"], "context_evidence": {"site": "supported"}}
+    },
+    {
+      "id": "B134-TOY-UNRESOLVED",
+      "classification": "toy_structure_only_not_real_source",
+      "proposal": {"proposal_version": "metaverify-proposal-v0.1", "id": "B134-TOY-UNRESOLVED", "dataset_id": "b134-toy", "origin": "hand_authored_unit_test", "assertions": [{"left": {"column": "x"}, "op": "eq", "right": {"multiply": [{"column": "y"}, {"parameter": "factor"}]}}], "context_keys": ["site"]},
+      "allowed_columns": ["x", "y"], "registry": {},
+      "policy_evidence": {"metadata": "supported", "documentary": {"status": "supported", "verified": true, "evidence_url": "https://example.org/toy-not-real-evidence", "evidence_locator": "toy-only"}, "required_contexts": ["site"], "context_evidence": {"site": "supported"}}
+    },
+    {
+      "id": "B134-TOY-INVALID",
+      "classification": "toy_structure_only_not_real_source",
+      "proposal": {"proposal_version": "metaverify-proposal-v0.1", "id": "B134-TOY-INVALID", "dataset_id": "b134-toy", "origin": "hand_authored_unit_test", "assertions": [{"left": {"column": "x"}, "op": "eq", "right": {"constant": "5"}}], "context_keys": ["site"]},
+      "allowed_columns": ["x", "y"], "registry": {},
+      "policy_evidence": {"metadata": "supported", "documentary": {"status": "supported", "verified": true, "evidence_url": "https://example.org/toy-not-real-evidence", "evidence_locator": "toy-only"}, "required_contexts": ["site"], "context_evidence": {"site": "supported"}}
+    },
+    {
+      "id": "B134-TOY-UNKNOWN-METADATA",
+      "classification": "toy_structure_only_not_real_source",
+      "proposal": {"proposal_version": "metaverify-proposal-v0.1", "id": "B134-TOY-UNKNOWN-METADATA", "dataset_id": "b134-toy", "origin": "hand_authored_unit_test", "assertions": [{"left": {"column": "x"}, "op": "eq", "right": {"column": "y"}}], "context_keys": ["site"]},
+      "allowed_columns": ["x", "y"], "registry": {},
+      "policy_evidence": {"metadata": "unknown", "documentary": {"status": "unknown", "verified": false, "evidence_url": "", "evidence_locator": ""}, "required_contexts": ["site"], "context_evidence": {"site": "unknown"}}
+    },
+    {
+      "id": "B134-TOY-MISSING-SCOPE",
+      "classification": "toy_structure_only_not_real_source",
+      "proposal": {"proposal_version": "metaverify-proposal-v0.1", "id": "B134-TOY-MISSING-SCOPE", "dataset_id": "b134-toy", "origin": "hand_authored_unit_test", "assertions": [{"left": {"column": "x"}, "op": "eq", "right": {"column": "y"}}], "context_keys": []},
+      "allowed_columns": ["x", "y"], "registry": {},
+      "policy_evidence": {"metadata": "supported", "documentary": {"status": "supported", "verified": true, "evidence_url": "https://example.org/toy-not-real-evidence", "evidence_locator": "toy-only"}, "required_contexts": ["site"], "context_evidence": {"site": "supported"}}
+    }
+  ]
+}

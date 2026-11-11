@@ -1,0 +1,90 @@
+{
+  "study_id": "b13_10_documentary_evidence_and_applicability_triage_v1",
+  "phase": "retrospective_source_documentation_triage_not_gold_not_confirmatory",
+  "parent_b13_9_plan_canonical_sha256": "56262f13b5a701252e2bc6c2778f297d4a831efa549ace222ebe1315102f945e",
+  "parent_b13_7_registry_canonical_sha256": "dbf0da0baa39ca9d3e1722e8adc0e3b2f0c5d06047887ecddc062bc8bb62650d",
+  "independent_review_performed": false,
+  "real_candidate_gates_performed": false,
+  "source_authenticity_independently_confirmed": false,
+  "context_policy_frozen_for_real_source": false,
+  "previously_exposed_documents": true,
+  "evidence_items": [
+    {
+      "item_id": "TRIGLY_TR_UNIT",
+      "kind": "published_unit_conversion",
+      "source_ids": [
+        "B13S-HLT-01"
+      ],
+      "source_group": "nhanes_2015_2016_cycle",
+      "documentary_status": "explicit_published_factor",
+      "documentation_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2015/DataFiles/TRIGLY_I.htm",
+      "documentation_locator": "Data Processing and Editing > LBDTRSI",
+      "documented_factor": "0.01129",
+      "applicability_note": "TRIGLY component targets morning-examined participants age >=12. The unit conversion on existing valid paired lab measurements is not an independent clinical distribution estimate; fasting-duration conditions are stated for distribution/LDL use.",
+      "eligibility_evidence_gap": "Exact SI rounding and independent adjudication missing; clinical subgroup validation would require other NHANES files.",
+      "b3_execution_gap": "A context_keys declaration only aligns per-field context and cannot alone test age/session/fasting.",
+      "recommendation": "retrospective_documented_consistency_only"
+    },
+    {
+      "item_id": "TRIGLY_LDL_UNIT",
+      "kind": "published_unit_conversion",
+      "source_ids": [
+        "B13S-HLT-01"
+      ],
+      "source_group": "nhanes_2015_2016_cycle",
+      "documentary_status": "explicit_published_factor",
+      "documentation_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2015/DataFiles/TRIGLY_I.htm",
+      "documentation_locator": "Data Processing and Editing > LBDLDLSI",
+      "documented_factor": "0.02586",
+      "applicability_note": "Conversion of reported LBDLDL to LBDLDLSI is distinct from validating Friedewald derivation. Source notes LDL derivation applicable with TG <=400 mg/dL and fasting/morning restrictions for distribution estimates.",
+      "eligibility_evidence_gap": "No exact precision gold or independent reviewer; assessing Friedewald would need other lab/analyte files and eligibility context.",
+      "b3_execution_gap": "Using context_keys without when predicates or joined eligibility fields does not enforce the documented sample restrictions.",
+      "recommendation": "retrospective_documented_consistency_only"
+    },
+    {
+      "item_id": "TCHOL_TC_UNIT",
+      "kind": "published_unit_conversion",
+      "source_ids": [
+        "B13S-HLT-02"
+      ],
+      "source_group": "nhanes_2015_2016_cycle",
+      "documentary_status": "explicit_published_factor",
+      "documentation_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2015/DataFiles/TCHOL_I.htm",
+      "documentation_locator": "Data Processing and Editing > LBDTCSI",
+      "documented_factor": "0.02586",
+      "applicability_note": "TCHOL component includes examined participants age >=6. This source shares the 2015-2016 NHANES cycle with TRIGLY, not a second independent survey cohort.",
+      "eligibility_evidence_gap": "Exact SI rounding, external age-eligibility joining and independent adjudication missing.",
+      "b3_execution_gap": "context_keys alone do not check age eligibility or apply a missingness predicate.",
+      "recommendation": "retrospective_documented_consistency_only"
+    },
+    {
+      "item_id": "STEEL_FAULT_ONEHOT",
+      "kind": "observed_multiclass_label_structure",
+      "source_ids": [
+        "B13S-MAN-01"
+      ],
+      "source_group": "uci_steel_plates_2010_release",
+      "documentary_status": "seven_categories_described_not_exactly_one_axiom",
+      "documentation_url": "https://archive.ics.uci.edu/dataset/198/steel%2Bplates%2Bfaults",
+      "documentation_locator": "Dataset Information > Type of dependent variables",
+      "documented_factor": null,
+      "applicability_note": "UCI describes seven fault classes; downloaded data show seven binary target columns and one positive label per row. This is an observed encoding, not evidence that every possible record is required to be one-hot.",
+      "eligibility_evidence_gap": "Independent authoritative encoding requirement, label exceptions and source provenance review missing.",
+      "b3_execution_gap": "Even if a sum-to-one assertion can compile, it does not by itself enforce each indicator being binary; applicability and raw semantics must be reviewed.",
+      "recommendation": "do_not_treat_observed_onehot_as_independent_gold"
+    }
+  ],
+  "research_claims_allowed": [
+    "documented_factors_recorded",
+    "observed_representational_pattern",
+    "limitations_of_current_executable_context_guard"
+  ],
+  "research_claims_forbidden": [
+    "independently_adjudicated_gold",
+    "novel_rule_discovery",
+    "precision_truth",
+    "confirmed_data_error",
+    "prospective_three_arm_effect",
+    "source_eligibility_confirmed"
+  ]
+}

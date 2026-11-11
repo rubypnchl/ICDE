@@ -1,0 +1,343 @@
+{
+  "study_id": "b13_6_source_context_readiness_v1",
+  "parent_study_id": "b13_prospective_matched_evidence_gate_v1",
+  "parent_shortlist_study_id": "b13_2_source_eligibility_screening_v1",
+  "policy_ancestry": "b13_5_context_declaration_policy_v2_toy_only",
+  "phase": "documentation_questions_only_not_source_eligibility",
+  "status": "preflight_only_source_eligibility_unverified",
+  "sources": [
+    {
+      "source_id": "B13S-FIN-01",
+      "domain": "finance",
+      "official_url": "https://www.sec.gov/search-filings/edgar-application-programming-interfaces",
+      "documentation_note": "SEC EDGAR APIs; Companyfacts includes entity-wide noncustom facts, not every inline XBRL dimension",
+      "prospective_cluster_axis_to_verify": "accession_or_filing_context",
+      "documentation_exposure": "official_documentation_consulted_before_new_candidate_freeze",
+      "source_selection_status": "not_selected",
+      "eligibility_status": "pending_source_specific_human_review",
+      "required_b4_context_keys_frozen": false,
+      "local_source_object_sha256": null,
+      "new_candidate_count": 0,
+      "questions": [
+        {
+          "question_id": "B13S-FIN-01-Q01",
+          "category": "source_identity",
+          "question": "Which specific new CIKs and accession numbers, filing timestamps and taxonomies are selected, and were they absent from earlier development sets?",
+          "potential_b4_context_key": "accession",
+          "evidence_url": "https://www.sec.gov/search-filings/edgar-application-programming-interfaces",
+          "evidence_locator_to_inspect": "Companyfacts API and submissions history",
+          "review_state": "unresolved",
+          "documentary_entailment_confirmed": false
+        },
+        {
+          "question_id": "B13S-FIN-01-Q02",
+          "category": "context_applicability",
+          "question": "Are accounting scope and consolidation dimensions proven from the actual filing/XBRL context, not assumed from arithmetic agreement?",
+          "potential_b4_context_key": "accounting_scope",
+          "evidence_url": "https://www.sec.gov/search-filings/edgar-application-programming-interfaces",
+          "evidence_locator_to_inspect": "Companyfacts API entity-wide scope limitation",
+          "review_state": "unresolved",
+          "documentary_entailment_confirmed": false
+        },
+        {
+          "question_id": "B13S-FIN-01-Q03",
+          "category": "context_applicability",
+          "question": "Do compared facts share the same reporting end/instant or duration, unit, and fiscal period?",
+          "potential_b4_context_key": "reporting_period",
+          "evidence_url": "https://www.sec.gov/search-filings/edgar-application-programming-interfaces",
+          "evidence_locator_to_inspect": "Companyconcept units and frame coverage",
+          "review_state": "unresolved",
+          "documentary_entailment_confirmed": false
+        },
+        {
+          "question_id": "B13S-FIN-01-Q04",
+          "category": "variable_semantics",
+          "question": "Are the exact accounting concept tags and noncontrolling/redeemable equity treatment supported in the chosen filing?",
+          "potential_b4_context_key": "taxonomy_tag",
+          "evidence_url": "https://www.sec.gov/search-filings/edgar-application-programming-interfaces",
+          "evidence_locator_to_inspect": "Standard taxonomy concepts and filing context",
+          "review_state": "unresolved",
+          "documentary_entailment_confirmed": false
+        },
+        {
+          "question_id": "B13S-FIN-01-Q05",
+          "category": "independence",
+          "question": "Are issuers/accessions disjoint from previously inspected Apple and any other known development issuers?",
+          "potential_b4_context_key": null,
+          "evidence_url": "https://www.sec.gov/search-filings/edgar-application-programming-interfaces",
+          "evidence_locator_to_inspect": "New-source sampling decision",
+          "review_state": "unresolved",
+          "documentary_entailment_confirmed": false
+        }
+      ]
+    },
+    {
+      "source_id": "B13S-HLT-01",
+      "domain": "healthcare",
+      "official_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2015/DataFiles/TRIGLY_I.htm",
+      "documentation_note": "TRIGLY_I contains documented conversions and LDL derivation plus participant and fasting restrictions",
+      "prospective_cluster_axis_to_verify": "nhanes_2015_2016_cycle",
+      "documentation_exposure": "official_documentation_consulted_before_new_candidate_freeze",
+      "source_selection_status": "not_selected",
+      "eligibility_status": "pending_source_specific_human_review",
+      "required_b4_context_keys_frozen": false,
+      "local_source_object_sha256": null,
+      "new_candidate_count": 0,
+      "questions": [
+        {
+          "question_id": "B13S-HLT-01-Q01",
+          "category": "source_identity",
+          "question": "Verify the released XPT object/hash, cycle, SEQN join semantics and any documented revisions.",
+          "potential_b4_context_key": "survey_cycle",
+          "evidence_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2015/DataFiles/TRIGLY_I.htm",
+          "evidence_locator_to_inspect": "Data File and Codebook",
+          "review_state": "unresolved",
+          "documentary_entailment_confirmed": false
+        },
+        {
+          "question_id": "B13S-HLT-01-Q02",
+          "category": "context_applicability",
+          "question": "Which age, morning-session and 8.5–24 hour fasting conditions apply to the particular variable/rule?",
+          "potential_b4_context_key": "sample_eligibility",
+          "evidence_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2015/DataFiles/TRIGLY_I.htm",
+          "evidence_locator_to_inspect": "Eligible Sample; Analytic Notes",
+          "review_state": "unresolved",
+          "documentary_entailment_confirmed": false
+        },
+        {
+          "question_id": "B13S-HLT-01-Q03",
+          "category": "variable_semantics",
+          "question": "Are derived conversion and LDL rules scoped to supported analytes, source variables and exact units?",
+          "potential_b4_context_key": "measurement_unit",
+          "evidence_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2015/DataFiles/TRIGLY_I.htm",
+          "evidence_locator_to_inspect": "Description of Laboratory Methodology",
+          "review_state": "unresolved",
+          "documentary_entailment_confirmed": false
+        },
+        {
+          "question_id": "B13S-HLT-01-Q04",
+          "category": "variable_semantics",
+          "question": "What is the documented rounding/precision behavior, and is a cross-file cholesterol/HDL join necessary?",
+          "potential_b4_context_key": null,
+          "evidence_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2015/DataFiles/TRIGLY_I.htm",
+          "evidence_locator_to_inspect": "Derived variables and LBDLDL notes",
+          "review_state": "unresolved",
+          "documentary_entailment_confirmed": false
+        },
+        {
+          "question_id": "B13S-HLT-01-Q05",
+          "category": "independence",
+          "question": "Document that the CDC derivation formula was read during preliminary screening; do not claim unseen blind discovery.",
+          "potential_b4_context_key": null,
+          "evidence_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2015/DataFiles/TRIGLY_I.htm",
+          "evidence_locator_to_inspect": "Prior-doc exposure log",
+          "review_state": "unresolved",
+          "documentary_entailment_confirmed": false
+        }
+      ]
+    },
+    {
+      "source_id": "B13S-HLT-02",
+      "domain": "healthcare",
+      "official_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2015/DataFiles/TCHOL_I.htm",
+      "documentation_note": "TCHOL_I shares the NHANES 2015–16 cycle/SEQN structure with TRIGLY_I",
+      "prospective_cluster_axis_to_verify": "nhanes_2015_2016_cycle",
+      "documentation_exposure": "official_documentation_consulted_before_new_candidate_freeze",
+      "source_selection_status": "not_selected",
+      "eligibility_status": "pending_source_specific_human_review",
+      "required_b4_context_keys_frozen": false,
+      "local_source_object_sha256": null,
+      "new_candidate_count": 0,
+      "questions": [
+        {
+          "question_id": "B13S-HLT-02-Q01",
+          "category": "source_identity",
+          "question": "Verify released XPT version, exact participant IDs, eligibility and analyte definitions.",
+          "potential_b4_context_key": "survey_cycle",
+          "evidence_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2015/DataFiles/TCHOL_I.htm",
+          "evidence_locator_to_inspect": "Data File; Eligible Sample",
+          "review_state": "unresolved",
+          "documentary_entailment_confirmed": false
+        },
+        {
+          "question_id": "B13S-HLT-02-Q02",
+          "category": "context_applicability",
+          "question": "For joined derived relationships, do source records correspond to the same SEQN and admissible participant subgroup?",
+          "potential_b4_context_key": "participant_alignment",
+          "evidence_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2015/DataFiles/TCHOL_I.htm",
+          "evidence_locator_to_inspect": "Codebook and lab data linking",
+          "review_state": "unresolved",
+          "documentary_entailment_confirmed": false
+        },
+        {
+          "question_id": "B13S-HLT-02-Q03",
+          "category": "variable_semantics",
+          "question": "Verify the total-cholesterol measurement unit, method and required precision before asserting equalities.",
+          "potential_b4_context_key": "measurement_unit",
+          "evidence_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2015/DataFiles/TCHOL_I.htm",
+          "evidence_locator_to_inspect": "Laboratory Methodology",
+          "review_state": "unresolved",
+          "documentary_entailment_confirmed": false
+        },
+        {
+          "question_id": "B13S-HLT-02-Q04",
+          "category": "independence",
+          "question": "Ensure TRIGLY_I and TCHOL_I count as one shared NHANES cycle cluster in uncertainty analysis.",
+          "potential_b4_context_key": null,
+          "evidence_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2015/DataFiles/TCHOL_I.htm",
+          "evidence_locator_to_inspect": "NHANES 2015–16 cohort",
+          "review_state": "unresolved",
+          "documentary_entailment_confirmed": false
+        }
+      ]
+    },
+    {
+      "source_id": "B13S-CYB-01",
+      "domain": "cybersecurity",
+      "official_url": "https://www.unb.ca/cic/datasets/ids-2018.html",
+      "documentation_note": "CSE-CIC-IDS2018 uses CICFlowMeter-V3 with bidirectional flow features and per-day source objects",
+      "prospective_cluster_axis_to_verify": "capture_day_and_source_object",
+      "documentation_exposure": "official_documentation_consulted_before_new_candidate_freeze",
+      "source_selection_status": "not_selected",
+      "eligibility_status": "pending_source_specific_human_review",
+      "required_b4_context_keys_frozen": false,
+      "local_source_object_sha256": null,
+      "new_candidate_count": 0,
+      "questions": [
+        {
+          "question_id": "B13S-CYB-01-Q01",
+          "category": "source_identity",
+          "question": "Select exact capture day, CSV/PCAP object, and verifiable local file checksum; do not sync the entire S3 dataset during screening.",
+          "potential_b4_context_key": "capture_day",
+          "evidence_url": "https://www.unb.ca/cic/datasets/ids-2018.html",
+          "evidence_locator_to_inspect": "Using the dataset",
+          "review_state": "unresolved",
+          "documentary_entailment_confirmed": false
+        },
+        {
+          "question_id": "B13S-CYB-01-Q02",
+          "category": "variable_semantics",
+          "question": "What CICFlowMeter-V3 implementation version and CSV header names generated these specific columns?",
+          "potential_b4_context_key": "extractor_version",
+          "evidence_url": "https://www.unb.ca/cic/datasets/ids-2018.html",
+          "evidence_locator_to_inspect": "Feature extraction and dataset release",
+          "review_state": "unresolved",
+          "documentary_entailment_confirmed": false
+        },
+        {
+          "question_id": "B13S-CYB-01-Q03",
+          "category": "context_applicability",
+          "question": "Are packet statistics compared only for the correct forward/backward direction and a nonempty eligible packet count?",
+          "potential_b4_context_key": "flow_direction",
+          "evidence_url": "https://www.unb.ca/cic/datasets/ids-2018.html",
+          "evidence_locator_to_inspect": "Bidirectional flows feature extraction",
+          "review_state": "unresolved",
+          "documentary_entailment_confirmed": false
+        },
+        {
+          "question_id": "B13S-CYB-01-Q04",
+          "category": "independence",
+          "question": "Check leakage by capture day, machine, flow group and overlap with CIC-IDS2017 generator family.",
+          "potential_b4_context_key": null,
+          "evidence_url": "https://www.unb.ca/cic/datasets/ids-2018.html",
+          "evidence_locator_to_inspect": "Dataset generation and prior exposure",
+          "review_state": "unresolved",
+          "documentary_entailment_confirmed": false
+        },
+        {
+          "question_id": "B13S-CYB-01-Q05",
+          "category": "rights",
+          "question": "Confirm original attribution terms and whether redistribution of selected objects is permitted.",
+          "potential_b4_context_key": null,
+          "evidence_url": "https://www.unb.ca/cic/datasets/ids-2018.html",
+          "evidence_locator_to_inspect": "License",
+          "review_state": "unresolved",
+          "documentary_entailment_confirmed": false
+        }
+      ]
+    },
+    {
+      "source_id": "B13S-MAN-01",
+      "domain": "manufacturing",
+      "official_url": "https://archive.ics.uci.edu/dataset/198/steel%2Bplates%2Bfaults",
+      "documentation_note": "UCI Steel Plates Faults has 1,941 rows, 27 features, seven classification targets; source rule entailment uncertain",
+      "prospective_cluster_axis_to_verify": "original_release_or_plate_group",
+      "documentation_exposure": "official_documentation_consulted_before_new_candidate_freeze",
+      "source_selection_status": "not_selected",
+      "eligibility_status": "pending_source_specific_human_review",
+      "required_b4_context_keys_frozen": false,
+      "local_source_object_sha256": null,
+      "new_candidate_count": 0,
+      "questions": [
+        {
+          "question_id": "B13S-MAN-01-Q01",
+          "category": "source_identity",
+          "question": "Verify original Faults.NNA (or official package) and its file hash, schema version and cited release.",
+          "potential_b4_context_key": "release_id",
+          "evidence_url": "https://archive.ics.uci.edu/dataset/198/steel%2Bplates%2Bfaults",
+          "evidence_locator_to_inspect": "Dataset Files and Citation",
+          "review_state": "unresolved",
+          "documentary_entailment_confirmed": false
+        },
+        {
+          "question_id": "B13S-MAN-01-Q02",
+          "category": "variable_semantics",
+          "question": "Do official variable definitions establish any proposed arithmetic/ordering relation, rather than a field-name guess?",
+          "potential_b4_context_key": "measurement_definition",
+          "evidence_url": "https://archive.ics.uci.edu/dataset/198/steel%2Bplates%2Bfaults",
+          "evidence_locator_to_inspect": "Variables Table",
+          "review_state": "unresolved",
+          "documentary_entailment_confirmed": false
+        },
+        {
+          "question_id": "B13S-MAN-01-Q03",
+          "category": "context_applicability",
+          "question": "Are steel type, fault label and operating conditions known where the rule is applicable?",
+          "potential_b4_context_key": "operating_context",
+          "evidence_url": "https://archive.ics.uci.edu/dataset/198/steel%2Bplates%2Bfaults",
+          "evidence_locator_to_inspect": "Additional Information",
+          "review_state": "unresolved",
+          "documentary_entailment_confirmed": false
+        },
+        {
+          "question_id": "B13S-MAN-01-Q04",
+          "category": "independence",
+          "question": "Determine whether row grouping permits independent plates/batches, or only a single dataset cohort.",
+          "potential_b4_context_key": null,
+          "evidence_url": "https://archive.ics.uci.edu/dataset/198/steel%2Bplates%2Bfaults",
+          "evidence_locator_to_inspect": "Dataset Information",
+          "review_state": "unresolved",
+          "documentary_entailment_confirmed": false
+        },
+        {
+          "question_id": "B13S-MAN-01-Q05",
+          "category": "rights",
+          "question": "Confirm Creative Commons BY 4.0 attribution and provenance obligations.",
+          "potential_b4_context_key": null,
+          "evidence_url": "https://archive.ics.uci.edu/dataset/198/steel%2Bplates%2Bfaults",
+          "evidence_locator_to_inspect": "License",
+          "review_state": "unresolved",
+          "documentary_entailment_confirmed": false
+        }
+      ]
+    }
+  ],
+  "cohort_eligibility_confirmed": 0,
+  "source_object_downloads": 0,
+  "real_candidate_gate_runs": 0,
+  "gold_rule_count": 0,
+  "independent_reviewer_decisions": 0,
+  "real_b4_context_policy_frozen": false,
+  "manual_review_required": true,
+  "allowed_claims": [
+    "source_specific_review_questions_prepared"
+  ],
+  "disallowed_claims": [
+    "source_eligibility_verified",
+    "documentary_entailment_verified",
+    "real_source_context_policy_frozen",
+    "independent_gold_labels",
+    "prospective_gate_effect",
+    "real_candidate_gate_execution"
+  ]
+}

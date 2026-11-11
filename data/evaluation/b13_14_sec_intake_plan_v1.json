@@ -1,0 +1,14 @@
+{
+  "study_id": "b13_14_disjoint_sec_filing_intake_v1",
+  "phase": "source_lead_not_a_qualified_candidate",
+  "cik": "0001058090",
+  "form": "10-K",
+  "filing_selection_cutoff": "2026-11-11",
+  "selection_rule": "latest_10_K_filed_on_or_before_cutoff_by_filing_date_then_accession",
+  "url": "https://data.sec.gov/submissions/CIK0001058090.json",
+  "prior_exposure_independently_verified": false,
+  "financial_context_independently_verified": false,
+  "real_candidate_generated": false,
+  "independent_gold_available": false,
+  "claim": "official_sec_submission_fingerprint_and_filing_locator_only"
+}

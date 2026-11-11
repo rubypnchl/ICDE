@@ -1,0 +1,50 @@
+{
+  "classification": "hand_constructed_synthetic_policy_controls_not_independent_reference_truth",
+  "cases": [
+    {
+      "candidate_id": "TOY-001", "compiler": "compiled", "metadata": "supported",
+      "documentary": {"status": "supported", "verified": true, "evidence_url": "https://example.org/toy-definition", "evidence_locator": "toy paragraph 1"},
+      "required_contexts": ["scope", "units"], "context_evidence": {"scope": "supported", "units": "supported"}
+    },
+    {
+      "candidate_id": "TOY-002", "compiler": "compiled", "metadata": "unknown",
+      "documentary": {"status": "unknown", "verified": false, "evidence_url": "", "evidence_locator": ""},
+      "required_contexts": ["scope"], "context_evidence": {}
+    },
+    {
+      "candidate_id": "TOY-003", "compiler": "compiled", "metadata": "supported",
+      "documentary": {"status": "supported", "verified": false, "evidence_url": "https://example.org/untested", "evidence_locator": "toy section 2"},
+      "required_contexts": ["scope"], "context_evidence": {"scope": "supported"}
+    },
+    {
+      "candidate_id": "TOY-004", "compiler": "compiled", "metadata": "supported",
+      "documentary": {"status": "supported", "verified": true, "evidence_url": "https://example.org/fiction", "evidence_locator": "toy section 3"},
+      "required_contexts": ["scope", "currency"], "context_evidence": {"scope": "unknown", "currency": "contradicted"}
+    },
+    {
+      "candidate_id": "TOY-005", "compiler": "blocked", "metadata": "supported",
+      "documentary": {"status": "unknown", "verified": false, "evidence_url": "", "evidence_locator": ""},
+      "required_contexts": ["scope"], "context_evidence": {}
+    },
+    {
+      "candidate_id": "TOY-006", "compiler": "unknown", "metadata": "supported",
+      "documentary": {"status": "unknown", "verified": false, "evidence_url": "", "evidence_locator": ""},
+      "required_contexts": ["scope"], "context_evidence": {}
+    },
+    {
+      "candidate_id": "TOY-007", "compiler": "compiled", "metadata": "contradicted",
+      "documentary": {"status": "unknown", "verified": false, "evidence_url": "", "evidence_locator": ""},
+      "required_contexts": ["scope"], "context_evidence": {}
+    },
+    {
+      "candidate_id": "TOY-008", "compiler": "compiled", "metadata": "supported",
+      "documentary": {"status": "contradicted", "verified": false, "evidence_url": "", "evidence_locator": ""},
+      "required_contexts": ["scope"], "context_evidence": {"scope": "supported"}
+    },
+    {
+      "candidate_id": "TOY-009", "compiler": "compiled", "metadata": "supported",
+      "documentary": {"status": "supported", "verified": true, "evidence_url": "https://example.org/fiction", "evidence_locator": "toy section 4"},
+      "required_contexts": ["scope", "units"], "context_evidence": {"scope": "supported"}
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "study_id": "b13_13_real_input_matched_arm_pilot_v1",
+  "phase": "pilot_not_confirmatory_no_unverified_gold",
+  "candidates": [
+    {
+      "candidate_id": "REPLACE_WITH_NEW_UNSEEN_CANDIDATE_ID",
+      "domain": "finance",
+      "source_group": "REPLACE_WITH_NEW_DISJOINT_SOURCE_GROUP",
+      "source_file": "REPLACE_WITH_ABSOLUTE_SOURCE_PATH_OUTSIDE_REPO",
+      "source_sha256": "REPLACE_WITH_ACTUAL_SHA256",
+      "source_evidence_url": "https://example.org/REPLACE_WITH_OFFICIAL_SOURCE_DOCUMENT",
+      "source_evidence_locator": "REPLACE_WITH_SECTION_TABLE_OR_DEFINITION",
+      "prior_exposure": "unknown",
+      "proposal": {
+        "proposal_version": "metaverify-proposal-v0.1",
+        "id": "REPLACE_WITH_NEW_UNSEEN_CANDIDATE_ID",
+        "dataset_id": "REPLACE_WITH_REAL_DATASET_ID",
+        "origin": "REPLACE_WITH_ACTUAL_CANDIDATE_PROVENANCE",
+        "assertions": [
+          {"left": {"column": "REPLACE_COLUMN_1"}, "op": "eq", "right": {"column": "REPLACE_COLUMN_2"}}
+        ],
+        "context_keys": []
+      },
+      "allowed_columns": ["REPLACE_COLUMN_1", "REPLACE_COLUMN_2"],
+      "parameter_registry": {},
+      "source_context_policy": {
+        "required_context_keys": [],
+        "required_when": null,
+        "context_review": "unknown",
+        "applicability_review": "unknown",
+        "source_eligibility_review": "unknown",
+        "reviewer_id": "REPLACE_WITH_INDEPENDENT_SOURCE_REVIEWER_ID",
+        "basis_url": "https://example.org/REPLACE_WITH_REAL_SOURCE_DOCUMENT",
+        "basis_locator": "REPLACE_WITH_SOURCE_CONTEXT_DEFINITION"
+      },
+      "policy_evidence": {
+        "metadata": "unknown",
+        "documentary": {
+          "status": "unknown",
+          "verified": false,
+          "evidence_url": "",
+          "evidence_locator": ""
+        },
+        "context_evidence": {},
+        "curator_id": "REPLACE_WITH_DIFFERENT_EVIDENCE_CURATOR_ID"
+      },
+      "field_context_by_column": {}
+    }
+  ]
+}

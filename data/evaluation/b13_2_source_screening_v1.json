@@ -1,0 +1,71 @@
+{
+  "study_id": "b13_2_source_eligibility_screening_v1",
+  "phase": "source_shortlist_only_not_a_candidate_cohort",
+  "status": "screening_unverified",
+  "parent_protocol": "b13_prospective_matched_evidence_gate_v1",
+  "gate_policies_frozen": false,
+  "candidate_set_frozen": false,
+  "data_downloaded_by_package": false,
+  "evaluation_performed": false,
+  "source_independence_confirmed": false,
+  "source_shortlist": [
+    {
+      "id": "B13S-FIN-01",
+      "domain": "finance",
+      "title": "SEC EDGAR submissions and companyfacts: new filer cohort to be selected",
+      "official_url": "https://www.sec.gov/search-filings/edgar-application-programming-interfaces",
+      "group_selection": "Select and freeze new CIKs and accessions excluding previously inspected issuers; verify entity, reporting period, accession, units, taxonomy and accounting scope",
+      "relationship_to_previous_work": "Same public EDGAR platform as earlier Apple Companyfacts work; new issuer and filing selection not yet demonstrated",
+      "eligibility_status": "pending_manual_verification",
+      "rights_or_access_note": "Use SEC fair-access rules; do not fetch automatically in this package",
+      "limitations": "Companyfacts alone may not establish all dimensional/consolidation contexts"
+    },
+    {
+      "id": "B13S-HLT-01",
+      "domain": "healthcare",
+      "title": "NHANES 2015-2016 triglycerides and LDL laboratory release (TRIGLY_I)",
+      "official_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2015/DataFiles/TRIGLY_I.htm",
+      "group_selection": "Verify TRIGLY_I XPT release/version, variable definitions, derivation applicability and overlap with previously inspected analytes",
+      "relationship_to_previous_work": "Different cycle and analytes than prior GLU_J glucose work; public documentation was consulted during screening",
+      "eligibility_status": "pending_manual_verification",
+      "rights_or_access_note": "Check CDC dataset citation and reuse conditions before redistributing data",
+      "limitations": "Published documentation includes derivation formulas; source screening is not blinded rule discovery"
+    },
+    {
+      "id": "B13S-HLT-02",
+      "domain": "healthcare",
+      "title": "NHANES 2015-2016 total cholesterol laboratory release (TCHOL_I)",
+      "official_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2015/DataFiles/TCHOL_I.htm",
+      "group_selection": "Verify XPT version, release variables and sample scope; treat same NHANES cycle as shared cluster where appropriate",
+      "relationship_to_previous_work": "Different analyte and cycle than GLU_J; screening read official derivation documentation",
+      "eligibility_status": "pending_manual_verification",
+      "rights_or_access_note": "Check CDC dataset citation and reuse conditions before redistributing data",
+      "limitations": "Two analytes in the same survey cycle are not independent survey clusters"
+    },
+    {
+      "id": "B13S-CYB-01",
+      "domain": "cybersecurity",
+      "title": "CSE-CIC-IDS2018 official traffic feature and PCAP release",
+      "official_url": "https://www.unb.ca/cic/datasets/ids-2018.html",
+      "group_selection": "Freeze disjoint capture day and source object; verify extractor version, flow-direction fields, header mapping and bucket object checksum",
+      "relationship_to_previous_work": "Different capture dataset from CIC-IDS2017, but shares a CICFlowMeter tool family",
+      "eligibility_status": "pending_manual_verification",
+      "rights_or_access_note": "Follow the official CIC dataset redistribution and attribution terms",
+      "limitations": "Shared extractor families and known NIDS dataset artifacts limit independent-tool claims"
+    },
+    {
+      "id": "B13S-MAN-01",
+      "domain": "manufacturing",
+      "title": "UCI Steel Plates Faults (dataset 198)",
+      "official_url": "https://archive.ics.uci.edu/dataset/198/steel%2Bplates%2Bfaults",
+      "group_selection": "Check original fault-file schema, column meaning, version, and whether source documents entail any nontrivial constraint",
+      "relationship_to_previous_work": "Distinct manufacturing dataset from synthetic AI4I 2020, not yet screened for candidate suitability",
+      "eligibility_status": "pending_manual_verification",
+      "rights_or_access_note": "UCI page indicates CC BY 4.0; preserve original citation and licence",
+      "limitations": "Descriptive variable names alone do not justify numeric, exclusivity or causal constraints"
+    }
+  ],
+  "next_action": "Independently record source eligibility and freeze gate policies before inspecting reference outcomes or executing any arm",
+  "allowed_claims": ["official_source_shortlist_prepared"],
+  "disallowed_claims": ["source_independence_verified", "gold_constraint_count", "prospective_gate_result", "new_natural_defects", "rule_discovery_accuracy"]
+}

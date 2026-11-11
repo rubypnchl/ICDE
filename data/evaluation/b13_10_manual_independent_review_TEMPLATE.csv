@@ -1,0 +1,13 @@
+relationship_id,reviewer_role,reviewer_code,review_date_utc,document_url_and_exact_locator,source_release_and_sha256_checked,formula_or_semantic_claim_supported_yes_no_uncertain,precision_or_label_encoding_supported_yes_no_uncertain,scope_and_eligibility_reviewed_yes_no_uncertain,required_columns_and_source_context_checked_yes_no_uncertain,prior_exposure_or_independence_concern,contradictory_evidence,decision_supported_conditional_unsupported_unverifiable,rationale_and_missing_information,adjudication_record_id
+TRIGLY_TR_UNIT,independent_reviewer_1,,,,,,,,,,,,,
+TRIGLY_TR_UNIT,independent_reviewer_2,,,,,,,,,,,,,
+TRIGLY_TR_UNIT,adjudicator,,,,,,,,,,,,,
+TRIGLY_LDL_UNIT,independent_reviewer_1,,,,,,,,,,,,,
+TRIGLY_LDL_UNIT,independent_reviewer_2,,,,,,,,,,,,,
+TRIGLY_LDL_UNIT,adjudicator,,,,,,,,,,,,,
+TCHOL_TC_UNIT,independent_reviewer_1,,,,,,,,,,,,,
+TCHOL_TC_UNIT,independent_reviewer_2,,,,,,,,,,,,,
+TCHOL_TC_UNIT,adjudicator,,,,,,,,,,,,,
+STEEL_FAULT_ONEHOT,independent_reviewer_1,,,,,,,,,,,,,
+STEEL_FAULT_ONEHOT,independent_reviewer_2,,,,,,,,,,,,,
+STEEL_FAULT_ONEHOT,adjudicator,,,,,,,,,,,,,

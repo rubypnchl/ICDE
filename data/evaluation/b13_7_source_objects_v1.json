@@ -1,0 +1,47 @@
+{
+  "study_id": "b13_7_source_object_acquisition_v1",
+  "scope": "three_public_source_object_snapshots_only_not_source_eligibility",
+  "phase": "source_acquisition_without_candidate_selection_or_gates",
+  "data_are_not_bundled": true,
+  "source_ids": [
+    {
+      "source_id": "B13S-HLT-01",
+      "domain": "healthcare",
+      "object_name": "TRIGLY_I.XPT",
+      "download_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2015/DataFiles/TRIGLY_I.XPT",
+      "documentation_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2015/DataFiles/TRIGLY_I.htm",
+      "format": "sas_xpt",
+      "source_group": "nhanes_2015_2016_cycle",
+      "prior_documentation_exposed": true,
+      "source_specific_eligibility_verified": false,
+      "reference_truth_available": false
+    },
+    {
+      "source_id": "B13S-HLT-02",
+      "domain": "healthcare",
+      "object_name": "TCHOL_I.XPT",
+      "download_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2015/DataFiles/TCHOL_I.XPT",
+      "documentation_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2015/DataFiles/TCHOL_I.htm",
+      "format": "sas_xpt",
+      "source_group": "nhanes_2015_2016_cycle",
+      "prior_documentation_exposed": true,
+      "source_specific_eligibility_verified": false,
+      "reference_truth_available": false
+    },
+    {
+      "source_id": "B13S-MAN-01",
+      "domain": "manufacturing",
+      "object_name": "steel_plates_faults.zip",
+      "download_url": "https://archive.ics.uci.edu/static/public/198/steel%2Bplates%2Bfaults.zip",
+      "documentation_url": "https://archive.ics.uci.edu/dataset/198/steel%2Bplates%2Bfaults",
+      "format": "zip",
+      "source_group": "uci_steel_plates_2010_release",
+      "prior_documentation_exposed": true,
+      "source_specific_eligibility_verified": false,
+      "reference_truth_available": false
+    }
+  ],
+  "acquisition_notice": "User-triggered HTTPS retrieval only; hashes are local provenance fingerprints, not independent official signatures or semantic truth",
+  "allowed_claims": ["public_source_file_acquisition_attempted_and_recorded_when_successful"],
+  "disallowed_claims": ["independently_verified_file_authenticity", "confirmatory_cohorts_eligible", "validated_semantic_constraint", "matched_gate_effect", "unseen_blinded_discovery", "adjudicated_gold"]
+}

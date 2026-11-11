@@ -1,0 +1,24 @@
+{
+  "study_id": "b13_prospective_matched_evidence_gate_v1",
+  "protocol_state": "design_draft_not_run",
+  "study_type": "matched_candidate_admission_policy_comparison",
+  "domains": ["finance", "healthcare", "cybersecurity", "manufacturing"],
+  "target_unique_candidates_per_domain": 8,
+  "target_is_statistical_power_calculation": false,
+  "candidate_universe": "new_and_versioned_after_design_lock; earlier B5/B6/B7/B8/B10/B12 sources are development only",
+  "unit_of_analysis": "typed_candidate_with_source_and_context_snapshot",
+  "arms": [
+    {"id": "A", "name": "compiler_only", "same_candidates": true, "shared_parameter_registry": true},
+    {"id": "B", "name": "compiler_plus_metadata", "same_candidates": true, "shared_parameter_registry": true},
+    {"id": "C", "name": "compiler_plus_metadata_plus_document_and_context", "same_candidates": true, "shared_parameter_registry": true}
+  ],
+  "primary_estimand": "unsupported_admission_rate_among_independently_adjudicated_unsupported_candidates",
+  "secondary_estimands": ["supported_candidate_recall", "admission_coverage", "abstention_rate", "conditional_admission_precision_when_defined"],
+  "required_reference_process": "two_independent_blinded_source_reviewers_plus_separate_adjudicator",
+  "frozen_before_reference_decisions": ["design", "candidate_universe", "candidate_inputs", "parameter_registry", "three_policies", "reference_eligibility_and_analysis_plan"],
+  "allowed_claims_now": ["protocol_design_only"],
+  "disallowed_claims_now": ["completed_prospective_experiment", "gold_precision", "causal_gate_benefit", "natural_defect_detection_accuracy", "published_baseline_superiority"],
+  "no_git_push": true,
+  "no_network_calls": true,
+  "no_source_modifications": true
+}

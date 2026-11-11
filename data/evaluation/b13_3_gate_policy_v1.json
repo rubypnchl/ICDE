@@ -1,0 +1,49 @@
+{
+  "study_id": "b13_3_three_arm_admission_policy_spec_v1",
+  "parent_study": "b13_prospective_matched_evidence_gate_v1",
+  "phase": "synthetic_protocol_validation_only",
+  "status": "not_integrated_with_real_compiler_or_source_evidence",
+  "arm_order": ["A", "B", "C"],
+  "arm_definitions": {
+    "A": "compiler_only",
+    "B": "compiler_plus_metadata",
+    "C": "compiler_plus_metadata_plus_document_and_context"
+  },
+  "input_truth_not_available": true,
+  "known_development_inputs_excluded_from_confirmatory_scoring": true,
+  "same_candidate_compiler_and_registry_all_arms": true,
+  "policy_evidence_separate_from_blinded_reference_adjudication": true,
+  "statuses": {
+    "signal": ["supported", "unknown", "contradicted"],
+    "compiler": ["compiled", "blocked", "unknown"],
+    "decision": ["admit", "abstain", "block"]
+  },
+  "priority_rules": [
+    "Compiler blocked => all arms block; compiler unknown => all arms abstain",
+    "Arm A admits compiled candidates regardless of evidence statuses, as research-only exposure not deployment",
+    "Arm B blocks on contradicted metadata; abstains on unknown metadata; otherwise admits",
+    "Arm C first applies Arm B; then blocks for contradicted documentary or required-context evidence; abstains for unknown evidence, unverified documentary evidence, or missing required contexts; otherwise admits"
+  ],
+  "evidence_integrity": {
+    "documentary_requires_https_url_and_locator": true,
+    "documentary_supported_requires_separate_verified_flag": true,
+    "every_required_context_must_have_an_explicit_signal": true,
+    "context_names_frozen_before_candidate_outcomes": true,
+    "evidence_verification_flag_does_not_prove_semantic_truth": true
+  },
+  "unresolved_prerequisites": [
+    "Map exact B4 compiler and B5 evidence outputs to frozen adapter statuses",
+    "Freeze actual gate inputs, evidence extractors, eligibility and independent reviewer role separation",
+    "Source eligibility and untouched candidate manifest not yet established",
+    "No real candidate execution, adjudication, or accuracy measurement"
+  ],
+  "allowed_claims": ["synthetic_policy_behavior_locally_tested"],
+  "disallowed_claims": [
+    "prospective_accuracy_result",
+    "real_candidate_gate_executed",
+    "independent_source_evidence_verified",
+    "adjudicated_reference_truth_available",
+    "clinical_or_financial_validity_established",
+    "published_discovery_baseline_beaten"
+  ]
+}
