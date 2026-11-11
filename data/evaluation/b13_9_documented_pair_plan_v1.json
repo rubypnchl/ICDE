@@ -1,0 +1,50 @@
+{
+  "study_id": "b13_9_documented_unit_pair_consistency_v1",
+  "phase": "retrospective_exploratory_after_source_exposure_not_confirmatory",
+  "parent_study_id": "b13_8_read_only_source_schema_audit_v1",
+  "source_group": "nhanes_2015_2016_cycle",
+  "pairs": [
+    {
+      "pair_id": "TRIGLY_TR_UNIT",
+      "source_id": "B13S-HLT-01",
+      "left_column": "LBXTR",
+      "right_column": "LBDTRSI",
+      "factor": "0.01129",
+      "units": "mg/dL_to_mmol/L",
+      "documentation_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2015/DataFiles/TRIGLY_I.htm",
+      "documentation_section": "Data Processing and Editing > LBDTRSI"
+    },
+    {
+      "pair_id": "TRIGLY_LDL_UNIT",
+      "source_id": "B13S-HLT-01",
+      "left_column": "LBDLDL",
+      "right_column": "LBDLDLSI",
+      "factor": "0.02586",
+      "units": "mg/dL_to_mmol/L",
+      "documentation_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2015/DataFiles/TRIGLY_I.htm",
+      "documentation_section": "Data Processing and Editing > LBDLDLSI"
+    },
+    {
+      "pair_id": "TCHOL_TC_UNIT",
+      "source_id": "B13S-HLT-02",
+      "left_column": "LBXTC",
+      "right_column": "LBDTCSI",
+      "factor": "0.02586",
+      "units": "mg/dL_to_mmol/L",
+      "documentation_url": "https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2015/DataFiles/TCHOL_I.htm",
+      "documentation_section": "Data Processing and Editing > LBDTCSI"
+    }
+  ],
+  "absolute_residual_thresholds_mmol_l": ["0.0005", "0.005", "0.01", "0.05", "0.1"],
+  "primary_purpose": "aggregate_empirical_consistency_with_published_unit_factors_without_fitting_precision",
+  "input_policy": "only_exact_B13_7_receipt_verified_files_and_existing_B13_8_aggregate_report",
+  "output_policy": "exclusive_aggregate_json_in_external_cache_no_rows_or_identifiers",
+  "cross_file_clinical_join_performed": false,
+  "fasting_age_or_morning_eligibility_verified": false,
+  "fitted_rounding_or_tolerance": false,
+  "source_eligibility_confirmed": false,
+  "independent_reference_truth_confirmed": false,
+  "real_gate_evaluation_allowed": false,
+  "allowed_claims": ["documented_factors_exploratory_recorded_value_consistency"],
+  "disallowed_claims": ["blinded_discovery", "source_authenticity_confirmed", "clinical_reference_truth", "precision_gold", "natural_error_detection", "prospective_gate_effect", "independent_gold"]
+}
