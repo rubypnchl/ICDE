@@ -1,0 +1,16 @@
+{
+  "study_id": "b13_12_fixed_grid_precision_sensitivity_v1",
+  "phase": "retrospective_numeric_sensitivity_not_independent_gold",
+  "parent_b13_11_study_id": "b13_11_real_xpt_matched_compiler_diagnostic_v1",
+  "source_group": "nhanes_2015_2016_cycle",
+  "pair_ids": ["TRIGLY_TR_UNIT", "TRIGLY_LDL_UNIT", "TCHOL_TC_UNIT"],
+  "tolerance_grid_mmol_l": ["0.0005", "0.005", "0.01", "0.05", "0.1"],
+  "tolerance_origin": "empirical_same_dataset_exploratory_bins_predeclared_B13_9_not_independent_precision_truth",
+  "numerical_gate_effect_claimed": false,
+  "independent_precision_verified": false,
+  "prospective_candidates": 0,
+  "independent_gold_rules": 0,
+  "output_policy": "external_cache_exclusive_aggregate_only",
+  "allowed_claims": ["B3_fixed_grid_numeric_sensitivity_reconciled_with_B13_9"],
+  "disallowed_claims": ["true_data_errors", "gold_rounding_spec", "independent_constraint_discovery", "three_arm_gate_improvement", "production_approval"]
+}
